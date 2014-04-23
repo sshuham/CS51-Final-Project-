@@ -41,7 +41,7 @@ object
     | _ -> for i = 0 to height do
 	     let bi = b.(i) in
 	     for j = 0 to width do 
-	       print_int bi.(j) 
+	       print_int bi.(j) in print_newline
 
     
 end
