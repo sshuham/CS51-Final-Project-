@@ -1,18 +1,50 @@
 open Core.Std
 
 class type board =
+object
+  val mutable board : int array array
+  method get_height : int
+  method get_width : int
+  method get_board : int array array
+end
 
-class type player = 
+class c4Board : board =
+object (self)
+  val mutable board = Array.make_matrix 6 7 0
+  method get_height = 6
+  method get_width = 7
+  method get_board = board
+end
 
-class C4Player : player = 
+class type move =
+object
+  method get_move : int
+end
 
-class type move = 
+class c4Move num : move =
+object
+  method get_move = num
+end
+
+class type player =
+object
+  method next_move : board -> move
+  method player_name : board -> string
+  method is_move : bool
+end
+
+class c4Player board : player = 
+object
+  method next_move board = new c4Move 0
+  method player_name board = "Bob"
+  method is_move = true
+end
 
 class type game =
 object
-  method initial_board : int -> int -> player -> board
+  method initial_board : player -> board * player
   method move_of_string : string -> move
-  method current_player : board -> player
+  method current_player : player -> player -> player
   method string_of_move : move -> string 
   method print_board : board -> unit 
   method allowed : move -> bool
@@ -21,32 +53,29 @@ object
   method is_won : board -> bool
 end
 
-class connect_Four player1 player2 : game  =
-object
-  (*type move
-  val mutable board (* move to class *)*)
-  let p1 = new C4Player (* move to class *)
+class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
+object (self)
 
-  let height = 6
+  val mutable board : c4Board = new c4Board
 
-  let width = 7
+  method initial_board (player : c4Player) : c4Board * c4Player =
+    (board, player1)
 
-  method initial_board (player : player) : board =
-    (Array.make_matrix height width 0, player)
+  method move_of_string (column : string) : move =
+    new c4Move (int_of_string column)
 
-  method move_of_string (column : string) : int =
-    int_of_string column
+  method current_player (player1 : c4Player) (player2 : c4Player) : c4Player =
+    if player1#is_move then player1 else player2
   
-  method string_of_move (m : move) : string = 
-    string_of_int m
+  method string_of_move (m : c4Move) : string = 
+    string_of_int m#get_move
 
-  method print_board (b : board) :  unit = 
-    match b with 
-    | [] -> failwith "Invalid Board" 
-    | _ -> for i = 0 to height do
-	     let bi = b.(i) in
-	     for j = 0 to width do 
-	       print_int bi.(j) in print_newline
+  method print_board (b : c4Board) :  unit = 
+    match b#get_board with 
+    | [||] -> failwith "Invalid Board"
+    | _ -> for i = 0 to (b#get_height - 1) do
+	     let bi = b#get_board.(i) in
+	     for j = 0 to b#get_width do 
+	       (if j = b#get_width then print_newline () else print_int bi.(j)) done done
 
-    
 end
