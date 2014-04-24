@@ -47,10 +47,9 @@ object
   method current_player : player -> player -> player
   method string_of_move : move -> string 
   method print_board : board -> unit 
-  method allowed : move -> bool
-  method allowed_moves : board -> move list
-  method next_board : board -> move -> board 
-  method is_won : board -> bool
+  method allowed : board -> move -> bool
+  (*method next_board : board -> move -> board 
+  method is_won : board -> bool*)
 end
 
 class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
@@ -77,5 +76,11 @@ object (self)
 	     let bi = b#get_board.(i) in
 	     for j = 0 to b#get_width do 
 	       (if j = b#get_width then print_newline () else print_int bi.(j)) done done
+
+  method allowed (b : c4Board) (m : c4Move) : bool =
+    let move = m#get_move in
+    let board = b#get_board in
+    move < 0 || move >= b#get_width 
+    || Array.fold_right ~f: (fun x y -> phys_equal x 0) ~init:true board.(move)
 
 end
