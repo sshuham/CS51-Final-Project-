@@ -1,4 +1,14 @@
 open Core.Std
+open Graphics 
+
+class type drawable =
+object
+  method rect : int -> int -> int -> int -> unit
+  method button : rect -> string -> unit
+  method circle : int*int -> int -> int -> color -> color -> string -> unit
+  method piece : rect -> circle -> unit 
+  method grid : int -> int -> int -> unit 
+end 
 
 class type board =
 object
