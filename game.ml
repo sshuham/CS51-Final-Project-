@@ -1,9 +1,15 @@
 open Core.Std
 
-class type Game =
+class type board =
+
+class type player = 
+
+class C4Player : player = 
+
+class type move = 
+
+class type game =
 object
-  type move
-  type board
   method initial_board : int -> int -> player -> board
   method move_of_string : string -> move
   method current_player : board -> player
@@ -15,12 +21,11 @@ object
   method is_won : board -> bool
 end
 
-
-class Connect_Four player1 player2 :  =
+class connect_Four player1 player2 : game  =
 object
-  type move = int
-
-  type board = (int array array) * player
+  (*type move
+  val mutable board (* move to class *)*)
+  let p1 = new C4Player (* move to class *)
 
   let height = 6
 
