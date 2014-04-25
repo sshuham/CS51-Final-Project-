@@ -83,4 +83,13 @@ object (self)
     move < 0 || move >= b#get_width 
     || Array.fold_right ~f: (fun x y -> phys_equal x 0) ~init:true board.(move)
 
+  method next_board (b : c4Board) (m : c4Move) : c4Board =
+    player = current_player player1 player2 in
+
+  method is_won (b : c4Board) : bool =
+    let board = b#get_board in
+    let rec check_row (board_array : Array) : bool =
+      
+    
+
 end
