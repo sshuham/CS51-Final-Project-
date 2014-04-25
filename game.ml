@@ -1,6 +1,7 @@
 open Core.Std
 open Graphics 
-open Graphicevents
+open Event
+open Draw
     
 let circle_height = 7
 let circle_width = 7
