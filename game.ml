@@ -34,7 +34,7 @@ end
 
 class c4Board : board =
 object 
-  val mutable board = Array.make_matrix 6 7 0
+  val mutable board = Array.make_matrix 7 6 0
   method get_height = 6
   method get_width = 7
   method get_board = board
@@ -71,16 +71,17 @@ object
   method move_of_string : string -> move
   method current_player : player -> player -> player
   method string_of_move : move -> string 
-  method print_board : board -> unit 
+  method print_board : board -> unit
   method allowed : board -> move -> bool
-  (*method next_board : board -> move -> board 
+  method change_player_to_move : player -> player -> unit
+  (*method next_board : board -> move -> unit
   method is_won : board -> bool*)
 end
 
 class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
 object (self)
 
-  inherit draw 
+  inherit draw
   
   val mutable board : c4Board = new c4Board
 
@@ -99,13 +100,13 @@ object (self)
   method print_board (b : c4Board) :  unit = 
     match b#get_board with 
     | [||] -> failwith "Invalid Board"
-    | _ -> for i = 0 to (b#get_height-1) do
+    | _ -> for i = 0 to (b#get_width-1) do
 	     let bi = b#get_board.(i) in
-		 for j = 0 to (b#get_width-1) do 
+		 for j = 0 to (b#get_height-1) do 
 		   match bi.(j) with
 		   | 0 -> self#print_piece ((j*10), (i*10)) Graphics.white ""
 		   | 1 -> self#print_piece ((j*10), (i*10)) Graphics.red "P1"
-		   | 2 -> self#print_piece ((j*10), (i*10)) Graphics.blue "P2"
+		   | 2 -> self#print_piece ((j*10), (i*10)) Graphics.blue "P2" done done
 		  
 	     
   method allowed (b : c4Board) (m : c4Move) : bool =
@@ -114,13 +115,22 @@ object (self)
     move < 0 || move >= b#get_width 
     || Array.fold_right ~f: (fun x y -> phys_equal x 0) ~init:true board.(move)
 
-  method next_board (b : c4Board) (m : c4Move) : c4Board =
-    player = current_player player1 player2 in
+  method change_player_to_move (p1 : c4Player) (p2: c4Player) : unit =
+    p1#is_move = (not p1#is_move); p2#is_move = (not p2#is_move); ()
 
-  method is_won (b : c4Board) : bool =
+  method next_board (b : c4Board) (m : c4Move) : unit =
+    if self#allowed b m then
+      let count = ref 0 in
+      let move = m#get_move in
+      for i = 0 to (b#get_height-1) do
+	if phys_equal b#get_board.(move).(i) 0 then count := !count + 1 done;
+      b#get_board.(move).(!count-1) <- 1; ()
+    else failwith "Illegal Move"
+
+
+  (*method is_won (b : c4Board) : bool =
     let board = b#get_board in
-    let rec check_row (board_array : Array) : bool =
-      
+    let rec check_row (board_array : Array) : bool =*)
     
 
 end
