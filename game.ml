@@ -85,7 +85,7 @@ object
 
   !method next_move (bd : board) =
     let test_game = new c4Game (new c4Player board) (new c4Player board) in 
-      let minimax (b : board) (d : int) (max_player : bool) : int = 
+      let minimax (b : board) (d : int) (max_player : bool) : (int * int) = 
         if d = 0 || test_game#is_won board != None
         then 0 (* insert heuristic function here *)
         else
@@ -97,26 +97,28 @@ object
               let mv = new c4Move i in
               if test_game#allowed b mv
               then 
-                (let val = minimax (test_game#next_board b mv) (d - 1) false in 
+                (let (_ , val) = minimax (test_game#next_board b mv) (d - 1) false in 
                 if val > !bestValue
                 then (bestValue := val; indexValue := i)
                 else () )
               else ();
-            !indexValue)
+            (!indexValue, !bestValue))
           else
             (let bestValue = ref infty in
+            let indexValue = ref 0 in
             for i = 0 to board#get_width - 1 do
               let mv = new c4Move i in
               if test_game#allowed b mv
               then 
-                (let val = minimax (test_game#next_board b mv) (d - 1) false in 
+                (let (_, val) = minimax (test_game#next_board b mv) (d - 1) false in 
                 if val < !bestValue
                 then (bestValue := val; indexValue := i)
                 else () )
               else ();
-            !indexValue)
+            (!indexValue, !bestValue)
       in
-      !indexValue
+      let (mv, _) = minimax b minimax_depth true in
+      new c4Move mv
 
 
 end  
