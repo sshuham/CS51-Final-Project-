@@ -1,34 +1,3 @@
-<<<<<<< HEAD
-(* open Core.Std *)
-
-module type GAME =
-sig
-  type move
-  type player
-  type board
-  val initial_board : int -> int -> player -> board
-  val move_of_string : string -> move
-  (*val new_board : board -> move -> board
-  val allowed : move -> bool
-  val allowed_moves : board -> move list
-  val current_player : board -> player
-  val is_won : board -> bool*)
-end
-  
-
-module Connect_Four =
-struct
-  type move = int
-  type player = | Player1 | Player2
-  type board = (int array array) * player
-  let initial_board (width : int) (height : int) (player : player) : board =
-    (Array.make_matrix width height 0, player)
-  let initial_board (player : player) : board =
-    (Array.make_matrix 6 7 0, player)
-  let move_of_string (column : string) : int =
-    int_of_string column
-  let new_board (old_board : board) (new_move : move) : board =
-=======
 open Core.Std
 open Graphics 
 open Event
@@ -87,14 +56,39 @@ object
   method next_move : board -> move
   method player_name : board -> string
   method is_move : bool
+  method set_move : bool -> unit
 end
 
-class c4Player board : player = 
+
+
+
+class c4Player (b : board) : player = 
 object
-  method next_move board = new c4Move 0
-  method player_name board = "Bob"
-  method is_move = true
+  val mutable move = true
+
+  method is_move = move
+  method set_move b = move <- b 
+  method player_name = "Bob"
+
+  method next_move b = new c4Move 0
 end
+
+class humanPlayer (b : board) : player = 
+object
+end 
+
+class minimaxPlayer (b : board) : player =
+object 
+  inherit c4Player as super
+
+
+  !method next_move board =
+     let minimax (b : board) (d : int) (max_player : bool) = 
+      if d = 0 || 
+
+end  
+
+
 
 class type game =
 object
@@ -160,10 +154,10 @@ object (self)
     else failwith "Illegal Move"
 
 
-  (*method is_won (b : c4Board) : bool =
+  (* when you implement is_won, please make sure to return the player who won the game, 
+   * so it's sth like "player option")
+
+  (*method is_won (b : c4Board) : player option =
     let board = b#get_board in
     let rec check_row (board_array : Array) : bool =*)
->>>>>>> 9f56a6634b851ed32c8fb1548dab8177dc1fbd86
-    
-
 end
