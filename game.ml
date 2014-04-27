@@ -7,6 +7,8 @@ let circle_height = 7
 let circle_width = 7
 let piece_height = 10
 let piece_width = 10 
+let infty = 10000000
+let minimax_depth = 5
 
 class type drawable =
 object
@@ -81,10 +83,41 @@ class minimaxPlayer (b : board) : player =
 object 
   inherit c4Player as super
 
+  !method next_move (bd : board) =
+    let test_game = new c4Game (new c4Player board) (new c4Player board) in 
+      let minimax (b : board) (d : int) (max_player : bool) : int = 
+        if d = 0 || test_game#is_won board != None
+        then 0 (* insert heuristic function here *)
+        else
+          if max_player
+          then 
+            (let bestValue = ref (-infty) in
+            let indexValue = ref 0 in
+            for i = 0 to board#get_width - 1 do
+              let mv = new c4Move i in
+              if test_game#allowed b mv
+              then 
+                (let val = minimax (test_game#next_board b mv) (d - 1) false in 
+                if val > !bestValue
+                then (bestValue := val; indexValue := i)
+                else () )
+              else ();
+            !indexValue)
+          else
+            (let bestValue = ref infty in
+            for i = 0 to board#get_width - 1 do
+              let mv = new c4Move i in
+              if test_game#allowed b mv
+              then 
+                (let val = minimax (test_game#next_board b mv) (d - 1) false in 
+                if val < !bestValue
+                then (bestValue := val; indexValue := i)
+                else () )
+              else ();
+            !indexValue)
+      in
+      !indexValue
 
-  !method next_move board =
-     let minimax (b : board) (d : int) (max_player : bool) = 
-      if d = 0 || 
 
 end  
 
@@ -100,8 +133,8 @@ object
   method print_board : board -> unit
   method allowed : board -> move -> bool
   method change_player_to_move : player -> player -> unit
-  (*method next_board : board -> move -> unit
-  method is_won : board -> bool*)
+  method next_board : board -> move -> unit
+  method is_won : board -> bool
 end
 
 class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
@@ -155,9 +188,7 @@ object (self)
 
 
   (* when you implement is_won, please make sure to return the player who won the game, 
-   * so it's sth like "player option")
+   * so it's sth like "player option" *)
 
-  (*method is_won (b : c4Board) : player option =
-    let board = b#get_board in
-    let rec check_row (board_array : Array) : bool =*)
+  method is_won (b : c4Board) : player option = None
 end
