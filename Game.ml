@@ -1,12 +1,18 @@
 open Core.Std
 open Graphics 
+<<<<<<< HEAD:Game.ml
 open Graphicevents
+=======
+open Event
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
 open Draw
     
 let circle_height = 7
 let circle_width = 7
 let piece_height = 10
 let piece_width = 10 
+let infty = 10000000
+let minimax_depth = 5
 
 class type drawable =
 object
@@ -35,7 +41,11 @@ end
 
 class c4Board : board =
 object 
+<<<<<<< HEAD:Game.ml
   val mutable board = Array.make_matrix ~dimx:7 ~dimy:6 0
+=======
+  val mutable board = Array.make_matrix 7 6 0
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
   method get_height = 6
   method get_width = 7
   method get_board = board
@@ -59,17 +69,34 @@ object
   method set_move : bool -> unit
 end
 
+<<<<<<< HEAD:Game.ml
 class c4Player : player = 
+=======
+
+
+
+class c4Player (b : board) : player = 
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
 object
   val mutable move = true
 
   method is_move = move
+<<<<<<< HEAD:Game.ml
   method set_move x = move <- x 
   method player_name = "Bob"
   method next_move _ = new c4Move 0
 end
 
 (*class humanPlayer (b : board) : player = 
+=======
+  method set_move b = move <- b 
+  method player_name = "Bob"
+
+  method next_move b = new c4Move 0
+end
+
+class humanPlayer (b : board) : player = 
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
 object
 end 
 
@@ -77,12 +104,54 @@ class minimaxPlayer (b : board) : player =
 object 
   inherit c4Player as super
 
+<<<<<<< HEAD:Game.ml
 
   !method next_move board =
      let minimax (b : board) (d : int) (max_player : bool) = 
        if d = 0 || 
 
 end  *)
+=======
+  !method next_move (bd : board) =
+    let test_game = new c4Game (new c4Player board) (new c4Player board) in 
+      let minimax (b : board) (d : int) (max_player : bool) : (int * int) = 
+        if d = 0 || test_game#is_won board != None
+        then 0 (* insert heuristic function here *)
+        else
+          if max_player
+          then 
+            (let bestValue = ref (-infty) in
+            let indexValue = ref 0 in
+            for i = 0 to board#get_width - 1 do
+              let mv = new c4Move i in
+              if test_game#allowed b mv
+              then 
+                (let (_ , val) = minimax (test_game#next_board b mv) (d - 1) false in 
+                if val > !bestValue
+                then (bestValue := val; indexValue := i)
+                else () )
+              else ();
+            (!indexValue, !bestValue))
+          else
+            (let bestValue = ref infty in
+            let indexValue = ref 0 in
+            for i = 0 to board#get_width - 1 do
+              let mv = new c4Move i in
+              if test_game#allowed b mv
+              then 
+                (let (_, val) = minimax (test_game#next_board b mv) (d - 1) false in 
+                if val < !bestValue
+                then (bestValue := val; indexValue := i)
+                else () )
+              else ();
+            (!indexValue, !bestValue)
+      in
+      let (mv, _) = minimax b minimax_depth true in
+      new c4Move mv
+
+
+end  
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
 
 
 
@@ -95,9 +164,15 @@ object
   method string_of_move : move -> string 
   method print_board : board -> unit
   method allowed : board -> move -> bool
+<<<<<<< HEAD:Game.ml
   (*method change_player_to_move : player -> player -> unit*)
   method next_board : board -> move -> unit
   (*method is_won : board -> bool*)
+=======
+  method change_player_to_move : player -> player -> unit
+  method next_board : board -> move -> unit
+  method is_won : board -> bool
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
 end
 
 class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
@@ -128,21 +203,32 @@ object (self)
 		   match bi.(j) with
 		   | 0 -> self#print_piece ((j*10), (i*10)) Graphics.white ""
 		   | 1 -> self#print_piece ((j*10), (i*10)) Graphics.red "P1"
+<<<<<<< HEAD:Game.ml
 		   | 2 -> self#print_piece ((j*10), (i*10)) Graphics.blue "P2" 
 		   | _ -> failwith "Invalid Board" 
 		 done 
 	   done 
 
 
+=======
+		   | 2 -> self#print_piece ((j*10), (i*10)) Graphics.blue "P2" done done
+		  
+	     
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
   method allowed (b : c4Board) (m : c4Move) : bool =
     let move = m#get_move in
     let board = b#get_board in
     move > 0 || move <= b#get_width 
     || Array.fold_right ~f: (fun x _ -> phys_equal x 0) ~init:true board.(move)
 
+<<<<<<< HEAD:Game.ml
   (*method change_player_to_move (p1 : c4Player) (p2: c4Player) : unit =
     p1#is_move = (not p1#is_move); p2#is_move = (not p2#is_move)*)
    
+=======
+  method change_player_to_move (p1 : c4Player) (p2: c4Player) : unit =
+    p1#is_move = (not p1#is_move); p2#is_move = (not p2#is_move); ()
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
 
   method next_board (b : c4Board) (m : c4Move) : unit =
     if self#allowed b m then
@@ -150,16 +236,26 @@ object (self)
       let move = m#get_move in
       for i = 0 to (b#get_height-1) do
 	if phys_equal b#get_board.(move).(i) 0 then count := !count + 1 done;
+<<<<<<< HEAD:Game.ml
       match self#current_player with 
       | player1 -> let new_board = b#get_board.(move).(!count-1) <- 1 in print_board new_board
       | player2 -> let new_board = b#get_board.(move).(!count-1) <- 2 in print_board new_board 
+=======
+      b#get_board.(move).(!count-1) <- 1; ()
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
     else failwith "Illegal Move"
 
 
   (* when you implement is_won, please make sure to return the player who won the game, 
+<<<<<<< HEAD:Game.ml
    * so it's sth like "player option"*)
 
   (*method is_won (b : c4Board) : player option =
     let board = b#get_board in
     let rec check_row (board_array : Array) : bool =*)
+=======
+   * so it's sth like "player option" *)
+
+  method is_won (b : c4Board) : player option = None
+>>>>>>> 27e74a2645f9d86e70783d8f35d8e96470174920:game.ml
 end
