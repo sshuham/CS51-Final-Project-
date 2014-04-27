@@ -16,7 +16,7 @@ let board_height = 60
 
 (** Fires when a key is pressed and returns the character corresponding
     to the key. *)
-let key_pressed : char Grapchicevents.event = Graphicevents.new_event ()
+let key_pressed : char Graphicevents.event = Graphicevents.new_event ()
 
 (** Fires when the mouse button is pressed, indicating the coordinates
     where the mouse was when the event occurred. *)
@@ -58,7 +58,7 @@ let read_event () =
       mouse_state := false ;
       Graphicevents.fire_event button_up new_pos
     end
-  end ;
+  end ;;
 
 (* Helper for restarting interrupted system calls (OY) *)
 let rec restart f arg =
@@ -76,7 +76,7 @@ let rec event_loop () =
   read_event ();
   Graphics.synchronize ();
   restart Thread.delay (1.0 /. frame_rate);
-  event_loop ()
+  event_loop () 
 
 
 (** The command "run_ui x y init" starts up the graphical environment with a
@@ -91,5 +91,4 @@ let run_ui (x:int) (y:int) (init:unit->unit) : unit =
     init () ;
     event_loop ()
   with exn -> (Graphics.close_graph () ; raise exn)
-
-
+;;

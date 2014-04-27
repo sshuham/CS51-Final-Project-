@@ -1,6 +1,7 @@
 open Core.Std
 open Graphics 
 open Graphicevents
+open Draw
     
 let circle_height = 7
 let circle_width = 7
@@ -12,11 +13,11 @@ object
   method private draw_rect : int*int -> unit
   method private draw_circle : int*int -> Graphics.color -> string -> unit
   method private print_piece : int*int -> Graphics.color -> string -> unit 
-  method private grid : int -> int -> int -> unit 
+  (*method private grid : int -> int -> int -> unit*)
 end 
 
 class draw : drawable = 
-object 
+object (self)
   method private draw_circle pos bg text = Draw.circle pos circle_width circle_height bg Graphics.black text
   method private draw_rect pos = Draw.rect pos piece_width piece_height Graphics.white 
   method private print_piece pos bg text = self#draw_rect pos; let (x,y) = pos in self#draw_circle (x+5, y+5) bg text
@@ -34,7 +35,7 @@ end
 
 class c4Board : board =
 object 
-  val mutable board = Array.make_matrix 6 7 0
+  val mutable board = Array.make_matrix ~dimx:7 ~dimy:6 0
   method get_height = 6
   method get_width = 7
   method get_board = board
@@ -53,44 +54,66 @@ end
 class type player =
 object
   method next_move : board -> move
-  method player_name : board -> string
+  method player_name : string
   method is_move : bool
+  method set_move : bool -> unit
 end
 
-class c4Player board : player = 
+class c4Player : player = 
 object
-  method next_move board = new c4Move 0
-  method player_name board = "Bob"
-  method is_move = true
+  val mutable move = true
+
+  method is_move = move
+  method set_move x = move <- x 
+  method player_name = "Bob"
+  method next_move _ = new c4Move 0
 end
+
+(*class humanPlayer (b : board) : player = 
+object
+end 
+
+class minimaxPlayer (b : board) : player =
+object 
+  inherit c4Player as super
+
+
+  !method next_move board =
+     let minimax (b : board) (d : int) (max_player : bool) = 
+       if d = 0 || 
+
+end  *)
+
+
 
 class type game =
 object
   inherit drawable 
   method initial_board : player -> board * player
   method move_of_string : string -> move
-  method current_player : player -> player -> player
+  method current_player : player
   method string_of_move : move -> string 
-  method print_board : board -> unit 
+  method print_board : board -> unit
   method allowed : board -> move -> bool
-  (*method next_board : board -> move -> board 
-  method is_won : board -> bool*)
+  (*method change_player_to_move : player -> player -> unit*)
+  method next_board : board -> move -> unit
+  (*method is_won : board -> bool*)
 end
 
 class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
 object (self)
 
-  inherit draw 
+  inherit draw
   
   val mutable board : c4Board = new c4Board
 
-  method initial_board (player : c4Player) : c4Board * c4Player =
+  method initial_board : c4Board * c4Player =
     (board, player1)
 
   method move_of_string (column : string) : move =
     new c4Move (int_of_string column)
 
-  method current_player (player1 : c4Player) (player2 : c4Player) : c4Player =
+  method current_player : c4Player =
     if player1#is_move then player1 else player2
   
   method string_of_move (m : c4Move) : string = 
@@ -99,19 +122,44 @@ object (self)
   method print_board (b : c4Board) :  unit = 
     match b#get_board with 
     | [||] -> failwith "Invalid Board"
-    | _ -> for i = 0 to (b#get_height-1) do
+    | _ -> for i = 0 to (b#get_width-1) do
 	     let bi = b#get_board.(i) in
-		 for j = 0 to (b#get_width-1) do 
+		 for j = 0 to (b#get_height-1) do 
 		   match bi.(j) with
 		   | 0 -> self#print_piece ((j*10), (i*10)) Graphics.white ""
 		   | 1 -> self#print_piece ((j*10), (i*10)) Graphics.red "P1"
-		   | 2 -> self#print_piece ((j*10), (i*10)) Graphics.blue "P2"
-		  
-	     
+		   | 2 -> self#print_piece ((j*10), (i*10)) Graphics.blue "P2" 
+		   | _ -> failwith "Invalid Board" 
+		 done 
+	   done 
+
+
   method allowed (b : c4Board) (m : c4Move) : bool =
     let move = m#get_move in
     let board = b#get_board in
-    move < 0 || move >= b#get_width 
-    || Array.fold_right ~f: (fun x y -> phys_equal x 0) ~init:true board.(move)
+    move > 0 || move <= b#get_width 
+    || Array.fold_right ~f: (fun x _ -> phys_equal x 0) ~init:true board.(move)
 
+  (*method change_player_to_move (p1 : c4Player) (p2: c4Player) : unit =
+    p1#is_move = (not p1#is_move); p2#is_move = (not p2#is_move)*)
+   
+
+  method next_board (b : c4Board) (m : c4Move) : unit =
+    if self#allowed b m then
+      let count = ref 0 in
+      let move = m#get_move in
+      for i = 0 to (b#get_height-1) do
+	if phys_equal b#get_board.(move).(i) 0 then count := !count + 1 done;
+      match self#current_player with 
+      | player1 -> let new_board = b#get_board.(move).(!count-1) <- 1 in print_board new_board
+      | player2 -> let new_board = b#get_board.(move).(!count-1) <- 2 in print_board new_board 
+    else failwith "Illegal Move"
+
+
+  (* when you implement is_won, please make sure to return the player who won the game, 
+   * so it's sth like "player option"*)
+
+  (*method is_won (b : c4Board) : player option =
+    let board = b#get_board in
+    let rec check_row (board_array : Array) : bool =*)
 end
