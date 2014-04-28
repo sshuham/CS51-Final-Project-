@@ -57,8 +57,6 @@ object
   method player_name : string
 end
 
-
-
 class c4Player (b : board) : player = 
 object
   val mutable move = true 
@@ -67,21 +65,16 @@ object
 end
 
 class humanPlayer (b : board) : player =  
+object
   method player_name = "Bob"
   method next_move b = new c4Move 0
 end
-
-class humanPlayer (b : board) : player = 
-object
-
-
-end 
 
 class minimaxPlayer (b : board) : player =
 object 
   inherit c4Player as super
 
-  !method next_move (bd : board) =
+  method! next_move (bd : board) =
     let test_game = new c4Game (new c4Player board) (new c4Player board) in 
       let minimax (b : board) (d : int) (max_player : bool) : (int * int) = 
         if d = 0 || test_game#is_won board != None
@@ -117,8 +110,6 @@ object
       in
       let (mv, _) = minimax b minimax_depth true in
       new c4Move mv
-
-
 end  
 
 
@@ -196,5 +187,6 @@ object (self)
 
 
   method play = 
+
 (*while not won, ask player for move, get move, print board, check if won, switch players.....then call play() in main function  
 end
