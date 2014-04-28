@@ -8,20 +8,20 @@ Partner 4: Alan Xie
 
 open Core.Std
 open Graphicevents
-
+open Game 
 
 (* Initializer functions *)
 let hh_initializer () : unit =
-  ignore (new Game.game (new Game.humanPlayer) (new Game.humanPlayer)) 
+  ignore (new c4Game (new humanPlayer) (new humanPlayer)) 
 
 let hc_initializer () : unit =
-  ignore (new Game.game (new Game.humanPlayer) (new Game.minimaxPlayer)) 
+  ignore (new c4Game (new humanPlayer) (new minimaxPlayer)) 
 
 let ch_initializer () : unit =
-  ignore (new Game.game (new Game.minimaxPlayer) (new Game.humanPlayer)) 
+  ignore (new c4Game (new minimaxPlayer) (new humanPlayer)) 
 
 let cc_initializer () : unit =
-  ignore (new Game.game (new Game.minimaxPlayer) (new Game.minimaxPlayer)) 
+  ignore (new c4Game (new minimaxPlayer) (new minimaxPlayer)) 
 
 
 (* Parse command-line arguments. Returns the appropriate initialization
@@ -42,6 +42,8 @@ let board_height = 6
 let run () : unit =
   let initialize = parse_args () in
   Interface.run_ui board_width board_height initialize 
+  c4Game.play() 
 ;;
 
 run () ;;
+

@@ -124,7 +124,8 @@ object
   inherit drawable 
   method print_board : unit
   method switch_player : unit 	
-  method is_won : bool 			  
+  method is_won : bool 	
+  method play : unit -> unit 		  
 end
 
 class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
@@ -136,7 +137,7 @@ object (self)
 
   val mutable board : board = Array.make_matrix ~dimx:width ~dimy:height 0 
 
-  method print_board = 
+  method print_board : unit= 
     match board with 
     | [||] -> failwith "Invalid Board"
     | _ -> for i = 0 to (width-1) do
@@ -170,5 +171,14 @@ object (self)
 	       done; 
 	       !v 
 
-(*while not won, ask player for move, get move, print board, check if won, switch players.....then call play() in main function *)
+  method play : unit = 
+    let rec check_win board = 
+      if (self#is_won) then
+	Graphics.clear_graph(); Graphics.draw_string ("Congratulations" ^ current_player ^ ", you won!");
+      else 
+	self#switch_player;
+      self#print_board;
+      Graphics.draw_string (current_player#player_name ^ ": It is your turn.");
+      let new_board = next_board board (current_player#next_move board 0) 
+    in check_win new_board 
 end
