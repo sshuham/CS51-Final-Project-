@@ -64,19 +64,31 @@ object
   method next_move _ = new c4Move 0
 end
 
+<<<<<<< HEAD
 class humanPlayer (b : board) : player =  
 object
   method player_name = "Bob"
   method next_move b = new c4Move 0
 end
+=======
+class humanPlayer (b : board) : player = 
+object
+  inherit c4Player as super
+
+end 
+>>>>>>> 0a2542225f1331a4ac0fd66af3bffd025df693cf
 
 class minimaxPlayer (b : board) : player =
 object 
   inherit c4Player as super
 
+<<<<<<< HEAD
   method! next_move (bd : board) =
+=======
+  !method next_move (bd : board) (num : int) =
+>>>>>>> 0a2542225f1331a4ac0fd66af3bffd025df693cf
     let test_game = new c4Game (new c4Player board) (new c4Player board) in 
-      let minimax (b : board) (d : int) (max_player : bool) : (int * int) = 
+      let minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
         if d = 0 || test_game#is_won board != None
         then 0 (* insert heuristic function here *)
         else
@@ -88,11 +100,12 @@ object
               let mv = new c4Move i in
               if test_game#allowed b mv
               then 
-                (let (_ , val) = minimax (test_game#next_board b mv) (d - 1) false in 
+                (let (_ , val) = minimax (test_game#next_board b mv ) (d - 1) false (3 - num_player) in 
                 if val > !bestValue
                 then (bestValue := val; indexValue := i)
                 else () )
-              else ();
+              else ()
+            done;
             (!indexValue, !bestValue))
           else
             (let bestValue = ref infty in
@@ -101,11 +114,12 @@ object
               let mv = new c4Move i in
               if test_game#allowed b mv
               then 
-                (let (_, val) = minimax (test_game#next_board b mv) (d - 1) false in 
+                (let (_, val) = minimax (test_game#next_board b mv) (d - 1) false (3 - num_player) in 
                 if val < !bestValue
                 then (bestValue := val; indexValue := i)
                 else () )
-              else ();
+              else ()
+            done;
             (!indexValue, !bestValue)
       in
       let (mv, _) = minimax b minimax_depth true in
