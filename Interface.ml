@@ -10,56 +10,6 @@ let mouse_pos = ref (0,0)
 let board_width = 70
 let board_height = 60 
 
-(*********************)
-(***** UI Events *****)
-(*********************)
-
-(** Fires when a key is pressed and returns the character corresponding
-    to the key. *)
-let key_pressed : char Graphicevents.event = Graphicevents.new_event ()
-
-(** Fires when the mouse button is pressed, indicating the coordinates
-    where the mouse was when the event occurred. *)
-let button_down : (int*int) Graphicevents.event = Graphicevents.new_event ()
-
-(** Fires when the mouse button is released, indicating the coordinates
-    where the mouse was when the event occurred. *)
-let button_up : (int * int) Graphicevents.event = Graphicevents.new_event ()
-
-(** Fires when the mouse moves, indicating the coordinates where the
-    mouse was when the event occured. *)
-let mouse_motion : (int * int) Graphicevents.event = Graphicevents.new_event ()
-
-(************************)
-(***** Event System *****)
-(************************)
-
-(* poll the Graphics module for the various events -- some care had to
-   be taken to "de-bounce" the mouse. *)
-let read_event () =
-  let new_pos = Graphics.mouse_pos () in
-  if new_pos <> !mouse_pos then begin
-    mouse_pos := new_pos ;
-    Graphicevents.fire_event mouse_motion (Graphics.mouse_pos ())
-  end ;
-  if Graphics.key_pressed () then begin
-    Graphicevents.fire_event key_pressed (Graphics.read_key ())
-  end ;
-  if not !mouse_state then begin
-    let s = Graphics.wait_next_event [Graphics.Button_down ; Graphics.Poll] in
-    if s.Graphics.button then begin
-      mouse_state := true ;
-      Graphicevents.fire_event button_down new_pos
-    end
-  end ;
-  if !mouse_state then begin
-    let s = Graphics.wait_next_event [Graphics.Button_up ; Graphics.Poll] in
-    if not s.Graphics.button then begin
-      mouse_state := false ;
-      Graphicevents.fire_event button_up new_pos
-    end
-  end ;;
-
 (* Helper for restarting interrupted system calls (OY) *)
 let rec restart f arg =
   try f arg
@@ -73,7 +23,6 @@ let frame_rate = 30.0
    events, then synchronizes the shadow graphics buffer with the screen,
    and then loops again. *)
 let rec event_loop () =
-  read_event ();
   Graphics.synchronize ();
   restart Thread.delay (1.0 /. frame_rate);
   event_loop () 
