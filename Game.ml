@@ -62,12 +62,23 @@ end
 class humanPlayer (b : board) : player = 
 object
   inherit c4Player b
+  method! player_name = "Human" 
+  method! next_move _ _ = let (x,_) = Graphics.mouse_pos() in 
+			  if 0<x && x<10 && Graphics.button_down() then (1,0) 
+			  else if 10<x && x<20 && Graphics.button_down() then (2,0)
+			  else if 20<x && x<30 && Graphics.button_down() then (3,0)  
+			  else if 30<x && x<40 && Graphics.button_down() then (4,0) 
+			  else if 40<x && x<50 && Graphics.button_down() then (5,0) 
+			  else if 50<x && x<60 && Graphics.button_down() then (6,0)
+			  else if 60<x && x<70 && Graphics.button_down() then (7,0)
+			  else (0,0)			  
 end 
 
 class minimaxPlayer (b : board) : player =
 object 
   inherit c4Player b 
 
+  method! player_name = "Computer" 
   method! next_move (_ : board) (num : int) =
       let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
         if d = 0 
