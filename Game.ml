@@ -8,6 +8,11 @@ let piece_height = 10
 let piece_width = 10 
 let infty = 10000000
 let minimax_depth = 5
+let width = 7
+let height = 6
+
+type board = int array array 
+type c4Move = int * int 
 
 class type drawable =
 object
@@ -25,84 +30,60 @@ object (self)
   (*method private grid height length bars = ????*)
 end 
 
+let allowed (b : board) (move : c4Move) : bool =
+  let (m,_) = move in 
+    m > 0 || m <= width
+    || Array.fold_right ~f: (fun x _ -> phys_equal x 0) ~init:true b.(m) 
 
-class type board =
-object
-  val mutable board : int array array
-  method get_height : int
-  method get_width : int
-  method get_board : int array array
-end
-
-class c4Board : board =
-object 
-  method get_height = 6
-  method get_width = 7
-  method get_board = board
-end
-
-class type move =
-object
-  method get_move : int
-end
-
-class c4Move num : move =
-object
-  method get_move = num
-end
+let next_board (b : board) (move : c4Move) : board =
+    if allowed b move then
+      let count = ref 0 in
+      let (m,p) = move in 
+      for i = 0 to (height-1) do
+	if phys_equal b.(m).(i) 0 then count := !count + 1 done;
+      match p with 
+      | 1 -> (b.(m).(!count-1) <- 1; b)
+      | 2 -> (b.(m).(!count-1) <- 2; b)
+      | _ -> failwith "Not legal"
+    else failwith "Illegal Move"
 
 class type player =
 object
-  method next_move : board -> move
+  method next_move : board -> int -> c4Move
   method player_name : string
 end
 
-class c4Player (b : board) : player = 
+class c4Player (_ : board): player = 
 object
-  val mutable move = true 
   method player_name = "Bob"
-  method next_move _ = new c4Move 0
+  method next_move _ _ = (0,0)
 end
 
-<<<<<<< HEAD
-class humanPlayer (b : board) : player =  
-object
-  method player_name = "Bob"
-  method next_move b = new c4Move 0
-end
-=======
 class humanPlayer (b : board) : player = 
 object
-  inherit c4Player as super
-
+  inherit c4Player b
 end 
->>>>>>> 0a2542225f1331a4ac0fd66af3bffd025df693cf
 
 class minimaxPlayer (b : board) : player =
 object 
-  inherit c4Player as super
+  inherit c4Player b 
 
-<<<<<<< HEAD
-  method! next_move (bd : board) =
-=======
-  !method next_move (bd : board) (num : int) =
->>>>>>> 0a2542225f1331a4ac0fd66af3bffd025df693cf
-    let test_game = new c4Game (new c4Player board) (new c4Player board) in 
-      let minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
-        if d = 0 || test_game#is_won board != None
-        then 0 (* insert heuristic function here *)
+  method! next_move (_ : board) (num : int) =
+      let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
+        if d = 0 
+        then (0,0) (* insert heuristic function here *)
         else
           if max_player
           then 
             (let bestValue = ref (-infty) in
             let indexValue = ref 0 in
-            for i = 0 to board#get_width - 1 do
-              let mv = new c4Move i in
-              if test_game#allowed b mv
+            for i = 0 to 7 - 1 do
+              let mv = (i,num_player) in
+              if allowed b mv
               then 
-                (let (_ , val) = minimax (test_game#next_board b mv ) (d - 1) false (3 - num_player) in 
-                if val > !bestValue
-                then (bestValue := val; indexValue := i)
+                (let (_ , vl) = minimax (next_board b mv ) (d - 1) false (3 - num_player) in 
+                if vl > !bestValue
+                then (bestValue := vl; indexValue := i)
                 else () )
               else ()
             done;
@@ -110,32 +91,29 @@ object
           else
             (let bestValue = ref infty in
             let indexValue = ref 0 in
-            for i = 0 to board#get_width - 1 do
-              let mv = new c4Move i in
-              if test_game#allowed b mv
+            for i = 0 to 7 - 1 do
+              let mv = (i,num_player) in
+              if allowed b mv
               then 
-                (let (_, val) = minimax (test_game#next_board b mv) (d - 1) false (3 - num_player) in 
-                if val < !bestValue
-                then (bestValue := val; indexValue := i)
+                (let (_, vl) = minimax (next_board b mv) (d - 1) false (3 - num_player) in 
+                if vl < !bestValue
+                then (bestValue := vl; indexValue := i)
                 else () )
               else ()
             done;
-            (!indexValue, !bestValue)
+            (!indexValue, !bestValue))
       in
-      let (mv, _) = minimax b minimax_depth true in
-      new c4Move mv
+      let (mv, _) = minimax b minimax_depth true num in
+      (mv,num)
 end  
 
 
 class type game =
 object
   inherit drawable 
-  method move_of_string : string -> move
-  method current_player : player
-  method string_of_move : move -> string 
-  method print_board : board -> unit
-  method allowed : board -> move -> bool
-  method next_board : board -> move -> board
+  method print_board : unit
+  method switch_player : unit 	
+  method is_won : bool 			  
 end
 
 class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
@@ -145,62 +123,41 @@ object (self)
   
   val mutable current_player = player1 
 
-  val mutable board : c4Board = new c4Board
+  val mutable board : board = Array.make_matrix ~dimx:width ~dimy:height 0 
 
-  method move_of_string (column : string) : move =
-    new c4Move (int_of_string column)
-  
-  method string_of_move (m : c4Move) : string = 
-    string_of_int m#get_move
-
-  method print_board (b : c4Board) :  unit = 
-    match b#get_board with 
+  method print_board = 
+    match board with 
     | [||] -> failwith "Invalid Board"
-    | _ -> for i = 0 to (b#get_width-1) do
-	     let bi = b#get_board.(i) in
-		 for j = 0 to (b#get_height-1) do 
+    | _ -> for i = 0 to (width-1) do
+	     let bi = board.(i) in
+		 for j = 0 to (height-1) do 
 		   match bi.(j) with
 		   | 0 -> self#print_piece ((j*10), (i*10)) Graphics.white ""
 		   | 1 -> self#print_piece ((j*10), (i*10)) Graphics.red "P1"
 		   | 2 -> self#print_piece ((j*10), (i*10)) Graphics.blue "P2" 
 		   | _ -> failwith "Invalid Board" 
 		 done 
-	   done
-
-  method allowed (b : c4Board) (m : c4Move) : bool =
-    let move = m#get_move in
-    let board = b#get_board in
-    move > 0 || move <= b#get_width 
-    || Array.fold_right ~f: (fun x _ -> phys_equal x 0) ~init:true board.(move)  
+	   done 
    
   method switch_player : unit =
-    if current_player = player1 then player2 else player1 
-    
-  method next_board (m : c4Move) : board =
-    if self#allowed b m then
-      let count = ref 0 in
-      let move = m#get_move in
-      for i = 0 to (board#get_height-1) do
-	if phys_equal board.(move).(i) 0 then count := !count + 1 done;
-      match current_player with 
-      | player1 -> b#get_board.(move).(!count-1) <- 1
-      | player2 -> b#get_board.(move).(!count-1) <- 2
-    else failwith "Illegal Move"
+    if current_player = player1 then current_player <- player2 else current_player <- player1
 
-  method is_won (b : c4Board) : bool = 
-    for i = 0 to (b#get_height - 1) do 
-      for j = 0 to (b#get_width - 1) do 
-	phys_equal b.(i).(j) b.(i).(j) && phys_equal b.(i).(j) b.(i+1).(j)  
-	&& phys_equal b.(i).(j) b.(i+2).(j)  && phys_equal b.(i).(j) b.(i+3).(j) 
-	|| phys_equal b.(i).(j) b.(i).(j) && phys_equal b.(i).(j) b.(i).(j+1)  
-	   && phys_equal b.(i).(j) b.(i).(j+2)  && phys_equal b.(i).(j) b.(i).(j+3) 
-	|| phys_equal b.(i).(j) b.(i).(j) && phys_equal b.(i).(j) b.(i+1).(j+1)  
-	   && phys_equal b.(i).(j) b.(i+2).(j+2)  && phys_equal b.(i).(j) b.(i+3).(j+3) 
-	|| phys_equal b.(i).(j) b.(i).(j) && phys_equal b.(i).(j) b.(i+1).(j-1)  
-	   && phys_equal b.(i).(j) b.(i+2).(j-2)  && phys_equal b.(i).(j) b.(i+3).(j-3) 
+  method is_won : bool = 
+    let v = ref false in
+    for i = 0 to (height - 1) do 
+      for j = 0 to (width - 1) do 
+	if not(phys_equal board.(i).(j) 0) then 
+		v := !v || (phys_equal board.(i).(j) board.(i).(j) && phys_equal board.(i).(j) board.(i+1).(j)  
+		&& phys_equal board.(i).(j) board.(i+2).(j)  && phys_equal board.(i).(j) board.(i+3).(j) 
+		|| phys_equal board.(i).(j) board.(i).(j) && phys_equal board.(i).(j) board.(i).(j+1)  
+		   && phys_equal board.(i).(j) board.(i).(j+2)  && phys_equal board.(i).(j) board.(i).(j+3) 
+		|| phys_equal board.(i).(j) board.(i).(j) && phys_equal board.(i).(j) board.(i+1).(j+1)  
+		   && phys_equal board.(i).(j) board.(i+2).(j+2)  && phys_equal board.(i).(j) board.(i+3).(j+3) 
+		|| phys_equal board.(i).(j) board.(i).(j) && phys_equal board.(i).(j) board.(i+1).(j-1)  
+		   && phys_equal board.(i).(j) board.(i+2).(j-2)  && phys_equal board.(i).(j) board.(i+3).(j-3)) 
+	       done 
+	       done; 
+	       !v 
 
-
-  method play = 
-
-(*while not won, ask player for move, get move, print board, check if won, switch players.....then call play() in main function  
+(*while not won, ask player for move, get move, print board, check if won, switch players.....then call play() in main function *)
 end
