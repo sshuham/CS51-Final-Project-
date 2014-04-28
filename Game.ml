@@ -182,20 +182,17 @@ object (self)
       | player2 -> b#get_board.(move).(!count-1) <- 2
     else failwith "Illegal Move"
 
- 
-
-  (* when you implement is_won, please make sure to return the player who won the game, 
-   * so it's sth like "player option"*)
-
-  (*method is_won (b : c4Board) : player option =
-    let board = b#get_board in
-    let rec check_row (board_array : Array) : bool =
-   * so it's sth like "player option" *)
-
   method is_won (b : c4Board) : bool = 
     for i = 0 to (b#get_height - 1) do 
-      let bi = b.(i) in 
-      for j = 0 to (b#get_width - 1))
+      for j = 0 to (b#get_width - 1) do 
+	phys_equal b.(i).(j) b.(i).(j) && phys_equal b.(i).(j) b.(i+1).(j)  
+	&& phys_equal b.(i).(j) b.(i+2).(j)  && phys_equal b.(i).(j) b.(i+3).(j) 
+	|| phys_equal b.(i).(j) b.(i).(j) && phys_equal b.(i).(j) b.(i).(j+1)  
+	   && phys_equal b.(i).(j) b.(i).(j+2)  && phys_equal b.(i).(j) b.(i).(j+3) 
+	|| phys_equal b.(i).(j) b.(i).(j) && phys_equal b.(i).(j) b.(i+1).(j+1)  
+	   && phys_equal b.(i).(j) b.(i+2).(j+2)  && phys_equal b.(i).(j) b.(i+3).(j+3) 
+	|| phys_equal b.(i).(j) b.(i).(j) && phys_equal b.(i).(j) b.(i+1).(j-1)  
+	   && phys_equal b.(i).(j) b.(i+2).(j-2)  && phys_equal b.(i).(j) b.(i+3).(j-3) 
 
 
   method play = 
