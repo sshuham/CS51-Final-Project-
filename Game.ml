@@ -81,6 +81,79 @@ object
 			  else (0,0)			  
 end 
 
+
+
+let estimate_value (b : board) (num_player : int) =
+  let w1 = 1 in
+  let w2 = 10 in
+  let w3 = 100 in
+  let w4 = infty in
+
+  let check_direction i j (d : int * int) =
+    let v = ref 0 in
+    let (i', j') = d in
+    if b.(i).(j) = b.(i+i').(j+j')
+    then 
+      if b.(i).(j) = b.(i+2*i').(j+2*j')
+      then 
+        if b.(i).(j) = b.(i+3*i').(j+3*j')
+        then v := !v + w4
+        else v := !v + w3
+      else 
+        if b.(i).(j) = b.(i+3*i').(j+3*j') && b.(i+2*i').(j+2*j') = 0
+        then v := !v + w3
+        else v := !v + w2
+    else 
+      if b.(i).(j) = b.(i+2*i').(j+2*j') && b.(i+i').(j+j') = 0
+      then 
+        if b.(i).(j) = b.(i+3*i').(j+3*j')
+        then v := !v + w3
+        else v := !v + w2 
+      ;!v 
+  in 
+
+  let up = (0, 1) in
+  let dup = (1, 1) in 
+  let right = (1, 0) in
+  let ddown = (0, -1) in
+
+  let check_vertex i j = 
+    let v = ref 0 in
+    if i <= 2 
+    then v := !v + check_direction i j right
+    else () ;
+    if j <= 1
+    then v := !v + check_direction i j up
+    else () ;    
+    if i <= 2 && j <= 1
+    then v := !v + check_direction i j dup
+    else () ;
+    if j >= 3 && i <= 2
+    then v := !v + check_direction i j ddown
+    else () ; 
+    !v 
+  in
+
+  let v = ref 0 in
+
+  for i = 0 to 6 do
+    for i = 0 to 5 do 
+      if b.(i).(j) = 0 
+      then ()
+      else 
+        if b.(i).(j) = num_player
+        then v := !v + check_vertex i j
+        else v := !v - check_vertex i j 
+    done 
+  done ;
+  if !v > 2 * infty / 3
+  then infty
+  else
+    if !v < - 2 * infty / 3 
+    then - infty
+    else !v 
+
+
 class minimaxPlayer (b : board) : player =
 object 
   inherit c4Player b 
