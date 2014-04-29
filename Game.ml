@@ -159,10 +159,38 @@ object
   inherit c4Player b 
 
   method! player_name = "Computer" 
-  method! next_move (_ : board) (num : int) =
+  method! next_move (bd : board) (num : int) =
       let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
-        if d = 0 
-        then (0,0) (* insert heuristic function here *)
+        if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty
+        then 
+          if max_player 
+          then 
+            (let v = ref 0 in 
+            let index = ref 0 in 
+            for i = 0 to 7 - 1 do 
+              let mv = (i , num_player) in 
+              if allowed b mv 
+              then  
+                (let vl = estimate_value (next_board b mv) in
+                if vl > !v 
+                then (v := vl; index := i))
+                else ())
+            done ;
+            (!index, !v)
+          else 
+            (let v = ref 0 in 
+            let index = ref 0 in 
+            for i = 0 to 7 - 1 do 
+              let mv = (i , num_player) in 
+              if allowed b mv 
+              then  
+                (let vl = estimate_value (next_board b mv) in
+                if vl < !v 
+                then (v := vl; index := i))
+                else ())
+            done ;
+
+                      
         else
           if max_player
           then 
@@ -186,7 +214,7 @@ object
               let mv = (i,num_player) in
               if allowed b mv
               then 
-                (let (_, vl) = minimax (next_board b mv) (d - 1) false (3 - num_player) in 
+                (let (_, vl) = minimax (next_board b mv) (d - 1) true (3 - num_player) in 
                 if vl < !bestValue
                 then (bestValue := vl; indexValue := i)
                 else () )
@@ -194,7 +222,7 @@ object
             done;
             (!indexValue, !bestValue))
       in
-      let (mv, _) = minimax b minimax_depth true num in
+      let (mv, _) = minimax bd minimax_depth true num in
       (mv,num)
 end  
 
