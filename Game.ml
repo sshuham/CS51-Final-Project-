@@ -19,7 +19,7 @@ object
   method private draw_rect : int*int -> unit
   method private draw_circle : int*int -> Graphics.color -> string -> unit
   method private print_piece : int*int -> Graphics.color -> string -> unit 
-  (*method private grid : int -> int -> int -> unit*)
+  method private grid : unit->unit
 end 
 
 class draw : drawable = 
@@ -27,7 +27,14 @@ object (self)
   method private draw_circle pos bg text = Draw.circle pos circle_width circle_height bg Graphics.black text
   method private draw_rect pos = Draw.rect pos piece_width piece_height Graphics.white 
   method private print_piece pos bg text = self#draw_rect pos; let (x,y) = pos in self#draw_circle (x+5, y+5) bg text
-  (*method private grid height length bars = ????*)
+  method private grid() = for i=0 to height do
+			  for j=0 to width do
+			    (Graphics.moveto (j*10) 0; 
+			    Graphics.lineto (j*10) (height*10);
+			    Graphics.moveto 0 (i*10);
+			    Graphics.lineto (width*10) (i*10))
+			  done 
+			done
 end 
 
 let allowed (b : board) (move : c4Move) : bool =
@@ -138,6 +145,7 @@ object (self)
   val mutable board : board = Array.make_matrix ~dimx:width ~dimy:height 0 
 
   method print_board : unit= 
+    self#grid(); 
     match board with 
     | [||] -> failwith "Invalid Board"
     | _ -> for i = 0 to (width-1) do
@@ -174,11 +182,11 @@ object (self)
   method play : unit = 
     let rec check_win board = 
       if (self#is_won) then
-	Graphics.clear_graph(); Graphics.draw_string ("Congratulations" ^ current_player ^ ", you won!");
+	(Graphics.clear_graph(); Graphics.draw_string ("Congratulations" ^ current_player#player_name ^ ", you won!");)
       else 
-	self#switch_player;
-      self#print_board;
+	(self#switch_player;
       Graphics.draw_string (current_player#player_name ^ ": It is your turn.");
-      let new_board = next_board board (current_player#next_move board 0) 
-    in check_win new_board 
+      next_board board (current_player#next_move board 0);
+      self#print_board;)
+    in check_win board
 end
