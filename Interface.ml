@@ -37,7 +37,8 @@ let run_ui (x:int) (y:int) (init:unit->unit) : unit =
   try
     Graphics.open_graph "" ; Graphics.resize_window x y ;
     Graphics.auto_synchronize false ;
-    init () ;
-    event_loop ()
+    Graphics.set_window_title "Connect 4"; 
+    init () 
+    (*event_loop ()*)
   with exn -> (Graphics.close_graph () ; raise exn)
 ;;

@@ -2,10 +2,10 @@ open Core.Std
 open Graphics 
 open Draw
     
-let circle_height = 7
-let circle_width = 7
-let piece_height = 10
-let piece_width = 10 
+let circle_height = 70
+let circle_width = 70
+let piece_height = 100
+let piece_width = 100
 let infty = 10000000
 let minimax_depth = 5
 let width = 7
@@ -16,77 +16,163 @@ type c4Move = int * int
 
 class type drawable =
 object
-  method private draw_rect : int*int -> unit
-  method private draw_circle : int*int -> Graphics.color -> string -> unit
+  (*method private draw_rect : int*int -> unit
+  method private draw_circle : int*int -> Graphics.color -> string -> unit*)
   method private print_piece : int*int -> Graphics.color -> string -> unit 
   method private grid : unit->unit
 end 
 
 class draw : drawable = 
 object (self)
-  method private draw_circle pos bg text = Draw.circle pos circle_width circle_height bg Graphics.black text
-  method private draw_rect pos = Draw.rect pos piece_width piece_height Graphics.white 
-  method private print_piece pos bg text = self#draw_rect pos; let (x,y) = pos in self#draw_circle (x+5, y+5) bg text
+  method private print_piece pos bg text = Draw.circle pos circle_width circle_height bg Graphics.black text
+  (*method private draw_rect pos = Draw.rect pos piece_width piece_height Graphics.yellow 
+  method private print_piece pos bg text = self#draw_rect pos; let (x,y) = pos in self#draw_circle (x+50, y+50) bg text*)
   method private grid() = for i=0 to height do
 			  for j=0 to width do
-			    (Graphics.moveto (j*10) 0; 
-			    Graphics.lineto (j*10) (height*10);
-			    Graphics.moveto 0 (i*10);
-			    Graphics.lineto (width*10) (i*10))
+			    (Graphics.moveto (j*100) 0; 
+			    Graphics.lineto (j*100) (height*100);
+			    Graphics.moveto 0 (i*100);
+			    Graphics.lineto (width*100) (i*100))
 			  done 
 			done
 end 
 
 let allowed (b : board) (move : c4Move) : bool =
-  let (m,_) = move in 
-    m > 0 || m <= width
-    || Array.fold_right ~f: (fun x _ -> phys_equal x 0) ~init:true b.(m) 
+ let (m,_) = move in 
+    m >= 0 && m < width
+    && b.(m).(5) = 0
 
 let next_board (b : board) (move : c4Move) : board =
     if allowed b move then
       let count = ref 0 in
       let (m,p) = move in 
       for i = 0 to (height-1) do
-	if phys_equal b.(m).(i) 0 then count := !count + 1 done;
+	if b.(m).(i) = 0 then count := !count + 1 done;
       match p with 
-      | 1 -> (b.(m).(!count-1) <- 1; b)
-      | 2 -> (b.(m).(!count-1) <- 2; b)
+      | 1 -> (b.(m).(6-(!count)) <- 1; b)
+      | 2 -> (b.(m).(6-(!count)) <- 2; b)
       | _ -> failwith "Not legal"
     else failwith "Illegal Move"
 
 class type player =
 object
-  method next_move : board -> int -> c4Move
+  method next_move : board -> c4Move
   method player_name : string
 end
 
-class c4Player (_ : board): player = 
+class c4Player (_ : board) (_ : int) : player = 
 object
   method player_name = "Bob"
-  method next_move _ _ = (0,0)
+  method next_move _ = (0,0)
 end
 
-class humanPlayer (b : board) : player = 
-object
-  inherit c4Player b
+class humanPlayer (b : board) (i : int) : player = 
+object (self)
+  inherit c4Player b i 
   method! player_name = "Human" 
-  method! next_move _ _ = let (x,_) = Graphics.mouse_pos() in 
-			  if 0<x && x<10 && Graphics.button_down() then (1,0) 
-			  else if 10<x && x<20 && Graphics.button_down() then (2,0)
-			  else if 20<x && x<30 && Graphics.button_down() then (3,0)  
-			  else if 30<x && x<40 && Graphics.button_down() then (4,0) 
-			  else if 40<x && x<50 && Graphics.button_down() then (5,0) 
-			  else if 50<x && x<60 && Graphics.button_down() then (6,0)
-			  else if 60<x && x<70 && Graphics.button_down() then (7,0)
-			  else (0,0)			  
+  (*method! next_move _ = let s = Graphics.wait_next_event [Graphics.Button_down] in
+			  let x = s.Graphics.mouse_x in 
+			  if 0<x && x<10 && s.Graphics.button then (0,i) 
+			  else if 10<x && x<20 && s.Graphics.button then (1,i)
+			  else if 20<x && x<30 && s.Graphics.button then (2,i)  
+			  else if 30<x && x<40 && s.Graphics.button then (3,i) 
+			  else if 40<x && x<50 && s.Graphics.button then (4,i) 
+			  else if 50<x && x<60 && s.Graphics.button then (5,i)
+			  else if 60<x && x<70 && s.Graphics.button then (6,i)
+			  else failwith "you suck"*)
+
+  method! next_move _ = let str = (input_line stdin) in 
+			let move = (int_of_string str, i) in
+			if allowed b move then 
+			  move else failwith "Fuck you"
+										 
 end 
 
-class minimaxPlayer (b : board) : player =
+let estimate_value (b : board) (num_player : int) =
+  let w1 = 1 in
+  let w2 = 10 in
+  let w3 = 100 in
+  let w4 = infty in
+  
+  let check_direction i j (d : int * int) =
+    let v = ref 0 in
+    let (i', j') = d in
+    
+
+    if b.(i).(j) = b.(i+i').(j+j')
+    then 
+      if b.(i).(j) = b.(i+2*i').(j+2*j')
+      then 
+        if b.(i).(j) = b.(i+3*i').(j+3*j')
+        then v := !v + w4
+        else v := !v + w3
+      else 
+        if b.(i).(j) = b.(i+3*i').(j+3*j') && b.(i+2*i').(j+2*j') = 0
+        then v := !v + w3
+        else v := !v + w2
+    else 
+      if b.(i).(j) = b.(i+2*i').(j+2*j') && b.(i+i').(j+j') = 0
+      then 
+        if b.(i).(j) = b.(i+3*i').(j+3*j')
+        then v := !v + w3
+        else v := !v + w2
+      else v := !v + w1 ; !v 
+  in 
+  
+  let check_vertex (i : int) (j : int) : int = 
+    let v = ref 0 in
+    if i <= 2 
+    then v := !v + check_direction i j (1,0)
+    else () ;
+    if j <= 1
+    then v := !v + check_direction i j (0,1)
+    else () ;    
+    if i <= 2 && j <= 1
+    then v := !v + check_direction i j (1,1)
+    else () ;
+    if j >= 3 && i <= 2
+    then v := !v + check_direction i j (1,-1)
+    else () ; 
+    if i >= 3 
+    then v := !v + check_direction i j (-1,0)
+    else () ;
+    if j >= 3
+    then v := !v + check_direction i j (0,-1)
+    else () ;    
+    if i >= 3 && j >= 3
+    then v := !v + check_direction i j (-1,-1)
+    else () ;
+    if i >= 3 && j <= 1 
+    then v := !v + check_direction i j (-1,1)
+    else () ; 
+    !v 
+  in
+
+  let v = ref 0 in
+
+  for i = 0 to 6 do
+    for j = 0 to 5 do 
+      if b.(i).(j) = 0 
+      then ()
+      else 
+        if b.(i).(j) = num_player
+        then v := !v + check_vertex i j
+        else v := !v - check_vertex i j 
+    done 
+  done ;
+  if !v > 2 * infty / 3
+  then infty
+  else
+    if !v < - 2 * infty / 3 
+    then - infty
+    else !v
+	  
+class minimaxPlayer (b : board) (num : int) : player =
 object 
-  inherit c4Player b 
+  inherit c4Player b num
 
   method! player_name = "Computer" 
-  method! next_move (_ : board) (num : int) =
+  method! next_move (_ : board) =
       let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
         if d = 0 
         then (0,0) (* insert heuristic function here *)
@@ -123,15 +209,15 @@ object
       in
       let (mv, _) = minimax b minimax_depth true num in
       (mv,num)
-end  
+end 
 
 
 class type game =
 object
   inherit drawable 
+  method get_board : int array array 
   method print_board : unit
   method switch_player : unit 	
-  method is_won : bool 	
   method play : unit -> unit 		  
 end
 
@@ -140,53 +226,65 @@ object (self)
 
   inherit draw
   
-  val mutable current_player = player1 
+  val mutable current_player = player2
 
   val mutable board : board = Array.make_matrix ~dimx:width ~dimy:height 0 
 
-  method print_board : unit= 
-    self#grid(); 
+  method get_board = board 
+
+  (*method print_board : unit= 
+    self#grid();
     match board with 
     | [||] -> failwith "Invalid Board"
     | _ -> for i = 0 to (width-1) do
 	     let bi = board.(i) in
 		 for j = 0 to (height-1) do 
 		   match bi.(j) with
-		   | 0 -> self#print_piece ((j*10), (i*10)) Graphics.white ""
-		   | 1 -> self#print_piece ((j*10), (i*10)) Graphics.red "P1"
-		   | 2 -> self#print_piece ((j*10), (i*10)) Graphics.blue "P2" 
+		   | 0 -> self#print_piece ((j*100), (i*100)) Graphics.black ""
+		   | 1 -> self#print_piece ((j*100), (i*100)) Graphics.red "P1"
+		   | 2 -> self#print_piece ((j*100), (i*100)) Graphics.blue "P2" 
 		   | _ -> failwith "Invalid Board" 
 		 done 
-	   done 
-   
+	   done*)
+
+  method print_board : unit = 
+    (*self#grid();*)
+    match board with 
+    | [||] -> failwith "Invalid Board"
+    | _ -> for j = 0 to 5 do
+	     (for i = 0 to 6 do 
+	       Printf.printf "%d" (board.(i).(5-j))
+	     done;
+	       Printf.printf "\n")
+	   done
+	     
   method switch_player : unit =
     if current_player = player1 then current_player <- player2 else current_player <- player1
 
-  method is_won : bool = 
-    let v = ref false in
-    for i = 0 to (height - 1) do 
-      for j = 0 to (width - 1) do 
-	if not(phys_equal board.(i).(j) 0) then 
-		v := !v || (phys_equal board.(i).(j) board.(i).(j) && phys_equal board.(i).(j) board.(i+1).(j)  
-		&& phys_equal board.(i).(j) board.(i+2).(j)  && phys_equal board.(i).(j) board.(i+3).(j) 
-		|| phys_equal board.(i).(j) board.(i).(j) && phys_equal board.(i).(j) board.(i).(j+1)  
-		   && phys_equal board.(i).(j) board.(i).(j+2)  && phys_equal board.(i).(j) board.(i).(j+3) 
-		|| phys_equal board.(i).(j) board.(i).(j) && phys_equal board.(i).(j) board.(i+1).(j+1)  
-		   && phys_equal board.(i).(j) board.(i+2).(j+2)  && phys_equal board.(i).(j) board.(i+3).(j+3) 
-		|| phys_equal board.(i).(j) board.(i).(j) && phys_equal board.(i).(j) board.(i+1).(j-1)  
-		   && phys_equal board.(i).(j) board.(i+2).(j-2)  && phys_equal board.(i).(j) board.(i+3).(j-3)) 
-	       done 
-	       done; 
-	       !v 
-
-  method play : unit = 
-    let rec check_win board = 
+  (*method play () : unit = 
+    let rec play_game () : unit= 
       if (self#is_won) then
 	(Graphics.clear_graph(); Graphics.draw_string ("Congratulations" ^ current_player#player_name ^ ", you won!");)
       else 
 	(self#switch_player;
       Graphics.draw_string (current_player#player_name ^ ": It is your turn.");
-      next_board board (current_player#next_move board 0);
+      next_board (self#get_board) (current_player#next_move (self#get_board) 0); 
       self#print_board;)
-    in check_win board
+	  play_game () 
+    in play_game ()*)
+  
+
+  method play() : unit = 
+    if (estimate_value board 1 = infty) || (estimate_value board 1 = (infty * -1))
+    then Printf.printf "You win \n"
+    else 
+      (self#switch_player;
+       (*Graphics.moveto 0 500;*)
+       Printf.printf "Make a move between 0 and 6: \n";
+       flush stdout;
+       ignore (next_board (self#get_board) (current_player#next_move (self#get_board))); 
+       self#print_board;
+       flush stdout; 
+       self#play())
+	(*(Graphics.clear_graph(); Graphics.draw_string ("Congratulations" ^ current_player#player_name ^ ", you won!");)*) 
 end
