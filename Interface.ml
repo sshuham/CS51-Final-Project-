@@ -28,7 +28,7 @@ let rec event_loop () =
   event_loop () 
 
 
-(** The command "run_ui x y init" starts up the graphical environment with a
+(* The command "run_ui x y init" starts up the graphical environment with a
     window size of x by y pixels, sets up the basic events such as the
     keyboard, mouse, etc. (see below), and then invokes the function init as
     an initializer, before entering an event polling loop which fires the
