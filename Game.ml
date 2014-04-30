@@ -6,7 +6,7 @@ let circle_radius = 35
 let piece_height = 100
 let piece_width = 100
 let infty = 10000000
-let minimax_depth = 5
+let minimax_depth = 4
 let width = 7
 let height = 6
 
@@ -22,15 +22,15 @@ end
 class draw : drawable = 
 object 
   method private print_piece x y bg t= ignore(Graphics.set_color bg; Graphics.fill_circle x y circle_radius);
-				       Graphics.set_color Graphics.white; Graphics.moveto x y; Graphics.draw_string t
+               Graphics.set_color Graphics.white; Graphics.moveto x y; Graphics.draw_string t
   method private grid() = for i=0 to height do
-			  for j=0 to width do
-			    (Graphics.moveto (j*100) 0; 
-			    Graphics.lineto (j*100) (height*100);
-			    Graphics.moveto 0 (i*100);
-			    Graphics.lineto (width*100) (i*100))
-			  done 
-			done
+        for j=0 to width do
+          (Graphics.moveto (j*100) 0; 
+          Graphics.lineto (j*100) (height*100);
+          Graphics.moveto 0 (i*100);
+          Graphics.lineto (width*100) (i*100))
+        done 
+      done
 end 
 
 let allowed (b : board) (move : c4Move) : bool =
@@ -43,12 +43,33 @@ let next_board (b : board) (move : c4Move) : board =
       let count = ref 0 in
       let (m,p) = move in 
       for i = 0 to (height-1) do
-	if b.(m).(i) = 0 then count := !count + 1 done;
+  if b.(m).(i) = 0 then count := !count + 1 done;
       match p with 
       | 1 -> (b.(m).(6-(!count)) <- 1; b)
       | 2 -> (b.(m).(6-(!count)) <- 2; b)
       | _ -> failwith "Not legal"
     else failwith "Illegal Move"
+    
+let not_alter_next_board (b : board) (move : c4Move) : board =
+  let b' = Array.make_matrix 7 6 0 in 
+  for i = 0 to 6 do
+    for j = 0 to 5 do
+      let vl = b.(i).(j) in 
+      b'.(i).(j) <- vl
+    done 
+  done;
+
+    if allowed b' move then
+      let count = ref 0 in
+      let (m,p) = move in 
+      for i = 0 to (height-1) do
+  if b'.(m).(i) = 0 then count := !count + 1 done;
+      match p with 
+      | 1 -> (b'.(m).(6-(!count)) <- 1; b')
+      | 2 -> (b'.(m).(6-(!count)) <- 2; b')
+      | _ -> failwith "Not legal"
+    else failwith "Illegal Move"    
+    
 
 class type player =
 object
@@ -59,7 +80,7 @@ end
 class c4Player (_ : board) (_ : int) : player = 
 object
   method player_name = "Bob"
-  method next_move _ = (0,0)
+  method next_move _ = (0,0))) <- 
 end
 
 class humanPlayer (b : board) (i : int) : player = 
@@ -67,16 +88,16 @@ object (self)
   inherit c4Player b i 
   method! player_name = "Human" ^ (string_of_int i) 
   method! next_move _ = let s = Graphics.wait_next_event [Graphics.Button_down] in
-			  let x = s.Graphics.mouse_x in 
-			  if 0<x && x<100 && s.Graphics.button then (0,i)
-			  else if 100<x && x<200 && s.Graphics.button then (1,i)
-			  else if 200<x && x<300 && s.Graphics.button then (2,i)
-			  else if 300<x && x<400 && s.Graphics.button then (3,i)
-			  else if 400<x && x<500 && s.Graphics.button then (4,i)
-			  else if 500<x && x<600 && s.Graphics.button then (5,i)
-			  else if 600<x && x<700 && s.Graphics.button then (6,i)
-			  else self#next_move b
-										 
+        let x = s.Graphics.mouse_x in 
+        if 0<x && x<100 && s.Graphics.button then (0,i)
+        else if 100<x && x<200 && s.Graphics.button then (1,i)
+        else if 200<x && x<300 && s.Graphics.button then (2,i)
+        else if 300<x && x<400 && s.Graphics.button then (3,i)
+        else if 400<x && x<500 && s.Graphics.button then (4,i)
+        else if 500<x && x<600 && s.Graphics.button then (5,i)
+        else if 600<x && x<700 && s.Graphics.button then (6,i)
+        else self#next_move b
+                     
 end 
 
 let estimate_value (b : board) (num_player : int) =
@@ -156,79 +177,78 @@ let estimate_value (b : board) (num_player : int) =
     then - infty
 
     else !v
-	  
+    
 class minimaxPlayer (b : board) (num : int) : player =
 object 
   inherit c4Player b num
 
-  (*method! player_name = "Computer" 
+  method! player_name = "Computer" 
   method! next_move (bd : board) =
-      let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
-        if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty
-        then 
-          if max_player 
-          then 
-            (let v = ref 0 in 
-            let index = ref 0 in 
-            for i = 0 to 7 - 1 do 
-              let mv = (i , num_player) in 
-              if allowed b mv 
-              then  
-                (let vl = estimate_value (next_board b mv) in
-                if vl > !v 
-                then (v := vl; index := i)
-                else ())
-              else ())
-            done ;
-            (!index, !v)
-          else 
-            (let v = ref 0 in 
-            let index = ref 0 in 
-            for i = 0 to 7 - 1 do 
-              let mv = (i , num_player) in 
-              if allowed b mv 
-              then  
-                (let vl = estimate_value (next_board b mv) in
-                if vl < !v 
-                then (v := vl; index := i)
-                else ())
-              else ())
-            done ;
+  let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
+    if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty
+    then 
+      if max_player 
+      then 
+        (let v = ref 0 in 
+        let index = ref 0 in 
+        for i = 0 to 6 do 
+          let mv = (i , num_player) in 
+          if allowed b mv 
+          then  
+            (let vl = estimate_value (not_alter_next_board b mv) num_player in
+            if vl > !v 
+            then (v := vl; index := i)
+            else ())
+          else ()
+        done ; (!index, !v))
+      else 
+        (let v = ref 0 in 
+        let index = ref 0 in 
+        for i = 0 to 6 do 
+          let mv = (i , num_player) in 
+          if allowed b mv 
+          then  
+            (let vl = estimate_value (not_alter_next_board b mv) num_player in
+            if vl < !v 
+            then (v := vl; index := i)
+            else ())
+          else ()
+        done ; (!index, !v))
 
 
-        else
-          if max_player
+    else
+      if max_player
+      then 
+        (let bestValue = ref (-infty) in
+        let indexValue = ref 0 in
+        for i = 0 to 6 do
+          let mv = (i,num_player) in
+          if allowed b mv
           then 
-            (let bestValue = ref (-infty) in
-            let indexValue = ref 0 in
-            for i = 0 to 7 - 1 do
-              let mv = (i,num_player) in
-              if allowed b mv
-              then 
-                (let (_ , vl) = minimax (next_board b mv ) (d - 1) false (3 - num_player) in 
-                if vl > !bestValue
-                then (bestValue := vl; indexValue := i)
-                else () )
-              else ()
-            done;
-            (!indexValue, !bestValue))
-          else
-            (let bestValue = ref infty in
-            let indexValue = ref 0 in
-            for i = 0 to 7 - 1 do
-              let mv = (i,num_player) in
-              if allowed b mv
-              then 
-                (let (_, vl) = minimax (next_board b mv) (d - 1) true (3 - num_player) in 
-                if vl < !bestValue
-                then (bestValue := vl; indexValue := i)
-                else () )
-              else ()
-            done;
-            (!indexValue, !bestValue))
-      in
-      let (mv, _) = minimax bd minimax_depth true num in
-      (mv,num)*)
+            (let (_ , vl) = minimax (not_alter_next_board b mv ) (d - 1) false (3 - num_player) in 
+            if vl > !bestValue
+            then (bestValue := vl; indexValue := i)
+            else () )
+          else ()
+        done;
+        (!indexValue, !bestValue))
+      else
+        (let bestValue = ref infty in
+        let indexValue = ref 0 in
+        for i = 0 to 6 do
+          let mv = (i,num_player) in
+          if allowed b mv
+          then 
+            (let (_, vl) = minimax (not_alter_next_board b mv) (d - 1) true (3 - num_player) in 
+            if vl < !bestValue
+            then (bestValue := vl; indexValue := i)
+            else () )
+          else ()
+        done;
+        (!indexValue, !bestValue))
+  in
+  let (mv, _) = minimax bd minimax_depth true num in
+  (mv,num)
 end  
 
 
@@ -237,8 +257,8 @@ object
   inherit drawable 
   method get_board : int array array 
   method print_board : unit
-  method switch_player : unit 	
-  method play : unit -> unit 		  
+  method switch_player : unit   
+  method play : unit -> unit      
 end
 
 class c4Game (player1 : c4Player) (player2 : c4Player) : game  =
@@ -258,15 +278,15 @@ object (self)
     match board with 
     | [||] -> failwith "Invalid Board"
     | _ -> for j = 0 to (height-1) do
-		 (for i = 0 to (width-1) do 
-		   match board.(i).(j) with
-		   | 0 -> self#print_piece ((i * 100)+50) ((j * 100)+50) Graphics.black ""
-		   | 1 -> self#print_piece ((i * 100)+50) ((j * 100)+50) Graphics.red "P1"
-		   | 2 -> self#print_piece ((i * 100)+50) ((j * 100)+50) Graphics.blue "P2"
-		   | _ -> failwith "Invalid Board" 
-		 done)
-	   done
-	     
+     (for i = 0 to (width-1) do 
+       match board.(i).(j) with
+       | 0 -> self#print_piece ((i * 100)+50) ((j * 100)+50) Graphics.black ""
+       | 1 -> self#print_piece ((i * 100)+50) ((j * 100)+50) Graphics.red "P1"
+       | 2 -> self#print_piece ((i * 100)+50) ((j * 100)+50) Graphics.blue "P2"
+       | _ -> failwith "Invalid Board" 
+     done)
+     done
+       
   method switch_player : unit =
     if current_player = player1 then current_player <- player2 else current_player <- player1
 
@@ -286,11 +306,11 @@ object (self)
        let move = current_player#next_move (self#get_board) in
        if allowed board move  
        then 
-	 ((ignore (next_board (self#get_board) (move))); 
-	  self#grid(); 
-	  self#print_board;
-	  self#play())
+   ((ignore (next_board (self#get_board) (move))); 
+    self#grid(); 
+    self#print_board;
+    self#play())
        else self#switch_player;
        self#play())
-	
+  
 end
