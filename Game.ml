@@ -60,7 +60,7 @@ object
   method player_name : string
 end
 
-class c4Player (_ : board): player = 
+class c4Player (_ : board) : player = 
 object
   method player_name = "Bob"
   method next_move _ _ = (0,0)
@@ -92,6 +92,8 @@ let estimate_value (b : board) (num_player : int) =
   let check_direction i j (d : int * int) =
     let v = ref 0 in
     let (i', j') = d in
+
+
     if b.(i).(j) = b.(i+i').(j+j')
     then 
       if b.(i).(j) = b.(i+2*i').(j+2*j')
@@ -108,28 +110,35 @@ let estimate_value (b : board) (num_player : int) =
       then 
         if b.(i).(j) = b.(i+3*i').(j+3*j')
         then v := !v + w3
-        else v := !v + w2 
-      ;!v 
+        else v := !v + w2
+      else v := !v + w1 ; !v 
   in 
 
-  let up = (0, 1) in
-  let dup = (1, 1) in 
-  let right = (1, 0) in
-  let ddown = (0, -1) in
-
-  let check_vertex i j = 
+  let check_vertex (i : int) (j : int) : int = 
     let v = ref 0 in
     if i <= 2 
-    then v := !v + check_direction i j right
+    then v := !v + check_direction i j (1,0)
     else () ;
     if j <= 1
-    then v := !v + check_direction i j up
+    then v := !v + check_direction i j (0,1)
     else () ;    
     if i <= 2 && j <= 1
-    then v := !v + check_direction i j dup
+    then v := !v + check_direction i j (1,1)
     else () ;
     if j >= 3 && i <= 2
-    then v := !v + check_direction i j ddown
+    then v := !v + check_direction i j (1,-1)
+    else () ; 
+    if i >= 3 
+    then v := !v + check_direction i j (-1,0)
+    else () ;
+    if j >= 3
+    then v := !v + check_direction i j (0,-1)
+    else () ;    
+    if i >= 3 && j >= 3
+    then v := !v + check_direction i j (-1,-1)
+    else () ;
+    if i >= 3 && j <= 1 
+    then v := !v + check_direction i j (-1,1)
     else () ; 
     !v 
   in
@@ -137,7 +146,7 @@ let estimate_value (b : board) (num_player : int) =
   let v = ref 0 in
 
   for i = 0 to 6 do
-    for i = 0 to 5 do 
+    for j = 0 to 5 do 
       if b.(i).(j) = 0 
       then ()
       else 
@@ -173,8 +182,9 @@ object
               then  
                 (let vl = estimate_value (next_board b mv) in
                 if vl > !v 
-                then (v := vl; index := i))
+                then (v := vl; index := i)
                 else ())
+              else ())
             done ;
             (!index, !v)
           else 
@@ -186,11 +196,12 @@ object
               then  
                 (let vl = estimate_value (next_board b mv) in
                 if vl < !v 
-                then (v := vl; index := i))
+                then (v := vl; index := i)
                 else ())
+              else ())
             done ;
 
-                      
+
         else
           if max_player
           then 
