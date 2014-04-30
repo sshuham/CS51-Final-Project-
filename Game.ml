@@ -253,6 +253,7 @@ object (self)
   method get_board = board 
 
   method print_board : unit= 
+    Graphics.clear_graph();
     self#grid();
     match board with 
     | [||] -> failwith "Invalid Board"
@@ -272,18 +273,22 @@ object (self)
   method play() : unit =
     self#print_board;
     self#grid(); 
+    Graphics.set_color Graphics.black;
+    Graphics.fill_rect 0 605 700 105;
     if (estimate_value board 1 = infty) || (estimate_value board 1 = (infty * -1))
     then 
-      (Graphics.clear_graph(); Graphics.moveto 350 300; 
-       Graphics.draw_string ("Congratulations" ^ current_player#player_name ^ ", you won!"))
+      (Printf.printf "You win!\n"; flush stdout)
     else 
       (self#switch_player;
+       Graphics.set_color Graphics.white;
+       Graphics.moveto 250 650;
+       Graphics.draw_string (current_player#player_name ^ ", it's your turn.");
        let move = current_player#next_move (self#get_board) in
        if allowed board move  
        then 
 	 ((ignore (next_board (self#get_board) (move))); 
+	  self#grid(); 
 	  self#print_board;
-	  flush stdout; 
 	  self#play())
        else self#switch_player;
        self#play())

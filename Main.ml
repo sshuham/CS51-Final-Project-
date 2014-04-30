@@ -10,7 +10,7 @@ open Core.Std
 open Graphicevents
 open Game 
 
-let board_height = 600
+let board_height = 700
 
 let board_width = 700
 

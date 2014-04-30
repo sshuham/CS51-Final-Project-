@@ -5,11 +5,6 @@ open Graphicevents
 (***** UI State *****)
 (********************)
 
-let mouse_state = ref false
-let mouse_pos = ref (0,0)
-let board_width = 70
-let board_height = 60 
-
 (* Helper for restarting interrupted system calls (OY) *)
 let rec restart f arg =
   try f arg
