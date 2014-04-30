@@ -93,11 +93,10 @@ let estimate_value (b : board) (num_player : int) =
   let w2 = 10 in
   let w3 = 100 in
   let w4 = infty in
-  
+
   let check_direction i j (d : int * int) =
     let v = ref 0 in
     let (i', j') = d in
-    
 
     if b.(i).(j) = b.(i+i').(j+j')
     then 
@@ -118,7 +117,6 @@ let estimate_value (b : board) (num_player : int) =
         else v := !v + w2
       else v := !v + w1 ; !v 
   in 
-  
   let check_vertex (i : int) (j : int) : int = 
     let v = ref 0 in
     if i <= 2 
@@ -165,17 +163,48 @@ let estimate_value (b : board) (num_player : int) =
   else
     if !v < - 2 * infty / 3 
     then - infty
+
     else !v
 	  
 class minimaxPlayer (b : board) (num : int) : player =
 object 
   inherit c4Player b num
 
-  method! player_name = "Computer" 
-  method! next_move (_ : board) =
+  (*method! player_name = "Computer" 
+  method! next_move (bd : board) =
       let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
-        if d = 0 
-        then (0,0) (* insert heuristic function here *)
+        if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty
+        then 
+          if max_player 
+          then 
+            (let v = ref 0 in 
+            let index = ref 0 in 
+            for i = 0 to 7 - 1 do 
+              let mv = (i , num_player) in 
+              if allowed b mv 
+              then  
+                (let vl = estimate_value (next_board b mv) in
+                if vl > !v 
+                then (v := vl; index := i)
+                else ())
+              else ())
+            done ;
+            (!index, !v)
+          else 
+            (let v = ref 0 in 
+            let index = ref 0 in 
+            for i = 0 to 7 - 1 do 
+              let mv = (i , num_player) in 
+              if allowed b mv 
+              then  
+                (let vl = estimate_value (next_board b mv) in
+                if vl < !v 
+                then (v := vl; index := i)
+                else ())
+              else ())
+            done ;
+
+
         else
           if max_player
           then 
@@ -199,7 +228,7 @@ object
               let mv = (i,num_player) in
               if allowed b mv
               then 
-                (let (_, vl) = minimax (next_board b mv) (d - 1) false (3 - num_player) in 
+                (let (_, vl) = minimax (next_board b mv) (d - 1) true (3 - num_player) in 
                 if vl < !bestValue
                 then (bestValue := vl; indexValue := i)
                 else () )
@@ -207,9 +236,9 @@ object
             done;
             (!indexValue, !bestValue))
       in
-      let (mv, _) = minimax b minimax_depth true num in
-      (mv,num)
-end 
+      let (mv, _) = minimax bd minimax_depth true num in
+      (mv,num)*)
+end  
 
 
 class type game =
