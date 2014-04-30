@@ -80,7 +80,7 @@ end
 class c4Player (_ : board) (_ : int) : player = 
 object
   method player_name = "Bob"
-  method next_move _ = (0,0))) <- 
+  method next_move _ = (0,0) 
 end
 
 class humanPlayer (b : board) (i : int) : player = 
