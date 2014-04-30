@@ -82,9 +82,16 @@ object (self)
 			  else failwith "you suck"*)
 
   method! next_move _ = let str = (input_line stdin) in 
-			let move = (int_of_string str, i) in
-			if allowed b move then 
-			  move else failwith "Fuck you"
+			if String.contains str '0'||
+			     String.contains str '1' ||
+			       String.contains str '2' ||
+				 String.contains str '3' ||
+				   String.contains str '4' ||
+				     String.contains str '5' ||
+				       String.contains str '6' then 
+			  let move = (int_of_string str, i) in
+			  move 
+			else self#next_move b
 										 
 end 
 
@@ -305,15 +312,19 @@ object (self)
 
   method play() : unit = 
     if (estimate_value board 1 = infty) || (estimate_value board 1 = (infty * -1))
-    then Printf.printf "You win \n"
+    then Printf.printf "You win \n"; flush stdout
     else 
       (self#switch_player;
-       (*Graphics.moveto 0 500;*)
        Printf.printf "Make a move between 0 and 6: \n";
        flush stdout;
-       ignore (next_board (self#get_board) (current_player#next_move (self#get_board))); 
-       self#print_board;
-       flush stdout; 
+       let move = current_player#next_move (self#get_board) in
+       if allowed board move  
+       then 
+	 ((ignore (next_board (self#get_board) (move))); 
+	  self#print_board;
+	  flush stdout; 
+	  self#play())
+       else self#switch_player;
        self#play())
 	(*(Graphics.clear_graph(); Graphics.draw_string ("Congratulations" ^ current_player#player_name ^ ", you won!");)*) 
 end
