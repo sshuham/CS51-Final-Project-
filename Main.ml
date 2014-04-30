@@ -46,10 +46,8 @@ let parse_args () : (unit -> unit) =
 
 let run () : unit =
   let initialize = parse_args () in
-  (*Interface.run_ui board_width board_height initialize;*)
-  let game = !current_game in
-  game#print_board; 
-  flush stdout;
+  Interface.run_ui board_width board_height initialize;
+  let game = !current_game in 
   game#play(); 
 ;;
 
