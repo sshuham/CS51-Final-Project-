@@ -86,7 +86,7 @@ end
 class humanPlayer (b : board) (i : int) : player = 
 object (self)
   inherit c4Player b i 
-  method! player_name = "Human" ^ (string_of_int i) 
+  method! player_name = "Player " ^ (string_of_int i) 
   method! next_move _ = let s = Graphics.wait_next_event [Graphics.Button_down] in
         let x = s.Graphics.mouse_x in 
         if 0<x && x<100 && s.Graphics.button then (0,i)
@@ -182,7 +182,7 @@ class minimaxPlayer (b : board) (num : int) : player =
 object 
   inherit c4Player b num
 
-  method! player_name = "Computer" 
+  method! player_name = "Computer " ^ (string_of_int num)
   method! next_move (bd : board) =
   let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
     if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty
@@ -297,7 +297,9 @@ object (self)
     Graphics.fill_rect 0 605 700 105;
     if (estimate_value board 1 = infty) || (estimate_value board 1 = (infty * -1))
     then 
-      (Printf.printf "You win!\n"; flush stdout)
+      let name = current_player#player_name in 
+      print_endline ("Congratulations " ^ name ^ ", you win!\n"); 
+      exit 1
     else 
       (self#switch_player;
        Graphics.set_color Graphics.white;
