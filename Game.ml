@@ -6,7 +6,7 @@ let circle_radius = 35
 let piece_height = 100
 let piece_width = 100
 let infty = 10000000
-let minimax_depth = 4
+let minimax_depth = 2
 let width = 7
 let height = 6
 
@@ -193,7 +193,7 @@ object
 
   method! player_name = "Computer " ^ (string_of_int num)
   method! next_move (bd : board) =
-  let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
+  (*let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
     if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty || board_full b
     then 
       if max_player 
@@ -257,7 +257,50 @@ object
         (!indexValue, !bestValue))
   in
   let (mv, _) = minimax bd minimax_depth true num in
-  (mv,num)
+  (mv,num)*)
+  let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : int = 
+    if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty || board_full b
+    then 
+      estimate_value b num_player 
+
+
+    else
+      if max_player
+      then 
+        (let bestValue = ref (-infty) in
+        for i = 0 to 6 do
+          let mv = (i,num_player) in
+          if allowed b mv
+          then 
+            (let vl = minimax (not_alter_next_board b mv ) (d - 1) false (3 - num_player) in 
+            if vl > !bestValue
+            then (bestValue := vl)
+            else () )
+          else ()
+        done;
+         !bestValue)
+      else
+        (let bestValue = ref infty in
+        for i = 0 to 6 do
+          let mv = (i,num_player) in
+          if allowed b mv
+          then 
+            (let vl = minimax (not_alter_next_board b mv) (d - 1) true (3 - num_player) in 
+            if vl < !bestValue
+            then (bestValue := vl)
+            else () )
+          else ()
+        done;
+        !bestValue)
+  in
+  let bestValue = ref (-infty) in 
+  let indexValue = ref 0 in 
+  for i = 0 to width - 1 do
+    let vl = minimax b minimax_depth true num in
+    if !bestValue < vl
+    then (bestValue := vl ; indexValue := i) 
+    else ()
+  done ; (!indexValue, num)
 end  
 
 
