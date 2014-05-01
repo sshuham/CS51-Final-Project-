@@ -178,6 +178,15 @@ let estimate_value (b : board) (num_player : int) =
 
     else !v
     
+let board_full (b : board) = 
+  let v = ref true in
+  for i = 0 to width - 1 do 
+    if allowed b (i, 1) 
+    then v := false 
+    else ()
+  done; !v  
+
+
 class minimaxPlayer (b : board) (num : int) : player =
 object 
   inherit c4Player b num
@@ -185,7 +194,7 @@ object
   method! player_name = "Computer " ^ (string_of_int num)
   method! next_move (bd : board) =
   let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
-    if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty
+    if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty || board_full b
     then 
       if max_player 
       then 
