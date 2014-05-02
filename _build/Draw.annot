@@ -1,0 +1,747 @@
+"Draw.ml" 7 263 267 "Draw.ml" 7 263 273
+type(
+  int * int -> int -> int -> int -> int -> string -> unit
+)
+ident(
+  def circle "Draw.ml" 16 620 620 "Draw.ml" 1 0 -1
+)
+"Draw.ml" 7 263 276 "Draw.ml" 7 263 277
+type(
+  int
+)
+ident(
+  def x "Draw.ml" 7 263 290 "Draw.ml" 14 594 618
+)
+"Draw.ml" 7 263 278 "Draw.ml" 7 263 279
+type(
+  int
+)
+ident(
+  def y "Draw.ml" 7 263 290 "Draw.ml" 14 594 618
+)
+"Draw.ml" 7 263 276 "Draw.ml" 7 263 279
+type(
+  int * int
+)
+"Draw.ml" 7 263 291 "Draw.ml" 7 263 296
+type(
+  int
+)
+ident(
+  def width "Draw.ml" 7 263 302 "Draw.ml" 14 594 618
+)
+"Draw.ml" 7 263 303 "Draw.ml" 7 263 309
+type(
+  int
+)
+ident(
+  def height "Draw.ml" 8 315 326 "Draw.ml" 14 594 618
+)
+"Draw.ml" 8 315 327 "Draw.ml" 8 315 329
+type(
+  int
+)
+ident(
+  def bg "Draw.ml" 8 315 346 "Draw.ml" 14 594 618
+)
+"Draw.ml" 8 315 347 "Draw.ml" 8 315 349
+type(
+  int
+)
+ident(
+  def fg "Draw.ml" 8 315 366 "Draw.ml" 14 594 618
+)
+"Draw.ml" 8 315 367 "Draw.ml" 8 315 368
+type(
+  string
+)
+ident(
+  def t "Draw.ml" 8 315 377 "Draw.ml" 14 594 618
+)
+"Draw.ml" 9 386 388 "Draw.ml" 9 386 406
+type(
+  int -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"Draw.ml" 9 386 407 "Draw.ml" 9 386 409
+type(
+  int
+)
+ident(
+  int_ref bg "Draw.ml" 8 315 327 "Draw.ml" 8 315 329
+)
+"Draw.ml" 9 386 388 "Draw.ml" 9 386 409
+type(
+  unit
+)
+"Draw.ml" 10 412 414 "Draw.ml" 10 412 434
+type(
+  int -> int -> int -> unit
+)
+ident(
+  ext_ref Graphics.fill_circle
+)
+"Draw.ml" 10 412 436 "Draw.ml" 10 412 437
+type(
+  int
+)
+ident(
+  int_ref x "Draw.ml" 7 263 276 "Draw.ml" 7 263 277
+)
+"Draw.ml" 10 412 437 "Draw.ml" 10 412 438
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Draw.ml" 10 412 438 "Draw.ml" 10 412 443
+type(
+  int
+)
+ident(
+  int_ref width "Draw.ml" 7 263 291 "Draw.ml" 7 263 296
+)
+"Draw.ml" 10 412 436 "Draw.ml" 10 412 443
+type(
+  int
+)
+"Draw.ml" 10 412 444 "Draw.ml" 10 412 445
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Draw.ml" 10 412 446 "Draw.ml" 10 412 451
+type(
+  int
+)
+ident(
+  int_ref width "Draw.ml" 7 263 291 "Draw.ml" 7 263 296
+)
+"Draw.ml" 10 412 451 "Draw.ml" 10 412 452
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Draw.ml" 10 412 452 "Draw.ml" 10 412 453
+type(
+  int
+)
+"Draw.ml" 10 412 446 "Draw.ml" 10 412 453
+type(
+  int
+)
+"Draw.ml" 10 412 436 "Draw.ml" 10 412 453
+type(
+  int
+)
+"Draw.ml" 10 412 456 "Draw.ml" 10 412 457
+type(
+  int
+)
+ident(
+  int_ref y "Draw.ml" 7 263 278 "Draw.ml" 7 263 279
+)
+"Draw.ml" 10 412 457 "Draw.ml" 10 412 458
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Draw.ml" 10 412 458 "Draw.ml" 10 412 464
+type(
+  int
+)
+ident(
+  int_ref height "Draw.ml" 7 263 303 "Draw.ml" 7 263 309
+)
+"Draw.ml" 10 412 456 "Draw.ml" 10 412 464
+type(
+  int
+)
+"Draw.ml" 10 412 465 "Draw.ml" 10 412 466
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Draw.ml" 10 412 467 "Draw.ml" 10 412 473
+type(
+  int
+)
+ident(
+  int_ref height "Draw.ml" 7 263 303 "Draw.ml" 7 263 309
+)
+"Draw.ml" 10 412 473 "Draw.ml" 10 412 474
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Draw.ml" 10 412 474 "Draw.ml" 10 412 475
+type(
+  int
+)
+"Draw.ml" 10 412 467 "Draw.ml" 10 412 475
+type(
+  int
+)
+"Draw.ml" 10 412 456 "Draw.ml" 10 412 475
+type(
+  int
+)
+"Draw.ml" 11 477 501 "Draw.ml" 11 477 504
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.min
+)
+"Draw.ml" 11 477 505 "Draw.ml" 11 477 510
+type(
+  int
+)
+ident(
+  int_ref width "Draw.ml" 7 263 291 "Draw.ml" 7 263 296
+)
+"Draw.ml" 11 477 511 "Draw.ml" 11 477 517
+type(
+  int
+)
+ident(
+  int_ref height "Draw.ml" 7 263 303 "Draw.ml" 7 263 309
+)
+"Draw.ml" 11 477 501 "Draw.ml" 11 477 517
+call(
+  stack
+)
+type(
+  int
+)
+"Draw.ml" 11 477 518 "Draw.ml" 11 477 519
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Draw.ml" 11 477 520 "Draw.ml" 11 477 521
+type(
+  int
+)
+"Draw.ml" 11 477 501 "Draw.ml" 11 477 521
+type(
+  int
+)
+"Draw.ml" 10 412 414 "Draw.ml" 11 477 522
+call(
+  stack
+)
+type(
+  unit
+)
+"Draw.ml" 12 525 527 "Draw.ml" 12 525 542
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.moveto
+)
+"Draw.ml" 12 525 544 "Draw.ml" 12 525 545
+type(
+  int
+)
+ident(
+  int_ref x "Draw.ml" 7 263 276 "Draw.ml" 7 263 277
+)
+"Draw.ml" 12 525 545 "Draw.ml" 12 525 546
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Draw.ml" 12 525 546 "Draw.ml" 12 525 551
+type(
+  int
+)
+ident(
+  int_ref width "Draw.ml" 7 263 291 "Draw.ml" 7 263 296
+)
+"Draw.ml" 12 525 544 "Draw.ml" 12 525 551
+type(
+  int
+)
+"Draw.ml" 12 525 551 "Draw.ml" 12 525 552
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Draw.ml" 12 525 552 "Draw.ml" 12 525 553
+type(
+  int
+)
+"Draw.ml" 12 525 544 "Draw.ml" 12 525 553
+type(
+  int
+)
+"Draw.ml" 12 525 556 "Draw.ml" 12 525 557
+type(
+  int
+)
+ident(
+  int_ref y "Draw.ml" 7 263 278 "Draw.ml" 7 263 279
+)
+"Draw.ml" 12 525 557 "Draw.ml" 12 525 558
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Draw.ml" 12 525 558 "Draw.ml" 12 525 564
+type(
+  int
+)
+ident(
+  int_ref height "Draw.ml" 7 263 303 "Draw.ml" 7 263 309
+)
+"Draw.ml" 12 525 556 "Draw.ml" 12 525 564
+type(
+  int
+)
+"Draw.ml" 12 525 527 "Draw.ml" 12 525 565
+type(
+  unit
+)
+"Draw.ml" 13 568 570 "Draw.ml" 13 568 588
+type(
+  int -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"Draw.ml" 13 568 589 "Draw.ml" 13 568 591
+type(
+  int
+)
+ident(
+  int_ref fg "Draw.ml" 8 315 347 "Draw.ml" 8 315 349
+)
+"Draw.ml" 13 568 570 "Draw.ml" 13 568 591
+type(
+  unit
+)
+"Draw.ml" 14 594 596 "Draw.ml" 14 594 616
+type(
+  string -> unit
+)
+ident(
+  ext_ref Graphics.draw_string
+)
+"Draw.ml" 14 594 617 "Draw.ml" 14 594 618
+type(
+  string
+)
+ident(
+  int_ref t "Draw.ml" 8 315 367 "Draw.ml" 8 315 368
+)
+"Draw.ml" 14 594 596 "Draw.ml" 14 594 618
+type(
+  unit
+)
+"Draw.ml" 13 568 570 "Draw.ml" 14 594 618
+type(
+  unit
+)
+"Draw.ml" 12 525 527 "Draw.ml" 14 594 618
+type(
+  unit
+)
+"Draw.ml" 10 412 414 "Draw.ml" 14 594 618
+type(
+  unit
+)
+"Draw.ml" 9 386 388 "Draw.ml" 14 594 618
+type(
+  unit
+)
+type(
+  unit
+)
+"Draw.ml" 8 315 366 "Draw.ml" 14 594 618
+type(
+  string -> unit
+)
+"Draw.ml" 8 315 346 "Draw.ml" 14 594 618
+type(
+  int -> string -> unit
+)
+"Draw.ml" 8 315 326 "Draw.ml" 14 594 618
+type(
+  int -> int -> string -> unit
+)
+"Draw.ml" 7 263 302 "Draw.ml" 14 594 618
+type(
+  int -> int -> int -> string -> unit
+)
+"Draw.ml" 7 263 290 "Draw.ml" 14 594 618
+type(
+  int -> int -> int -> int -> string -> unit
+)
+"Draw.ml" 7 263 274 "Draw.ml" 14 594 618
+type(
+  int * int -> int -> int -> int -> int -> string -> unit
+)
+"Draw.ml" 16 620 624 "Draw.ml" 16 620 628
+type(
+  int * int -> int -> int -> int -> unit
+)
+ident(
+  def rect "Draw.ml" 21 839 881 "Draw.ml" 1 0 -1
+)
+"Draw.ml" 16 620 631 "Draw.ml" 16 620 632
+type(
+  int
+)
+ident(
+  def x "Draw.ml" 16 620 645 "Draw.ml" 21 839 881
+)
+"Draw.ml" 16 620 633 "Draw.ml" 16 620 634
+type(
+  int
+)
+ident(
+  def y "Draw.ml" 16 620 645 "Draw.ml" 21 839 881
+)
+"Draw.ml" 16 620 631 "Draw.ml" 16 620 634
+type(
+  int * int
+)
+"Draw.ml" 16 620 646 "Draw.ml" 16 620 651
+type(
+  int
+)
+ident(
+  def width "Draw.ml" 16 620 657 "Draw.ml" 21 839 881
+)
+"Draw.ml" 16 620 658 "Draw.ml" 16 620 664
+type(
+  int
+)
+ident(
+  def height "Draw.ml" 17 670 672 "Draw.ml" 21 839 881
+)
+"Draw.ml" 17 670 673 "Draw.ml" 17 670 675
+type(
+  int
+)
+ident(
+  def bg "Draw.ml" 17 670 692 "Draw.ml" 21 839 881
+)
+"Draw.ml" 18 701 703 "Draw.ml" 18 701 721
+type(
+  int -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"Draw.ml" 18 701 722 "Draw.ml" 18 701 724
+type(
+  int
+)
+ident(
+  int_ref bg "Draw.ml" 17 670 673 "Draw.ml" 17 670 675
+)
+"Draw.ml" 18 701 703 "Draw.ml" 18 701 724
+type(
+  unit
+)
+"Draw.ml" 19 727 729 "Draw.ml" 19 727 747
+type(
+  int -> int -> int -> int -> unit
+)
+ident(
+  ext_ref Graphics.fill_rect
+)
+"Draw.ml" 19 727 749 "Draw.ml" 19 727 750
+type(
+  int
+)
+ident(
+  int_ref x "Draw.ml" 16 620 631 "Draw.ml" 16 620 632
+)
+"Draw.ml" 19 727 750 "Draw.ml" 19 727 751
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Draw.ml" 19 727 751 "Draw.ml" 19 727 756
+type(
+  int
+)
+ident(
+  int_ref width "Draw.ml" 16 620 646 "Draw.ml" 16 620 651
+)
+"Draw.ml" 19 727 749 "Draw.ml" 19 727 756
+type(
+  int
+)
+"Draw.ml" 19 727 757 "Draw.ml" 19 727 758
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Draw.ml" 19 727 759 "Draw.ml" 19 727 764
+type(
+  int
+)
+ident(
+  int_ref width "Draw.ml" 16 620 646 "Draw.ml" 16 620 651
+)
+"Draw.ml" 19 727 764 "Draw.ml" 19 727 765
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Draw.ml" 19 727 765 "Draw.ml" 19 727 766
+type(
+  int
+)
+"Draw.ml" 19 727 759 "Draw.ml" 19 727 766
+type(
+  int
+)
+"Draw.ml" 19 727 749 "Draw.ml" 19 727 766
+type(
+  int
+)
+"Draw.ml" 19 727 769 "Draw.ml" 19 727 770
+type(
+  int
+)
+ident(
+  int_ref y "Draw.ml" 16 620 633 "Draw.ml" 16 620 634
+)
+"Draw.ml" 19 727 770 "Draw.ml" 19 727 771
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Draw.ml" 19 727 771 "Draw.ml" 19 727 777
+type(
+  int
+)
+ident(
+  int_ref height "Draw.ml" 16 620 658 "Draw.ml" 16 620 664
+)
+"Draw.ml" 19 727 769 "Draw.ml" 19 727 777
+type(
+  int
+)
+"Draw.ml" 19 727 778 "Draw.ml" 19 727 779
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Draw.ml" 19 727 780 "Draw.ml" 19 727 786
+type(
+  int
+)
+ident(
+  int_ref height "Draw.ml" 16 620 658 "Draw.ml" 16 620 664
+)
+"Draw.ml" 19 727 786 "Draw.ml" 19 727 787
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Draw.ml" 19 727 787 "Draw.ml" 19 727 788
+type(
+  int
+)
+"Draw.ml" 19 727 780 "Draw.ml" 19 727 788
+type(
+  int
+)
+"Draw.ml" 19 727 769 "Draw.ml" 19 727 788
+type(
+  int
+)
+"Draw.ml" 20 790 814 "Draw.ml" 20 790 819
+type(
+  int
+)
+ident(
+  int_ref width "Draw.ml" 16 620 646 "Draw.ml" 16 620 651
+)
+"Draw.ml" 20 790 820 "Draw.ml" 20 790 821
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Draw.ml" 20 790 822 "Draw.ml" 20 790 823
+type(
+  int
+)
+"Draw.ml" 20 790 814 "Draw.ml" 20 790 823
+type(
+  int
+)
+"Draw.ml" 20 790 826 "Draw.ml" 20 790 832
+type(
+  int
+)
+ident(
+  int_ref height "Draw.ml" 16 620 658 "Draw.ml" 16 620 664
+)
+"Draw.ml" 20 790 833 "Draw.ml" 20 790 834
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Draw.ml" 20 790 835 "Draw.ml" 20 790 836
+type(
+  int
+)
+"Draw.ml" 20 790 826 "Draw.ml" 20 790 836
+type(
+  int
+)
+"Draw.ml" 19 727 729 "Draw.ml" 20 790 837
+call(
+  stack
+)
+type(
+  unit
+)
+"Draw.ml" 21 839 841 "Draw.ml" 21 839 856
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.moveto
+)
+"Draw.ml" 21 839 858 "Draw.ml" 21 839 859
+type(
+  int
+)
+ident(
+  int_ref x "Draw.ml" 16 620 631 "Draw.ml" 16 620 632
+)
+"Draw.ml" 21 839 859 "Draw.ml" 21 839 860
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Draw.ml" 21 839 860 "Draw.ml" 21 839 865
+type(
+  int
+)
+ident(
+  int_ref width "Draw.ml" 16 620 646 "Draw.ml" 16 620 651
+)
+"Draw.ml" 21 839 858 "Draw.ml" 21 839 865
+type(
+  int
+)
+"Draw.ml" 21 839 865 "Draw.ml" 21 839 866
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Draw.ml" 21 839 866 "Draw.ml" 21 839 867
+type(
+  int
+)
+"Draw.ml" 21 839 858 "Draw.ml" 21 839 867
+type(
+  int
+)
+"Draw.ml" 21 839 870 "Draw.ml" 21 839 871
+type(
+  int
+)
+ident(
+  int_ref y "Draw.ml" 16 620 633 "Draw.ml" 16 620 634
+)
+"Draw.ml" 21 839 871 "Draw.ml" 21 839 872
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Draw.ml" 21 839 872 "Draw.ml" 21 839 878
+type(
+  int
+)
+ident(
+  int_ref height "Draw.ml" 16 620 658 "Draw.ml" 16 620 664
+)
+"Draw.ml" 21 839 870 "Draw.ml" 21 839 878
+type(
+  int
+)
+"Draw.ml" 21 839 841 "Draw.ml" 21 839 879
+type(
+  unit
+)
+"Draw.ml" 19 727 729 "Draw.ml" 21 839 879
+type(
+  unit
+)
+"Draw.ml" 18 701 703 "Draw.ml" 21 839 879
+type(
+  unit
+)
+type(
+  unit
+)
+"Draw.ml" 17 670 672 "Draw.ml" 21 839 881
+type(
+  int -> unit
+)
+"Draw.ml" 16 620 657 "Draw.ml" 21 839 881
+type(
+  int -> int -> unit
+)
+"Draw.ml" 16 620 645 "Draw.ml" 21 839 881
+type(
+  int -> int -> int -> unit
+)
+"Draw.ml" 16 620 629 "Draw.ml" 21 839 881
+type(
+  int * int -> int -> int -> int -> unit
+)
