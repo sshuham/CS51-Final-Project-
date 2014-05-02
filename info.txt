@@ -1,0 +1,2 @@
+title: Connect Four
+seas-usernames: sshuham, winstonhuang, octavdragoi, alanxie
