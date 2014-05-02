@@ -6,7 +6,7 @@ let circle_radius = 35
 let piece_height = 100
 let piece_width = 100
 let infty = 30000000
-let minimax_depth = 0
+let minimax_depth = 2
 let width = 7
 let height = 6
 
@@ -188,9 +188,9 @@ let board_full (b : board) =
 
 let board_almost_full (b : board) = 
   let f (a : int array) (x : int) : int = 
-    Array.fold_right (fun t n -> if t = 0 then n + 1 else n) a 0 
+    Array.fold_right ~f:(fun t n -> if t = 0 then n + 1 else n) a ~init:0 
   in 
-  let vl = Array.fold_right f b 0 in
+  let vl = Array.fold_right ~f:f b ~init:0 in
   vl = 1
 
 class minimaxPlayer (b : board) (nump : int) : player =
@@ -212,7 +212,7 @@ object
           if allowed b mv 
           then  
             (let vl = estimate_value (not_alter_next_board b mv) num_player in
-            if vl < !v 
+            if vl > !v 
             then (v := vl; index := i)
             else ())
           else ()
@@ -225,7 +225,7 @@ object
           if allowed b mv 
           then  
             (let vl = estimate_value (not_alter_next_board b mv) num_player in
-            if vl > !v 
+            if vl < !v 
             then (v := vl; index := i)
             else ())
           else ()
