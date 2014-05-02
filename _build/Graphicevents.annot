@@ -1,0 +1,247 @@
+"Graphicevents.ml" 29 533 539 "Graphicevents.ml" 29 533 549
+type(
+  id ref
+)
+ident(
+  def id_counter "Graphicevents.ml" 31 559 561 "Graphicevents.ml" 41 807 810
+)
+"Graphicevents.ml" 29 533 552 "Graphicevents.ml" 29 533 555
+type(
+  id -> id ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Graphicevents.ml" 29 533 556 "Graphicevents.ml" 29 533 557
+type(
+  id
+)
+"Graphicevents.ml" 29 533 552 "Graphicevents.ml" 29 533 557
+type(
+  id ref
+)
+"Graphicevents.ml" 31 559 565 "Graphicevents.ml" 31 559 571
+type(
+  unit -> id
+)
+ident(
+  def new_id "Graphicevents.ml" 35 634 636 "Graphicevents.ml" 41 807 810
+)
+"Graphicevents.ml" 31 559 572 "Graphicevents.ml" 31 559 574
+type(
+  unit
+)
+"Graphicevents.ml" 32 582 590 "Graphicevents.ml" 32 582 591
+type(
+  id
+)
+ident(
+  def i "Graphicevents.ml" 33 609 613 "Graphicevents.ml" 33 609 632
+)
+"Graphicevents.ml" 32 582 595 "Graphicevents.ml" 32 582 605
+type(
+  id ref
+)
+ident(
+  int_ref id_counter "Graphicevents.ml" 29 533 539 "Graphicevents.ml" 29 533 549
+)
+"Graphicevents.ml" 32 582 594 "Graphicevents.ml" 32 582 605
+type(
+  id
+)
+type(
+  id ref -> id
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Graphicevents.ml" 33 609 613 "Graphicevents.ml" 33 609 617
+type(
+  id ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"Graphicevents.ml" 33 609 618 "Graphicevents.ml" 33 609 628
+type(
+  id ref
+)
+ident(
+  int_ref id_counter "Graphicevents.ml" 29 533 539 "Graphicevents.ml" 29 533 549
+)
+"Graphicevents.ml" 33 609 613 "Graphicevents.ml" 33 609 628
+type(
+  unit
+)
+"Graphicevents.ml" 33 609 631 "Graphicevents.ml" 33 609 632
+type(
+  id
+)
+ident(
+  int_ref i "Graphicevents.ml" 32 582 590 "Graphicevents.ml" 32 582 591
+)
+"Graphicevents.ml" 33 609 613 "Graphicevents.ml" 33 609 632
+type(
+  id
+)
+"Graphicevents.ml" 32 582 586 "Graphicevents.ml" 33 609 632
+type(
+  id
+)
+type(
+  id
+)
+"Graphicevents.ml" 31 559 572 "Graphicevents.ml" 33 609 632
+type(
+  unit -> id
+)
+"Graphicevents.ml" 35 634 640 "Graphicevents.ml" 35 634 649
+type(
+  unit -> 'a event
+)
+ident(
+  def new_event "Graphicevents.ml" 37 689 691 "Graphicevents.ml" 41 807 810
+)
+"Graphicevents.ml" 35 634 675 "Graphicevents.ml" 35 634 677
+type(
+  unit
+)
+"Graphicevents.ml" 35 634 681 "Graphicevents.ml" 35 634 684
+type(
+  'a waiter list -> 'a event
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Graphicevents.ml" 35 634 685 "Graphicevents.ml" 35 634 687
+type(
+  'a waiter list
+)
+"Graphicevents.ml" 35 634 681 "Graphicevents.ml" 35 634 687
+type(
+  'a event
+)
+"Graphicevents.ml" 35 634 675 "Graphicevents.ml" 35 634 687
+type(
+  unit -> 'a event
+)
+type(
+  unit -> 'a event
+)
+"Graphicevents.ml" 37 689 695 "Graphicevents.ml" 37 689 705
+type(
+  'a0 event -> 'a0 -> unit
+)
+ident(
+  def fire_event "Graphicevents.ml" 39 759 805 "Graphicevents.ml" 41 807 810
+)
+"Graphicevents.ml" 37 689 707 "Graphicevents.ml" 37 689 708
+type(
+  'a0 event
+)
+ident(
+  def e "Graphicevents.ml" 37 689 719 "Graphicevents.ml" 39 759 805
+)
+"Graphicevents.ml" 37 689 720 "Graphicevents.ml" 37 689 721
+type(
+  'a0
+)
+ident(
+  def v "Graphicevents.ml" 37 689 726 "Graphicevents.ml" 39 759 805
+)
+"Graphicevents.ml" 38 735 743 "Graphicevents.ml" 38 735 750
+type(
+  'a0 waiter list
+)
+ident(
+  def waiters "Graphicevents.ml" 39 759 763 "Graphicevents.ml" 39 759 805
+)
+"Graphicevents.ml" 38 735 754 "Graphicevents.ml" 38 735 755
+type(
+  'a0 event
+)
+ident(
+  int_ref e "Graphicevents.ml" 37 689 707 "Graphicevents.ml" 37 689 708
+)
+"Graphicevents.ml" 38 735 753 "Graphicevents.ml" 38 735 755
+type(
+  'a0 waiter list
+)
+type(
+  'a0 event -> 'a0 waiter list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Graphicevents.ml" 39 759 763 "Graphicevents.ml" 39 759 772
+type(
+  'a0 waiter list -> f:('a0 waiter -> unit) -> unit
+)
+ident(
+  ext_ref Core.Std.List.iter
+)
+"Graphicevents.ml" 39 759 781 "Graphicevents.ml" 39 759 782
+type(
+  'a0 waiter
+)
+ident(
+  def w "Graphicevents.ml" 39 759 786 "Graphicevents.ml" 39 759 796
+)
+"Graphicevents.ml" 39 759 786 "Graphicevents.ml" 39 759 787
+type(
+  'a0 waiter
+)
+ident(
+  int_ref w "Graphicevents.ml" 39 759 781 "Graphicevents.ml" 39 759 782
+)
+"Graphicevents.ml" 39 759 786 "Graphicevents.ml" 39 759 794
+type(
+  'a0 -> unit
+)
+"Graphicevents.ml" 39 759 795 "Graphicevents.ml" 39 759 796
+type(
+  'a0
+)
+ident(
+  int_ref v "Graphicevents.ml" 37 689 720 "Graphicevents.ml" 37 689 721
+)
+"Graphicevents.ml" 39 759 786 "Graphicevents.ml" 39 759 796
+call(
+  tail
+)
+type(
+  unit
+)
+"Graphicevents.ml" 39 759 781 "Graphicevents.ml" 39 759 796
+type(
+  'a0 waiter -> unit
+)
+"Graphicevents.ml" 39 759 798 "Graphicevents.ml" 39 759 805
+type(
+  'a0 waiter list
+)
+ident(
+  int_ref waiters "Graphicevents.ml" 38 735 743 "Graphicevents.ml" 38 735 750
+)
+"Graphicevents.ml" 39 759 763 "Graphicevents.ml" 39 759 805
+call(
+  tail
+)
+type(
+  unit
+)
+"Graphicevents.ml" 38 735 739 "Graphicevents.ml" 39 759 805
+type(
+  unit
+)
+type(
+  unit
+)
+"Graphicevents.ml" 37 689 719 "Graphicevents.ml" 39 759 805
+type(
+  'a0 -> unit
+)
+"Graphicevents.ml" 37 689 706 "Graphicevents.ml" 39 759 805
+type(
+  'a0 event -> 'a0 -> unit
+)

@@ -1,0 +1,9657 @@
+"Game.ml" 5 44 48 "Game.ml" 5 44 61
+type(
+  int
+)
+ident(
+  def circle_radius "Game.ml" 6 67 67 "Game.ml" 1 0 -1
+)
+"Game.ml" 5 44 64 "Game.ml" 5 44 66
+type(
+  int
+)
+"Game.ml" 6 67 71 "Game.ml" 6 67 83
+type(
+  int
+)
+ident(
+  def piece_height "Game.ml" 7 90 90 "Game.ml" 1 0 -1
+)
+"Game.ml" 6 67 86 "Game.ml" 6 67 89
+type(
+  int
+)
+"Game.ml" 7 90 94 "Game.ml" 7 90 105
+type(
+  int
+)
+ident(
+  def piece_width "Game.ml" 8 112 112 "Game.ml" 1 0 -1
+)
+"Game.ml" 7 90 108 "Game.ml" 7 90 111
+type(
+  int
+)
+"Game.ml" 8 112 116 "Game.ml" 8 112 121
+type(
+  int
+)
+ident(
+  def infty "Game.ml" 9 133 133 "Game.ml" 1 0 -1
+)
+"Game.ml" 8 112 124 "Game.ml" 8 112 132
+type(
+  int
+)
+"Game.ml" 9 133 137 "Game.ml" 9 133 150
+type(
+  int
+)
+ident(
+  def minimax_depth "Game.ml" 10 155 155 "Game.ml" 1 0 -1
+)
+"Game.ml" 9 133 153 "Game.ml" 9 133 154
+type(
+  int
+)
+"Game.ml" 10 155 159 "Game.ml" 10 155 164
+type(
+  int
+)
+ident(
+  def width "Game.ml" 11 169 169 "Game.ml" 1 0 -1
+)
+"Game.ml" 10 155 167 "Game.ml" 10 155 168
+type(
+  int
+)
+"Game.ml" 11 169 173 "Game.ml" 11 169 179
+type(
+  int
+)
+ident(
+  def height "Game.ml" 13 185 185 "Game.ml" 1 0 -1
+)
+"Game.ml" 11 169 182 "Game.ml" 11 169 183
+type(
+  int
+)
+"Game.ml" 24 421 450 "Game.ml" 24 421 451
+type(
+  int
+)
+ident(
+  def x "Game.ml" 24 421 452 "Game.ml" 25 531 624
+)
+"Game.ml" 24 421 452 "Game.ml" 24 421 453
+type(
+  int
+)
+ident(
+  def y "Game.ml" 24 421 454 "Game.ml" 25 531 624
+)
+"Game.ml" 24 421 454 "Game.ml" 24 421 456
+type(
+  int
+)
+ident(
+  def bg "Game.ml" 24 421 457 "Game.ml" 25 531 624
+)
+"Game.ml" 24 421 457 "Game.ml" 24 421 458
+type(
+  string
+)
+ident(
+  def t "Game.ml" 24 421 460 "Game.ml" 25 531 624
+)
+"Game.ml" 24 421 460 "Game.ml" 24 421 466
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Game.ml" 24 421 467 "Game.ml" 24 421 485
+type(
+  int -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"Game.ml" 24 421 486 "Game.ml" 24 421 488
+type(
+  int
+)
+ident(
+  int_ref bg "Game.ml" 24 421 454 "Game.ml" 24 421 456
+)
+"Game.ml" 24 421 467 "Game.ml" 24 421 488
+type(
+  unit
+)
+"Game.ml" 24 421 490 "Game.ml" 24 421 510
+type(
+  int -> int -> int -> unit
+)
+ident(
+  ext_ref Graphics.fill_circle
+)
+"Game.ml" 24 421 511 "Game.ml" 24 421 512
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 24 421 450 "Game.ml" 24 421 451
+)
+"Game.ml" 24 421 513 "Game.ml" 24 421 514
+type(
+  int
+)
+ident(
+  int_ref y "Game.ml" 24 421 452 "Game.ml" 24 421 453
+)
+"Game.ml" 24 421 515 "Game.ml" 24 421 528
+type(
+  int
+)
+ident(
+  int_ref circle_radius "Game.ml" 5 44 48 "Game.ml" 5 44 61
+)
+"Game.ml" 24 421 490 "Game.ml" 24 421 528
+call(
+  stack
+)
+type(
+  unit
+)
+"Game.ml" 24 421 467 "Game.ml" 24 421 528
+type(
+  unit
+)
+"Game.ml" 24 421 460 "Game.ml" 24 421 529
+type(
+  unit
+)
+"Game.ml" 25 531 546 "Game.ml" 25 531 564
+type(
+  int -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"Game.ml" 25 531 565 "Game.ml" 25 531 579
+type(
+  int
+)
+ident(
+  ext_ref Graphics.white
+)
+"Game.ml" 25 531 546 "Game.ml" 25 531 579
+type(
+  unit
+)
+"Game.ml" 25 531 581 "Game.ml" 25 531 596
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.moveto
+)
+"Game.ml" 25 531 597 "Game.ml" 25 531 598
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 24 421 450 "Game.ml" 24 421 451
+)
+"Game.ml" 25 531 599 "Game.ml" 25 531 600
+type(
+  int
+)
+ident(
+  int_ref y "Game.ml" 24 421 452 "Game.ml" 24 421 453
+)
+"Game.ml" 25 531 581 "Game.ml" 25 531 600
+type(
+  unit
+)
+"Game.ml" 25 531 602 "Game.ml" 25 531 622
+type(
+  string -> unit
+)
+ident(
+  ext_ref Graphics.draw_string
+)
+"Game.ml" 25 531 623 "Game.ml" 25 531 624
+type(
+  string
+)
+ident(
+  int_ref t "Game.ml" 24 421 457 "Game.ml" 24 421 458
+)
+"Game.ml" 25 531 602 "Game.ml" 25 531 624
+type(
+  unit
+)
+"Game.ml" 25 531 581 "Game.ml" 25 531 624
+type(
+  unit
+)
+"Game.ml" 25 531 546 "Game.ml" 25 531 624
+type(
+  unit
+)
+"Game.ml" 24 421 460 "Game.ml" 25 531 624
+type(
+  unit
+)
+"Game.ml" 24 421 457 "Game.ml" 25 531 624
+type(
+  string -> unit
+)
+"Game.ml" 24 421 454 "Game.ml" 25 531 624
+type(
+  int -> string -> unit
+)
+"Game.ml" 24 421 452 "Game.ml" 25 531 624
+type(
+  int -> int -> string -> unit
+)
+"Game.ml" 24 421 450 "Game.ml" 25 531 624
+type(
+  int -> int -> int -> string -> unit
+)
+type(
+  int -> int -> int -> string -> unit
+)
+"Game.ml" 24 421 423 "Game.ml" 25 531 624
+type(
+  < .. > -> int -> int -> int -> string -> unit
+)
+"Game.ml" 26 625 646 "Game.ml" 26 625 648
+type(
+  unit
+)
+"Game.ml" 26 625 657 "Game.ml" 26 625 658
+type(
+  int
+)
+"Game.ml" 26 625 662 "Game.ml" 26 625 668
+type(
+  int
+)
+ident(
+  int_ref height "Game.ml" 11 169 173 "Game.ml" 11 169 179
+)
+"Game.ml" 27 672 686 "Game.ml" 27 672 687
+type(
+  int
+)
+"Game.ml" 27 672 691 "Game.ml" 27 672 696
+type(
+  int
+)
+ident(
+  int_ref width "Game.ml" 10 155 159 "Game.ml" 10 155 164
+)
+"Game.ml" 28 700 711 "Game.ml" 28 700 726
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.moveto
+)
+"Game.ml" 28 700 728 "Game.ml" 28 700 729
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 27 672 680 "Game.ml" 32 871 883
+)
+"Game.ml" 28 700 729 "Game.ml" 28 700 730
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 28 700 730 "Game.ml" 28 700 733
+type(
+  int
+)
+"Game.ml" 28 700 728 "Game.ml" 28 700 733
+type(
+  int
+)
+"Game.ml" 28 700 735 "Game.ml" 28 700 736
+type(
+  int
+)
+"Game.ml" 28 700 711 "Game.ml" 28 700 736
+type(
+  unit
+)
+"Game.ml" 29 739 749 "Game.ml" 29 739 764
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.lineto
+)
+"Game.ml" 29 739 766 "Game.ml" 29 739 767
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 27 672 680 "Game.ml" 32 871 883
+)
+"Game.ml" 29 739 767 "Game.ml" 29 739 768
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 29 739 768 "Game.ml" 29 739 771
+type(
+  int
+)
+"Game.ml" 29 739 766 "Game.ml" 29 739 771
+type(
+  int
+)
+"Game.ml" 29 739 774 "Game.ml" 29 739 780
+type(
+  int
+)
+ident(
+  int_ref height "Game.ml" 11 169 173 "Game.ml" 11 169 179
+)
+"Game.ml" 29 739 780 "Game.ml" 29 739 781
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 29 739 781 "Game.ml" 29 739 784
+type(
+  int
+)
+"Game.ml" 29 739 774 "Game.ml" 29 739 784
+type(
+  int
+)
+"Game.ml" 29 739 749 "Game.ml" 29 739 785
+type(
+  unit
+)
+"Game.ml" 30 787 797 "Game.ml" 30 787 812
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.moveto
+)
+"Game.ml" 30 787 813 "Game.ml" 30 787 814
+type(
+  int
+)
+"Game.ml" 30 787 816 "Game.ml" 30 787 817
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 26 625 651 "Game.ml" 33 885 895
+)
+"Game.ml" 30 787 817 "Game.ml" 30 787 818
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 30 787 818 "Game.ml" 30 787 821
+type(
+  int
+)
+"Game.ml" 30 787 816 "Game.ml" 30 787 821
+type(
+  int
+)
+"Game.ml" 30 787 797 "Game.ml" 30 787 822
+type(
+  unit
+)
+"Game.ml" 31 824 834 "Game.ml" 31 824 849
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.lineto
+)
+"Game.ml" 31 824 851 "Game.ml" 31 824 856
+type(
+  int
+)
+ident(
+  int_ref width "Game.ml" 10 155 159 "Game.ml" 10 155 164
+)
+"Game.ml" 31 824 856 "Game.ml" 31 824 857
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 31 824 857 "Game.ml" 31 824 860
+type(
+  int
+)
+"Game.ml" 31 824 851 "Game.ml" 31 824 860
+type(
+  int
+)
+"Game.ml" 31 824 863 "Game.ml" 31 824 864
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 26 625 651 "Game.ml" 33 885 895
+)
+"Game.ml" 31 824 864 "Game.ml" 31 824 865
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 31 824 865 "Game.ml" 31 824 868
+type(
+  int
+)
+"Game.ml" 31 824 863 "Game.ml" 31 824 868
+type(
+  int
+)
+"Game.ml" 31 824 834 "Game.ml" 31 824 869
+type(
+  unit
+)
+"Game.ml" 30 787 797 "Game.ml" 31 824 869
+type(
+  unit
+)
+"Game.ml" 29 739 749 "Game.ml" 31 824 869
+type(
+  unit
+)
+"Game.ml" 28 700 711 "Game.ml" 31 824 869
+type(
+  unit
+)
+"Game.ml" 27 672 680 "Game.ml" 32 871 883
+type(
+  unit
+)
+"Game.ml" 26 625 651 "Game.ml" 33 885 895
+type(
+  unit
+)
+"Game.ml" 26 625 646 "Game.ml" 33 885 895
+type(
+  unit -> unit
+)
+type(
+  unit -> unit
+)
+"Game.ml" 26 625 627 "Game.ml" 33 885 895
+type(
+  (< .. > as 'a) -> unit -> unit
+)
+"Game.ml" 23 413 413 "Game.ml" 34 896 899
+type(
+  'a
+)
+"Game.ml" 36 902 906 "Game.ml" 36 902 913
+type(
+  board -> c4Move -> bool
+)
+ident(
+  def allowed "Game.ml" 41 1019 1019 "Game.ml" 1 0 -1
+)
+"Game.ml" 36 902 915 "Game.ml" 36 902 916
+type(
+  board
+)
+ident(
+  def b "Game.ml" 36 902 926 "Game.ml" 39 997 1017
+)
+"Game.ml" 36 902 927 "Game.ml" 36 902 931
+type(
+  c4Move
+)
+ident(
+  def move "Game.ml" 36 902 942 "Game.ml" 39 997 1017
+)
+"Game.ml" 37 951 957 "Game.ml" 37 951 958
+type(
+  int
+)
+ident(
+  def m "Game.ml" 38 973 977 "Game.ml" 39 997 1017
+)
+"Game.ml" 37 951 959 "Game.ml" 37 951 960
+type(
+  int
+)
+"Game.ml" 37 951 957 "Game.ml" 37 951 960
+type(
+  c4Move
+)
+"Game.ml" 37 951 964 "Game.ml" 37 951 968
+type(
+  c4Move
+)
+ident(
+  int_ref move "Game.ml" 36 902 927 "Game.ml" 36 902 931
+)
+"Game.ml" 38 973 977 "Game.ml" 38 973 978
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 37 951 957 "Game.ml" 37 951 958
+)
+"Game.ml" 38 973 979 "Game.ml" 38 973 981
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Game.ml" 38 973 982 "Game.ml" 38 973 983
+type(
+  int
+)
+"Game.ml" 38 973 977 "Game.ml" 38 973 983
+type(
+  bool
+)
+"Game.ml" 38 973 984 "Game.ml" 38 973 986
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 38 973 987 "Game.ml" 38 973 988
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 37 951 957 "Game.ml" 37 951 958
+)
+"Game.ml" 38 973 989 "Game.ml" 38 973 990
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 38 973 991 "Game.ml" 38 973 996
+type(
+  int
+)
+ident(
+  int_ref width "Game.ml" 10 155 159 "Game.ml" 10 155 164
+)
+"Game.ml" 38 973 987 "Game.ml" 38 973 996
+type(
+  bool
+)
+"Game.ml" 39 997 1001 "Game.ml" 39 997 1003
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 39 997 1004 "Game.ml" 39 997 1005
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 36 902 915 "Game.ml" 36 902 916
+)
+"Game.ml" 39 997 1007 "Game.ml" 39 997 1008
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 37 951 957 "Game.ml" 37 951 958
+)
+"Game.ml" 39 997 1004 "Game.ml" 39 997 1009
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 39 997 1011 "Game.ml" 39 997 1012
+type(
+  int
+)
+"Game.ml" 39 997 1004 "Game.ml" 39 997 1013
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 39 997 1014 "Game.ml" 39 997 1015
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 39 997 1016 "Game.ml" 39 997 1017
+type(
+  int
+)
+"Game.ml" 39 997 1004 "Game.ml" 39 997 1017
+type(
+  bool
+)
+"Game.ml" 38 973 987 "Game.ml" 39 997 1017
+type(
+  bool
+)
+"Game.ml" 38 973 977 "Game.ml" 39 997 1017
+type(
+  bool
+)
+"Game.ml" 37 951 952 "Game.ml" 39 997 1017
+type(
+  bool
+)
+type(
+  bool
+)
+"Game.ml" 36 902 926 "Game.ml" 39 997 1017
+type(
+  c4Move -> bool
+)
+"Game.ml" 36 902 914 "Game.ml" 39 997 1017
+type(
+  board -> c4Move -> bool
+)
+"Game.ml" 41 1019 1023 "Game.ml" 41 1019 1033
+type(
+  board -> c4Move -> board
+)
+ident(
+  def next_board "Game.ml" 53 1412 1412 "Game.ml" 1 0 -1
+)
+"Game.ml" 41 1019 1035 "Game.ml" 41 1019 1036
+type(
+  board
+)
+ident(
+  def b "Game.ml" 41 1019 1046 "Game.ml" 51 1374 1406
+)
+"Game.ml" 41 1019 1047 "Game.ml" 41 1019 1051
+type(
+  c4Move
+)
+ident(
+  def move "Game.ml" 41 1019 1062 "Game.ml" 51 1374 1406
+)
+"Game.ml" 42 1072 1079 "Game.ml" 42 1072 1086
+type(
+  board -> c4Move -> bool
+)
+ident(
+  int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
+)
+"Game.ml" 42 1072 1087 "Game.ml" 42 1072 1088
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 41 1019 1035 "Game.ml" 41 1019 1036
+)
+"Game.ml" 42 1072 1089 "Game.ml" 42 1072 1093
+type(
+  c4Move
+)
+ident(
+  int_ref move "Game.ml" 41 1019 1047 "Game.ml" 41 1019 1051
+)
+"Game.ml" 42 1072 1079 "Game.ml" 42 1072 1093
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 43 1099 1109 "Game.ml" 43 1099 1114
+type(
+  int ref
+)
+ident(
+  def count "Game.ml" 44 1126 1132 "Game.ml" 50 1340 1373
+)
+"Game.ml" 43 1099 1117 "Game.ml" 43 1099 1120
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 43 1099 1121 "Game.ml" 43 1099 1122
+type(
+  int
+)
+"Game.ml" 43 1099 1117 "Game.ml" 43 1099 1122
+type(
+  int ref
+)
+"Game.ml" 44 1126 1137 "Game.ml" 44 1126 1138
+type(
+  int
+)
+ident(
+  def m "Game.ml" 45 1153 1159 "Game.ml" 50 1340 1373
+)
+"Game.ml" 44 1126 1139 "Game.ml" 44 1126 1140
+type(
+  int
+)
+ident(
+  def p "Game.ml" 45 1153 1159 "Game.ml" 50 1340 1373
+)
+"Game.ml" 44 1126 1137 "Game.ml" 44 1126 1140
+type(
+  c4Move
+)
+"Game.ml" 44 1126 1144 "Game.ml" 44 1126 1148
+type(
+  c4Move
+)
+ident(
+  int_ref move "Game.ml" 41 1019 1047 "Game.ml" 41 1019 1051
+)
+"Game.ml" 45 1153 1167 "Game.ml" 45 1153 1168
+type(
+  int
+)
+"Game.ml" 45 1153 1173 "Game.ml" 45 1153 1179
+type(
+  int
+)
+ident(
+  int_ref height "Game.ml" 11 169 173 "Game.ml" 11 169 179
+)
+"Game.ml" 45 1153 1179 "Game.ml" 45 1153 1180
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 45 1153 1180 "Game.ml" 45 1153 1181
+type(
+  int
+)
+"Game.ml" 45 1153 1173 "Game.ml" 45 1153 1181
+type(
+  int
+)
+"Game.ml" 46 1186 1191 "Game.ml" 46 1186 1192
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 41 1019 1035 "Game.ml" 41 1019 1036
+)
+"Game.ml" 46 1186 1194 "Game.ml" 46 1186 1195
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 44 1126 1137 "Game.ml" 44 1126 1138
+)
+"Game.ml" 46 1186 1191 "Game.ml" 46 1186 1196
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 46 1186 1198 "Game.ml" 46 1186 1199
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 45 1153 1159 "Game.ml" 46 1186 1234
+)
+"Game.ml" 46 1186 1191 "Game.ml" 46 1186 1200
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 46 1186 1201 "Game.ml" 46 1186 1202
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 46 1186 1203 "Game.ml" 46 1186 1204
+type(
+  int
+)
+"Game.ml" 46 1186 1191 "Game.ml" 46 1186 1204
+type(
+  bool
+)
+"Game.ml" 46 1186 1210 "Game.ml" 46 1186 1215
+type(
+  int ref
+)
+ident(
+  int_ref count "Game.ml" 43 1099 1109 "Game.ml" 43 1099 1114
+)
+"Game.ml" 46 1186 1220 "Game.ml" 46 1186 1225
+type(
+  int ref
+)
+ident(
+  int_ref count "Game.ml" 43 1099 1109 "Game.ml" 43 1099 1114
+)
+"Game.ml" 46 1186 1219 "Game.ml" 46 1186 1225
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 46 1186 1226 "Game.ml" 46 1186 1227
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 46 1186 1228 "Game.ml" 46 1186 1229
+type(
+  int
+)
+"Game.ml" 46 1186 1219 "Game.ml" 46 1186 1229
+type(
+  int
+)
+"Game.ml" 46 1186 1210 "Game.ml" 46 1186 1229
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 46 1186 1188 "Game.ml" 46 1186 1229
+type(
+  unit
+)
+type(
+  unit
+)
+"Game.ml" 45 1153 1159 "Game.ml" 46 1186 1234
+type(
+  unit
+)
+"Game.ml" 47 1236 1248 "Game.ml" 47 1236 1249
+type(
+  int
+)
+ident(
+  int_ref p "Game.ml" 44 1126 1139 "Game.ml" 44 1126 1140
+)
+"Game.ml" 48 1256 1264 "Game.ml" 48 1256 1265
+type(
+  int
+)
+"Game.ml" 48 1256 1270 "Game.ml" 48 1256 1271
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 41 1019 1035 "Game.ml" 41 1019 1036
+)
+"Game.ml" 48 1256 1273 "Game.ml" 48 1256 1274
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 44 1126 1137 "Game.ml" 44 1126 1138
+)
+"Game.ml" 48 1256 1270 "Game.ml" 48 1256 1275
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 48 1256 1277 "Game.ml" 48 1256 1278
+type(
+  int
+)
+"Game.ml" 48 1256 1278 "Game.ml" 48 1256 1279
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 48 1256 1281 "Game.ml" 48 1256 1286
+type(
+  int ref
+)
+ident(
+  int_ref count "Game.ml" 43 1099 1109 "Game.ml" 43 1099 1114
+)
+"Game.ml" 48 1256 1280 "Game.ml" 48 1256 1286
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 48 1256 1277 "Game.ml" 48 1256 1287
+type(
+  int
+)
+"Game.ml" 48 1256 1270 "Game.ml" 48 1256 1288
+type(
+  int array -> int -> int -> unit
+)
+ident(
+  ext_ref Core.Std.Array.set
+)
+"Game.ml" 48 1256 1292 "Game.ml" 48 1256 1293
+type(
+  int
+)
+"Game.ml" 48 1256 1270 "Game.ml" 48 1256 1293
+type(
+  unit
+)
+"Game.ml" 48 1256 1295 "Game.ml" 48 1256 1296
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 41 1019 1035 "Game.ml" 41 1019 1036
+)
+"Game.ml" 48 1256 1270 "Game.ml" 48 1256 1296
+type(
+  board
+)
+"Game.ml" 49 1298 1306 "Game.ml" 49 1298 1307
+type(
+  int
+)
+"Game.ml" 49 1298 1312 "Game.ml" 49 1298 1313
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 41 1019 1035 "Game.ml" 41 1019 1036
+)
+"Game.ml" 49 1298 1315 "Game.ml" 49 1298 1316
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 44 1126 1137 "Game.ml" 44 1126 1138
+)
+"Game.ml" 49 1298 1312 "Game.ml" 49 1298 1317
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 49 1298 1319 "Game.ml" 49 1298 1320
+type(
+  int
+)
+"Game.ml" 49 1298 1320 "Game.ml" 49 1298 1321
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 49 1298 1323 "Game.ml" 49 1298 1328
+type(
+  int ref
+)
+ident(
+  int_ref count "Game.ml" 43 1099 1109 "Game.ml" 43 1099 1114
+)
+"Game.ml" 49 1298 1322 "Game.ml" 49 1298 1328
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 49 1298 1319 "Game.ml" 49 1298 1329
+type(
+  int
+)
+"Game.ml" 49 1298 1312 "Game.ml" 49 1298 1330
+type(
+  int array -> int -> int -> unit
+)
+ident(
+  ext_ref Core.Std.Array.set
+)
+"Game.ml" 49 1298 1334 "Game.ml" 49 1298 1335
+type(
+  int
+)
+"Game.ml" 49 1298 1312 "Game.ml" 49 1298 1335
+type(
+  unit
+)
+"Game.ml" 49 1298 1337 "Game.ml" 49 1298 1338
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 41 1019 1035 "Game.ml" 41 1019 1036
+)
+"Game.ml" 49 1298 1312 "Game.ml" 49 1298 1338
+type(
+  board
+)
+"Game.ml" 50 1340 1348 "Game.ml" 50 1340 1349
+type(
+  int
+)
+"Game.ml" 50 1340 1353 "Game.ml" 50 1340 1361
+type(
+  string -> board
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"Game.ml" 50 1340 1362 "Game.ml" 50 1340 1373
+type(
+  string
+)
+"Game.ml" 50 1340 1353 "Game.ml" 50 1340 1373
+call(
+  tail
+)
+type(
+  board
+)
+"Game.ml" 47 1236 1242 "Game.ml" 50 1340 1373
+type(
+  board
+)
+"Game.ml" 45 1153 1159 "Game.ml" 50 1340 1373
+type(
+  board
+)
+"Game.ml" 44 1126 1132 "Game.ml" 50 1340 1373
+type(
+  board
+)
+"Game.ml" 43 1099 1105 "Game.ml" 50 1340 1373
+type(
+  board
+)
+"Game.ml" 51 1374 1383 "Game.ml" 51 1374 1391
+type(
+  string -> board
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"Game.ml" 51 1374 1392 "Game.ml" 51 1374 1406
+type(
+  string
+)
+"Game.ml" 51 1374 1383 "Game.ml" 51 1374 1406
+call(
+  tail
+)
+type(
+  board
+)
+"Game.ml" 42 1072 1076 "Game.ml" 51 1374 1406
+type(
+  board
+)
+type(
+  board
+)
+"Game.ml" 41 1019 1046 "Game.ml" 51 1374 1406
+type(
+  c4Move -> board
+)
+"Game.ml" 41 1019 1034 "Game.ml" 51 1374 1406
+type(
+  board -> c4Move -> board
+)
+"Game.ml" 53 1412 1416 "Game.ml" 53 1412 1436
+type(
+  board -> c4Move -> board
+)
+ident(
+  def not_alter_next_board "Game.ml" 74 1978 1978 "Game.ml" 1 0 -1
+)
+"Game.ml" 53 1412 1438 "Game.ml" 53 1412 1439
+type(
+  board
+)
+ident(
+  def b "Game.ml" 53 1412 1449 "Game.ml" 71 1935 1967
+)
+"Game.ml" 53 1412 1450 "Game.ml" 53 1412 1454
+type(
+  c4Move
+)
+ident(
+  def move "Game.ml" 53 1412 1465 "Game.ml" 71 1935 1967
+)
+"Game.ml" 54 1475 1481 "Game.ml" 54 1475 1483
+type(
+  int array array
+)
+ident(
+  def b' "Game.ml" 55 1514 1516 "Game.ml" 71 1935 1967
+)
+"Game.ml" 54 1475 1486 "Game.ml" 54 1475 1503
+type(
+  dimx:int -> dimy:int -> int -> int array array
+)
+ident(
+  ext_ref Core.Std.Array.make_matrix
+)
+"Game.ml" 54 1475 1504 "Game.ml" 54 1475 1505
+type(
+  int
+)
+"Game.ml" 54 1475 1506 "Game.ml" 54 1475 1507
+type(
+  int
+)
+"Game.ml" 54 1475 1508 "Game.ml" 54 1475 1509
+type(
+  int
+)
+"Game.ml" 54 1475 1486 "Game.ml" 54 1475 1509
+call(
+  stack
+)
+type(
+  int array array
+)
+"Game.ml" 55 1514 1524 "Game.ml" 55 1514 1525
+type(
+  int
+)
+"Game.ml" 55 1514 1529 "Game.ml" 55 1514 1530
+type(
+  int
+)
+"Game.ml" 56 1534 1546 "Game.ml" 56 1534 1547
+type(
+  int
+)
+"Game.ml" 56 1534 1551 "Game.ml" 56 1534 1552
+type(
+  int
+)
+"Game.ml" 57 1556 1566 "Game.ml" 57 1556 1568
+type(
+  int
+)
+ident(
+  def vl "Game.ml" 58 1585 1591 "Game.ml" 58 1585 1607
+)
+"Game.ml" 57 1556 1571 "Game.ml" 57 1556 1572
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 53 1412 1438 "Game.ml" 53 1412 1439
+)
+"Game.ml" 57 1556 1574 "Game.ml" 57 1556 1575
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 55 1514 1516 "Game.ml" 60 1618 1624
+)
+"Game.ml" 57 1556 1571 "Game.ml" 57 1556 1576
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 57 1556 1578 "Game.ml" 57 1556 1579
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 56 1534 1538 "Game.ml" 59 1608 1616
+)
+"Game.ml" 57 1556 1571 "Game.ml" 57 1556 1580
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 58 1585 1591 "Game.ml" 58 1585 1593
+type(
+  int array array
+)
+ident(
+  int_ref b' "Game.ml" 54 1475 1481 "Game.ml" 54 1475 1483
+)
+"Game.ml" 58 1585 1595 "Game.ml" 58 1585 1596
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 55 1514 1516 "Game.ml" 60 1618 1624
+)
+"Game.ml" 58 1585 1591 "Game.ml" 58 1585 1597
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 58 1585 1599 "Game.ml" 58 1585 1600
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 56 1534 1538 "Game.ml" 59 1608 1616
+)
+"Game.ml" 58 1585 1591 "Game.ml" 58 1585 1601
+type(
+  int array -> int -> int -> unit
+)
+ident(
+  ext_ref Core.Std.Array.set
+)
+"Game.ml" 58 1585 1605 "Game.ml" 58 1585 1607
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 57 1556 1566 "Game.ml" 57 1556 1568
+)
+"Game.ml" 58 1585 1591 "Game.ml" 58 1585 1607
+type(
+  unit
+)
+"Game.ml" 57 1556 1562 "Game.ml" 58 1585 1607
+type(
+  unit
+)
+"Game.ml" 56 1534 1538 "Game.ml" 59 1608 1616
+type(
+  unit
+)
+"Game.ml" 55 1514 1516 "Game.ml" 60 1618 1624
+type(
+  unit
+)
+"Game.ml" 62 1627 1634 "Game.ml" 62 1627 1641
+type(
+  board -> c4Move -> bool
+)
+ident(
+  int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
+)
+"Game.ml" 62 1627 1642 "Game.ml" 62 1627 1644
+type(
+  int array array
+)
+ident(
+  int_ref b' "Game.ml" 54 1475 1481 "Game.ml" 54 1475 1483
+)
+"Game.ml" 62 1627 1645 "Game.ml" 62 1627 1649
+type(
+  c4Move
+)
+ident(
+  int_ref move "Game.ml" 53 1412 1450 "Game.ml" 53 1412 1454
+)
+"Game.ml" 62 1627 1634 "Game.ml" 62 1627 1649
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 63 1655 1665 "Game.ml" 63 1655 1670
+type(
+  int ref
+)
+ident(
+  def count "Game.ml" 64 1682 1688 "Game.ml" 70 1901 1934
+)
+"Game.ml" 63 1655 1673 "Game.ml" 63 1655 1676
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 63 1655 1677 "Game.ml" 63 1655 1678
+type(
+  int
+)
+"Game.ml" 63 1655 1673 "Game.ml" 63 1655 1678
+type(
+  int ref
+)
+"Game.ml" 64 1682 1693 "Game.ml" 64 1682 1694
+type(
+  int
+)
+ident(
+  def m "Game.ml" 65 1709 1715 "Game.ml" 70 1901 1934
+)
+"Game.ml" 64 1682 1695 "Game.ml" 64 1682 1696
+type(
+  int
+)
+ident(
+  def p "Game.ml" 65 1709 1715 "Game.ml" 70 1901 1934
+)
+"Game.ml" 64 1682 1693 "Game.ml" 64 1682 1696
+type(
+  c4Move
+)
+"Game.ml" 64 1682 1700 "Game.ml" 64 1682 1704
+type(
+  c4Move
+)
+ident(
+  int_ref move "Game.ml" 53 1412 1450 "Game.ml" 53 1412 1454
+)
+"Game.ml" 65 1709 1723 "Game.ml" 65 1709 1724
+type(
+  int
+)
+"Game.ml" 65 1709 1729 "Game.ml" 65 1709 1735
+type(
+  int
+)
+ident(
+  int_ref height "Game.ml" 11 169 173 "Game.ml" 11 169 179
+)
+"Game.ml" 65 1709 1735 "Game.ml" 65 1709 1736
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 65 1709 1736 "Game.ml" 65 1709 1737
+type(
+  int
+)
+"Game.ml" 65 1709 1729 "Game.ml" 65 1709 1737
+type(
+  int
+)
+"Game.ml" 66 1742 1747 "Game.ml" 66 1742 1749
+type(
+  int array array
+)
+ident(
+  int_ref b' "Game.ml" 54 1475 1481 "Game.ml" 54 1475 1483
+)
+"Game.ml" 66 1742 1751 "Game.ml" 66 1742 1752
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 64 1682 1693 "Game.ml" 64 1682 1694
+)
+"Game.ml" 66 1742 1747 "Game.ml" 66 1742 1753
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 66 1742 1755 "Game.ml" 66 1742 1756
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 65 1709 1715 "Game.ml" 66 1742 1791
+)
+"Game.ml" 66 1742 1747 "Game.ml" 66 1742 1757
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 66 1742 1758 "Game.ml" 66 1742 1759
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 66 1742 1760 "Game.ml" 66 1742 1761
+type(
+  int
+)
+"Game.ml" 66 1742 1747 "Game.ml" 66 1742 1761
+type(
+  bool
+)
+"Game.ml" 66 1742 1767 "Game.ml" 66 1742 1772
+type(
+  int ref
+)
+ident(
+  int_ref count "Game.ml" 63 1655 1665 "Game.ml" 63 1655 1670
+)
+"Game.ml" 66 1742 1777 "Game.ml" 66 1742 1782
+type(
+  int ref
+)
+ident(
+  int_ref count "Game.ml" 63 1655 1665 "Game.ml" 63 1655 1670
+)
+"Game.ml" 66 1742 1776 "Game.ml" 66 1742 1782
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 66 1742 1783 "Game.ml" 66 1742 1784
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 66 1742 1785 "Game.ml" 66 1742 1786
+type(
+  int
+)
+"Game.ml" 66 1742 1776 "Game.ml" 66 1742 1786
+type(
+  int
+)
+"Game.ml" 66 1742 1767 "Game.ml" 66 1742 1786
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 66 1742 1744 "Game.ml" 66 1742 1786
+type(
+  unit
+)
+type(
+  unit
+)
+"Game.ml" 65 1709 1715 "Game.ml" 66 1742 1791
+type(
+  unit
+)
+"Game.ml" 67 1793 1805 "Game.ml" 67 1793 1806
+type(
+  int
+)
+ident(
+  int_ref p "Game.ml" 64 1682 1695 "Game.ml" 64 1682 1696
+)
+"Game.ml" 68 1813 1821 "Game.ml" 68 1813 1822
+type(
+  int
+)
+"Game.ml" 68 1813 1827 "Game.ml" 68 1813 1829
+type(
+  int array array
+)
+ident(
+  int_ref b' "Game.ml" 54 1475 1481 "Game.ml" 54 1475 1483
+)
+"Game.ml" 68 1813 1831 "Game.ml" 68 1813 1832
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 64 1682 1693 "Game.ml" 64 1682 1694
+)
+"Game.ml" 68 1813 1827 "Game.ml" 68 1813 1833
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 68 1813 1835 "Game.ml" 68 1813 1836
+type(
+  int
+)
+"Game.ml" 68 1813 1836 "Game.ml" 68 1813 1837
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 68 1813 1839 "Game.ml" 68 1813 1844
+type(
+  int ref
+)
+ident(
+  int_ref count "Game.ml" 63 1655 1665 "Game.ml" 63 1655 1670
+)
+"Game.ml" 68 1813 1838 "Game.ml" 68 1813 1844
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 68 1813 1835 "Game.ml" 68 1813 1845
+type(
+  int
+)
+"Game.ml" 68 1813 1827 "Game.ml" 68 1813 1846
+type(
+  int array -> int -> int -> unit
+)
+ident(
+  ext_ref Core.Std.Array.set
+)
+"Game.ml" 68 1813 1850 "Game.ml" 68 1813 1851
+type(
+  int
+)
+"Game.ml" 68 1813 1827 "Game.ml" 68 1813 1851
+type(
+  unit
+)
+"Game.ml" 68 1813 1853 "Game.ml" 68 1813 1855
+type(
+  int array array
+)
+ident(
+  int_ref b' "Game.ml" 54 1475 1481 "Game.ml" 54 1475 1483
+)
+"Game.ml" 68 1813 1827 "Game.ml" 68 1813 1855
+type(
+  int array array
+)
+"Game.ml" 69 1857 1865 "Game.ml" 69 1857 1866
+type(
+  int
+)
+"Game.ml" 69 1857 1871 "Game.ml" 69 1857 1873
+type(
+  int array array
+)
+ident(
+  int_ref b' "Game.ml" 54 1475 1481 "Game.ml" 54 1475 1483
+)
+"Game.ml" 69 1857 1875 "Game.ml" 69 1857 1876
+type(
+  int
+)
+ident(
+  int_ref m "Game.ml" 64 1682 1693 "Game.ml" 64 1682 1694
+)
+"Game.ml" 69 1857 1871 "Game.ml" 69 1857 1877
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 69 1857 1879 "Game.ml" 69 1857 1880
+type(
+  int
+)
+"Game.ml" 69 1857 1880 "Game.ml" 69 1857 1881
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 69 1857 1883 "Game.ml" 69 1857 1888
+type(
+  int ref
+)
+ident(
+  int_ref count "Game.ml" 63 1655 1665 "Game.ml" 63 1655 1670
+)
+"Game.ml" 69 1857 1882 "Game.ml" 69 1857 1888
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 69 1857 1879 "Game.ml" 69 1857 1889
+type(
+  int
+)
+"Game.ml" 69 1857 1871 "Game.ml" 69 1857 1890
+type(
+  int array -> int -> int -> unit
+)
+ident(
+  ext_ref Core.Std.Array.set
+)
+"Game.ml" 69 1857 1894 "Game.ml" 69 1857 1895
+type(
+  int
+)
+"Game.ml" 69 1857 1871 "Game.ml" 69 1857 1895
+type(
+  unit
+)
+"Game.ml" 69 1857 1897 "Game.ml" 69 1857 1899
+type(
+  int array array
+)
+ident(
+  int_ref b' "Game.ml" 54 1475 1481 "Game.ml" 54 1475 1483
+)
+"Game.ml" 69 1857 1871 "Game.ml" 69 1857 1899
+type(
+  int array array
+)
+"Game.ml" 70 1901 1909 "Game.ml" 70 1901 1910
+type(
+  int
+)
+"Game.ml" 70 1901 1914 "Game.ml" 70 1901 1922
+type(
+  string -> board
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"Game.ml" 70 1901 1923 "Game.ml" 70 1901 1934
+type(
+  string
+)
+"Game.ml" 70 1901 1914 "Game.ml" 70 1901 1934
+call(
+  tail
+)
+type(
+  board
+)
+"Game.ml" 67 1793 1799 "Game.ml" 70 1901 1934
+type(
+  board
+)
+"Game.ml" 65 1709 1715 "Game.ml" 70 1901 1934
+type(
+  board
+)
+"Game.ml" 64 1682 1688 "Game.ml" 70 1901 1934
+type(
+  board
+)
+"Game.ml" 63 1655 1661 "Game.ml" 70 1901 1934
+type(
+  board
+)
+"Game.ml" 71 1935 1944 "Game.ml" 71 1935 1952
+type(
+  string -> board
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"Game.ml" 71 1935 1953 "Game.ml" 71 1935 1967
+type(
+  string
+)
+"Game.ml" 71 1935 1944 "Game.ml" 71 1935 1967
+call(
+  tail
+)
+type(
+  board
+)
+"Game.ml" 62 1627 1631 "Game.ml" 71 1935 1967
+type(
+  board
+)
+"Game.ml" 55 1514 1516 "Game.ml" 71 1935 1967
+type(
+  board
+)
+"Game.ml" 54 1475 1477 "Game.ml" 71 1935 1967
+type(
+  board
+)
+type(
+  board
+)
+"Game.ml" 53 1412 1449 "Game.ml" 71 1935 1967
+type(
+  c4Move -> board
+)
+"Game.ml" 53 1412 1437 "Game.ml" 71 1935 1967
+type(
+  board -> c4Move -> board
+)
+"Game.ml" 80 2077 2093 "Game.ml" 80 2077 2094
+type(
+  board
+)
+"Game.ml" 80 2077 2105 "Game.ml" 80 2077 2106
+type(
+  int
+)
+"Game.ml" 82 2133 2156 "Game.ml" 82 2133 2161
+type(
+  string
+)
+type(
+  string
+)
+"Game.ml" 82 2133 2135 "Game.ml" 82 2133 2161
+type(
+  < next_move : board -> int * int; player_name : string; .. > -> string
+)
+"Game.ml" 83 2162 2181 "Game.ml" 83 2162 2182
+type(
+  board
+)
+"Game.ml" 83 2162 2186 "Game.ml" 83 2162 2187
+type(
+  int
+)
+"Game.ml" 83 2162 2188 "Game.ml" 83 2162 2189
+type(
+  int
+)
+"Game.ml" 83 2162 2186 "Game.ml" 83 2162 2189
+type(
+  int * int
+)
+"Game.ml" 83 2162 2181 "Game.ml" 83 2162 2190
+type(
+  board -> int * int
+)
+type(
+  board -> int * int
+)
+"Game.ml" 83 2162 2164 "Game.ml" 83 2162 2190
+type(
+  (< next_move : board -> int * int; player_name : string; .. > as 'a) ->
+  board -> int * int
+)
+"Game.ml" 81 2126 2126 "Game.ml" 84 2192 2195
+type(
+  'a
+)
+"Game.ml" 86 2197 2216 "Game.ml" 86 2197 2217
+type(
+  board
+)
+"Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+type(
+  int
+)
+"Game.ml" 87 2249 2257 "Game.ml" 87 2249 2261
+type(
+  < next_move : board -> c4Move; player_name : string; .. >
+)
+"Game.ml" 88 2263 2282 "Game.ml" 88 2263 2283
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 86 2197 2216 "Game.ml" 86 2197 2217
+)
+"Game.ml" 88 2263 2284 "Game.ml" 88 2263 2285
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 89 2287 2311 "Game.ml" 89 2287 2320
+type(
+  string
+)
+"Game.ml" 89 2287 2321 "Game.ml" 89 2287 2322
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"Game.ml" 89 2287 2324 "Game.ml" 89 2287 2337
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"Game.ml" 89 2287 2338 "Game.ml" 89 2287 2339
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 89 2287 2324 "Game.ml" 89 2287 2339
+call(
+  stack
+)
+type(
+  string
+)
+"Game.ml" 89 2287 2311 "Game.ml" 89 2287 2340
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"Game.ml" 89 2287 2289 "Game.ml" 89 2287 2340
+type(
+  (< next_move : board -> c4Move; player_name : string; .. > as 'a) -> string
+)
+"Game.ml" 90 2342 2362 "Game.ml" 90 2342 2363
+type(
+  board
+)
+"Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+type(
+  status
+)
+ident(
+  def s "Game.ml" 91 2425 2433 "Game.ml" 99 2898 2927
+)
+"Game.ml" 90 2342 2374 "Game.ml" 90 2342 2398
+type(
+  event list -> status
+)
+ident(
+  ext_ref Graphics.wait_next_event
+)
+"Game.ml" 90 2342 2400 "Game.ml" 90 2342 2420
+type(
+  event
+)
+type(
+  event list
+)
+"Game.ml" 90 2342 2399 "Game.ml" 90 2342 2421
+type(
+  event list
+)
+"Game.ml" 90 2342 2374 "Game.ml" 90 2342 2421
+type(
+  status
+)
+"Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+type(
+  int
+)
+ident(
+  def x "Game.ml" 92 2464 2472 "Game.ml" 99 2898 2927
+)
+"Game.ml" 91 2425 2441 "Game.ml" 91 2425 2442
+type(
+  status
+)
+ident(
+  int_ref s "Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+)
+"Game.ml" 91 2425 2441 "Game.ml" 91 2425 2459
+type(
+  int
+)
+"Game.ml" 92 2464 2475 "Game.ml" 92 2464 2476
+type(
+  int
+)
+"Game.ml" 92 2464 2476 "Game.ml" 92 2464 2477
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 92 2464 2477 "Game.ml" 92 2464 2478
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 92 2464 2475 "Game.ml" 92 2464 2478
+type(
+  bool
+)
+"Game.ml" 92 2464 2479 "Game.ml" 92 2464 2481
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 92 2464 2482 "Game.ml" 92 2464 2483
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 92 2464 2483 "Game.ml" 92 2464 2484
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 92 2464 2484 "Game.ml" 92 2464 2487
+type(
+  int
+)
+"Game.ml" 92 2464 2482 "Game.ml" 92 2464 2487
+type(
+  bool
+)
+"Game.ml" 92 2464 2488 "Game.ml" 92 2464 2490
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 92 2464 2491 "Game.ml" 92 2464 2492
+type(
+  status
+)
+ident(
+  int_ref s "Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+)
+"Game.ml" 92 2464 2491 "Game.ml" 92 2464 2508
+type(
+  bool
+)
+"Game.ml" 92 2464 2482 "Game.ml" 92 2464 2508
+type(
+  bool
+)
+"Game.ml" 92 2464 2475 "Game.ml" 92 2464 2508
+type(
+  bool
+)
+"Game.ml" 92 2464 2515 "Game.ml" 92 2464 2516
+type(
+  int
+)
+"Game.ml" 92 2464 2517 "Game.ml" 92 2464 2518
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 92 2464 2515 "Game.ml" 92 2464 2518
+type(
+  c4Move
+)
+"Game.ml" 93 2520 2536 "Game.ml" 93 2520 2539
+type(
+  int
+)
+"Game.ml" 93 2520 2539 "Game.ml" 93 2520 2540
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 93 2520 2540 "Game.ml" 93 2520 2541
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 93 2520 2536 "Game.ml" 93 2520 2541
+type(
+  bool
+)
+"Game.ml" 93 2520 2542 "Game.ml" 93 2520 2544
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 93 2520 2545 "Game.ml" 93 2520 2546
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 93 2520 2546 "Game.ml" 93 2520 2547
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 93 2520 2547 "Game.ml" 93 2520 2550
+type(
+  int
+)
+"Game.ml" 93 2520 2545 "Game.ml" 93 2520 2550
+type(
+  bool
+)
+"Game.ml" 93 2520 2551 "Game.ml" 93 2520 2553
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 93 2520 2554 "Game.ml" 93 2520 2555
+type(
+  status
+)
+ident(
+  int_ref s "Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+)
+"Game.ml" 93 2520 2554 "Game.ml" 93 2520 2571
+type(
+  bool
+)
+"Game.ml" 93 2520 2545 "Game.ml" 93 2520 2571
+type(
+  bool
+)
+"Game.ml" 93 2520 2536 "Game.ml" 93 2520 2571
+type(
+  bool
+)
+"Game.ml" 93 2520 2578 "Game.ml" 93 2520 2579
+type(
+  int
+)
+"Game.ml" 93 2520 2580 "Game.ml" 93 2520 2581
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 93 2520 2578 "Game.ml" 93 2520 2581
+type(
+  c4Move
+)
+"Game.ml" 94 2583 2599 "Game.ml" 94 2583 2602
+type(
+  int
+)
+"Game.ml" 94 2583 2602 "Game.ml" 94 2583 2603
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 94 2583 2603 "Game.ml" 94 2583 2604
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 94 2583 2599 "Game.ml" 94 2583 2604
+type(
+  bool
+)
+"Game.ml" 94 2583 2605 "Game.ml" 94 2583 2607
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 94 2583 2608 "Game.ml" 94 2583 2609
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 94 2583 2609 "Game.ml" 94 2583 2610
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 94 2583 2610 "Game.ml" 94 2583 2613
+type(
+  int
+)
+"Game.ml" 94 2583 2608 "Game.ml" 94 2583 2613
+type(
+  bool
+)
+"Game.ml" 94 2583 2614 "Game.ml" 94 2583 2616
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 94 2583 2617 "Game.ml" 94 2583 2618
+type(
+  status
+)
+ident(
+  int_ref s "Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+)
+"Game.ml" 94 2583 2617 "Game.ml" 94 2583 2634
+type(
+  bool
+)
+"Game.ml" 94 2583 2608 "Game.ml" 94 2583 2634
+type(
+  bool
+)
+"Game.ml" 94 2583 2599 "Game.ml" 94 2583 2634
+type(
+  bool
+)
+"Game.ml" 94 2583 2641 "Game.ml" 94 2583 2642
+type(
+  int
+)
+"Game.ml" 94 2583 2643 "Game.ml" 94 2583 2644
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 94 2583 2641 "Game.ml" 94 2583 2644
+type(
+  c4Move
+)
+"Game.ml" 95 2646 2662 "Game.ml" 95 2646 2665
+type(
+  int
+)
+"Game.ml" 95 2646 2665 "Game.ml" 95 2646 2666
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 95 2646 2666 "Game.ml" 95 2646 2667
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 95 2646 2662 "Game.ml" 95 2646 2667
+type(
+  bool
+)
+"Game.ml" 95 2646 2668 "Game.ml" 95 2646 2670
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 95 2646 2671 "Game.ml" 95 2646 2672
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 95 2646 2672 "Game.ml" 95 2646 2673
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 95 2646 2673 "Game.ml" 95 2646 2676
+type(
+  int
+)
+"Game.ml" 95 2646 2671 "Game.ml" 95 2646 2676
+type(
+  bool
+)
+"Game.ml" 95 2646 2677 "Game.ml" 95 2646 2679
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 95 2646 2680 "Game.ml" 95 2646 2681
+type(
+  status
+)
+ident(
+  int_ref s "Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+)
+"Game.ml" 95 2646 2680 "Game.ml" 95 2646 2697
+type(
+  bool
+)
+"Game.ml" 95 2646 2671 "Game.ml" 95 2646 2697
+type(
+  bool
+)
+"Game.ml" 95 2646 2662 "Game.ml" 95 2646 2697
+type(
+  bool
+)
+"Game.ml" 95 2646 2704 "Game.ml" 95 2646 2705
+type(
+  int
+)
+"Game.ml" 95 2646 2706 "Game.ml" 95 2646 2707
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 95 2646 2704 "Game.ml" 95 2646 2707
+type(
+  c4Move
+)
+"Game.ml" 96 2709 2725 "Game.ml" 96 2709 2728
+type(
+  int
+)
+"Game.ml" 96 2709 2728 "Game.ml" 96 2709 2729
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 96 2709 2729 "Game.ml" 96 2709 2730
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 96 2709 2725 "Game.ml" 96 2709 2730
+type(
+  bool
+)
+"Game.ml" 96 2709 2731 "Game.ml" 96 2709 2733
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 96 2709 2734 "Game.ml" 96 2709 2735
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 96 2709 2735 "Game.ml" 96 2709 2736
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 96 2709 2736 "Game.ml" 96 2709 2739
+type(
+  int
+)
+"Game.ml" 96 2709 2734 "Game.ml" 96 2709 2739
+type(
+  bool
+)
+"Game.ml" 96 2709 2740 "Game.ml" 96 2709 2742
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 96 2709 2743 "Game.ml" 96 2709 2744
+type(
+  status
+)
+ident(
+  int_ref s "Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+)
+"Game.ml" 96 2709 2743 "Game.ml" 96 2709 2760
+type(
+  bool
+)
+"Game.ml" 96 2709 2734 "Game.ml" 96 2709 2760
+type(
+  bool
+)
+"Game.ml" 96 2709 2725 "Game.ml" 96 2709 2760
+type(
+  bool
+)
+"Game.ml" 96 2709 2767 "Game.ml" 96 2709 2768
+type(
+  int
+)
+"Game.ml" 96 2709 2769 "Game.ml" 96 2709 2770
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 96 2709 2767 "Game.ml" 96 2709 2770
+type(
+  c4Move
+)
+"Game.ml" 97 2772 2788 "Game.ml" 97 2772 2791
+type(
+  int
+)
+"Game.ml" 97 2772 2791 "Game.ml" 97 2772 2792
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 97 2772 2792 "Game.ml" 97 2772 2793
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 97 2772 2788 "Game.ml" 97 2772 2793
+type(
+  bool
+)
+"Game.ml" 97 2772 2794 "Game.ml" 97 2772 2796
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 97 2772 2797 "Game.ml" 97 2772 2798
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 97 2772 2798 "Game.ml" 97 2772 2799
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 97 2772 2799 "Game.ml" 97 2772 2802
+type(
+  int
+)
+"Game.ml" 97 2772 2797 "Game.ml" 97 2772 2802
+type(
+  bool
+)
+"Game.ml" 97 2772 2803 "Game.ml" 97 2772 2805
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 97 2772 2806 "Game.ml" 97 2772 2807
+type(
+  status
+)
+ident(
+  int_ref s "Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+)
+"Game.ml" 97 2772 2806 "Game.ml" 97 2772 2823
+type(
+  bool
+)
+"Game.ml" 97 2772 2797 "Game.ml" 97 2772 2823
+type(
+  bool
+)
+"Game.ml" 97 2772 2788 "Game.ml" 97 2772 2823
+type(
+  bool
+)
+"Game.ml" 97 2772 2830 "Game.ml" 97 2772 2831
+type(
+  int
+)
+"Game.ml" 97 2772 2832 "Game.ml" 97 2772 2833
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 97 2772 2830 "Game.ml" 97 2772 2833
+type(
+  c4Move
+)
+"Game.ml" 98 2835 2851 "Game.ml" 98 2835 2854
+type(
+  int
+)
+"Game.ml" 98 2835 2854 "Game.ml" 98 2835 2855
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 98 2835 2855 "Game.ml" 98 2835 2856
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 98 2835 2851 "Game.ml" 98 2835 2856
+type(
+  bool
+)
+"Game.ml" 98 2835 2857 "Game.ml" 98 2835 2859
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 98 2835 2860 "Game.ml" 98 2835 2861
+type(
+  int
+)
+ident(
+  int_ref x "Game.ml" 91 2425 2437 "Game.ml" 91 2425 2438
+)
+"Game.ml" 98 2835 2861 "Game.ml" 98 2835 2862
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 98 2835 2862 "Game.ml" 98 2835 2865
+type(
+  int
+)
+"Game.ml" 98 2835 2860 "Game.ml" 98 2835 2865
+type(
+  bool
+)
+"Game.ml" 98 2835 2866 "Game.ml" 98 2835 2868
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 98 2835 2869 "Game.ml" 98 2835 2870
+type(
+  status
+)
+ident(
+  int_ref s "Game.ml" 90 2342 2370 "Game.ml" 90 2342 2371
+)
+"Game.ml" 98 2835 2869 "Game.ml" 98 2835 2886
+type(
+  bool
+)
+"Game.ml" 98 2835 2860 "Game.ml" 98 2835 2886
+type(
+  bool
+)
+"Game.ml" 98 2835 2851 "Game.ml" 98 2835 2886
+type(
+  bool
+)
+"Game.ml" 98 2835 2893 "Game.ml" 98 2835 2894
+type(
+  int
+)
+"Game.ml" 98 2835 2895 "Game.ml" 98 2835 2896
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 86 2197 2228 "Game.ml" 86 2197 2229
+)
+"Game.ml" 98 2835 2893 "Game.ml" 98 2835 2896
+type(
+  c4Move
+)
+"Game.ml" 99 2898 2911 "Game.ml" 99 2898 2915
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 87 2249 2257 "Game.ml" 87 2249 2261
+)
+"Game.ml" 99 2898 2911 "Game.ml" 99 2898 2925
+call(
+  tail
+)
+type(
+  board -> c4Move
+)
+"Game.ml" 99 2898 2926 "Game.ml" 99 2898 2927
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 86 2197 2216 "Game.ml" 86 2197 2217
+)
+"Game.ml" 99 2898 2911 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 98 2835 2848 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 97 2772 2785 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 96 2709 2722 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 95 2646 2659 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 94 2583 2596 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 93 2520 2533 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 92 2464 2472 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 91 2425 2433 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 90 2342 2366 "Game.ml" 99 2898 2927
+type(
+  c4Move
+)
+"Game.ml" 90 2342 2362 "Game.ml" 99 2898 2927
+type(
+  board -> c4Move
+)
+type(
+  board -> c4Move
+)
+"Game.ml" 90 2342 2344 "Game.ml" 99 2898 2927
+type(
+  'a -> board -> c4Move
+)
+"Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
+type(
+  board -> int -> int
+)
+ident(
+  def estimate_value "Game.ml" 181 4795 4795 "Game.ml" 1 0 -1
+)
+"Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+type(
+  board
+)
+ident(
+  def b "Game.ml" 103 2956 2987 "Game.ml" 179 4778 4789
+)
+"Game.ml" 103 2956 2988 "Game.ml" 103 2956 2998
+type(
+  int
+)
+ident(
+  def num_player "Game.ml" 104 3008 3010 "Game.ml" 179 4778 4789
+)
+"Game.ml" 104 3008 3014 "Game.ml" 104 3008 3016
+type(
+  int
+)
+ident(
+  def w1 "Game.ml" 105 3024 3026 "Game.ml" 179 4778 4789
+)
+"Game.ml" 104 3008 3019 "Game.ml" 104 3008 3020
+type(
+  int
+)
+"Game.ml" 105 3024 3030 "Game.ml" 105 3024 3032
+type(
+  int
+)
+ident(
+  def w2 "Game.ml" 106 3041 3043 "Game.ml" 179 4778 4789
+)
+"Game.ml" 105 3024 3035 "Game.ml" 105 3024 3037
+type(
+  int
+)
+"Game.ml" 106 3041 3047 "Game.ml" 106 3041 3049
+type(
+  int
+)
+ident(
+  def w3 "Game.ml" 107 3059 3061 "Game.ml" 179 4778 4789
+)
+"Game.ml" 106 3041 3052 "Game.ml" 106 3041 3055
+type(
+  int
+)
+"Game.ml" 107 3059 3065 "Game.ml" 107 3059 3067
+type(
+  int
+)
+ident(
+  def w4 "Game.ml" 109 3080 3082 "Game.ml" 179 4778 4789
+)
+"Game.ml" 107 3059 3070 "Game.ml" 107 3059 3075
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  def check_direction "Game.ml" 132 3714 3716 "Game.ml" 179 4778 4789
+)
+"Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+type(
+  int
+)
+ident(
+  def i "Game.ml" 109 3080 3104 "Game.ml" 130 3678 3706
+)
+"Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+type(
+  int
+)
+ident(
+  def j "Game.ml" 109 3080 3106 "Game.ml" 130 3678 3706
+)
+"Game.ml" 109 3080 3107 "Game.ml" 109 3080 3108
+type(
+  int * int
+)
+ident(
+  def d "Game.ml" 110 3124 3128 "Game.ml" 130 3678 3706
+)
+"Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+type(
+  int ref
+)
+ident(
+  def v "Game.ml" 111 3145 3149 "Game.ml" 130 3678 3706
+)
+"Game.ml" 110 3124 3136 "Game.ml" 110 3124 3139
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 110 3124 3140 "Game.ml" 110 3124 3141
+type(
+  int
+)
+"Game.ml" 110 3124 3136 "Game.ml" 110 3124 3141
+type(
+  int ref
+)
+"Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+type(
+  int
+)
+ident(
+  def i' "Game.ml" 113 3170 3174 "Game.ml" 130 3678 3706
+)
+"Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+type(
+  int
+)
+ident(
+  def j' "Game.ml" 113 3170 3174 "Game.ml" 130 3678 3706
+)
+"Game.ml" 111 3145 3154 "Game.ml" 111 3145 3160
+type(
+  int * int
+)
+"Game.ml" 111 3145 3164 "Game.ml" 111 3145 3165
+type(
+  int * int
+)
+ident(
+  int_ref d "Game.ml" 109 3080 3107 "Game.ml" 109 3080 3108
+)
+"Game.ml" 113 3170 3177 "Game.ml" 113 3170 3178
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 113 3170 3180 "Game.ml" 113 3170 3181
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 113 3170 3177 "Game.ml" 113 3170 3182
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 113 3170 3184 "Game.ml" 113 3170 3185
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 113 3170 3177 "Game.ml" 113 3170 3186
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 113 3170 3187 "Game.ml" 113 3170 3188
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 113 3170 3189 "Game.ml" 113 3170 3190
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 113 3170 3192 "Game.ml" 113 3170 3193
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 113 3170 3193 "Game.ml" 113 3170 3194
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 113 3170 3194 "Game.ml" 113 3170 3196
+type(
+  int
+)
+ident(
+  int_ref i' "Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+)
+"Game.ml" 113 3170 3192 "Game.ml" 113 3170 3196
+type(
+  int
+)
+"Game.ml" 113 3170 3189 "Game.ml" 113 3170 3197
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 113 3170 3199 "Game.ml" 113 3170 3200
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 113 3170 3200 "Game.ml" 113 3170 3201
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 113 3170 3201 "Game.ml" 113 3170 3203
+type(
+  int
+)
+ident(
+  int_ref j' "Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+)
+"Game.ml" 113 3170 3199 "Game.ml" 113 3170 3203
+type(
+  int
+)
+"Game.ml" 113 3170 3189 "Game.ml" 113 3170 3204
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 113 3170 3177 "Game.ml" 113 3170 3204
+type(
+  bool
+)
+"Game.ml" 115 3215 3224 "Game.ml" 115 3215 3225
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 115 3215 3227 "Game.ml" 115 3215 3228
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 115 3215 3224 "Game.ml" 115 3215 3229
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 115 3215 3231 "Game.ml" 115 3215 3232
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 115 3215 3224 "Game.ml" 115 3215 3233
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 115 3215 3234 "Game.ml" 115 3215 3235
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 115 3215 3236 "Game.ml" 115 3215 3237
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 115 3215 3239 "Game.ml" 115 3215 3240
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 115 3215 3240 "Game.ml" 115 3215 3241
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 115 3215 3241 "Game.ml" 115 3215 3242
+type(
+  int
+)
+"Game.ml" 115 3215 3242 "Game.ml" 115 3215 3243
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 115 3215 3243 "Game.ml" 115 3215 3245
+type(
+  int
+)
+ident(
+  int_ref i' "Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+)
+"Game.ml" 115 3215 3241 "Game.ml" 115 3215 3245
+type(
+  int
+)
+"Game.ml" 115 3215 3239 "Game.ml" 115 3215 3245
+type(
+  int
+)
+"Game.ml" 115 3215 3236 "Game.ml" 115 3215 3246
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 115 3215 3248 "Game.ml" 115 3215 3249
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 115 3215 3249 "Game.ml" 115 3215 3250
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 115 3215 3250 "Game.ml" 115 3215 3251
+type(
+  int
+)
+"Game.ml" 115 3215 3251 "Game.ml" 115 3215 3252
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 115 3215 3252 "Game.ml" 115 3215 3254
+type(
+  int
+)
+ident(
+  int_ref j' "Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+)
+"Game.ml" 115 3215 3250 "Game.ml" 115 3215 3254
+type(
+  int
+)
+"Game.ml" 115 3215 3248 "Game.ml" 115 3215 3254
+type(
+  int
+)
+"Game.ml" 115 3215 3236 "Game.ml" 115 3215 3255
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 115 3215 3224 "Game.ml" 115 3215 3255
+type(
+  bool
+)
+"Game.ml" 117 3268 3279 "Game.ml" 117 3268 3280
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 117 3268 3282 "Game.ml" 117 3268 3283
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 117 3268 3279 "Game.ml" 117 3268 3284
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 117 3268 3286 "Game.ml" 117 3268 3287
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 117 3268 3279 "Game.ml" 117 3268 3288
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 117 3268 3289 "Game.ml" 117 3268 3290
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 117 3268 3291 "Game.ml" 117 3268 3292
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 117 3268 3294 "Game.ml" 117 3268 3295
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 117 3268 3295 "Game.ml" 117 3268 3296
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 117 3268 3296 "Game.ml" 117 3268 3297
+type(
+  int
+)
+"Game.ml" 117 3268 3297 "Game.ml" 117 3268 3298
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 117 3268 3298 "Game.ml" 117 3268 3300
+type(
+  int
+)
+ident(
+  int_ref i' "Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+)
+"Game.ml" 117 3268 3296 "Game.ml" 117 3268 3300
+type(
+  int
+)
+"Game.ml" 117 3268 3294 "Game.ml" 117 3268 3300
+type(
+  int
+)
+"Game.ml" 117 3268 3291 "Game.ml" 117 3268 3301
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 117 3268 3303 "Game.ml" 117 3268 3304
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 117 3268 3304 "Game.ml" 117 3268 3305
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 117 3268 3305 "Game.ml" 117 3268 3306
+type(
+  int
+)
+"Game.ml" 117 3268 3306 "Game.ml" 117 3268 3307
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 117 3268 3307 "Game.ml" 117 3268 3309
+type(
+  int
+)
+ident(
+  int_ref j' "Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+)
+"Game.ml" 117 3268 3305 "Game.ml" 117 3268 3309
+type(
+  int
+)
+"Game.ml" 117 3268 3303 "Game.ml" 117 3268 3309
+type(
+  int
+)
+"Game.ml" 117 3268 3291 "Game.ml" 117 3268 3310
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 117 3268 3279 "Game.ml" 117 3268 3310
+type(
+  bool
+)
+"Game.ml" 118 3311 3324 "Game.ml" 118 3311 3325
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 118 3311 3330 "Game.ml" 118 3311 3331
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 118 3311 3329 "Game.ml" 118 3311 3331
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 118 3311 3332 "Game.ml" 118 3311 3333
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 118 3311 3334 "Game.ml" 118 3311 3336
+type(
+  int
+)
+ident(
+  int_ref w4 "Game.ml" 107 3059 3065 "Game.ml" 107 3059 3067
+)
+"Game.ml" 118 3311 3329 "Game.ml" 118 3311 3336
+type(
+  int
+)
+"Game.ml" 118 3311 3324 "Game.ml" 118 3311 3336
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 119 3337 3350 "Game.ml" 119 3337 3351
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 119 3337 3356 "Game.ml" 119 3337 3357
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 119 3337 3355 "Game.ml" 119 3337 3357
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 119 3337 3358 "Game.ml" 119 3337 3359
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 119 3337 3360 "Game.ml" 119 3337 3362
+type(
+  int
+)
+ident(
+  int_ref w3 "Game.ml" 106 3041 3047 "Game.ml" 106 3041 3049
+)
+"Game.ml" 119 3337 3355 "Game.ml" 119 3337 3362
+type(
+  int
+)
+"Game.ml" 119 3337 3350 "Game.ml" 119 3337 3362
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 117 3268 3276 "Game.ml" 119 3337 3362
+type(
+  unit
+)
+"Game.ml" 121 3375 3386 "Game.ml" 121 3375 3387
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 121 3375 3389 "Game.ml" 121 3375 3390
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 121 3375 3386 "Game.ml" 121 3375 3391
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 121 3375 3393 "Game.ml" 121 3375 3394
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 121 3375 3386 "Game.ml" 121 3375 3395
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 121 3375 3396 "Game.ml" 121 3375 3397
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 121 3375 3398 "Game.ml" 121 3375 3399
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 121 3375 3401 "Game.ml" 121 3375 3402
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 121 3375 3402 "Game.ml" 121 3375 3403
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 121 3375 3403 "Game.ml" 121 3375 3404
+type(
+  int
+)
+"Game.ml" 121 3375 3404 "Game.ml" 121 3375 3405
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 121 3375 3405 "Game.ml" 121 3375 3407
+type(
+  int
+)
+ident(
+  int_ref i' "Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+)
+"Game.ml" 121 3375 3403 "Game.ml" 121 3375 3407
+type(
+  int
+)
+"Game.ml" 121 3375 3401 "Game.ml" 121 3375 3407
+type(
+  int
+)
+"Game.ml" 121 3375 3398 "Game.ml" 121 3375 3408
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 121 3375 3410 "Game.ml" 121 3375 3411
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 121 3375 3411 "Game.ml" 121 3375 3412
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 121 3375 3412 "Game.ml" 121 3375 3413
+type(
+  int
+)
+"Game.ml" 121 3375 3413 "Game.ml" 121 3375 3414
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 121 3375 3414 "Game.ml" 121 3375 3416
+type(
+  int
+)
+ident(
+  int_ref j' "Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+)
+"Game.ml" 121 3375 3412 "Game.ml" 121 3375 3416
+type(
+  int
+)
+"Game.ml" 121 3375 3410 "Game.ml" 121 3375 3416
+type(
+  int
+)
+"Game.ml" 121 3375 3398 "Game.ml" 121 3375 3417
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 121 3375 3386 "Game.ml" 121 3375 3417
+type(
+  bool
+)
+"Game.ml" 121 3375 3418 "Game.ml" 121 3375 3420
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 121 3375 3421 "Game.ml" 121 3375 3422
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 121 3375 3424 "Game.ml" 121 3375 3425
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 121 3375 3425 "Game.ml" 121 3375 3426
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 121 3375 3426 "Game.ml" 121 3375 3427
+type(
+  int
+)
+"Game.ml" 121 3375 3427 "Game.ml" 121 3375 3428
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 121 3375 3428 "Game.ml" 121 3375 3430
+type(
+  int
+)
+ident(
+  int_ref i' "Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+)
+"Game.ml" 121 3375 3426 "Game.ml" 121 3375 3430
+type(
+  int
+)
+"Game.ml" 121 3375 3424 "Game.ml" 121 3375 3430
+type(
+  int
+)
+"Game.ml" 121 3375 3421 "Game.ml" 121 3375 3431
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 121 3375 3433 "Game.ml" 121 3375 3434
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 121 3375 3434 "Game.ml" 121 3375 3435
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 121 3375 3435 "Game.ml" 121 3375 3436
+type(
+  int
+)
+"Game.ml" 121 3375 3436 "Game.ml" 121 3375 3437
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 121 3375 3437 "Game.ml" 121 3375 3439
+type(
+  int
+)
+ident(
+  int_ref j' "Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+)
+"Game.ml" 121 3375 3435 "Game.ml" 121 3375 3439
+type(
+  int
+)
+"Game.ml" 121 3375 3433 "Game.ml" 121 3375 3439
+type(
+  int
+)
+"Game.ml" 121 3375 3421 "Game.ml" 121 3375 3440
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 121 3375 3441 "Game.ml" 121 3375 3442
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 121 3375 3443 "Game.ml" 121 3375 3444
+type(
+  int
+)
+"Game.ml" 121 3375 3421 "Game.ml" 121 3375 3444
+type(
+  bool
+)
+"Game.ml" 121 3375 3386 "Game.ml" 121 3375 3444
+type(
+  bool
+)
+"Game.ml" 122 3445 3458 "Game.ml" 122 3445 3459
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 122 3445 3464 "Game.ml" 122 3445 3465
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 122 3445 3463 "Game.ml" 122 3445 3465
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 122 3445 3466 "Game.ml" 122 3445 3467
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 122 3445 3468 "Game.ml" 122 3445 3470
+type(
+  int
+)
+ident(
+  int_ref w3 "Game.ml" 106 3041 3047 "Game.ml" 106 3041 3049
+)
+"Game.ml" 122 3445 3463 "Game.ml" 122 3445 3470
+type(
+  int
+)
+"Game.ml" 122 3445 3458 "Game.ml" 122 3445 3470
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 123 3471 3484 "Game.ml" 123 3471 3485
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 123 3471 3490 "Game.ml" 123 3471 3491
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 123 3471 3489 "Game.ml" 123 3471 3491
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 123 3471 3492 "Game.ml" 123 3471 3493
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 123 3471 3494 "Game.ml" 123 3471 3496
+type(
+  int
+)
+ident(
+  int_ref w2 "Game.ml" 105 3024 3030 "Game.ml" 105 3024 3032
+)
+"Game.ml" 123 3471 3489 "Game.ml" 123 3471 3496
+type(
+  int
+)
+"Game.ml" 123 3471 3484 "Game.ml" 123 3471 3496
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 121 3375 3383 "Game.ml" 123 3471 3496
+type(
+  unit
+)
+"Game.ml" 115 3215 3221 "Game.ml" 123 3471 3496
+type(
+  unit
+)
+"Game.ml" 125 3507 3516 "Game.ml" 125 3507 3517
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 125 3507 3519 "Game.ml" 125 3507 3520
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 125 3507 3516 "Game.ml" 125 3507 3521
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 125 3507 3523 "Game.ml" 125 3507 3524
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 125 3507 3516 "Game.ml" 125 3507 3525
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 125 3507 3526 "Game.ml" 125 3507 3527
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 125 3507 3528 "Game.ml" 125 3507 3529
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 125 3507 3531 "Game.ml" 125 3507 3532
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 125 3507 3532 "Game.ml" 125 3507 3533
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 125 3507 3533 "Game.ml" 125 3507 3534
+type(
+  int
+)
+"Game.ml" 125 3507 3534 "Game.ml" 125 3507 3535
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 125 3507 3535 "Game.ml" 125 3507 3537
+type(
+  int
+)
+ident(
+  int_ref i' "Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+)
+"Game.ml" 125 3507 3533 "Game.ml" 125 3507 3537
+type(
+  int
+)
+"Game.ml" 125 3507 3531 "Game.ml" 125 3507 3537
+type(
+  int
+)
+"Game.ml" 125 3507 3528 "Game.ml" 125 3507 3538
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 125 3507 3540 "Game.ml" 125 3507 3541
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 125 3507 3541 "Game.ml" 125 3507 3542
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 125 3507 3542 "Game.ml" 125 3507 3543
+type(
+  int
+)
+"Game.ml" 125 3507 3543 "Game.ml" 125 3507 3544
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 125 3507 3544 "Game.ml" 125 3507 3546
+type(
+  int
+)
+ident(
+  int_ref j' "Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+)
+"Game.ml" 125 3507 3542 "Game.ml" 125 3507 3546
+type(
+  int
+)
+"Game.ml" 125 3507 3540 "Game.ml" 125 3507 3546
+type(
+  int
+)
+"Game.ml" 125 3507 3528 "Game.ml" 125 3507 3547
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 125 3507 3516 "Game.ml" 125 3507 3547
+type(
+  bool
+)
+"Game.ml" 125 3507 3548 "Game.ml" 125 3507 3550
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 125 3507 3551 "Game.ml" 125 3507 3552
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 125 3507 3554 "Game.ml" 125 3507 3555
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 125 3507 3555 "Game.ml" 125 3507 3556
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 125 3507 3556 "Game.ml" 125 3507 3558
+type(
+  int
+)
+ident(
+  int_ref i' "Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+)
+"Game.ml" 125 3507 3554 "Game.ml" 125 3507 3558
+type(
+  int
+)
+"Game.ml" 125 3507 3551 "Game.ml" 125 3507 3559
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 125 3507 3561 "Game.ml" 125 3507 3562
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 125 3507 3562 "Game.ml" 125 3507 3563
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 125 3507 3563 "Game.ml" 125 3507 3565
+type(
+  int
+)
+ident(
+  int_ref j' "Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+)
+"Game.ml" 125 3507 3561 "Game.ml" 125 3507 3565
+type(
+  int
+)
+"Game.ml" 125 3507 3551 "Game.ml" 125 3507 3566
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 125 3507 3567 "Game.ml" 125 3507 3568
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 125 3507 3569 "Game.ml" 125 3507 3570
+type(
+  int
+)
+"Game.ml" 125 3507 3551 "Game.ml" 125 3507 3570
+type(
+  bool
+)
+"Game.ml" 125 3507 3516 "Game.ml" 125 3507 3570
+type(
+  bool
+)
+"Game.ml" 127 3583 3594 "Game.ml" 127 3583 3595
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 127 3583 3597 "Game.ml" 127 3583 3598
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 127 3583 3594 "Game.ml" 127 3583 3599
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 127 3583 3601 "Game.ml" 127 3583 3602
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 127 3583 3594 "Game.ml" 127 3583 3603
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 127 3583 3604 "Game.ml" 127 3583 3605
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 127 3583 3606 "Game.ml" 127 3583 3607
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 127 3583 3609 "Game.ml" 127 3583 3610
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 109 3080 3102 "Game.ml" 109 3080 3103
+)
+"Game.ml" 127 3583 3610 "Game.ml" 127 3583 3611
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 127 3583 3611 "Game.ml" 127 3583 3612
+type(
+  int
+)
+"Game.ml" 127 3583 3612 "Game.ml" 127 3583 3613
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 127 3583 3613 "Game.ml" 127 3583 3615
+type(
+  int
+)
+ident(
+  int_ref i' "Game.ml" 111 3145 3154 "Game.ml" 111 3145 3156
+)
+"Game.ml" 127 3583 3611 "Game.ml" 127 3583 3615
+type(
+  int
+)
+"Game.ml" 127 3583 3609 "Game.ml" 127 3583 3615
+type(
+  int
+)
+"Game.ml" 127 3583 3606 "Game.ml" 127 3583 3616
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 127 3583 3618 "Game.ml" 127 3583 3619
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 109 3080 3104 "Game.ml" 109 3080 3105
+)
+"Game.ml" 127 3583 3619 "Game.ml" 127 3583 3620
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 127 3583 3620 "Game.ml" 127 3583 3621
+type(
+  int
+)
+"Game.ml" 127 3583 3621 "Game.ml" 127 3583 3622
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 127 3583 3622 "Game.ml" 127 3583 3624
+type(
+  int
+)
+ident(
+  int_ref j' "Game.ml" 111 3145 3158 "Game.ml" 111 3145 3160
+)
+"Game.ml" 127 3583 3620 "Game.ml" 127 3583 3624
+type(
+  int
+)
+"Game.ml" 127 3583 3618 "Game.ml" 127 3583 3624
+type(
+  int
+)
+"Game.ml" 127 3583 3606 "Game.ml" 127 3583 3625
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 127 3583 3594 "Game.ml" 127 3583 3625
+type(
+  bool
+)
+"Game.ml" 128 3626 3639 "Game.ml" 128 3626 3640
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 128 3626 3645 "Game.ml" 128 3626 3646
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 128 3626 3644 "Game.ml" 128 3626 3646
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 128 3626 3647 "Game.ml" 128 3626 3648
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 128 3626 3649 "Game.ml" 128 3626 3651
+type(
+  int
+)
+ident(
+  int_ref w3 "Game.ml" 106 3041 3047 "Game.ml" 106 3041 3049
+)
+"Game.ml" 128 3626 3644 "Game.ml" 128 3626 3651
+type(
+  int
+)
+"Game.ml" 128 3626 3639 "Game.ml" 128 3626 3651
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 129 3652 3665 "Game.ml" 129 3652 3666
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 129 3652 3671 "Game.ml" 129 3652 3672
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 129 3652 3670 "Game.ml" 129 3652 3672
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 129 3652 3673 "Game.ml" 129 3652 3674
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 129 3652 3675 "Game.ml" 129 3652 3677
+type(
+  int
+)
+ident(
+  int_ref w2 "Game.ml" 105 3024 3030 "Game.ml" 105 3024 3032
+)
+"Game.ml" 129 3652 3670 "Game.ml" 129 3652 3677
+type(
+  int
+)
+"Game.ml" 129 3652 3665 "Game.ml" 129 3652 3677
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 127 3583 3591 "Game.ml" 129 3652 3677
+type(
+  unit
+)
+"Game.ml" 130 3678 3689 "Game.ml" 130 3678 3690
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 130 3678 3695 "Game.ml" 130 3678 3696
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 130 3678 3694 "Game.ml" 130 3678 3696
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 130 3678 3697 "Game.ml" 130 3678 3698
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 130 3678 3699 "Game.ml" 130 3678 3701
+type(
+  int
+)
+ident(
+  int_ref w1 "Game.ml" 104 3008 3014 "Game.ml" 104 3008 3016
+)
+"Game.ml" 130 3678 3694 "Game.ml" 130 3678 3701
+type(
+  int
+)
+"Game.ml" 130 3678 3689 "Game.ml" 130 3678 3701
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 125 3507 3513 "Game.ml" 130 3678 3701
+type(
+  unit
+)
+"Game.ml" 113 3170 3174 "Game.ml" 130 3678 3701
+type(
+  unit
+)
+"Game.ml" 130 3678 3705 "Game.ml" 130 3678 3706
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 110 3124 3132 "Game.ml" 110 3124 3133
+)
+"Game.ml" 130 3678 3704 "Game.ml" 130 3678 3706
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 113 3170 3174 "Game.ml" 130 3678 3706
+type(
+  int
+)
+"Game.ml" 111 3145 3149 "Game.ml" 130 3678 3706
+type(
+  int
+)
+"Game.ml" 110 3124 3128 "Game.ml" 130 3678 3706
+type(
+  int
+)
+"Game.ml" 109 3080 3106 "Game.ml" 130 3678 3706
+type(
+  int * int -> int
+)
+"Game.ml" 109 3080 3104 "Game.ml" 130 3678 3706
+type(
+  int -> int * int -> int
+)
+"Game.ml" 109 3080 3102 "Game.ml" 130 3678 3706
+type(
+  int -> int -> int * int -> int
+)
+"Game.ml" 132 3714 3720 "Game.ml" 132 3714 3732
+type(
+  int -> int -> int
+)
+ident(
+  def check_vertex "Game.ml" 161 4440 4442 "Game.ml" 179 4778 4789
+)
+"Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+type(
+  int
+)
+ident(
+  def i "Game.ml" 132 3714 3743 "Game.ml" 158 4426 4432
+)
+"Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+type(
+  int
+)
+ident(
+  def j "Game.ml" 132 3714 3753 "Game.ml" 158 4426 4432
+)
+"Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+type(
+  int ref
+)
+ident(
+  def v "Game.ml" 134 3783 3787 "Game.ml" 158 4426 4432
+)
+"Game.ml" 133 3762 3774 "Game.ml" 133 3762 3777
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 133 3762 3778 "Game.ml" 133 3762 3779
+type(
+  int
+)
+"Game.ml" 133 3762 3774 "Game.ml" 133 3762 3779
+type(
+  int ref
+)
+"Game.ml" 134 3783 3790 "Game.ml" 134 3783 3791
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 134 3783 3792 "Game.ml" 134 3783 3794
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"Game.ml" 134 3783 3795 "Game.ml" 134 3783 3796
+type(
+  int
+)
+"Game.ml" 134 3783 3790 "Game.ml" 134 3783 3796
+type(
+  bool
+)
+"Game.ml" 135 3798 3807 "Game.ml" 135 3798 3808
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 135 3798 3813 "Game.ml" 135 3798 3814
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 135 3798 3812 "Game.ml" 135 3798 3814
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 135 3798 3815 "Game.ml" 135 3798 3816
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 135 3798 3817 "Game.ml" 135 3798 3832
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  int_ref check_direction "Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+)
+"Game.ml" 135 3798 3833 "Game.ml" 135 3798 3834
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 135 3798 3835 "Game.ml" 135 3798 3836
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 135 3798 3838 "Game.ml" 135 3798 3839
+type(
+  int
+)
+"Game.ml" 135 3798 3840 "Game.ml" 135 3798 3841
+type(
+  int
+)
+"Game.ml" 135 3798 3838 "Game.ml" 135 3798 3841
+type(
+  int * int
+)
+"Game.ml" 135 3798 3817 "Game.ml" 135 3798 3842
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 135 3798 3812 "Game.ml" 135 3798 3842
+type(
+  int
+)
+"Game.ml" 135 3798 3807 "Game.ml" 135 3798 3842
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 136 3843 3852 "Game.ml" 136 3843 3854
+type(
+  unit
+)
+"Game.ml" 134 3783 3787 "Game.ml" 136 3843 3854
+type(
+  unit
+)
+"Game.ml" 137 3857 3864 "Game.ml" 137 3857 3865
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 137 3857 3866 "Game.ml" 137 3857 3868
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"Game.ml" 137 3857 3869 "Game.ml" 137 3857 3870
+type(
+  int
+)
+"Game.ml" 137 3857 3864 "Game.ml" 137 3857 3870
+type(
+  bool
+)
+"Game.ml" 138 3871 3880 "Game.ml" 138 3871 3881
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 138 3871 3886 "Game.ml" 138 3871 3887
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 138 3871 3885 "Game.ml" 138 3871 3887
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 138 3871 3888 "Game.ml" 138 3871 3889
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 138 3871 3890 "Game.ml" 138 3871 3905
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  int_ref check_direction "Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+)
+"Game.ml" 138 3871 3906 "Game.ml" 138 3871 3907
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 138 3871 3908 "Game.ml" 138 3871 3909
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 138 3871 3911 "Game.ml" 138 3871 3912
+type(
+  int
+)
+"Game.ml" 138 3871 3913 "Game.ml" 138 3871 3914
+type(
+  int
+)
+"Game.ml" 138 3871 3911 "Game.ml" 138 3871 3914
+type(
+  int * int
+)
+"Game.ml" 138 3871 3890 "Game.ml" 138 3871 3915
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 138 3871 3885 "Game.ml" 138 3871 3915
+type(
+  int
+)
+"Game.ml" 138 3871 3880 "Game.ml" 138 3871 3915
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 139 3916 3925 "Game.ml" 139 3916 3927
+type(
+  unit
+)
+"Game.ml" 137 3857 3861 "Game.ml" 139 3916 3927
+type(
+  unit
+)
+"Game.ml" 140 3934 3941 "Game.ml" 140 3934 3942
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 140 3934 3943 "Game.ml" 140 3934 3945
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"Game.ml" 140 3934 3946 "Game.ml" 140 3934 3947
+type(
+  int
+)
+"Game.ml" 140 3934 3941 "Game.ml" 140 3934 3947
+type(
+  bool
+)
+"Game.ml" 140 3934 3948 "Game.ml" 140 3934 3950
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 140 3934 3951 "Game.ml" 140 3934 3952
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 140 3934 3953 "Game.ml" 140 3934 3955
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"Game.ml" 140 3934 3956 "Game.ml" 140 3934 3957
+type(
+  int
+)
+"Game.ml" 140 3934 3951 "Game.ml" 140 3934 3957
+type(
+  bool
+)
+"Game.ml" 140 3934 3941 "Game.ml" 140 3934 3957
+type(
+  bool
+)
+"Game.ml" 141 3958 3967 "Game.ml" 141 3958 3968
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 141 3958 3973 "Game.ml" 141 3958 3974
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 141 3958 3972 "Game.ml" 141 3958 3974
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 141 3958 3975 "Game.ml" 141 3958 3976
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 141 3958 3977 "Game.ml" 141 3958 3992
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  int_ref check_direction "Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+)
+"Game.ml" 141 3958 3993 "Game.ml" 141 3958 3994
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 141 3958 3995 "Game.ml" 141 3958 3996
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 141 3958 3998 "Game.ml" 141 3958 3999
+type(
+  int
+)
+"Game.ml" 141 3958 4000 "Game.ml" 141 3958 4001
+type(
+  int
+)
+"Game.ml" 141 3958 3998 "Game.ml" 141 3958 4001
+type(
+  int * int
+)
+"Game.ml" 141 3958 3977 "Game.ml" 141 3958 4002
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 141 3958 3972 "Game.ml" 141 3958 4002
+type(
+  int
+)
+"Game.ml" 141 3958 3967 "Game.ml" 141 3958 4002
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 142 4003 4012 "Game.ml" 142 4003 4014
+type(
+  unit
+)
+"Game.ml" 140 3934 3938 "Game.ml" 142 4003 4014
+type(
+  unit
+)
+"Game.ml" 143 4017 4024 "Game.ml" 143 4017 4025
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 143 4017 4026 "Game.ml" 143 4017 4028
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"Game.ml" 143 4017 4029 "Game.ml" 143 4017 4030
+type(
+  int
+)
+"Game.ml" 143 4017 4024 "Game.ml" 143 4017 4030
+type(
+  bool
+)
+"Game.ml" 143 4017 4031 "Game.ml" 143 4017 4033
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 143 4017 4034 "Game.ml" 143 4017 4035
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 143 4017 4036 "Game.ml" 143 4017 4038
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Game.ml" 143 4017 4039 "Game.ml" 143 4017 4040
+type(
+  int
+)
+"Game.ml" 143 4017 4034 "Game.ml" 143 4017 4040
+type(
+  bool
+)
+"Game.ml" 143 4017 4024 "Game.ml" 143 4017 4040
+type(
+  bool
+)
+"Game.ml" 144 4041 4050 "Game.ml" 144 4041 4051
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 144 4041 4056 "Game.ml" 144 4041 4057
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 144 4041 4055 "Game.ml" 144 4041 4057
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 144 4041 4058 "Game.ml" 144 4041 4059
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 144 4041 4060 "Game.ml" 144 4041 4075
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  int_ref check_direction "Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+)
+"Game.ml" 144 4041 4076 "Game.ml" 144 4041 4077
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 144 4041 4078 "Game.ml" 144 4041 4079
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 144 4041 4081 "Game.ml" 144 4041 4082
+type(
+  int
+)
+"Game.ml" 144 4041 4083 "Game.ml" 144 4041 4085
+type(
+  int
+)
+"Game.ml" 144 4041 4081 "Game.ml" 144 4041 4085
+type(
+  int * int
+)
+"Game.ml" 144 4041 4060 "Game.ml" 144 4041 4086
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 144 4041 4055 "Game.ml" 144 4041 4086
+type(
+  int
+)
+"Game.ml" 144 4041 4050 "Game.ml" 144 4041 4086
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 145 4087 4096 "Game.ml" 145 4087 4098
+type(
+  unit
+)
+"Game.ml" 143 4017 4021 "Game.ml" 145 4087 4098
+type(
+  unit
+)
+"Game.ml" 146 4102 4109 "Game.ml" 146 4102 4110
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 146 4102 4111 "Game.ml" 146 4102 4113
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Game.ml" 146 4102 4114 "Game.ml" 146 4102 4115
+type(
+  int
+)
+"Game.ml" 146 4102 4109 "Game.ml" 146 4102 4115
+type(
+  bool
+)
+"Game.ml" 147 4117 4126 "Game.ml" 147 4117 4127
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 147 4117 4132 "Game.ml" 147 4117 4133
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 147 4117 4131 "Game.ml" 147 4117 4133
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 147 4117 4134 "Game.ml" 147 4117 4135
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 147 4117 4136 "Game.ml" 147 4117 4151
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  int_ref check_direction "Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+)
+"Game.ml" 147 4117 4152 "Game.ml" 147 4117 4153
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 147 4117 4154 "Game.ml" 147 4117 4155
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 147 4117 4157 "Game.ml" 147 4117 4159
+type(
+  int
+)
+"Game.ml" 147 4117 4160 "Game.ml" 147 4117 4161
+type(
+  int
+)
+"Game.ml" 147 4117 4157 "Game.ml" 147 4117 4161
+type(
+  int * int
+)
+"Game.ml" 147 4117 4136 "Game.ml" 147 4117 4162
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 147 4117 4131 "Game.ml" 147 4117 4162
+type(
+  int
+)
+"Game.ml" 147 4117 4126 "Game.ml" 147 4117 4162
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 148 4163 4172 "Game.ml" 148 4163 4174
+type(
+  unit
+)
+"Game.ml" 146 4102 4106 "Game.ml" 148 4163 4174
+type(
+  unit
+)
+"Game.ml" 149 4177 4184 "Game.ml" 149 4177 4185
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 149 4177 4186 "Game.ml" 149 4177 4188
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Game.ml" 149 4177 4189 "Game.ml" 149 4177 4190
+type(
+  int
+)
+"Game.ml" 149 4177 4184 "Game.ml" 149 4177 4190
+type(
+  bool
+)
+"Game.ml" 150 4191 4200 "Game.ml" 150 4191 4201
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 150 4191 4206 "Game.ml" 150 4191 4207
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 150 4191 4205 "Game.ml" 150 4191 4207
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 150 4191 4208 "Game.ml" 150 4191 4209
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 150 4191 4210 "Game.ml" 150 4191 4225
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  int_ref check_direction "Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+)
+"Game.ml" 150 4191 4226 "Game.ml" 150 4191 4227
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 150 4191 4228 "Game.ml" 150 4191 4229
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 150 4191 4231 "Game.ml" 150 4191 4232
+type(
+  int
+)
+"Game.ml" 150 4191 4233 "Game.ml" 150 4191 4235
+type(
+  int
+)
+"Game.ml" 150 4191 4231 "Game.ml" 150 4191 4235
+type(
+  int * int
+)
+"Game.ml" 150 4191 4210 "Game.ml" 150 4191 4236
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 150 4191 4205 "Game.ml" 150 4191 4236
+type(
+  int
+)
+"Game.ml" 150 4191 4200 "Game.ml" 150 4191 4236
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 151 4237 4246 "Game.ml" 151 4237 4248
+type(
+  unit
+)
+"Game.ml" 149 4177 4181 "Game.ml" 151 4237 4248
+type(
+  unit
+)
+"Game.ml" 152 4255 4262 "Game.ml" 152 4255 4263
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 152 4255 4264 "Game.ml" 152 4255 4266
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Game.ml" 152 4255 4267 "Game.ml" 152 4255 4268
+type(
+  int
+)
+"Game.ml" 152 4255 4262 "Game.ml" 152 4255 4268
+type(
+  bool
+)
+"Game.ml" 152 4255 4269 "Game.ml" 152 4255 4271
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 152 4255 4272 "Game.ml" 152 4255 4273
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 152 4255 4274 "Game.ml" 152 4255 4276
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Game.ml" 152 4255 4277 "Game.ml" 152 4255 4278
+type(
+  int
+)
+"Game.ml" 152 4255 4272 "Game.ml" 152 4255 4278
+type(
+  bool
+)
+"Game.ml" 152 4255 4262 "Game.ml" 152 4255 4278
+type(
+  bool
+)
+"Game.ml" 153 4279 4288 "Game.ml" 153 4279 4289
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 153 4279 4294 "Game.ml" 153 4279 4295
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 153 4279 4293 "Game.ml" 153 4279 4295
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 153 4279 4296 "Game.ml" 153 4279 4297
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 153 4279 4298 "Game.ml" 153 4279 4313
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  int_ref check_direction "Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+)
+"Game.ml" 153 4279 4314 "Game.ml" 153 4279 4315
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 153 4279 4316 "Game.ml" 153 4279 4317
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 153 4279 4319 "Game.ml" 153 4279 4321
+type(
+  int
+)
+"Game.ml" 153 4279 4322 "Game.ml" 153 4279 4324
+type(
+  int
+)
+"Game.ml" 153 4279 4319 "Game.ml" 153 4279 4324
+type(
+  int * int
+)
+"Game.ml" 153 4279 4298 "Game.ml" 153 4279 4325
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 153 4279 4293 "Game.ml" 153 4279 4325
+type(
+  int
+)
+"Game.ml" 153 4279 4288 "Game.ml" 153 4279 4325
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 154 4326 4335 "Game.ml" 154 4326 4337
+type(
+  unit
+)
+"Game.ml" 152 4255 4259 "Game.ml" 154 4326 4337
+type(
+  unit
+)
+"Game.ml" 155 4340 4347 "Game.ml" 155 4340 4348
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 155 4340 4349 "Game.ml" 155 4340 4351
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Game.ml" 155 4340 4352 "Game.ml" 155 4340 4353
+type(
+  int
+)
+"Game.ml" 155 4340 4347 "Game.ml" 155 4340 4353
+type(
+  bool
+)
+"Game.ml" 155 4340 4354 "Game.ml" 155 4340 4356
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"Game.ml" 155 4340 4357 "Game.ml" 155 4340 4358
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 155 4340 4359 "Game.ml" 155 4340 4361
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"Game.ml" 155 4340 4362 "Game.ml" 155 4340 4363
+type(
+  int
+)
+"Game.ml" 155 4340 4357 "Game.ml" 155 4340 4363
+type(
+  bool
+)
+"Game.ml" 155 4340 4347 "Game.ml" 155 4340 4363
+type(
+  bool
+)
+"Game.ml" 156 4365 4374 "Game.ml" 156 4365 4375
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 156 4365 4380 "Game.ml" 156 4365 4381
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 156 4365 4379 "Game.ml" 156 4365 4381
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 156 4365 4382 "Game.ml" 156 4365 4383
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 156 4365 4384 "Game.ml" 156 4365 4399
+type(
+  int -> int -> int * int -> int
+)
+ident(
+  int_ref check_direction "Game.ml" 109 3080 3086 "Game.ml" 109 3080 3101
+)
+"Game.ml" 156 4365 4400 "Game.ml" 156 4365 4401
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 132 3714 3734 "Game.ml" 132 3714 3735
+)
+"Game.ml" 156 4365 4402 "Game.ml" 156 4365 4403
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 132 3714 3744 "Game.ml" 132 3714 3745
+)
+"Game.ml" 156 4365 4405 "Game.ml" 156 4365 4407
+type(
+  int
+)
+"Game.ml" 156 4365 4408 "Game.ml" 156 4365 4409
+type(
+  int
+)
+"Game.ml" 156 4365 4405 "Game.ml" 156 4365 4409
+type(
+  int * int
+)
+"Game.ml" 156 4365 4384 "Game.ml" 156 4365 4410
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 156 4365 4379 "Game.ml" 156 4365 4410
+type(
+  int
+)
+"Game.ml" 156 4365 4374 "Game.ml" 156 4365 4410
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 157 4411 4420 "Game.ml" 157 4411 4422
+type(
+  unit
+)
+"Game.ml" 155 4340 4344 "Game.ml" 157 4411 4422
+type(
+  unit
+)
+"Game.ml" 158 4426 4431 "Game.ml" 158 4426 4432
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 133 3762 3770 "Game.ml" 133 3762 3771
+)
+"Game.ml" 158 4426 4430 "Game.ml" 158 4426 4432
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 155 4340 4344 "Game.ml" 158 4426 4432
+type(
+  int
+)
+"Game.ml" 152 4255 4259 "Game.ml" 158 4426 4432
+type(
+  int
+)
+"Game.ml" 149 4177 4181 "Game.ml" 158 4426 4432
+type(
+  int
+)
+"Game.ml" 146 4102 4106 "Game.ml" 158 4426 4432
+type(
+  int
+)
+"Game.ml" 143 4017 4021 "Game.ml" 158 4426 4432
+type(
+  int
+)
+"Game.ml" 140 3934 3938 "Game.ml" 158 4426 4432
+type(
+  int
+)
+"Game.ml" 137 3857 3861 "Game.ml" 158 4426 4432
+type(
+  int
+)
+"Game.ml" 134 3783 3787 "Game.ml" 158 4426 4432
+type(
+  int
+)
+"Game.ml" 133 3762 3766 "Game.ml" 158 4426 4432
+type(
+  int
+)
+type(
+  int
+)
+"Game.ml" 132 3714 3743 "Game.ml" 158 4426 4432
+type(
+  int -> int
+)
+"Game.ml" 132 3714 3733 "Game.ml" 158 4426 4432
+type(
+  int -> int -> int
+)
+"Game.ml" 161 4440 4446 "Game.ml" 161 4440 4447
+type(
+  int ref
+)
+ident(
+  def v "Game.ml" 163 4460 4462 "Game.ml" 179 4778 4789
+)
+"Game.ml" 161 4440 4450 "Game.ml" 161 4440 4453
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 161 4440 4454 "Game.ml" 161 4440 4455
+type(
+  int
+)
+"Game.ml" 161 4440 4450 "Game.ml" 161 4440 4455
+type(
+  int ref
+)
+"Game.ml" 163 4460 4470 "Game.ml" 163 4460 4471
+type(
+  int
+)
+"Game.ml" 163 4460 4475 "Game.ml" 163 4460 4476
+type(
+  int
+)
+"Game.ml" 164 4480 4492 "Game.ml" 164 4480 4493
+type(
+  int
+)
+"Game.ml" 164 4480 4497 "Game.ml" 164 4480 4498
+type(
+  int
+)
+"Game.ml" 165 4503 4512 "Game.ml" 165 4503 4513
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 165 4503 4515 "Game.ml" 165 4503 4516
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 163 4460 4462 "Game.ml" 172 4678 4684
+)
+"Game.ml" 165 4503 4512 "Game.ml" 165 4503 4517
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 165 4503 4519 "Game.ml" 165 4503 4520
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 164 4480 4484 "Game.ml" 171 4668 4676
+)
+"Game.ml" 165 4503 4512 "Game.ml" 165 4503 4521
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 165 4503 4522 "Game.ml" 165 4503 4523
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 165 4503 4524 "Game.ml" 165 4503 4525
+type(
+  int
+)
+"Game.ml" 165 4503 4512 "Game.ml" 165 4503 4525
+type(
+  bool
+)
+"Game.ml" 166 4527 4538 "Game.ml" 166 4527 4540
+type(
+  unit
+)
+"Game.ml" 168 4553 4564 "Game.ml" 168 4553 4565
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 103 2956 2976 "Game.ml" 103 2956 2977
+)
+"Game.ml" 168 4553 4567 "Game.ml" 168 4553 4568
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 163 4460 4462 "Game.ml" 172 4678 4684
+)
+"Game.ml" 168 4553 4564 "Game.ml" 168 4553 4569
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 168 4553 4571 "Game.ml" 168 4553 4572
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 164 4480 4484 "Game.ml" 171 4668 4676
+)
+"Game.ml" 168 4553 4564 "Game.ml" 168 4553 4573
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 168 4553 4574 "Game.ml" 168 4553 4575
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 168 4553 4576 "Game.ml" 168 4553 4586
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 103 2956 2988 "Game.ml" 103 2956 2998
+)
+"Game.ml" 168 4553 4564 "Game.ml" 168 4553 4586
+type(
+  bool
+)
+"Game.ml" 169 4587 4600 "Game.ml" 169 4587 4601
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 161 4440 4446 "Game.ml" 161 4440 4447
+)
+"Game.ml" 169 4587 4606 "Game.ml" 169 4587 4607
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 161 4440 4446 "Game.ml" 161 4440 4447
+)
+"Game.ml" 169 4587 4605 "Game.ml" 169 4587 4607
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 169 4587 4608 "Game.ml" 169 4587 4609
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 169 4587 4610 "Game.ml" 169 4587 4622
+type(
+  int -> int -> int
+)
+ident(
+  int_ref check_vertex "Game.ml" 132 3714 3720 "Game.ml" 132 3714 3732
+)
+"Game.ml" 169 4587 4623 "Game.ml" 169 4587 4624
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 163 4460 4462 "Game.ml" 172 4678 4684
+)
+"Game.ml" 169 4587 4625 "Game.ml" 169 4587 4626
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 164 4480 4484 "Game.ml" 171 4668 4676
+)
+"Game.ml" 169 4587 4610 "Game.ml" 169 4587 4626
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 169 4587 4605 "Game.ml" 169 4587 4626
+type(
+  int
+)
+"Game.ml" 169 4587 4600 "Game.ml" 169 4587 4626
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 170 4627 4640 "Game.ml" 170 4627 4641
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 161 4440 4446 "Game.ml" 161 4440 4447
+)
+"Game.ml" 170 4627 4646 "Game.ml" 170 4627 4647
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 161 4440 4446 "Game.ml" 161 4440 4447
+)
+"Game.ml" 170 4627 4645 "Game.ml" 170 4627 4647
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 170 4627 4648 "Game.ml" 170 4627 4649
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 170 4627 4650 "Game.ml" 170 4627 4662
+type(
+  int -> int -> int
+)
+ident(
+  int_ref check_vertex "Game.ml" 132 3714 3720 "Game.ml" 132 3714 3732
+)
+"Game.ml" 170 4627 4663 "Game.ml" 170 4627 4664
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 163 4460 4462 "Game.ml" 172 4678 4684
+)
+"Game.ml" 170 4627 4665 "Game.ml" 170 4627 4666
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 164 4480 4484 "Game.ml" 171 4668 4676
+)
+"Game.ml" 170 4627 4650 "Game.ml" 170 4627 4666
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 170 4627 4645 "Game.ml" 170 4627 4666
+type(
+  int
+)
+"Game.ml" 170 4627 4640 "Game.ml" 170 4627 4666
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 168 4553 4561 "Game.ml" 170 4627 4666
+type(
+  unit
+)
+"Game.ml" 165 4503 4509 "Game.ml" 170 4627 4666
+type(
+  unit
+)
+"Game.ml" 164 4480 4484 "Game.ml" 171 4668 4676
+type(
+  unit
+)
+"Game.ml" 163 4460 4462 "Game.ml" 172 4678 4684
+type(
+  unit
+)
+"Game.ml" 173 4687 4693 "Game.ml" 173 4687 4694
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 161 4440 4446 "Game.ml" 161 4440 4447
+)
+"Game.ml" 173 4687 4692 "Game.ml" 173 4687 4694
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 173 4687 4695 "Game.ml" 173 4687 4696
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"Game.ml" 173 4687 4697 "Game.ml" 173 4687 4698
+type(
+  int
+)
+"Game.ml" 173 4687 4699 "Game.ml" 173 4687 4700
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 173 4687 4701 "Game.ml" 173 4687 4706
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 173 4687 4697 "Game.ml" 173 4687 4706
+type(
+  int
+)
+"Game.ml" 173 4687 4707 "Game.ml" 173 4687 4708
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Game.ml" 173 4687 4709 "Game.ml" 173 4687 4710
+type(
+  int
+)
+"Game.ml" 173 4687 4697 "Game.ml" 173 4687 4710
+type(
+  int
+)
+"Game.ml" 173 4687 4692 "Game.ml" 173 4687 4710
+type(
+  bool
+)
+"Game.ml" 174 4711 4718 "Game.ml" 174 4711 4723
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 176 4731 4739 "Game.ml" 176 4731 4740
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 161 4440 4446 "Game.ml" 161 4440 4447
+)
+"Game.ml" 176 4731 4738 "Game.ml" 176 4731 4740
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 176 4731 4741 "Game.ml" 176 4731 4742
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 176 4731 4743 "Game.ml" 176 4731 4746
+type(
+  int
+)
+"Game.ml" 176 4731 4747 "Game.ml" 176 4731 4748
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 176 4731 4749 "Game.ml" 176 4731 4754
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 176 4731 4743 "Game.ml" 176 4731 4754
+type(
+  int
+)
+"Game.ml" 176 4731 4755 "Game.ml" 176 4731 4756
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"Game.ml" 176 4731 4757 "Game.ml" 176 4731 4758
+type(
+  int
+)
+"Game.ml" 176 4731 4743 "Game.ml" 176 4731 4758
+type(
+  int
+)
+"Game.ml" 176 4731 4738 "Game.ml" 176 4731 4758
+type(
+  bool
+)
+"Game.ml" 177 4760 4771 "Game.ml" 177 4760 4776
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 177 4760 4769 "Game.ml" 177 4760 4776
+type(
+  int
+)
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"Game.ml" 179 4778 4788 "Game.ml" 179 4778 4789
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 161 4440 4446 "Game.ml" 161 4440 4447
+)
+"Game.ml" 179 4778 4787 "Game.ml" 179 4778 4789
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 176 4731 4735 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 173 4687 4689 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 163 4460 4462 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 161 4440 4442 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 132 3714 3716 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 109 3080 3082 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 107 3059 3061 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 106 3041 3043 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 105 3024 3026 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 104 3008 3010 "Game.ml" 179 4778 4789
+type(
+  int
+)
+"Game.ml" 103 2956 2987 "Game.ml" 179 4778 4789
+type(
+  int -> int
+)
+"Game.ml" 103 2956 2975 "Game.ml" 179 4778 4789
+type(
+  board -> int -> int
+)
+"Game.ml" 181 4795 4799 "Game.ml" 181 4795 4809
+type(
+  board -> bool
+)
+ident(
+  def board_full "Game.ml" 189 4948 4948 "Game.ml" 1 0 -1
+)
+"Game.ml" 181 4795 4811 "Game.ml" 181 4795 4812
+type(
+  board
+)
+ident(
+  def b "Game.ml" 182 4825 4827 "Game.ml" 187 4934 4944
+)
+"Game.ml" 182 4825 4831 "Game.ml" 182 4825 4832
+type(
+  bool ref
+)
+ident(
+  def v "Game.ml" 183 4847 4849 "Game.ml" 187 4934 4944
+)
+"Game.ml" 182 4825 4835 "Game.ml" 182 4825 4838
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 182 4825 4839 "Game.ml" 182 4825 4843
+type(
+  bool
+)
+"Game.ml" 182 4825 4835 "Game.ml" 182 4825 4843
+type(
+  bool ref
+)
+"Game.ml" 183 4847 4857 "Game.ml" 183 4847 4858
+type(
+  int
+)
+"Game.ml" 183 4847 4862 "Game.ml" 183 4847 4867
+type(
+  int
+)
+ident(
+  int_ref width "Game.ml" 10 155 159 "Game.ml" 10 155 164
+)
+"Game.ml" 183 4847 4868 "Game.ml" 183 4847 4869
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 183 4847 4870 "Game.ml" 183 4847 4871
+type(
+  int
+)
+"Game.ml" 183 4847 4862 "Game.ml" 183 4847 4871
+type(
+  int
+)
+"Game.ml" 184 4876 4883 "Game.ml" 184 4876 4890
+type(
+  board -> c4Move -> bool
+)
+ident(
+  int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
+)
+"Game.ml" 184 4876 4891 "Game.ml" 184 4876 4892
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 181 4795 4811 "Game.ml" 181 4795 4812
+)
+"Game.ml" 184 4876 4894 "Game.ml" 184 4876 4895
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 183 4847 4849 "Game.ml" 187 4934 4940
+)
+"Game.ml" 184 4876 4897 "Game.ml" 184 4876 4898
+type(
+  int
+)
+"Game.ml" 184 4876 4894 "Game.ml" 184 4876 4898
+type(
+  c4Move
+)
+"Game.ml" 184 4876 4883 "Game.ml" 184 4876 4899
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 185 4901 4910 "Game.ml" 185 4901 4911
+type(
+  bool ref
+)
+ident(
+  int_ref v "Game.ml" 182 4825 4831 "Game.ml" 182 4825 4832
+)
+"Game.ml" 185 4901 4915 "Game.ml" 185 4901 4920
+type(
+  bool
+)
+"Game.ml" 185 4901 4910 "Game.ml" 185 4901 4920
+type(
+  unit
+)
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 186 4922 4931 "Game.ml" 186 4922 4933
+type(
+  unit
+)
+"Game.ml" 184 4876 4880 "Game.ml" 186 4922 4933
+type(
+  unit
+)
+"Game.ml" 183 4847 4849 "Game.ml" 187 4934 4940
+type(
+  unit
+)
+"Game.ml" 187 4934 4943 "Game.ml" 187 4934 4944
+type(
+  bool ref
+)
+ident(
+  int_ref v "Game.ml" 182 4825 4831 "Game.ml" 182 4825 4832
+)
+"Game.ml" 187 4934 4942 "Game.ml" 187 4934 4944
+type(
+  bool
+)
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 183 4847 4849 "Game.ml" 187 4934 4944
+type(
+  bool
+)
+"Game.ml" 182 4825 4827 "Game.ml" 187 4934 4944
+type(
+  bool
+)
+"Game.ml" 181 4795 4810 "Game.ml" 187 4934 4944
+type(
+  board -> bool
+)
+"Game.ml" 189 4948 4952 "Game.ml" 189 4948 4969
+type(
+  board -> bool
+)
+ident(
+  def board_almost_full "Game.ml" 196 5165 5165 "Game.ml" 1 0 -1
+)
+"Game.ml" 189 4948 4971 "Game.ml" 189 4948 4972
+type(
+  board
+)
+ident(
+  def b "Game.ml" 190 4985 4987 "Game.ml" 194 5155 5163
+)
+"Game.ml" 190 4985 4991 "Game.ml" 190 4985 4992
+type(
+  int array -> int -> int
+)
+ident(
+  def f "Game.ml" 193 5109 5111 "Game.ml" 194 5155 5163
+)
+"Game.ml" 190 4985 4994 "Game.ml" 190 4985 4995
+type(
+  int array
+)
+ident(
+  def a "Game.ml" 190 4985 5009 "Game.ml" 191 5028 5101
+)
+"Game.ml" 190 4985 5010 "Game.ml" 190 4985 5011
+type(
+  int
+)
+ident(
+  def x "Game.ml" 190 4985 5019 "Game.ml" 191 5028 5101
+)
+"Game.ml" 191 5028 5032 "Game.ml" 191 5028 5048
+type(
+  int array -> f:(int -> int -> int) -> init:int -> int
+)
+ident(
+  ext_ref Core.Std.Array.fold_right
+)
+"Game.ml" 191 5028 5057 "Game.ml" 191 5028 5058
+type(
+  int
+)
+ident(
+  def t "Game.ml" 191 5028 5059 "Game.ml" 191 5028 5090
+)
+"Game.ml" 191 5028 5059 "Game.ml" 191 5028 5060
+type(
+  int
+)
+ident(
+  def n "Game.ml" 191 5028 5064 "Game.ml" 191 5028 5090
+)
+"Game.ml" 191 5028 5067 "Game.ml" 191 5028 5068
+type(
+  int
+)
+ident(
+  int_ref t "Game.ml" 191 5028 5057 "Game.ml" 191 5028 5058
+)
+"Game.ml" 191 5028 5069 "Game.ml" 191 5028 5070
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 191 5028 5071 "Game.ml" 191 5028 5072
+type(
+  int
+)
+"Game.ml" 191 5028 5067 "Game.ml" 191 5028 5072
+type(
+  bool
+)
+"Game.ml" 191 5028 5078 "Game.ml" 191 5028 5079
+type(
+  int
+)
+ident(
+  int_ref n "Game.ml" 191 5028 5059 "Game.ml" 191 5028 5060
+)
+"Game.ml" 191 5028 5080 "Game.ml" 191 5028 5081
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 191 5028 5082 "Game.ml" 191 5028 5083
+type(
+  int
+)
+"Game.ml" 191 5028 5078 "Game.ml" 191 5028 5083
+type(
+  int
+)
+"Game.ml" 191 5028 5089 "Game.ml" 191 5028 5090
+type(
+  int
+)
+ident(
+  int_ref n "Game.ml" 191 5028 5059 "Game.ml" 191 5028 5060
+)
+"Game.ml" 191 5028 5064 "Game.ml" 191 5028 5090
+type(
+  int
+)
+"Game.ml" 191 5028 5059 "Game.ml" 191 5028 5090
+type(
+  int -> int
+)
+"Game.ml" 191 5028 5057 "Game.ml" 191 5028 5090
+type(
+  int -> int -> int
+)
+"Game.ml" 191 5028 5092 "Game.ml" 191 5028 5093
+type(
+  int array
+)
+ident(
+  int_ref a "Game.ml" 190 4985 4994 "Game.ml" 190 4985 4995
+)
+"Game.ml" 191 5028 5100 "Game.ml" 191 5028 5101
+type(
+  int
+)
+"Game.ml" 191 5028 5032 "Game.ml" 191 5028 5101
+call(
+  tail
+)
+type(
+  int
+)
+type(
+  int
+)
+"Game.ml" 190 4985 5009 "Game.ml" 191 5028 5101
+type(
+  int -> int
+)
+"Game.ml" 190 4985 4993 "Game.ml" 191 5028 5101
+type(
+  int array -> int -> int
+)
+"Game.ml" 193 5109 5115 "Game.ml" 193 5109 5117
+type(
+  int
+)
+ident(
+  def vl "Game.ml" 194 5155 5157 "Game.ml" 194 5155 5163
+)
+"Game.ml" 193 5109 5120 "Game.ml" 193 5109 5136
+type(
+  int array array -> f:(int array -> int -> int) -> init:int -> int
+)
+ident(
+  ext_ref Core.Std.Array.fold_right
+)
+"Game.ml" 193 5109 5140 "Game.ml" 193 5109 5141
+type(
+  int array -> int -> int
+)
+ident(
+  int_ref f "Game.ml" 190 4985 4991 "Game.ml" 190 4985 4992
+)
+"Game.ml" 193 5109 5142 "Game.ml" 193 5109 5143
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 189 4948 4971 "Game.ml" 189 4948 4972
+)
+"Game.ml" 193 5109 5150 "Game.ml" 193 5109 5151
+type(
+  int
+)
+"Game.ml" 193 5109 5120 "Game.ml" 193 5109 5151
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 194 5155 5157 "Game.ml" 194 5155 5159
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 193 5109 5115 "Game.ml" 193 5109 5117
+)
+"Game.ml" 194 5155 5160 "Game.ml" 194 5155 5161
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 194 5155 5162 "Game.ml" 194 5155 5163
+type(
+  int
+)
+"Game.ml" 194 5155 5157 "Game.ml" 194 5155 5163
+type(
+  bool
+)
+"Game.ml" 193 5109 5111 "Game.ml" 194 5155 5163
+type(
+  bool
+)
+"Game.ml" 190 4985 4987 "Game.ml" 194 5155 5163
+type(
+  bool
+)
+"Game.ml" 189 4948 4970 "Game.ml" 194 5155 5163
+type(
+  board -> bool
+)
+"Game.ml" 196 5165 5186 "Game.ml" 196 5165 5187
+type(
+  board
+)
+"Game.ml" 196 5165 5198 "Game.ml" 196 5165 5202
+type(
+  int
+)
+"Game.ml" 198 5229 5248 "Game.ml" 198 5229 5249
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 196 5165 5186 "Game.ml" 196 5165 5187
+)
+"Game.ml" 198 5229 5250 "Game.ml" 198 5229 5254
+type(
+  int
+)
+ident(
+  int_ref nump "Game.ml" 196 5165 5198 "Game.ml" 196 5165 5202
+)
+"Game.ml" 199 5256 5268 "Game.ml" 199 5256 5272
+type(
+  int
+)
+ident(
+  int_ref nump "Game.ml" 196 5165 5198 "Game.ml" 196 5165 5202
+)
+"Game.ml" 201 5276 5300 "Game.ml" 201 5276 5311
+type(
+  string
+)
+"Game.ml" 201 5276 5312 "Game.ml" 201 5276 5313
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"Game.ml" 201 5276 5315 "Game.ml" 201 5276 5328
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"Game.ml" 201 5276 5329 "Game.ml" 201 5276 5332
+type(
+  int
+)
+ident(
+  ext_ref num
+)
+"Game.ml" 201 5276 5315 "Game.ml" 201 5276 5332
+call(
+  stack
+)
+type(
+  string
+)
+"Game.ml" 201 5276 5300 "Game.ml" 201 5276 5333
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"Game.ml" 201 5276 5278 "Game.ml" 201 5276 5333
+type(
+  < next_move : board -> c4Move; player_name : string; .. > -> string
+)
+"Game.ml" 202 5334 5355 "Game.ml" 202 5334 5357
+type(
+  board
+)
+ident(
+  def bd "Game.ml" 203 5369 5371 "Game.ml" 267 7313 7323
+)
+"Game.ml" 203 5369 5379 "Game.ml" 203 5369 5386
+type(
+  board -> int -> int -> int * int
+)
+ident(
+  def minimax "Game.ml" 203 5369 5371 "Game.ml" 267 7313 7323
+)
+"Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+type(
+  board
+)
+ident(
+  def b "Game.ml" 203 5369 5399 "Game.ml" 264 7225 7259
+)
+"Game.ml" 203 5369 5400 "Game.ml" 203 5369 5401
+type(
+  int
+)
+ident(
+  def d "Game.ml" 203 5369 5409 "Game.ml" 264 7225 7259
+)
+"Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+type(
+  int
+)
+ident(
+  def num_player "Game.ml" 203 5369 5428 "Game.ml" 264 7225 7259
+)
+"Game.ml" 204 5445 5452 "Game.ml" 204 5445 5453
+type(
+  int
+)
+ident(
+  int_ref d "Game.ml" 203 5369 5400 "Game.ml" 203 5369 5401
+)
+"Game.ml" 204 5445 5454 "Game.ml" 204 5445 5455
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 204 5445 5456 "Game.ml" 204 5445 5457
+type(
+  int
+)
+"Game.ml" 204 5445 5452 "Game.ml" 204 5445 5457
+type(
+  bool
+)
+"Game.ml" 204 5445 5458 "Game.ml" 204 5445 5460
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"Game.ml" 204 5445 5461 "Game.ml" 204 5445 5471
+type(
+  board -> bool
+)
+ident(
+  int_ref board_full "Game.ml" 181 4795 4799 "Game.ml" 181 4795 4809
+)
+"Game.ml" 204 5445 5472 "Game.ml" 204 5445 5473
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 204 5445 5461 "Game.ml" 204 5445 5473
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 204 5445 5474 "Game.ml" 204 5445 5476
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"Game.ml" 204 5445 5477 "Game.ml" 204 5445 5494
+type(
+  board -> bool
+)
+ident(
+  int_ref board_almost_full "Game.ml" 189 4948 4952 "Game.ml" 189 4948 4969
+)
+"Game.ml" 204 5445 5495 "Game.ml" 204 5445 5496
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 204 5445 5477 "Game.ml" 204 5445 5496
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 204 5445 5461 "Game.ml" 204 5445 5496
+type(
+  bool
+)
+"Game.ml" 204 5445 5452 "Game.ml" 204 5445 5496
+type(
+  bool
+)
+"Game.ml" 206 5507 5516 "Game.ml" 206 5507 5519
+type(
+  int
+)
+ident(
+  ext_ref num
+)
+"Game.ml" 206 5507 5520 "Game.ml" 206 5507 5521
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 206 5507 5522 "Game.ml" 206 5507 5532
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 206 5507 5516 "Game.ml" 206 5507 5532
+type(
+  bool
+)
+"Game.ml" 208 5545 5558 "Game.ml" 208 5545 5559
+type(
+  int ref
+)
+ident(
+  def v "Game.ml" 209 5572 5580 "Game.ml" 219 5894 5921
+)
+"Game.ml" 208 5545 5562 "Game.ml" 208 5545 5565
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 208 5545 5566 "Game.ml" 208 5545 5567
+type(
+  int
+)
+"Game.ml" 208 5545 5562 "Game.ml" 208 5545 5567
+type(
+  int ref
+)
+"Game.ml" 209 5572 5584 "Game.ml" 209 5572 5589
+type(
+  int ref
+)
+ident(
+  def index "Game.ml" 210 5602 5610 "Game.ml" 219 5894 5920
+)
+"Game.ml" 209 5572 5592 "Game.ml" 209 5572 5595
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 209 5572 5596 "Game.ml" 209 5572 5597
+type(
+  int
+)
+"Game.ml" 209 5572 5592 "Game.ml" 209 5572 5597
+type(
+  int ref
+)
+"Game.ml" 210 5602 5618 "Game.ml" 210 5602 5619
+type(
+  int
+)
+"Game.ml" 210 5602 5623 "Game.ml" 210 5602 5624
+type(
+  int
+)
+"Game.ml" 211 5629 5643 "Game.ml" 211 5629 5645
+type(
+  int * int
+)
+ident(
+  def mv "Game.ml" 212 5669 5679 "Game.ml" 218 5876 5893
+)
+"Game.ml" 211 5629 5649 "Game.ml" 211 5629 5650
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 210 5602 5610 "Game.ml" 219 5894 5906
+)
+"Game.ml" 211 5629 5653 "Game.ml" 211 5629 5663
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 211 5629 5649 "Game.ml" 211 5629 5663
+type(
+  int * int
+)
+"Game.ml" 212 5669 5682 "Game.ml" 212 5669 5689
+type(
+  board -> c4Move -> bool
+)
+ident(
+  int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
+)
+"Game.ml" 212 5669 5690 "Game.ml" 212 5669 5691
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 212 5669 5692 "Game.ml" 212 5669 5694
+type(
+  c4Move
+)
+ident(
+  int_ref mv "Game.ml" 211 5629 5643 "Game.ml" 211 5629 5645
+)
+"Game.ml" 212 5669 5682 "Game.ml" 212 5669 5694
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 214 5713 5730 "Game.ml" 214 5713 5732
+type(
+  int
+)
+ident(
+  def vl "Game.ml" 215 5792 5804 "Game.ml" 217 5855 5874
+)
+"Game.ml" 214 5713 5735 "Game.ml" 214 5713 5749
+type(
+  board -> int -> int
+)
+ident(
+  int_ref estimate_value "Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
+)
+"Game.ml" 214 5713 5751 "Game.ml" 214 5713 5771
+type(
+  board -> c4Move -> board
+)
+ident(
+  int_ref not_alter_next_board "Game.ml" 53 1412 1416 "Game.ml" 53 1412 1436
+)
+"Game.ml" 214 5713 5772 "Game.ml" 214 5713 5773
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 214 5713 5774 "Game.ml" 214 5713 5776
+type(
+  c4Move
+)
+ident(
+  int_ref mv "Game.ml" 211 5629 5643 "Game.ml" 211 5629 5645
+)
+"Game.ml" 214 5713 5751 "Game.ml" 214 5713 5776
+call(
+  stack
+)
+type(
+  board
+)
+"Game.ml" 214 5713 5778 "Game.ml" 214 5713 5788
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 214 5713 5735 "Game.ml" 214 5713 5788
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 215 5792 5807 "Game.ml" 215 5792 5809
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 214 5713 5730 "Game.ml" 214 5713 5732
+)
+"Game.ml" 215 5792 5810 "Game.ml" 215 5792 5811
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"Game.ml" 215 5792 5813 "Game.ml" 215 5792 5814
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 208 5545 5558 "Game.ml" 208 5545 5559
+)
+"Game.ml" 215 5792 5812 "Game.ml" 215 5792 5814
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 215 5792 5807 "Game.ml" 215 5792 5814
+type(
+  bool
+)
+"Game.ml" 216 5816 5834 "Game.ml" 216 5816 5835
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 208 5545 5558 "Game.ml" 208 5545 5559
+)
+"Game.ml" 216 5816 5839 "Game.ml" 216 5816 5841
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 214 5713 5730 "Game.ml" 214 5713 5732
+)
+"Game.ml" 216 5816 5834 "Game.ml" 216 5816 5841
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 216 5816 5843 "Game.ml" 216 5816 5848
+type(
+  int ref
+)
+ident(
+  int_ref index "Game.ml" 209 5572 5584 "Game.ml" 209 5572 5589
+)
+"Game.ml" 216 5816 5852 "Game.ml" 216 5816 5853
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 210 5602 5610 "Game.ml" 219 5894 5906
+)
+"Game.ml" 216 5816 5843 "Game.ml" 216 5816 5853
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 216 5816 5834 "Game.ml" 216 5816 5853
+type(
+  unit
+)
+"Game.ml" 217 5855 5872 "Game.ml" 217 5855 5874
+type(
+  unit
+)
+"Game.ml" 215 5792 5804 "Game.ml" 217 5855 5874
+type(
+  unit
+)
+"Game.ml" 214 5713 5726 "Game.ml" 217 5855 5874
+type(
+  unit
+)
+"Game.ml" 218 5876 5891 "Game.ml" 218 5876 5893
+type(
+  unit
+)
+"Game.ml" 212 5669 5679 "Game.ml" 218 5876 5893
+type(
+  unit
+)
+"Game.ml" 211 5629 5639 "Game.ml" 218 5876 5893
+type(
+  unit
+)
+"Game.ml" 210 5602 5610 "Game.ml" 219 5894 5906
+type(
+  unit
+)
+"Game.ml" 219 5894 5911 "Game.ml" 219 5894 5916
+type(
+  int ref
+)
+ident(
+  int_ref index "Game.ml" 209 5572 5584 "Game.ml" 209 5572 5589
+)
+"Game.ml" 219 5894 5910 "Game.ml" 219 5894 5916
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 219 5894 5919 "Game.ml" 219 5894 5920
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 208 5545 5558 "Game.ml" 208 5545 5559
+)
+"Game.ml" 219 5894 5918 "Game.ml" 219 5894 5920
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 219 5894 5910 "Game.ml" 219 5894 5920
+type(
+  int * int
+)
+"Game.ml" 210 5602 5610 "Game.ml" 219 5894 5920
+type(
+  int * int
+)
+"Game.ml" 209 5572 5580 "Game.ml" 219 5894 5921
+type(
+  int * int
+)
+"Game.ml" 208 5545 5554 "Game.ml" 219 5894 5921
+type(
+  int * int
+)
+"Game.ml" 221 5935 5948 "Game.ml" 221 5935 5949
+type(
+  int ref
+)
+ident(
+  def v "Game.ml" 222 5962 5970 "Game.ml" 232 6284 6311
+)
+"Game.ml" 221 5935 5952 "Game.ml" 221 5935 5955
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 221 5935 5956 "Game.ml" 221 5935 5957
+type(
+  int
+)
+"Game.ml" 221 5935 5952 "Game.ml" 221 5935 5957
+type(
+  int ref
+)
+"Game.ml" 222 5962 5974 "Game.ml" 222 5962 5979
+type(
+  int ref
+)
+ident(
+  def index "Game.ml" 223 5992 6000 "Game.ml" 232 6284 6310
+)
+"Game.ml" 222 5962 5982 "Game.ml" 222 5962 5985
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 222 5962 5986 "Game.ml" 222 5962 5987
+type(
+  int
+)
+"Game.ml" 222 5962 5982 "Game.ml" 222 5962 5987
+type(
+  int ref
+)
+"Game.ml" 223 5992 6008 "Game.ml" 223 5992 6009
+type(
+  int
+)
+"Game.ml" 223 5992 6013 "Game.ml" 223 5992 6014
+type(
+  int
+)
+"Game.ml" 224 6019 6033 "Game.ml" 224 6019 6035
+type(
+  int * int
+)
+ident(
+  def mv "Game.ml" 225 6059 6069 "Game.ml" 231 6266 6283
+)
+"Game.ml" 224 6019 6039 "Game.ml" 224 6019 6040
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 223 5992 6000 "Game.ml" 232 6284 6296
+)
+"Game.ml" 224 6019 6043 "Game.ml" 224 6019 6053
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 224 6019 6039 "Game.ml" 224 6019 6053
+type(
+  int * int
+)
+"Game.ml" 225 6059 6072 "Game.ml" 225 6059 6079
+type(
+  board -> c4Move -> bool
+)
+ident(
+  int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
+)
+"Game.ml" 225 6059 6080 "Game.ml" 225 6059 6081
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 225 6059 6082 "Game.ml" 225 6059 6084
+type(
+  c4Move
+)
+ident(
+  int_ref mv "Game.ml" 224 6019 6033 "Game.ml" 224 6019 6035
+)
+"Game.ml" 225 6059 6072 "Game.ml" 225 6059 6084
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 227 6103 6120 "Game.ml" 227 6103 6122
+type(
+  int
+)
+ident(
+  def vl "Game.ml" 228 6182 6194 "Game.ml" 230 6245 6264
+)
+"Game.ml" 227 6103 6125 "Game.ml" 227 6103 6139
+type(
+  board -> int -> int
+)
+ident(
+  int_ref estimate_value "Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
+)
+"Game.ml" 227 6103 6141 "Game.ml" 227 6103 6161
+type(
+  board -> c4Move -> board
+)
+ident(
+  int_ref not_alter_next_board "Game.ml" 53 1412 1416 "Game.ml" 53 1412 1436
+)
+"Game.ml" 227 6103 6162 "Game.ml" 227 6103 6163
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 227 6103 6164 "Game.ml" 227 6103 6166
+type(
+  c4Move
+)
+ident(
+  int_ref mv "Game.ml" 224 6019 6033 "Game.ml" 224 6019 6035
+)
+"Game.ml" 227 6103 6141 "Game.ml" 227 6103 6166
+call(
+  stack
+)
+type(
+  board
+)
+"Game.ml" 227 6103 6168 "Game.ml" 227 6103 6178
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 227 6103 6125 "Game.ml" 227 6103 6178
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 228 6182 6197 "Game.ml" 228 6182 6199
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 227 6103 6120 "Game.ml" 227 6103 6122
+)
+"Game.ml" 228 6182 6200 "Game.ml" 228 6182 6201
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 228 6182 6203 "Game.ml" 228 6182 6204
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 221 5935 5948 "Game.ml" 221 5935 5949
+)
+"Game.ml" 228 6182 6202 "Game.ml" 228 6182 6204
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 228 6182 6197 "Game.ml" 228 6182 6204
+type(
+  bool
+)
+"Game.ml" 229 6206 6224 "Game.ml" 229 6206 6225
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 221 5935 5948 "Game.ml" 221 5935 5949
+)
+"Game.ml" 229 6206 6229 "Game.ml" 229 6206 6231
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 227 6103 6120 "Game.ml" 227 6103 6122
+)
+"Game.ml" 229 6206 6224 "Game.ml" 229 6206 6231
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 229 6206 6233 "Game.ml" 229 6206 6238
+type(
+  int ref
+)
+ident(
+  int_ref index "Game.ml" 222 5962 5974 "Game.ml" 222 5962 5979
+)
+"Game.ml" 229 6206 6242 "Game.ml" 229 6206 6243
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 223 5992 6000 "Game.ml" 232 6284 6296
+)
+"Game.ml" 229 6206 6233 "Game.ml" 229 6206 6243
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 229 6206 6224 "Game.ml" 229 6206 6243
+type(
+  unit
+)
+"Game.ml" 230 6245 6262 "Game.ml" 230 6245 6264
+type(
+  unit
+)
+"Game.ml" 228 6182 6194 "Game.ml" 230 6245 6264
+type(
+  unit
+)
+"Game.ml" 227 6103 6116 "Game.ml" 230 6245 6264
+type(
+  unit
+)
+"Game.ml" 231 6266 6281 "Game.ml" 231 6266 6283
+type(
+  unit
+)
+"Game.ml" 225 6059 6069 "Game.ml" 231 6266 6283
+type(
+  unit
+)
+"Game.ml" 224 6019 6029 "Game.ml" 231 6266 6283
+type(
+  unit
+)
+"Game.ml" 223 5992 6000 "Game.ml" 232 6284 6296
+type(
+  unit
+)
+"Game.ml" 232 6284 6301 "Game.ml" 232 6284 6306
+type(
+  int ref
+)
+ident(
+  int_ref index "Game.ml" 222 5962 5974 "Game.ml" 222 5962 5979
+)
+"Game.ml" 232 6284 6300 "Game.ml" 232 6284 6306
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 232 6284 6309 "Game.ml" 232 6284 6310
+type(
+  int ref
+)
+ident(
+  int_ref v "Game.ml" 221 5935 5948 "Game.ml" 221 5935 5949
+)
+"Game.ml" 232 6284 6308 "Game.ml" 232 6284 6310
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 232 6284 6300 "Game.ml" 232 6284 6310
+type(
+  int * int
+)
+"Game.ml" 223 5992 6000 "Game.ml" 232 6284 6310
+type(
+  int * int
+)
+"Game.ml" 222 5962 5970 "Game.ml" 232 6284 6311
+type(
+  int * int
+)
+"Game.ml" 221 5935 5944 "Game.ml" 232 6284 6311
+type(
+  int * int
+)
+"Game.ml" 206 5507 5513 "Game.ml" 232 6284 6312
+type(
+  int * int
+)
+"Game.ml" 236 6324 6333 "Game.ml" 236 6324 6336
+type(
+  int
+)
+ident(
+  ext_ref num
+)
+"Game.ml" 236 6324 6337 "Game.ml" 236 6324 6338
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 236 6324 6339 "Game.ml" 236 6324 6349
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 236 6324 6333 "Game.ml" 236 6324 6349
+type(
+  bool
+)
+"Game.ml" 238 6362 6375 "Game.ml" 238 6362 6384
+type(
+  int ref
+)
+ident(
+  def bestValue "Game.ml" 239 6403 6411 "Game.ml" 250 6773 6806
+)
+"Game.ml" 238 6362 6387 "Game.ml" 238 6362 6390
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 238 6362 6393 "Game.ml" 238 6362 6398
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 238 6362 6392 "Game.ml" 238 6362 6398
+type(
+  int
+)
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"Game.ml" 238 6362 6387 "Game.ml" 238 6362 6399
+type(
+  int ref
+)
+"Game.ml" 239 6403 6415 "Game.ml" 239 6403 6425
+type(
+  int ref
+)
+ident(
+  def indexValue "Game.ml" 240 6437 6445 "Game.ml" 250 6773 6805
+)
+"Game.ml" 239 6403 6428 "Game.ml" 239 6403 6431
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 239 6403 6432 "Game.ml" 239 6403 6433
+type(
+  int
+)
+"Game.ml" 239 6403 6428 "Game.ml" 239 6403 6433
+type(
+  int ref
+)
+"Game.ml" 240 6437 6453 "Game.ml" 240 6437 6454
+type(
+  int
+)
+"Game.ml" 240 6437 6458 "Game.ml" 240 6437 6459
+type(
+  int
+)
+"Game.ml" 241 6463 6477 "Game.ml" 241 6463 6479
+type(
+  int * int
+)
+ident(
+  def mv "Game.ml" 242 6500 6510 "Game.ml" 248 6741 6758
+)
+"Game.ml" 241 6463 6483 "Game.ml" 241 6463 6484
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 240 6437 6445 "Game.ml" 249 6759 6771
+)
+"Game.ml" 241 6463 6485 "Game.ml" 241 6463 6495
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 241 6463 6483 "Game.ml" 241 6463 6495
+type(
+  int * int
+)
+"Game.ml" 242 6500 6513 "Game.ml" 242 6500 6520
+type(
+  board -> c4Move -> bool
+)
+ident(
+  int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
+)
+"Game.ml" 242 6500 6521 "Game.ml" 242 6500 6522
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 242 6500 6523 "Game.ml" 242 6500 6525
+type(
+  c4Move
+)
+ident(
+  int_ref mv "Game.ml" 241 6463 6477 "Game.ml" 241 6463 6479
+)
+"Game.ml" 242 6500 6513 "Game.ml" 242 6500 6525
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 244 6542 6560 "Game.ml" 244 6542 6561
+type(
+  int
+)
+"Game.ml" 244 6542 6564 "Game.ml" 244 6542 6566
+type(
+  int
+)
+ident(
+  def vl "Game.ml" 245 6636 6648 "Game.ml" 247 6719 6738
+)
+"Game.ml" 244 6542 6560 "Game.ml" 244 6542 6566
+type(
+  int * int
+)
+"Game.ml" 244 6542 6570 "Game.ml" 244 6542 6577
+type(
+  board -> int -> int -> int * int
+)
+ident(
+  int_ref minimax "Game.ml" 203 5369 5379 "Game.ml" 203 5369 5386
+)
+"Game.ml" 244 6542 6579 "Game.ml" 244 6542 6599
+type(
+  board -> c4Move -> board
+)
+ident(
+  int_ref not_alter_next_board "Game.ml" 53 1412 1416 "Game.ml" 53 1412 1436
+)
+"Game.ml" 244 6542 6600 "Game.ml" 244 6542 6601
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 244 6542 6602 "Game.ml" 244 6542 6604
+type(
+  c4Move
+)
+ident(
+  int_ref mv "Game.ml" 241 6463 6477 "Game.ml" 241 6463 6479
+)
+"Game.ml" 244 6542 6579 "Game.ml" 244 6542 6604
+call(
+  stack
+)
+type(
+  board
+)
+"Game.ml" 244 6542 6608 "Game.ml" 244 6542 6609
+type(
+  int
+)
+ident(
+  int_ref d "Game.ml" 203 5369 5400 "Game.ml" 203 5369 5401
+)
+"Game.ml" 244 6542 6610 "Game.ml" 244 6542 6611
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 244 6542 6612 "Game.ml" 244 6542 6613
+type(
+  int
+)
+"Game.ml" 244 6542 6608 "Game.ml" 244 6542 6613
+type(
+  int
+)
+"Game.ml" 244 6542 6616 "Game.ml" 244 6542 6617
+type(
+  int
+)
+"Game.ml" 244 6542 6618 "Game.ml" 244 6542 6619
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 244 6542 6620 "Game.ml" 244 6542 6630
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 244 6542 6616 "Game.ml" 244 6542 6630
+type(
+  int
+)
+"Game.ml" 244 6542 6570 "Game.ml" 244 6542 6631
+call(
+  stack
+)
+type(
+  int * int
+)
+"Game.ml" 245 6636 6651 "Game.ml" 245 6636 6653
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 244 6542 6564 "Game.ml" 244 6542 6566
+)
+"Game.ml" 245 6636 6654 "Game.ml" 245 6636 6655
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"Game.ml" 245 6636 6657 "Game.ml" 245 6636 6666
+type(
+  int ref
+)
+ident(
+  int_ref bestValue "Game.ml" 238 6362 6375 "Game.ml" 238 6362 6384
+)
+"Game.ml" 245 6636 6656 "Game.ml" 245 6636 6666
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 245 6636 6651 "Game.ml" 245 6636 6666
+type(
+  bool
+)
+"Game.ml" 246 6667 6685 "Game.ml" 246 6667 6694
+type(
+  int ref
+)
+ident(
+  int_ref bestValue "Game.ml" 238 6362 6375 "Game.ml" 238 6362 6384
+)
+"Game.ml" 246 6667 6698 "Game.ml" 246 6667 6700
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 244 6542 6564 "Game.ml" 244 6542 6566
+)
+"Game.ml" 246 6667 6685 "Game.ml" 246 6667 6700
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 246 6667 6702 "Game.ml" 246 6667 6712
+type(
+  int ref
+)
+ident(
+  int_ref indexValue "Game.ml" 239 6403 6415 "Game.ml" 239 6403 6425
+)
+"Game.ml" 246 6667 6716 "Game.ml" 246 6667 6717
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 240 6437 6445 "Game.ml" 249 6759 6771
+)
+"Game.ml" 246 6667 6702 "Game.ml" 246 6667 6717
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 246 6667 6685 "Game.ml" 246 6667 6717
+type(
+  unit
+)
+"Game.ml" 247 6719 6736 "Game.ml" 247 6719 6738
+type(
+  unit
+)
+"Game.ml" 245 6636 6648 "Game.ml" 247 6719 6738
+type(
+  unit
+)
+"Game.ml" 244 6542 6555 "Game.ml" 247 6719 6738
+type(
+  unit
+)
+"Game.ml" 248 6741 6756 "Game.ml" 248 6741 6758
+type(
+  unit
+)
+"Game.ml" 242 6500 6510 "Game.ml" 248 6741 6758
+type(
+  unit
+)
+"Game.ml" 241 6463 6473 "Game.ml" 248 6741 6758
+type(
+  unit
+)
+"Game.ml" 240 6437 6445 "Game.ml" 249 6759 6771
+type(
+  unit
+)
+"Game.ml" 250 6773 6783 "Game.ml" 250 6773 6793
+type(
+  int ref
+)
+ident(
+  int_ref indexValue "Game.ml" 239 6403 6415 "Game.ml" 239 6403 6425
+)
+"Game.ml" 250 6773 6782 "Game.ml" 250 6773 6793
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 250 6773 6796 "Game.ml" 250 6773 6805
+type(
+  int ref
+)
+ident(
+  int_ref bestValue "Game.ml" 238 6362 6375 "Game.ml" 238 6362 6384
+)
+"Game.ml" 250 6773 6795 "Game.ml" 250 6773 6805
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 250 6773 6782 "Game.ml" 250 6773 6805
+type(
+  int * int
+)
+"Game.ml" 240 6437 6445 "Game.ml" 250 6773 6805
+type(
+  int * int
+)
+"Game.ml" 239 6403 6411 "Game.ml" 250 6773 6806
+type(
+  int * int
+)
+"Game.ml" 238 6362 6371 "Game.ml" 250 6773 6806
+type(
+  int * int
+)
+"Game.ml" 252 6819 6832 "Game.ml" 252 6819 6841
+type(
+  int ref
+)
+ident(
+  def bestValue "Game.ml" 253 6857 6865 "Game.ml" 264 7225 7258
+)
+"Game.ml" 252 6819 6844 "Game.ml" 252 6819 6847
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 252 6819 6848 "Game.ml" 252 6819 6853
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 252 6819 6844 "Game.ml" 252 6819 6853
+type(
+  int ref
+)
+"Game.ml" 253 6857 6869 "Game.ml" 253 6857 6879
+type(
+  int ref
+)
+ident(
+  def indexValue "Game.ml" 254 6891 6899 "Game.ml" 264 7225 7257
+)
+"Game.ml" 253 6857 6882 "Game.ml" 253 6857 6885
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Game.ml" 253 6857 6886 "Game.ml" 253 6857 6887
+type(
+  int
+)
+"Game.ml" 253 6857 6882 "Game.ml" 253 6857 6887
+type(
+  int ref
+)
+"Game.ml" 254 6891 6907 "Game.ml" 254 6891 6908
+type(
+  int
+)
+"Game.ml" 254 6891 6912 "Game.ml" 254 6891 6913
+type(
+  int
+)
+"Game.ml" 255 6917 6931 "Game.ml" 255 6917 6933
+type(
+  int * int
+)
+ident(
+  def mv "Game.ml" 256 6954 6964 "Game.ml" 262 7193 7210
+)
+"Game.ml" 255 6917 6937 "Game.ml" 255 6917 6938
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 254 6891 6899 "Game.ml" 263 7211 7223
+)
+"Game.ml" 255 6917 6939 "Game.ml" 255 6917 6949
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 255 6917 6937 "Game.ml" 255 6917 6949
+type(
+  int * int
+)
+"Game.ml" 256 6954 6967 "Game.ml" 256 6954 6974
+type(
+  board -> c4Move -> bool
+)
+ident(
+  int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
+)
+"Game.ml" 256 6954 6975 "Game.ml" 256 6954 6976
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 256 6954 6977 "Game.ml" 256 6954 6979
+type(
+  c4Move
+)
+ident(
+  int_ref mv "Game.ml" 255 6917 6931 "Game.ml" 255 6917 6933
+)
+"Game.ml" 256 6954 6967 "Game.ml" 256 6954 6979
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 258 6996 7014 "Game.ml" 258 6996 7015
+type(
+  int
+)
+"Game.ml" 258 6996 7017 "Game.ml" 258 6996 7019
+type(
+  int
+)
+ident(
+  def vl "Game.ml" 259 7088 7100 "Game.ml" 261 7171 7190
+)
+"Game.ml" 258 6996 7014 "Game.ml" 258 6996 7019
+type(
+  int * int
+)
+"Game.ml" 258 6996 7023 "Game.ml" 258 6996 7030
+type(
+  board -> int -> int -> int * int
+)
+ident(
+  int_ref minimax "Game.ml" 203 5369 5379 "Game.ml" 203 5369 5386
+)
+"Game.ml" 258 6996 7032 "Game.ml" 258 6996 7052
+type(
+  board -> c4Move -> board
+)
+ident(
+  int_ref not_alter_next_board "Game.ml" 53 1412 1416 "Game.ml" 53 1412 1436
+)
+"Game.ml" 258 6996 7053 "Game.ml" 258 6996 7054
+type(
+  board
+)
+ident(
+  int_ref b "Game.ml" 203 5369 5388 "Game.ml" 203 5369 5389
+)
+"Game.ml" 258 6996 7055 "Game.ml" 258 6996 7057
+type(
+  c4Move
+)
+ident(
+  int_ref mv "Game.ml" 255 6917 6931 "Game.ml" 255 6917 6933
+)
+"Game.ml" 258 6996 7032 "Game.ml" 258 6996 7057
+call(
+  stack
+)
+type(
+  board
+)
+"Game.ml" 258 6996 7060 "Game.ml" 258 6996 7061
+type(
+  int
+)
+ident(
+  int_ref d "Game.ml" 203 5369 5400 "Game.ml" 203 5369 5401
+)
+"Game.ml" 258 6996 7062 "Game.ml" 258 6996 7063
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 258 6996 7064 "Game.ml" 258 6996 7065
+type(
+  int
+)
+"Game.ml" 258 6996 7060 "Game.ml" 258 6996 7065
+type(
+  int
+)
+"Game.ml" 258 6996 7068 "Game.ml" 258 6996 7069
+type(
+  int
+)
+"Game.ml" 258 6996 7070 "Game.ml" 258 6996 7071
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 258 6996 7072 "Game.ml" 258 6996 7082
+type(
+  int
+)
+ident(
+  int_ref num_player "Game.ml" 203 5369 5410 "Game.ml" 203 5369 5420
+)
+"Game.ml" 258 6996 7068 "Game.ml" 258 6996 7082
+type(
+  int
+)
+"Game.ml" 258 6996 7023 "Game.ml" 258 6996 7083
+call(
+  stack
+)
+type(
+  int * int
+)
+"Game.ml" 259 7088 7103 "Game.ml" 259 7088 7105
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 258 6996 7017 "Game.ml" 258 6996 7019
+)
+"Game.ml" 259 7088 7106 "Game.ml" 259 7088 7107
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"Game.ml" 259 7088 7109 "Game.ml" 259 7088 7118
+type(
+  int ref
+)
+ident(
+  int_ref bestValue "Game.ml" 252 6819 6832 "Game.ml" 252 6819 6841
+)
+"Game.ml" 259 7088 7108 "Game.ml" 259 7088 7118
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 259 7088 7103 "Game.ml" 259 7088 7118
+type(
+  bool
+)
+"Game.ml" 260 7119 7137 "Game.ml" 260 7119 7146
+type(
+  int ref
+)
+ident(
+  int_ref bestValue "Game.ml" 252 6819 6832 "Game.ml" 252 6819 6841
+)
+"Game.ml" 260 7119 7150 "Game.ml" 260 7119 7152
+type(
+  int
+)
+ident(
+  int_ref vl "Game.ml" 258 6996 7017 "Game.ml" 258 6996 7019
+)
+"Game.ml" 260 7119 7137 "Game.ml" 260 7119 7152
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 260 7119 7154 "Game.ml" 260 7119 7164
+type(
+  int ref
+)
+ident(
+  int_ref indexValue "Game.ml" 253 6857 6869 "Game.ml" 253 6857 6879
+)
+"Game.ml" 260 7119 7168 "Game.ml" 260 7119 7169
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 254 6891 6899 "Game.ml" 263 7211 7223
+)
+"Game.ml" 260 7119 7154 "Game.ml" 260 7119 7169
+type(
+  unit
+)
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Game.ml" 260 7119 7137 "Game.ml" 260 7119 7169
+type(
+  unit
+)
+"Game.ml" 261 7171 7188 "Game.ml" 261 7171 7190
+type(
+  unit
+)
+"Game.ml" 259 7088 7100 "Game.ml" 261 7171 7190
+type(
+  unit
+)
+"Game.ml" 258 6996 7009 "Game.ml" 261 7171 7190
+type(
+  unit
+)
+"Game.ml" 262 7193 7208 "Game.ml" 262 7193 7210
+type(
+  unit
+)
+"Game.ml" 256 6954 6964 "Game.ml" 262 7193 7210
+type(
+  unit
+)
+"Game.ml" 255 6917 6927 "Game.ml" 262 7193 7210
+type(
+  unit
+)
+"Game.ml" 254 6891 6899 "Game.ml" 263 7211 7223
+type(
+  unit
+)
+"Game.ml" 264 7225 7235 "Game.ml" 264 7225 7245
+type(
+  int ref
+)
+ident(
+  int_ref indexValue "Game.ml" 253 6857 6869 "Game.ml" 253 6857 6879
+)
+"Game.ml" 264 7225 7234 "Game.ml" 264 7225 7245
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 264 7225 7248 "Game.ml" 264 7225 7257
+type(
+  int ref
+)
+ident(
+  int_ref bestValue "Game.ml" 252 6819 6832 "Game.ml" 252 6819 6841
+)
+"Game.ml" 264 7225 7247 "Game.ml" 264 7225 7257
+type(
+  int
+)
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Game.ml" 264 7225 7234 "Game.ml" 264 7225 7257
+type(
+  int * int
+)
+"Game.ml" 254 6891 6899 "Game.ml" 264 7225 7257
+type(
+  int * int
+)
+"Game.ml" 253 6857 6865 "Game.ml" 264 7225 7258
+type(
+  int * int
+)
+"Game.ml" 252 6819 6828 "Game.ml" 264 7225 7258
+type(
+  int * int
+)
+"Game.ml" 236 6324 6330 "Game.ml" 264 7225 7259
+type(
+  int * int
+)
+"Game.ml" 204 5445 5449 "Game.ml" 264 7225 7259
+type(
+  int * int
+)
+type(
+  int * int
+)
+"Game.ml" 203 5369 5409 "Game.ml" 264 7225 7259
+type(
+  int -> int * int
+)
+"Game.ml" 203 5369 5399 "Game.ml" 264 7225 7259
+type(
+  int -> int -> int * int
+)
+"Game.ml" 203 5369 5387 "Game.ml" 264 7225 7259
+type(
+  board -> int -> int -> int * int
+)
+"Game.ml" 266 7265 7272 "Game.ml" 266 7265 7274
+type(
+  int
+)
+ident(
+  def mv "Game.ml" 267 7313 7316 "Game.ml" 267 7313 7322
+)
+"Game.ml" 266 7265 7276 "Game.ml" 266 7265 7277
+type(
+  int
+)
+"Game.ml" 266 7265 7272 "Game.ml" 266 7265 7277
+type(
+  int * int
+)
+"Game.ml" 266 7265 7281 "Game.ml" 266 7265 7288
+type(
+  board -> int -> int -> int * int
+)
+ident(
+  int_ref minimax "Game.ml" 203 5369 5379 "Game.ml" 203 5369 5386
+)
+"Game.ml" 266 7265 7289 "Game.ml" 266 7265 7291
+type(
+  board
+)
+ident(
+  int_ref bd "Game.ml" 202 5334 5355 "Game.ml" 202 5334 5357
+)
+"Game.ml" 266 7265 7292 "Game.ml" 266 7265 7305
+type(
+  int
+)
+ident(
+  int_ref minimax_depth "Game.ml" 9 133 137 "Game.ml" 9 133 150
+)
+"Game.ml" 266 7265 7306 "Game.ml" 266 7265 7309
+type(
+  int
+)
+ident(
+  ext_ref num
+)
+"Game.ml" 266 7265 7281 "Game.ml" 266 7265 7309
+call(
+  stack
+)
+type(
+  int * int
+)
+"Game.ml" 267 7313 7316 "Game.ml" 267 7313 7318
+type(
+  int
+)
+ident(
+  int_ref mv "Game.ml" 266 7265 7272 "Game.ml" 266 7265 7274
+)
+"Game.ml" 267 7313 7319 "Game.ml" 267 7313 7322
+type(
+  int
+)
+ident(
+  ext_ref num
+)
+"Game.ml" 267 7313 7316 "Game.ml" 267 7313 7322
+type(
+  int * int
+)
+"Game.ml" 266 7265 7267 "Game.ml" 267 7313 7323
+type(
+  int * int
+)
+"Game.ml" 203 5369 5371 "Game.ml" 267 7313 7323
+type(
+  int * int
+)
+"Game.ml" 202 5334 5354 "Game.ml" 267 7313 7323
+type(
+  board -> c4Move
+)
+type(
+  board -> c4Move
+)
+"Game.ml" 202 5334 5336 "Game.ml" 267 7313 7323
+type(
+  (< next_move : board -> c4Move; player_name : string; .. > as 'a) ->
+  board -> c4Move
+)
+"Game.ml" 197 5221 5221 "Game.ml" 314 8686 8689
+type(
+  'a
+)
+"Game.ml" 326 8878 8892 "Game.ml" 326 8878 8899
+type(
+  c4Player
+)
+"Game.ml" 326 8878 8913 "Game.ml" 326 8878 8920
+type(
+  c4Player
+)
+"Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+type(
+  < get_board : board; play : unit -> unit; print_board : unit;
+    switch_player : unit; .. >
+)
+"Game.ml" 331 8976 9007 "Game.ml" 331 8976 9014
+type(
+  c4Player
+)
+ident(
+  int_ref player2 "Game.ml" 326 8878 8913 "Game.ml" 326 8878 8920
+)
+"Game.ml" 333 9016 9046 "Game.ml" 333 9016 9063
+type(
+  dimx:int -> dimy:int -> int -> int array array
+)
+ident(
+  ext_ref Core.Std.Array.make_matrix
+)
+"Game.ml" 333 9016 9070 "Game.ml" 333 9016 9075
+type(
+  int
+)
+ident(
+  int_ref width "Game.ml" 10 155 159 "Game.ml" 10 155 164
+)
+"Game.ml" 333 9016 9082 "Game.ml" 333 9016 9088
+type(
+  int
+)
+ident(
+  int_ref height "Game.ml" 11 169 173 "Game.ml" 11 169 179
+)
+"Game.ml" 333 9016 9089 "Game.ml" 333 9016 9090
+type(
+  int
+)
+"Game.ml" 333 9016 9046 "Game.ml" 333 9016 9090
+call(
+  stack
+)
+type(
+  board
+)
+type(
+  int array array
+)
+"Game.ml" 335 9093 9114 "Game.ml" 335 9093 9119
+type(
+  board
+)
+type(
+  board
+)
+ident(
+  ext_ref board
+)
+"Game.ml" 335 9093 9095 "Game.ml" 335 9093 9119
+type(
+  (< get_board : board; play : unit -> unit; print_board : unit;
+     switch_player : unit; .. >
+   as 'a) ->
+  board
+)
+"Game.ml" 338 9152 9156 "Game.ml" 338 9152 9176
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Graphics.clear_graph
+)
+"Game.ml" 338 9152 9176 "Game.ml" 338 9152 9178
+type(
+  unit
+)
+"Game.ml" 338 9152 9156 "Game.ml" 338 9152 9178
+type(
+  unit
+)
+"Game.ml" 339 9180 9184 "Game.ml" 339 9180 9188
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 339 9180 9184 "Game.ml" 339 9180 9193
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"Game.ml" 339 9180 9193 "Game.ml" 339 9180 9195
+type(
+  unit
+)
+"Game.ml" 339 9180 9184 "Game.ml" 339 9180 9195
+type(
+  unit
+)
+"Game.ml" 340 9197 9207 "Game.ml" 340 9197 9212
+type(
+  board
+)
+ident(
+  ext_ref board
+)
+"Game.ml" 341 9219 9225 "Game.ml" 341 9219 9229
+type(
+  board
+)
+"Game.ml" 341 9219 9233 "Game.ml" 341 9219 9241
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"Game.ml" 341 9219 9242 "Game.ml" 341 9219 9257
+type(
+  string
+)
+"Game.ml" 341 9219 9233 "Game.ml" 341 9219 9257
+call(
+  tail
+)
+type(
+  unit
+)
+"Game.ml" 342 9258 9264 "Game.ml" 342 9258 9265
+type(
+  board
+)
+"Game.ml" 342 9258 9277 "Game.ml" 342 9258 9278
+type(
+  int
+)
+"Game.ml" 342 9258 9283 "Game.ml" 342 9258 9289
+type(
+  int
+)
+ident(
+  int_ref height "Game.ml" 11 169 173 "Game.ml" 11 169 179
+)
+"Game.ml" 342 9258 9289 "Game.ml" 342 9258 9290
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 342 9258 9290 "Game.ml" 342 9258 9291
+type(
+  int
+)
+"Game.ml" 342 9258 9283 "Game.ml" 342 9258 9291
+type(
+  int
+)
+"Game.ml" 343 9296 9310 "Game.ml" 343 9296 9311
+type(
+  int
+)
+"Game.ml" 343 9296 9316 "Game.ml" 343 9296 9321
+type(
+  int
+)
+ident(
+  int_ref width "Game.ml" 10 155 159 "Game.ml" 10 155 164
+)
+"Game.ml" 343 9296 9321 "Game.ml" 343 9296 9322
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Game.ml" 343 9296 9322 "Game.ml" 343 9296 9323
+type(
+  int
+)
+"Game.ml" 343 9296 9316 "Game.ml" 343 9296 9323
+type(
+  int
+)
+"Game.ml" 344 9329 9342 "Game.ml" 344 9329 9347
+type(
+  board
+)
+ident(
+  ext_ref board
+)
+"Game.ml" 344 9329 9349 "Game.ml" 344 9329 9350
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 343 9296 9302 "Game.ml" 349 9639 9648
+)
+"Game.ml" 344 9329 9342 "Game.ml" 344 9329 9351
+type(
+  int array
+)
+type(
+  int array array -> int -> int array
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 344 9329 9353 "Game.ml" 344 9329 9354
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 342 9258 9269 "Game.ml" 350 9650 9659
+)
+"Game.ml" 344 9329 9342 "Game.ml" 344 9329 9355
+type(
+  int
+)
+type(
+  int array -> int -> int
+)
+ident(
+  ext_ref Core.Std.Array.get
+)
+"Game.ml" 345 9361 9370 "Game.ml" 345 9361 9371
+type(
+  int
+)
+"Game.ml" 345 9361 9375 "Game.ml" 345 9361 9379
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 345 9361 9375 "Game.ml" 345 9361 9391
+call(
+  stack
+)
+type(
+  int -> int -> int -> string -> unit
+)
+"Game.ml" 345 9361 9394 "Game.ml" 345 9361 9395
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 343 9296 9302 "Game.ml" 349 9639 9648
+)
+"Game.ml" 345 9361 9396 "Game.ml" 345 9361 9397
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 345 9361 9398 "Game.ml" 345 9361 9401
+type(
+  int
+)
+"Game.ml" 345 9361 9394 "Game.ml" 345 9361 9401
+type(
+  int
+)
+"Game.ml" 345 9361 9402 "Game.ml" 345 9361 9403
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 345 9361 9403 "Game.ml" 345 9361 9405
+type(
+  int
+)
+"Game.ml" 345 9361 9393 "Game.ml" 345 9361 9405
+type(
+  int
+)
+"Game.ml" 345 9361 9409 "Game.ml" 345 9361 9410
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 342 9258 9269 "Game.ml" 350 9650 9659
+)
+"Game.ml" 345 9361 9411 "Game.ml" 345 9361 9412
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 345 9361 9413 "Game.ml" 345 9361 9416
+type(
+  int
+)
+"Game.ml" 345 9361 9409 "Game.ml" 345 9361 9416
+type(
+  int
+)
+"Game.ml" 345 9361 9417 "Game.ml" 345 9361 9418
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 345 9361 9418 "Game.ml" 345 9361 9420
+type(
+  int
+)
+"Game.ml" 345 9361 9408 "Game.ml" 345 9361 9420
+type(
+  int
+)
+"Game.ml" 345 9361 9422 "Game.ml" 345 9361 9436
+type(
+  int
+)
+ident(
+  ext_ref Graphics.black
+)
+"Game.ml" 345 9361 9437 "Game.ml" 345 9361 9439
+type(
+  string
+)
+"Game.ml" 345 9361 9375 "Game.ml" 345 9361 9439
+type(
+  unit
+)
+"Game.ml" 346 9440 9449 "Game.ml" 346 9440 9450
+type(
+  int
+)
+"Game.ml" 346 9440 9454 "Game.ml" 346 9440 9458
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 346 9440 9454 "Game.ml" 346 9440 9470
+call(
+  stack
+)
+type(
+  int -> int -> int -> string -> unit
+)
+"Game.ml" 346 9440 9473 "Game.ml" 346 9440 9474
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 343 9296 9302 "Game.ml" 349 9639 9648
+)
+"Game.ml" 346 9440 9475 "Game.ml" 346 9440 9476
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 346 9440 9477 "Game.ml" 346 9440 9480
+type(
+  int
+)
+"Game.ml" 346 9440 9473 "Game.ml" 346 9440 9480
+type(
+  int
+)
+"Game.ml" 346 9440 9481 "Game.ml" 346 9440 9482
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 346 9440 9482 "Game.ml" 346 9440 9484
+type(
+  int
+)
+"Game.ml" 346 9440 9472 "Game.ml" 346 9440 9484
+type(
+  int
+)
+"Game.ml" 346 9440 9488 "Game.ml" 346 9440 9489
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 342 9258 9269 "Game.ml" 350 9650 9659
+)
+"Game.ml" 346 9440 9490 "Game.ml" 346 9440 9491
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 346 9440 9492 "Game.ml" 346 9440 9495
+type(
+  int
+)
+"Game.ml" 346 9440 9488 "Game.ml" 346 9440 9495
+type(
+  int
+)
+"Game.ml" 346 9440 9496 "Game.ml" 346 9440 9497
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 346 9440 9497 "Game.ml" 346 9440 9499
+type(
+  int
+)
+"Game.ml" 346 9440 9487 "Game.ml" 346 9440 9499
+type(
+  int
+)
+"Game.ml" 346 9440 9501 "Game.ml" 346 9440 9513
+type(
+  int
+)
+ident(
+  ext_ref Graphics.red
+)
+"Game.ml" 346 9440 9514 "Game.ml" 346 9440 9518
+type(
+  string
+)
+"Game.ml" 346 9440 9454 "Game.ml" 346 9440 9518
+type(
+  unit
+)
+"Game.ml" 347 9519 9528 "Game.ml" 347 9519 9529
+type(
+  int
+)
+"Game.ml" 347 9519 9533 "Game.ml" 347 9519 9537
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 347 9519 9533 "Game.ml" 347 9519 9549
+call(
+  stack
+)
+type(
+  int -> int -> int -> string -> unit
+)
+"Game.ml" 347 9519 9552 "Game.ml" 347 9519 9553
+type(
+  int
+)
+ident(
+  int_ref i "Game.ml" 343 9296 9302 "Game.ml" 349 9639 9648
+)
+"Game.ml" 347 9519 9554 "Game.ml" 347 9519 9555
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 347 9519 9556 "Game.ml" 347 9519 9559
+type(
+  int
+)
+"Game.ml" 347 9519 9552 "Game.ml" 347 9519 9559
+type(
+  int
+)
+"Game.ml" 347 9519 9560 "Game.ml" 347 9519 9561
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 347 9519 9561 "Game.ml" 347 9519 9563
+type(
+  int
+)
+"Game.ml" 347 9519 9551 "Game.ml" 347 9519 9563
+type(
+  int
+)
+"Game.ml" 347 9519 9567 "Game.ml" 347 9519 9568
+type(
+  int
+)
+ident(
+  int_ref j "Game.ml" 342 9258 9269 "Game.ml" 350 9650 9659
+)
+"Game.ml" 347 9519 9569 "Game.ml" 347 9519 9570
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 347 9519 9571 "Game.ml" 347 9519 9574
+type(
+  int
+)
+"Game.ml" 347 9519 9567 "Game.ml" 347 9519 9574
+type(
+  int
+)
+"Game.ml" 347 9519 9575 "Game.ml" 347 9519 9576
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"Game.ml" 347 9519 9576 "Game.ml" 347 9519 9578
+type(
+  int
+)
+"Game.ml" 347 9519 9566 "Game.ml" 347 9519 9578
+type(
+  int
+)
+"Game.ml" 347 9519 9580 "Game.ml" 347 9519 9593
+type(
+  int
+)
+ident(
+  ext_ref Graphics.blue
+)
+"Game.ml" 347 9519 9594 "Game.ml" 347 9519 9598
+type(
+  string
+)
+"Game.ml" 347 9519 9533 "Game.ml" 347 9519 9598
+type(
+  unit
+)
+"Game.ml" 348 9599 9608 "Game.ml" 348 9599 9609
+type(
+  int
+)
+"Game.ml" 348 9599 9613 "Game.ml" 348 9599 9621
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"Game.ml" 348 9599 9622 "Game.ml" 348 9599 9637
+type(
+  string
+)
+"Game.ml" 348 9599 9613 "Game.ml" 348 9599 9637
+call(
+  stack
+)
+type(
+  unit
+)
+"Game.ml" 344 9329 9336 "Game.ml" 348 9599 9637
+type(
+  unit
+)
+"Game.ml" 343 9296 9302 "Game.ml" 349 9639 9648
+type(
+  unit
+)
+"Game.ml" 342 9258 9269 "Game.ml" 350 9650 9659
+type(
+  unit
+)
+"Game.ml" 340 9197 9201 "Game.ml" 350 9650 9659
+type(
+  unit
+)
+"Game.ml" 339 9180 9184 "Game.ml" 350 9650 9659
+type(
+  unit
+)
+"Game.ml" 338 9152 9156 "Game.ml" 350 9650 9659
+type(
+  unit
+)
+type(
+  unit
+)
+"Game.ml" 337 9122 9124 "Game.ml" 350 9650 9659
+type(
+  'a -> unit
+)
+"Game.ml" 353 9700 9707 "Game.ml" 353 9700 9721
+type(
+  c4Player
+)
+ident(
+  ext_ref current_player
+)
+"Game.ml" 353 9700 9722 "Game.ml" 353 9700 9723
+type(
+  c4Player -> c4Player -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 353 9700 9724 "Game.ml" 353 9700 9731
+type(
+  c4Player
+)
+ident(
+  int_ref player1 "Game.ml" 326 8878 8892 "Game.ml" 326 8878 8899
+)
+"Game.ml" 353 9700 9707 "Game.ml" 353 9700 9731
+type(
+  bool
+)
+"Game.ml" 353 9700 9755 "Game.ml" 353 9700 9762
+type(
+  c4Player
+)
+ident(
+  int_ref player2 "Game.ml" 326 8878 8913 "Game.ml" 326 8878 8920
+)
+"Game.ml" 353 9700 9737 "Game.ml" 353 9700 9762
+type(
+  unit
+)
+"Game.ml" 353 9700 9786 "Game.ml" 353 9700 9793
+type(
+  c4Player
+)
+ident(
+  int_ref player1 "Game.ml" 326 8878 8892 "Game.ml" 326 8878 8899
+)
+"Game.ml" 353 9700 9768 "Game.ml" 353 9700 9793
+type(
+  unit
+)
+"Game.ml" 353 9700 9704 "Game.ml" 353 9700 9793
+type(
+  unit
+)
+type(
+  unit
+)
+"Game.ml" 352 9668 9670 "Game.ml" 353 9700 9793
+type(
+  'a -> unit
+)
+"Game.ml" 355 9795 9808 "Game.ml" 355 9795 9810
+type(
+  unit
+)
+"Game.ml" 356 9820 9824 "Game.ml" 356 9820 9828
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 356 9820 9824 "Game.ml" 356 9820 9840
+call(
+  stack
+)
+type(
+  unit
+)
+"Game.ml" 357 9842 9846 "Game.ml" 357 9842 9850
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 357 9842 9846 "Game.ml" 357 9842 9855
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"Game.ml" 357 9842 9855 "Game.ml" 357 9842 9857
+type(
+  unit
+)
+"Game.ml" 357 9842 9846 "Game.ml" 357 9842 9857
+type(
+  unit
+)
+"Game.ml" 358 9860 9864 "Game.ml" 358 9860 9882
+type(
+  int -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"Game.ml" 358 9860 9883 "Game.ml" 358 9860 9897
+type(
+  int
+)
+ident(
+  ext_ref Graphics.black
+)
+"Game.ml" 358 9860 9864 "Game.ml" 358 9860 9897
+type(
+  unit
+)
+"Game.ml" 359 9899 9903 "Game.ml" 359 9899 9921
+type(
+  int -> int -> int -> int -> unit
+)
+ident(
+  ext_ref Graphics.fill_rect
+)
+"Game.ml" 359 9899 9922 "Game.ml" 359 9899 9923
+type(
+  int
+)
+"Game.ml" 359 9899 9924 "Game.ml" 359 9899 9927
+type(
+  int
+)
+"Game.ml" 359 9899 9928 "Game.ml" 359 9899 9931
+type(
+  int
+)
+"Game.ml" 359 9899 9932 "Game.ml" 359 9899 9935
+type(
+  int
+)
+"Game.ml" 359 9899 9903 "Game.ml" 359 9899 9935
+call(
+  stack
+)
+type(
+  unit
+)
+"Game.ml" 360 9937 9945 "Game.ml" 360 9937 9959
+type(
+  board -> int -> int
+)
+ident(
+  int_ref estimate_value "Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
+)
+"Game.ml" 360 9937 9960 "Game.ml" 360 9937 9965
+type(
+  board
+)
+ident(
+  ext_ref board
+)
+"Game.ml" 360 9937 9966 "Game.ml" 360 9937 9967
+type(
+  int
+)
+"Game.ml" 360 9937 9945 "Game.ml" 360 9937 9967
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 360 9937 9968 "Game.ml" 360 9937 9969
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 360 9937 9970 "Game.ml" 360 9937 9975
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 360 9937 9945 "Game.ml" 360 9937 9975
+type(
+  bool
+)
+"Game.ml" 360 9937 9977 "Game.ml" 360 9937 9979
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"Game.ml" 360 9937 9981 "Game.ml" 360 9937 9995
+type(
+  board -> int -> int
+)
+ident(
+  int_ref estimate_value "Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
+)
+"Game.ml" 360 9937 9996 "Game.ml" 360 9937 10001
+type(
+  board
+)
+ident(
+  ext_ref board
+)
+"Game.ml" 360 9937 10002 "Game.ml" 360 9937 10003
+type(
+  int
+)
+"Game.ml" 360 9937 9981 "Game.ml" 360 9937 10003
+call(
+  stack
+)
+type(
+  int
+)
+"Game.ml" 360 9937 10004 "Game.ml" 360 9937 10005
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"Game.ml" 360 9937 10007 "Game.ml" 360 9937 10012
+type(
+  int
+)
+ident(
+  int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
+)
+"Game.ml" 360 9937 10013 "Game.ml" 360 9937 10014
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Game.ml" 360 9937 10015 "Game.ml" 360 9937 10017
+type(
+  int
+)
+"Game.ml" 360 9937 10007 "Game.ml" 360 9937 10017
+type(
+  int
+)
+"Game.ml" 360 9937 9981 "Game.ml" 360 9937 10018
+type(
+  bool
+)
+"Game.ml" 360 9937 9944 "Game.ml" 360 9937 10019
+type(
+  bool
+)
+"Game.ml" 362 10030 10040 "Game.ml" 362 10030 10044
+type(
+  string
+)
+ident(
+  def name "Game.ml" 363 10078 10084 "Game.ml" 364 10145 10157
+)
+"Game.ml" 362 10030 10047 "Game.ml" 362 10030 10061
+type(
+  c4Player
+)
+ident(
+  ext_ref current_player
+)
+"Game.ml" 362 10030 10047 "Game.ml" 362 10030 10073
+call(
+  stack
+)
+type(
+  string
+)
+"Game.ml" 363 10078 10084 "Game.ml" 363 10078 10097
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_endline
+)
+"Game.ml" 363 10078 10099 "Game.ml" 363 10078 10117
+type(
+  string
+)
+"Game.ml" 363 10078 10118 "Game.ml" 363 10078 10119
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"Game.ml" 363 10078 10120 "Game.ml" 363 10078 10124
+type(
+  string
+)
+ident(
+  int_ref name "Game.ml" 362 10030 10040 "Game.ml" 362 10030 10044
+)
+"Game.ml" 363 10078 10125 "Game.ml" 363 10078 10126
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"Game.ml" 363 10078 10127 "Game.ml" 363 10078 10141
+type(
+  string
+)
+"Game.ml" 363 10078 10120 "Game.ml" 363 10078 10141
+call(
+  stack
+)
+type(
+  string
+)
+"Game.ml" 363 10078 10099 "Game.ml" 363 10078 10141
+call(
+  stack
+)
+type(
+  string
+)
+"Game.ml" 363 10078 10084 "Game.ml" 363 10078 10142
+call(
+  stack
+)
+type(
+  unit
+)
+"Game.ml" 364 10145 10151 "Game.ml" 364 10145 10155
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"Game.ml" 364 10145 10156 "Game.ml" 364 10145 10157
+type(
+  int
+)
+"Game.ml" 364 10145 10151 "Game.ml" 364 10145 10157
+call(
+  tail
+)
+type(
+  unit
+)
+"Game.ml" 363 10078 10084 "Game.ml" 364 10145 10157
+type(
+  unit
+)
+"Game.ml" 362 10030 10036 "Game.ml" 364 10145 10157
+type(
+  unit
+)
+"Game.ml" 366 10168 10175 "Game.ml" 366 10168 10179
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 366 10168 10175 "Game.ml" 366 10168 10193
+call(
+  stack
+)
+type(
+  unit
+)
+"Game.ml" 367 10195 10202 "Game.ml" 367 10195 10220
+type(
+  int -> unit
+)
+ident(
+  ext_ref Graphics.set_color
+)
+"Game.ml" 367 10195 10221 "Game.ml" 367 10195 10235
+type(
+  int
+)
+ident(
+  ext_ref Graphics.white
+)
+"Game.ml" 367 10195 10202 "Game.ml" 367 10195 10235
+type(
+  unit
+)
+"Game.ml" 368 10237 10244 "Game.ml" 368 10237 10259
+type(
+  int -> int -> unit
+)
+ident(
+  ext_ref Graphics.moveto
+)
+"Game.ml" 368 10237 10260 "Game.ml" 368 10237 10263
+type(
+  int
+)
+"Game.ml" 368 10237 10264 "Game.ml" 368 10237 10267
+type(
+  int
+)
+"Game.ml" 368 10237 10244 "Game.ml" 368 10237 10267
+type(
+  unit
+)
+"Game.ml" 369 10269 10276 "Game.ml" 369 10269 10296
+type(
+  string -> unit
+)
+ident(
+  ext_ref Graphics.draw_string
+)
+"Game.ml" 369 10269 10298 "Game.ml" 369 10269 10312
+type(
+  c4Player
+)
+ident(
+  ext_ref current_player
+)
+"Game.ml" 369 10269 10298 "Game.ml" 369 10269 10324
+call(
+  stack
+)
+type(
+  string
+)
+"Game.ml" 369 10269 10325 "Game.ml" 369 10269 10326
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"Game.ml" 369 10269 10327 "Game.ml" 369 10269 10346
+type(
+  string
+)
+"Game.ml" 369 10269 10298 "Game.ml" 369 10269 10346
+call(
+  stack
+)
+type(
+  string
+)
+"Game.ml" 369 10269 10276 "Game.ml" 369 10269 10347
+type(
+  unit
+)
+"Game.ml" 370 10349 10360 "Game.ml" 370 10349 10364
+type(
+  c4Move
+)
+ident(
+  def move "Game.ml" 371 10412 10419 "Game.ml" 378 10597 10615
+)
+"Game.ml" 370 10349 10367 "Game.ml" 370 10349 10381
+type(
+  c4Player
+)
+ident(
+  ext_ref current_player
+)
+"Game.ml" 370 10349 10367 "Game.ml" 370 10349 10391
+call(
+  stack
+)
+type(
+  board -> c4Move
+)
+"Game.ml" 370 10349 10393 "Game.ml" 370 10349 10397
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 370 10349 10393 "Game.ml" 370 10349 10407
+call(
+  stack
+)
+type(
+  board
+)
+"Game.ml" 370 10349 10367 "Game.ml" 370 10349 10408
+type(
+  c4Move
+)
+"Game.ml" 371 10412 10422 "Game.ml" 371 10412 10429
+type(
+  board -> c4Move -> bool
+)
+ident(
+  int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
+)
+"Game.ml" 371 10412 10430 "Game.ml" 371 10412 10435
+type(
+  board
+)
+ident(
+  ext_ref board
+)
+"Game.ml" 371 10412 10436 "Game.ml" 371 10412 10440
+type(
+  c4Move
+)
+ident(
+  int_ref move "Game.ml" 370 10349 10360 "Game.ml" 370 10349 10364
+)
+"Game.ml" 371 10412 10422 "Game.ml" 371 10412 10440
+call(
+  stack
+)
+type(
+  bool
+)
+"Game.ml" 373 10456 10461 "Game.ml" 373 10456 10467
+type(
+  board -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"Game.ml" 373 10456 10469 "Game.ml" 373 10456 10479
+type(
+  board -> c4Move -> board
+)
+ident(
+  int_ref next_board "Game.ml" 41 1019 1023 "Game.ml" 41 1019 1033
+)
+"Game.ml" 373 10456 10481 "Game.ml" 373 10456 10485
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 373 10456 10481 "Game.ml" 373 10456 10495
+call(
+  stack
+)
+type(
+  board
+)
+"Game.ml" 373 10456 10498 "Game.ml" 373 10456 10502
+type(
+  c4Move
+)
+ident(
+  int_ref move "Game.ml" 370 10349 10360 "Game.ml" 370 10349 10364
+)
+"Game.ml" 373 10456 10469 "Game.ml" 373 10456 10503
+call(
+  stack
+)
+type(
+  board
+)
+"Game.ml" 373 10456 10461 "Game.ml" 373 10456 10504
+type(
+  unit
+)
+"Game.ml" 374 10508 10512 "Game.ml" 374 10508 10516
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 374 10508 10512 "Game.ml" 374 10508 10521
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"Game.ml" 374 10508 10521 "Game.ml" 374 10508 10523
+type(
+  unit
+)
+"Game.ml" 374 10508 10512 "Game.ml" 374 10508 10523
+type(
+  unit
+)
+"Game.ml" 375 10526 10530 "Game.ml" 375 10526 10534
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 375 10526 10530 "Game.ml" 375 10526 10546
+call(
+  stack
+)
+type(
+  unit
+)
+"Game.ml" 376 10548 10552 "Game.ml" 376 10548 10556
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 376 10548 10552 "Game.ml" 376 10548 10561
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"Game.ml" 376 10548 10561 "Game.ml" 376 10548 10563
+type(
+  unit
+)
+"Game.ml" 376 10548 10552 "Game.ml" 376 10548 10563
+type(
+  unit
+)
+"Game.ml" 375 10526 10530 "Game.ml" 376 10548 10563
+type(
+  unit
+)
+"Game.ml" 374 10508 10512 "Game.ml" 376 10548 10563
+type(
+  unit
+)
+"Game.ml" 373 10456 10461 "Game.ml" 376 10548 10563
+type(
+  unit
+)
+"Game.ml" 377 10565 10577 "Game.ml" 377 10565 10581
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 377 10565 10577 "Game.ml" 377 10565 10595
+call(
+  stack
+)
+type(
+  unit
+)
+"Game.ml" 371 10412 10419 "Game.ml" 377 10565 10595
+type(
+  unit
+)
+"Game.ml" 378 10597 10604 "Game.ml" 378 10597 10608
+type(
+  'a
+)
+ident(
+  int_ref self "Game.ml" 327 8943 8951 "Game.ml" 327 8943 8955
+)
+"Game.ml" 378 10597 10604 "Game.ml" 378 10597 10613
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"Game.ml" 378 10597 10613 "Game.ml" 378 10597 10615
+type(
+  unit
+)
+"Game.ml" 378 10597 10604 "Game.ml" 378 10597 10615
+type(
+  unit
+)
+"Game.ml" 371 10412 10419 "Game.ml" 378 10597 10615
+type(
+  unit
+)
+"Game.ml" 370 10349 10356 "Game.ml" 378 10597 10615
+type(
+  unit
+)
+"Game.ml" 369 10269 10276 "Game.ml" 378 10597 10615
+type(
+  unit
+)
+"Game.ml" 368 10237 10244 "Game.ml" 378 10597 10615
+type(
+  unit
+)
+"Game.ml" 367 10195 10202 "Game.ml" 378 10597 10615
+type(
+  unit
+)
+"Game.ml" 366 10168 10175 "Game.ml" 378 10597 10615
+type(
+  unit
+)
+"Game.ml" 360 9937 9941 "Game.ml" 378 10597 10616
+type(
+  unit
+)
+"Game.ml" 359 9899 9903 "Game.ml" 378 10597 10616
+type(
+  unit
+)
+"Game.ml" 358 9860 9864 "Game.ml" 378 10597 10616
+type(
+  unit
+)
+"Game.ml" 357 9842 9846 "Game.ml" 378 10597 10616
+type(
+  unit
+)
+"Game.ml" 356 9820 9824 "Game.ml" 378 10597 10616
+type(
+  unit
+)
+type(
+  unit
+)
+"Game.ml" 355 9795 9808 "Game.ml" 378 10597 10616
+type(
+  unit -> unit
+)
+type(
+  unit -> unit
+)
+"Game.ml" 355 9795 9797 "Game.ml" 378 10597 10616
+type(
+  'a -> unit -> unit
+)
