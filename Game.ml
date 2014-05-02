@@ -131,16 +131,16 @@ let estimate_value (b : board) (num_player : int) =
   in 
   let check_vertex (i : int) (j : int) : int = 
     let v = ref 0 in
-    if i <= 2 
+    if i <= 3 
     then v := !v + check_direction i j (1,0)
     else () ;
-    if j <= 1
+    if j <= 2
     then v := !v + check_direction i j (0,1)
     else () ;    
-    if i <= 2 && j <= 1
+    if i <= 3 && j <= 2
     then v := !v + check_direction i j (1,1)
     else () ;
-    if j >= 3 && i <= 2
+    if j >= 3 && i <= 3
     then v := !v + check_direction i j (1,-1)
     else () ; 
     if i >= 3 
@@ -152,7 +152,7 @@ let estimate_value (b : board) (num_player : int) =
     if i >= 3 && j >= 3
     then v := !v + check_direction i j (-1,-1)
     else () ;
-    if i >= 3 && j <= 1 
+    if i >= 3 && j <= 2 
     then v := !v + check_direction i j (-1,1)
     else () ; 
     !v 
@@ -193,10 +193,10 @@ object
 
   method! player_name = "Computer " ^ (string_of_int num)
   method! next_move (bd : board) =
-  let rec minimax (b : board) (d : int) (max_player : bool) (num_player : int) : (int * int) = 
+  let rec minimax (b : board) (d : int) (num_player : int) : (int * int) = 
     if d = 0 ||  board_full b
     then 
-      if max_player 
+      if num = num_player
       then 
         (let v = ref 0 in 
         let index = ref 0 in 
@@ -226,7 +226,7 @@ object
 
 
     else
-      if max_player
+      if num = num_player
       then 
         (let bestValue = ref (-infty) in
         let indexValue = ref 0 in
@@ -234,7 +234,7 @@ object
           let mv = (i,num_player) in
           if allowed b mv
           then 
-            (let (_ , vl) = minimax (not_alter_next_board b mv ) (d - 1) false (3 - num_player) in 
+            (let (_ , vl) = minimax (not_alter_next_board b mv ) (d - 1) (3 - num_player) in 
             if vl > !bestValue
             then (bestValue := vl; indexValue := i)
             else () )
@@ -248,7 +248,7 @@ object
           let mv = (i,num_player) in
           if allowed b mv
           then 
-            (let (_, vl) = minimax (not_alter_next_board b mv) (d - 1) true (3 - num_player) in 
+            (let (_, vl) = minimax (not_alter_next_board b mv) (d - 1) (3 - num_player) in 
             if vl < !bestValue
             then (bestValue := vl; indexValue := i)
             else () )
@@ -256,7 +256,7 @@ object
         done;
         (!indexValue, !bestValue))
   in
-  let (mv, _) = minimax bd minimax_depth true num in
+  let (mv, _) = minimax bd minimax_depth num in
   (mv,num)
   (*let rec minimax (b : board) (d : int) (num_player : int) : int = 
     if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty || board_full b
