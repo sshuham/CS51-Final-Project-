@@ -6,7 +6,7 @@ let circle_radius = 35
 let piece_height = 100
 let piece_width = 100
 let infty = 30000000
-let minimax_depth = 6
+let minimax_depth = 0
 let width = 7
 let height = 6
 
@@ -187,14 +187,15 @@ let board_full (b : board) =
   done; !v  
 
 
-class minimaxPlayer (b : board) (num : int) : player =
+class minimaxPlayer (b : board) (nump : int) : player =
 object 
-  inherit c4Player b num
-
+  inherit c4Player b nump 
+  val num = nump
+  
   method! player_name = "Computer " ^ (string_of_int num)
   method! next_move (bd : board) =
   let rec minimax (b : board) (d : int) (num_player : int) : (int * int) = 
-    if d = 0 ||  board_full b
+    if d = 0 || board_full b
     then 
       if num = num_player
       then 
@@ -205,7 +206,7 @@ object
           if allowed b mv 
           then  
             (let vl = estimate_value (not_alter_next_board b mv) num_player in
-            if vl > !v 
+            if vl < !v 
             then (v := vl; index := i)
             else ())
           else ()
@@ -218,7 +219,7 @@ object
           if allowed b mv 
           then  
             (let vl = estimate_value (not_alter_next_board b mv) num_player in
-            if vl < !v 
+            if vl > !v 
             then (v := vl; index := i)
             else ())
           else ()
