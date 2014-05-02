@@ -140,7 +140,7 @@ let estimate_value (b : board) (num_player : int) =
     if i <= 3 && j <= 2
     then v := !v + check_direction i j (1,1)
     else () ;
-    if j >= 3 && i <= 3
+    if i <= 3 && j >= 3
     then v := !v + check_direction i j (1,-1)
     else () ; 
     if i >= 3 
@@ -186,6 +186,12 @@ let board_full (b : board) =
     else ()
   done; !v  
 
+let board_almost_full (b : board) = 
+  let f (a : int array) (x : int) : int = 
+    Array.fold_right (fun t n -> if t = 0 then n + 1 else n) a 0 
+  in 
+  let vl = Array.fold_right f b 0 in
+  vl = 1
 
 class minimaxPlayer (b : board) (nump : int) : player =
 object 
@@ -195,7 +201,7 @@ object
   method! player_name = "Computer " ^ (string_of_int num)
   method! next_move (bd : board) =
   let rec minimax (b : board) (d : int) (num_player : int) : (int * int) = 
-    if d = 0 || board_full b
+    if d = 0 || board_full b || board_almost_full b
     then 
       if num = num_player
       then 
