@@ -321,7 +321,7 @@ object
   inherit c4Player b nump 
   val num = nump
   
-  method! plfayer_name = "Computer " ^ (string_of_int num)
+  method! player_name = "Computer " ^ (string_of_int num)
   method! next_move (bd : board) =
   let rec minimax (b : board) (d : int) (num_player : int) : (int * int) = 
     if d = 0 || board_full b || board_almost_full b
@@ -330,7 +330,7 @@ object
       then 
         (let v = ref ~-infty in (* initialize value of root node as worst case scenario for maximizer *)
 	let a = ref ~-infty in (* initialize alpha as best already explored option for maximizer *)
-	let b = ref infty (* initialize beta as best already explored option for minimizer *)
+	let b = ref infty in (* initialize beta as best already explored option for minimizer *)
         let index = ref 0 in 
         for i = 0 to 6 do 
           let mv = (i , num_player) in 
@@ -340,7 +340,7 @@ object
             if v1 > !v (* if value of potential move is greater than current option *)
             then 
 	      (if v1 > !a (* if value of potential move is greater than alpha *)
-	       then v := vl;  a := v1 (* then sets value of a to the value of node *)
+	       then (v := vl;  a := v1) (* then sets value of a to the value of node *)
 	       else v := v1; index := i) (* if value of potential move is less than alpha, it should break here *)
             else ())
           else ()
