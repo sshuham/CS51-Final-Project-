@@ -205,7 +205,7 @@ object
   (* 
    * INITIAL MINIMAX SHIT
    *)
-
+(*
    let rec minimax (b : board) (d : int) (num_player : int) : (int * int) = 
     if d = 0 || board_full b || board_almost_full b 
     then 
@@ -271,7 +271,7 @@ object
   in
   let (mv, _) = minimax bd minimax_depth num in
   (mv,num) 
-
+*)
 
   (* 
    * SOME OTHER MINIMAX STUFF THAT DOES NOT WORK
@@ -329,7 +329,7 @@ object
    * ALPHA-BETA PRUNING 
    *)
 
-(*
+
   let rec alphabeta (brd: board) (d : int) (num_player : int) (alpha : int) (beta : int) : (int * int) = 
     let a = ref alpha in (* initialize alpha as best already explored option for maximizer *)
     let b = ref beta in (* initialize beta as best already explored option for minimizer *)
@@ -413,12 +413,12 @@ object
                 else ()) (* then sets value of a to the value of node *)
               else ()) (* if value of potential move is less than alpha, it should break here *)
           else (); i := !i + 1)
-        done; Printf.printf "%d" (!(indexValue));
+        done;
         (!(indexValue), !b))
   in
   let (mv, _) = alphabeta bd minimax_depth num (-infty) infty in
   (mv,num)
-*)
+
 
 end  
 
