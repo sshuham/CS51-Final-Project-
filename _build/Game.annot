@@ -6614,201 +6614,201 @@ type(
   board
 )
 ident(
-  def bd "Game.ml" 333 8851 8853 "Game.ml" 420 12062 12072
+  def bd "Game.ml" 333 8850 8852 "Game.ml" 420 12025 12035
 )
-"Game.ml" 333 8851 8861 "Game.ml" 333 8851 8870
+"Game.ml" 333 8850 8860 "Game.ml" 333 8850 8869
 type(
   board -> int -> int -> int -> int -> int * int
 )
 ident(
-  def alphabeta "Game.ml" 333 8851 8853 "Game.ml" 420 12062 12072
+  def alphabeta "Game.ml" 333 8850 8852 "Game.ml" 420 12025 12035
 )
-"Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+"Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 type(
   board
 )
 ident(
-  def brd "Game.ml" 333 8851 8884 "Game.ml" 417 11963 11991
+  def brd "Game.ml" 333 8850 8883 "Game.ml" 417 11926 11954
 )
-"Game.ml" 333 8851 8885 "Game.ml" 333 8851 8886
+"Game.ml" 333 8850 8884 "Game.ml" 333 8850 8885
 type(
   int
 )
 ident(
-  def d "Game.ml" 333 8851 8894 "Game.ml" 417 11963 11991
+  def d "Game.ml" 333 8850 8893 "Game.ml" 417 11926 11954
 )
-"Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+"Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 type(
   int
 )
 ident(
-  def num_player "Game.ml" 333 8851 8913 "Game.ml" 417 11963 11991
+  def num_player "Game.ml" 333 8850 8912 "Game.ml" 417 11926 11954
 )
-"Game.ml" 333 8851 8914 "Game.ml" 333 8851 8919
+"Game.ml" 333 8850 8913 "Game.ml" 333 8850 8918
 type(
   int
 )
 ident(
-  def alpha "Game.ml" 333 8851 8927 "Game.ml" 417 11963 11991
+  def alpha "Game.ml" 333 8850 8926 "Game.ml" 417 11926 11954
 )
-"Game.ml" 333 8851 8928 "Game.ml" 333 8851 8932
+"Game.ml" 333 8850 8927 "Game.ml" 333 8850 8931
 type(
   int
 )
 ident(
-  def beta "Game.ml" 333 8851 8940 "Game.ml" 417 11963 11991
+  def beta "Game.ml" 333 8850 8939 "Game.ml" 417 11926 11954
 )
-"Game.ml" 334 8957 8965 "Game.ml" 334 8957 8966
+"Game.ml" 334 8956 8964 "Game.ml" 334 8956 8965
 type(
   int ref
 )
 ident(
-  def a "Game.ml" 335 9051 9055 "Game.ml" 417 11963 11991
+  def a "Game.ml" 335 9050 9054 "Game.ml" 417 11926 11954
 )
-"Game.ml" 334 8957 8969 "Game.ml" 334 8957 8972
+"Game.ml" 334 8956 8968 "Game.ml" 334 8956 8971
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 334 8957 8973 "Game.ml" 334 8957 8978
+"Game.ml" 334 8956 8972 "Game.ml" 334 8956 8977
 type(
   int
 )
 ident(
-  int_ref alpha "Game.ml" 333 8851 8914 "Game.ml" 333 8851 8919
+  int_ref alpha "Game.ml" 333 8850 8913 "Game.ml" 333 8850 8918
 )
-"Game.ml" 334 8957 8969 "Game.ml" 334 8957 8978
+"Game.ml" 334 8956 8968 "Game.ml" 334 8956 8977
 type(
   int ref
 )
-"Game.ml" 335 9051 9059 "Game.ml" 335 9051 9060
+"Game.ml" 335 9050 9058 "Game.ml" 335 9050 9059
 type(
   int ref
 )
 ident(
-  def b "Game.ml" 336 9143 9147 "Game.ml" 417 11963 11991
+  def b "Game.ml" 336 9142 9146 "Game.ml" 417 11926 11954
 )
-"Game.ml" 335 9051 9063 "Game.ml" 335 9051 9066
+"Game.ml" 335 9050 9062 "Game.ml" 335 9050 9065
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 335 9051 9067 "Game.ml" 335 9051 9071
+"Game.ml" 335 9050 9066 "Game.ml" 335 9050 9070
 type(
   int
 )
 ident(
-  int_ref beta "Game.ml" 333 8851 8928 "Game.ml" 333 8851 8932
+  int_ref beta "Game.ml" 333 8850 8927 "Game.ml" 333 8850 8931
 )
-"Game.ml" 335 9051 9063 "Game.ml" 335 9051 9071
+"Game.ml" 335 9050 9062 "Game.ml" 335 9050 9070
 type(
   int ref
 )
-"Game.ml" 336 9143 9150 "Game.ml" 336 9143 9151
+"Game.ml" 336 9142 9149 "Game.ml" 336 9142 9150
 type(
   int
 )
 ident(
-  int_ref d "Game.ml" 333 8851 8885 "Game.ml" 333 8851 8886
+  int_ref d "Game.ml" 333 8850 8884 "Game.ml" 333 8850 8885
 )
-"Game.ml" 336 9143 9152 "Game.ml" 336 9143 9153
+"Game.ml" 336 9142 9151 "Game.ml" 336 9142 9152
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"Game.ml" 336 9143 9154 "Game.ml" 336 9143 9155
+"Game.ml" 336 9142 9153 "Game.ml" 336 9142 9154
 type(
   int
 )
-"Game.ml" 336 9143 9150 "Game.ml" 336 9143 9155
+"Game.ml" 336 9142 9149 "Game.ml" 336 9142 9154
 type(
   bool
 )
-"Game.ml" 336 9143 9156 "Game.ml" 336 9143 9158
+"Game.ml" 336 9142 9155 "Game.ml" 336 9142 9157
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"Game.ml" 336 9143 9159 "Game.ml" 336 9143 9169
+"Game.ml" 336 9142 9158 "Game.ml" 336 9142 9168
 type(
   board -> bool
 )
 ident(
   int_ref board_full "Game.ml" 181 4795 4799 "Game.ml" 181 4795 4809
 )
-"Game.ml" 336 9143 9170 "Game.ml" 336 9143 9173
+"Game.ml" 336 9142 9169 "Game.ml" 336 9142 9172
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 336 9143 9159 "Game.ml" 336 9143 9173
+"Game.ml" 336 9142 9158 "Game.ml" 336 9142 9172
 call(
   stack
 )
 type(
   bool
 )
-"Game.ml" 336 9143 9150 "Game.ml" 336 9143 9173
+"Game.ml" 336 9142 9149 "Game.ml" 336 9142 9172
 type(
   bool
 )
-"Game.ml" 338 9213 9222 "Game.ml" 338 9213 9225
+"Game.ml" 338 9212 9221 "Game.ml" 338 9212 9224
 type(
   int
 )
 ident(
   ext_ref num
 )
-"Game.ml" 338 9213 9226 "Game.ml" 338 9213 9227
+"Game.ml" 338 9212 9225 "Game.ml" 338 9212 9226
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"Game.ml" 338 9213 9228 "Game.ml" 338 9213 9238
+"Game.ml" 338 9212 9227 "Game.ml" 338 9212 9237
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 338 9213 9222 "Game.ml" 338 9213 9238
+"Game.ml" 338 9212 9221 "Game.ml" 338 9212 9237
 type(
   bool
 )
-"Game.ml" 341 9261 9273 "Game.ml" 341 9261 9274
+"Game.ml" 341 9260 9272 "Game.ml" 341 9260 9273
 type(
   int ref
 )
 ident(
-  def v "Game.ml" 342 9293 9301 "Game.ml" 352 9672 9699
+  def v "Game.ml" 342 9292 9300 "Game.ml" 352 9671 9698
 )
-"Game.ml" 341 9261 9277 "Game.ml" 341 9261 9280
+"Game.ml" 341 9260 9276 "Game.ml" 341 9260 9279
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 341 9261 9283 "Game.ml" 341 9261 9288
+"Game.ml" 341 9260 9282 "Game.ml" 341 9260 9287
 type(
   int
 )
 ident(
   int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
 )
-"Game.ml" 341 9261 9282 "Game.ml" 341 9261 9288
+"Game.ml" 341 9260 9281 "Game.ml" 341 9260 9287
 type(
   int
 )
@@ -6818,171 +6818,171 @@ type(
 ident(
   ext_ref Pervasives.( ~- )
 )
-"Game.ml" 341 9261 9277 "Game.ml" 341 9261 9289
+"Game.ml" 341 9260 9276 "Game.ml" 341 9260 9288
 type(
   int ref
 )
-"Game.ml" 342 9293 9305 "Game.ml" 342 9293 9310
+"Game.ml" 342 9292 9304 "Game.ml" 342 9292 9309
 type(
   int ref
 )
 ident(
-  def index "Game.ml" 343 9323 9331 "Game.ml" 352 9672 9698
+  def index "Game.ml" 343 9322 9330 "Game.ml" 352 9671 9697
 )
-"Game.ml" 342 9293 9313 "Game.ml" 342 9293 9316
+"Game.ml" 342 9292 9312 "Game.ml" 342 9292 9315
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 342 9293 9317 "Game.ml" 342 9293 9318
+"Game.ml" 342 9292 9316 "Game.ml" 342 9292 9317
 type(
   int
 )
-"Game.ml" 342 9293 9313 "Game.ml" 342 9293 9318
+"Game.ml" 342 9292 9312 "Game.ml" 342 9292 9317
 type(
   int ref
 )
-"Game.ml" 343 9323 9339 "Game.ml" 343 9323 9340
+"Game.ml" 343 9322 9338 "Game.ml" 343 9322 9339
 type(
   int
 )
-"Game.ml" 343 9323 9344 "Game.ml" 343 9323 9345
+"Game.ml" 343 9322 9343 "Game.ml" 343 9322 9344
 type(
   int
 )
-"Game.ml" 344 9350 9364 "Game.ml" 344 9350 9366
+"Game.ml" 344 9349 9363 "Game.ml" 344 9349 9365
 type(
   int * int
 )
 ident(
-  def mv "Game.ml" 345 9390 9400 "Game.ml" 351 9654 9671
+  def mv "Game.ml" 345 9389 9399 "Game.ml" 351 9653 9670
 )
-"Game.ml" 344 9350 9370 "Game.ml" 344 9350 9371
+"Game.ml" 344 9349 9369 "Game.ml" 344 9349 9370
 type(
   int
 )
 ident(
-  int_ref i "Game.ml" 343 9323 9331 "Game.ml" 352 9672 9684
+  int_ref i "Game.ml" 343 9322 9330 "Game.ml" 352 9671 9683
 )
-"Game.ml" 344 9350 9374 "Game.ml" 344 9350 9384
+"Game.ml" 344 9349 9373 "Game.ml" 344 9349 9383
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 344 9350 9370 "Game.ml" 344 9350 9384
+"Game.ml" 344 9349 9369 "Game.ml" 344 9349 9383
 type(
   int * int
 )
-"Game.ml" 345 9390 9403 "Game.ml" 345 9390 9410
+"Game.ml" 345 9389 9402 "Game.ml" 345 9389 9409
 type(
   board -> c4Move -> bool
 )
 ident(
   int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
 )
-"Game.ml" 345 9390 9411 "Game.ml" 345 9390 9414
+"Game.ml" 345 9389 9410 "Game.ml" 345 9389 9413
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 345 9390 9415 "Game.ml" 345 9390 9417
+"Game.ml" 345 9389 9414 "Game.ml" 345 9389 9416
 type(
   c4Move
 )
 ident(
-  int_ref mv "Game.ml" 344 9350 9364 "Game.ml" 344 9350 9366
+  int_ref mv "Game.ml" 344 9349 9363 "Game.ml" 344 9349 9365
 )
-"Game.ml" 345 9390 9403 "Game.ml" 345 9390 9417
+"Game.ml" 345 9389 9402 "Game.ml" 345 9389 9416
 call(
   stack
 )
 type(
   bool
 )
-"Game.ml" 347 9436 9453 "Game.ml" 347 9436 9455
+"Game.ml" 347 9435 9452 "Game.ml" 347 9435 9454
 type(
   int
 )
 ident(
-  def vl "Game.ml" 348 9507 9519 "Game.ml" 350 9633 9652
+  def vl "Game.ml" 348 9506 9518 "Game.ml" 350 9632 9651
 )
-"Game.ml" 347 9436 9458 "Game.ml" 347 9436 9472
+"Game.ml" 347 9435 9457 "Game.ml" 347 9435 9471
 type(
   board -> int -> int
 )
 ident(
   int_ref estimate_value "Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
 )
-"Game.ml" 347 9436 9474 "Game.ml" 347 9436 9484
+"Game.ml" 347 9435 9473 "Game.ml" 347 9435 9483
 type(
   board -> c4Move -> board
 )
 ident(
   int_ref next_board "Game.ml" 41 1019 1023 "Game.ml" 41 1019 1033
 )
-"Game.ml" 347 9436 9485 "Game.ml" 347 9436 9488
+"Game.ml" 347 9435 9484 "Game.ml" 347 9435 9487
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 347 9436 9489 "Game.ml" 347 9436 9491
+"Game.ml" 347 9435 9488 "Game.ml" 347 9435 9490
 type(
   c4Move
 )
 ident(
-  int_ref mv "Game.ml" 344 9350 9364 "Game.ml" 344 9350 9366
+  int_ref mv "Game.ml" 344 9349 9363 "Game.ml" 344 9349 9365
 )
-"Game.ml" 347 9436 9474 "Game.ml" 347 9436 9491
+"Game.ml" 347 9435 9473 "Game.ml" 347 9435 9490
 call(
   stack
 )
 type(
   board
 )
-"Game.ml" 347 9436 9493 "Game.ml" 347 9436 9503
+"Game.ml" 347 9435 9492 "Game.ml" 347 9435 9502
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 347 9436 9458 "Game.ml" 347 9436 9503
+"Game.ml" 347 9435 9457 "Game.ml" 347 9435 9502
 call(
   stack
 )
 type(
   int
 )
-"Game.ml" 348 9507 9522 "Game.ml" 348 9507 9524
+"Game.ml" 348 9506 9521 "Game.ml" 348 9506 9523
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 347 9436 9453 "Game.ml" 347 9436 9455
+  int_ref vl "Game.ml" 347 9435 9452 "Game.ml" 347 9435 9454
 )
-"Game.ml" 348 9507 9525 "Game.ml" 348 9507 9526
+"Game.ml" 348 9506 9524 "Game.ml" 348 9506 9525
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( > )
 )
-"Game.ml" 348 9507 9528 "Game.ml" 348 9507 9529
+"Game.ml" 348 9506 9527 "Game.ml" 348 9506 9528
 type(
   int ref
 )
 ident(
-  int_ref v "Game.ml" 341 9261 9273 "Game.ml" 341 9261 9274
+  int_ref v "Game.ml" 341 9260 9272 "Game.ml" 341 9260 9273
 )
-"Game.ml" 348 9507 9527 "Game.ml" 348 9507 9529
+"Game.ml" 348 9506 9526 "Game.ml" 348 9506 9528
 type(
   int
 )
@@ -6992,25 +6992,25 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 348 9507 9522 "Game.ml" 348 9507 9529
+"Game.ml" 348 9506 9521 "Game.ml" 348 9506 9528
 type(
   bool
 )
-"Game.ml" 349 9594 9612 "Game.ml" 349 9594 9613
+"Game.ml" 349 9593 9611 "Game.ml" 349 9593 9612
 type(
   int ref
 )
 ident(
-  int_ref v "Game.ml" 341 9261 9273 "Game.ml" 341 9261 9274
+  int_ref v "Game.ml" 341 9260 9272 "Game.ml" 341 9260 9273
 )
-"Game.ml" 349 9594 9617 "Game.ml" 349 9594 9619
+"Game.ml" 349 9593 9616 "Game.ml" 349 9593 9618
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 347 9436 9453 "Game.ml" 347 9436 9455
+  int_ref vl "Game.ml" 347 9435 9452 "Game.ml" 347 9435 9454
 )
-"Game.ml" 349 9594 9612 "Game.ml" 349 9594 9619
+"Game.ml" 349 9593 9611 "Game.ml" 349 9593 9618
 type(
   unit
 )
@@ -7020,21 +7020,21 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 349 9594 9621 "Game.ml" 349 9594 9626
+"Game.ml" 349 9593 9620 "Game.ml" 349 9593 9625
 type(
   int ref
 )
 ident(
-  int_ref index "Game.ml" 342 9293 9305 "Game.ml" 342 9293 9310
+  int_ref index "Game.ml" 342 9292 9304 "Game.ml" 342 9292 9309
 )
-"Game.ml" 349 9594 9630 "Game.ml" 349 9594 9631
+"Game.ml" 349 9593 9629 "Game.ml" 349 9593 9630
 type(
   int
 )
 ident(
-  int_ref i "Game.ml" 343 9323 9331 "Game.ml" 352 9672 9684
+  int_ref i "Game.ml" 343 9322 9330 "Game.ml" 352 9671 9683
 )
-"Game.ml" 349 9594 9621 "Game.ml" 349 9594 9631
+"Game.ml" 349 9593 9620 "Game.ml" 349 9593 9630
 type(
   unit
 )
@@ -7044,46 +7044,46 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 349 9594 9612 "Game.ml" 349 9594 9631
+"Game.ml" 349 9593 9611 "Game.ml" 349 9593 9630
 type(
   unit
 )
-"Game.ml" 350 9633 9650 "Game.ml" 350 9633 9652
+"Game.ml" 350 9632 9649 "Game.ml" 350 9632 9651
 type(
   unit
 )
-"Game.ml" 348 9507 9519 "Game.ml" 350 9633 9652
+"Game.ml" 348 9506 9518 "Game.ml" 350 9632 9651
 type(
   unit
 )
-"Game.ml" 347 9436 9449 "Game.ml" 350 9633 9652
+"Game.ml" 347 9435 9448 "Game.ml" 350 9632 9651
 type(
   unit
 )
-"Game.ml" 351 9654 9669 "Game.ml" 351 9654 9671
+"Game.ml" 351 9653 9668 "Game.ml" 351 9653 9670
 type(
   unit
 )
-"Game.ml" 345 9390 9400 "Game.ml" 351 9654 9671
+"Game.ml" 345 9389 9399 "Game.ml" 351 9653 9670
 type(
   unit
 )
-"Game.ml" 344 9350 9360 "Game.ml" 351 9654 9671
+"Game.ml" 344 9349 9359 "Game.ml" 351 9653 9670
 type(
   unit
 )
-"Game.ml" 343 9323 9331 "Game.ml" 352 9672 9684
+"Game.ml" 343 9322 9330 "Game.ml" 352 9671 9683
 type(
   unit
 )
-"Game.ml" 352 9672 9689 "Game.ml" 352 9672 9694
+"Game.ml" 352 9671 9688 "Game.ml" 352 9671 9693
 type(
   int ref
 )
 ident(
-  int_ref index "Game.ml" 342 9293 9305 "Game.ml" 342 9293 9310
+  int_ref index "Game.ml" 342 9292 9304 "Game.ml" 342 9292 9309
 )
-"Game.ml" 352 9672 9688 "Game.ml" 352 9672 9694
+"Game.ml" 352 9671 9687 "Game.ml" 352 9671 9693
 type(
   int
 )
@@ -7093,14 +7093,14 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 352 9672 9697 "Game.ml" 352 9672 9698
+"Game.ml" 352 9671 9696 "Game.ml" 352 9671 9697
 type(
   int ref
 )
 ident(
-  int_ref v "Game.ml" 341 9261 9273 "Game.ml" 341 9261 9274
+  int_ref v "Game.ml" 341 9260 9272 "Game.ml" 341 9260 9273
 )
-"Game.ml" 352 9672 9696 "Game.ml" 352 9672 9698
+"Game.ml" 352 9671 9695 "Game.ml" 352 9671 9697
 type(
   int
 )
@@ -7110,208 +7110,208 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 352 9672 9688 "Game.ml" 352 9672 9698
+"Game.ml" 352 9671 9687 "Game.ml" 352 9671 9697
 type(
   int * int
 )
-"Game.ml" 343 9323 9331 "Game.ml" 352 9672 9698
+"Game.ml" 343 9322 9330 "Game.ml" 352 9671 9697
 type(
   int * int
 )
-"Game.ml" 342 9293 9301 "Game.ml" 352 9672 9699
+"Game.ml" 342 9292 9300 "Game.ml" 352 9671 9698
 type(
   int * int
 )
-"Game.ml" 341 9261 9269 "Game.ml" 352 9672 9699
+"Game.ml" 341 9260 9268 "Game.ml" 352 9671 9698
 type(
   int * int
 )
-"Game.ml" 354 9751 9764 "Game.ml" 354 9751 9765
+"Game.ml" 354 9750 9763 "Game.ml" 354 9750 9764
 type(
   int ref
 )
 ident(
-  def v "Game.ml" 355 9782 9790 "Game.ml" 365 10098 10125
+  def v "Game.ml" 355 9781 9789 "Game.ml" 365 10097 10124
 )
-"Game.ml" 354 9751 9768 "Game.ml" 354 9751 9771
+"Game.ml" 354 9750 9767 "Game.ml" 354 9750 9770
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 354 9751 9772 "Game.ml" 354 9751 9777
+"Game.ml" 354 9750 9771 "Game.ml" 354 9750 9776
 type(
   int
 )
 ident(
   int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
 )
-"Game.ml" 354 9751 9768 "Game.ml" 354 9751 9777
+"Game.ml" 354 9750 9767 "Game.ml" 354 9750 9776
 type(
   int ref
 )
-"Game.ml" 355 9782 9794 "Game.ml" 355 9782 9799
+"Game.ml" 355 9781 9793 "Game.ml" 355 9781 9798
 type(
   int ref
 )
 ident(
-  def index "Game.ml" 356 9812 9820 "Game.ml" 365 10098 10124
+  def index "Game.ml" 356 9811 9819 "Game.ml" 365 10097 10123
 )
-"Game.ml" 355 9782 9802 "Game.ml" 355 9782 9805
+"Game.ml" 355 9781 9801 "Game.ml" 355 9781 9804
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 355 9782 9806 "Game.ml" 355 9782 9807
+"Game.ml" 355 9781 9805 "Game.ml" 355 9781 9806
 type(
   int
 )
-"Game.ml" 355 9782 9802 "Game.ml" 355 9782 9807
+"Game.ml" 355 9781 9801 "Game.ml" 355 9781 9806
 type(
   int ref
 )
-"Game.ml" 356 9812 9828 "Game.ml" 356 9812 9829
+"Game.ml" 356 9811 9827 "Game.ml" 356 9811 9828
 type(
   int
 )
-"Game.ml" 356 9812 9833 "Game.ml" 356 9812 9834
+"Game.ml" 356 9811 9832 "Game.ml" 356 9811 9833
 type(
   int
 )
-"Game.ml" 357 9839 9853 "Game.ml" 357 9839 9855
+"Game.ml" 357 9838 9852 "Game.ml" 357 9838 9854
 type(
   int * int
 )
 ident(
-  def mv "Game.ml" 358 9879 9889 "Game.ml" 364 10080 10097
+  def mv "Game.ml" 358 9878 9888 "Game.ml" 364 10079 10096
 )
-"Game.ml" 357 9839 9859 "Game.ml" 357 9839 9860
+"Game.ml" 357 9838 9858 "Game.ml" 357 9838 9859
 type(
   int
 )
 ident(
-  int_ref i "Game.ml" 356 9812 9820 "Game.ml" 365 10098 10110
+  int_ref i "Game.ml" 356 9811 9819 "Game.ml" 365 10097 10109
 )
-"Game.ml" 357 9839 9863 "Game.ml" 357 9839 9873
+"Game.ml" 357 9838 9862 "Game.ml" 357 9838 9872
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 357 9839 9859 "Game.ml" 357 9839 9873
+"Game.ml" 357 9838 9858 "Game.ml" 357 9838 9872
 type(
   int * int
 )
-"Game.ml" 358 9879 9892 "Game.ml" 358 9879 9899
+"Game.ml" 358 9878 9891 "Game.ml" 358 9878 9898
 type(
   board -> c4Move -> bool
 )
 ident(
   int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
 )
-"Game.ml" 358 9879 9900 "Game.ml" 358 9879 9903
+"Game.ml" 358 9878 9899 "Game.ml" 358 9878 9902
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 358 9879 9904 "Game.ml" 358 9879 9906
+"Game.ml" 358 9878 9903 "Game.ml" 358 9878 9905
 type(
   c4Move
 )
 ident(
-  int_ref mv "Game.ml" 357 9839 9853 "Game.ml" 357 9839 9855
+  int_ref mv "Game.ml" 357 9838 9852 "Game.ml" 357 9838 9854
 )
-"Game.ml" 358 9879 9892 "Game.ml" 358 9879 9906
+"Game.ml" 358 9878 9891 "Game.ml" 358 9878 9905
 call(
   stack
 )
 type(
   bool
 )
-"Game.ml" 360 9925 9942 "Game.ml" 360 9925 9944
+"Game.ml" 360 9924 9941 "Game.ml" 360 9924 9943
 type(
   int
 )
 ident(
-  def vl "Game.ml" 361 9996 10008 "Game.ml" 363 10059 10078
+  def vl "Game.ml" 361 9995 10007 "Game.ml" 363 10058 10077
 )
-"Game.ml" 360 9925 9947 "Game.ml" 360 9925 9961
+"Game.ml" 360 9924 9946 "Game.ml" 360 9924 9960
 type(
   board -> int -> int
 )
 ident(
   int_ref estimate_value "Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
 )
-"Game.ml" 360 9925 9963 "Game.ml" 360 9925 9973
+"Game.ml" 360 9924 9962 "Game.ml" 360 9924 9972
 type(
   board -> c4Move -> board
 )
 ident(
   int_ref next_board "Game.ml" 41 1019 1023 "Game.ml" 41 1019 1033
 )
-"Game.ml" 360 9925 9974 "Game.ml" 360 9925 9977
+"Game.ml" 360 9924 9973 "Game.ml" 360 9924 9976
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 360 9925 9978 "Game.ml" 360 9925 9980
+"Game.ml" 360 9924 9977 "Game.ml" 360 9924 9979
 type(
   c4Move
 )
 ident(
-  int_ref mv "Game.ml" 357 9839 9853 "Game.ml" 357 9839 9855
+  int_ref mv "Game.ml" 357 9838 9852 "Game.ml" 357 9838 9854
 )
-"Game.ml" 360 9925 9963 "Game.ml" 360 9925 9980
+"Game.ml" 360 9924 9962 "Game.ml" 360 9924 9979
 call(
   stack
 )
 type(
   board
 )
-"Game.ml" 360 9925 9982 "Game.ml" 360 9925 9992
+"Game.ml" 360 9924 9981 "Game.ml" 360 9924 9991
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 360 9925 9947 "Game.ml" 360 9925 9992
+"Game.ml" 360 9924 9946 "Game.ml" 360 9924 9991
 call(
   stack
 )
 type(
   int
 )
-"Game.ml" 361 9996 10011 "Game.ml" 361 9996 10013
+"Game.ml" 361 9995 10010 "Game.ml" 361 9995 10012
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 360 9925 9942 "Game.ml" 360 9925 9944
+  int_ref vl "Game.ml" 360 9924 9941 "Game.ml" 360 9924 9943
 )
-"Game.ml" 361 9996 10014 "Game.ml" 361 9996 10015
+"Game.ml" 361 9995 10013 "Game.ml" 361 9995 10014
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"Game.ml" 361 9996 10017 "Game.ml" 361 9996 10018
+"Game.ml" 361 9995 10016 "Game.ml" 361 9995 10017
 type(
   int ref
 )
 ident(
-  int_ref v "Game.ml" 354 9751 9764 "Game.ml" 354 9751 9765
+  int_ref v "Game.ml" 354 9750 9763 "Game.ml" 354 9750 9764
 )
-"Game.ml" 361 9996 10016 "Game.ml" 361 9996 10018
+"Game.ml" 361 9995 10015 "Game.ml" 361 9995 10017
 type(
   int
 )
@@ -7321,25 +7321,25 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 361 9996 10011 "Game.ml" 361 9996 10018
+"Game.ml" 361 9995 10010 "Game.ml" 361 9995 10017
 type(
   bool
 )
-"Game.ml" 362 10020 10038 "Game.ml" 362 10020 10039
+"Game.ml" 362 10019 10037 "Game.ml" 362 10019 10038
 type(
   int ref
 )
 ident(
-  int_ref v "Game.ml" 354 9751 9764 "Game.ml" 354 9751 9765
+  int_ref v "Game.ml" 354 9750 9763 "Game.ml" 354 9750 9764
 )
-"Game.ml" 362 10020 10043 "Game.ml" 362 10020 10045
+"Game.ml" 362 10019 10042 "Game.ml" 362 10019 10044
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 360 9925 9942 "Game.ml" 360 9925 9944
+  int_ref vl "Game.ml" 360 9924 9941 "Game.ml" 360 9924 9943
 )
-"Game.ml" 362 10020 10038 "Game.ml" 362 10020 10045
+"Game.ml" 362 10019 10037 "Game.ml" 362 10019 10044
 type(
   unit
 )
@@ -7349,21 +7349,21 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 362 10020 10047 "Game.ml" 362 10020 10052
+"Game.ml" 362 10019 10046 "Game.ml" 362 10019 10051
 type(
   int ref
 )
 ident(
-  int_ref index "Game.ml" 355 9782 9794 "Game.ml" 355 9782 9799
+  int_ref index "Game.ml" 355 9781 9793 "Game.ml" 355 9781 9798
 )
-"Game.ml" 362 10020 10056 "Game.ml" 362 10020 10057
+"Game.ml" 362 10019 10055 "Game.ml" 362 10019 10056
 type(
   int
 )
 ident(
-  int_ref i "Game.ml" 356 9812 9820 "Game.ml" 365 10098 10110
+  int_ref i "Game.ml" 356 9811 9819 "Game.ml" 365 10097 10109
 )
-"Game.ml" 362 10020 10047 "Game.ml" 362 10020 10057
+"Game.ml" 362 10019 10046 "Game.ml" 362 10019 10056
 type(
   unit
 )
@@ -7373,46 +7373,46 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 362 10020 10038 "Game.ml" 362 10020 10057
+"Game.ml" 362 10019 10037 "Game.ml" 362 10019 10056
 type(
   unit
 )
-"Game.ml" 363 10059 10076 "Game.ml" 363 10059 10078
+"Game.ml" 363 10058 10075 "Game.ml" 363 10058 10077
 type(
   unit
 )
-"Game.ml" 361 9996 10008 "Game.ml" 363 10059 10078
+"Game.ml" 361 9995 10007 "Game.ml" 363 10058 10077
 type(
   unit
 )
-"Game.ml" 360 9925 9938 "Game.ml" 363 10059 10078
+"Game.ml" 360 9924 9937 "Game.ml" 363 10058 10077
 type(
   unit
 )
-"Game.ml" 364 10080 10095 "Game.ml" 364 10080 10097
+"Game.ml" 364 10079 10094 "Game.ml" 364 10079 10096
 type(
   unit
 )
-"Game.ml" 358 9879 9889 "Game.ml" 364 10080 10097
+"Game.ml" 358 9878 9888 "Game.ml" 364 10079 10096
 type(
   unit
 )
-"Game.ml" 357 9839 9849 "Game.ml" 364 10080 10097
+"Game.ml" 357 9838 9848 "Game.ml" 364 10079 10096
 type(
   unit
 )
-"Game.ml" 356 9812 9820 "Game.ml" 365 10098 10110
+"Game.ml" 356 9811 9819 "Game.ml" 365 10097 10109
 type(
   unit
 )
-"Game.ml" 365 10098 10115 "Game.ml" 365 10098 10120
+"Game.ml" 365 10097 10114 "Game.ml" 365 10097 10119
 type(
   int ref
 )
 ident(
-  int_ref index "Game.ml" 355 9782 9794 "Game.ml" 355 9782 9799
+  int_ref index "Game.ml" 355 9781 9793 "Game.ml" 355 9781 9798
 )
-"Game.ml" 365 10098 10114 "Game.ml" 365 10098 10120
+"Game.ml" 365 10097 10113 "Game.ml" 365 10097 10119
 type(
   int
 )
@@ -7422,14 +7422,14 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 365 10098 10123 "Game.ml" 365 10098 10124
+"Game.ml" 365 10097 10122 "Game.ml" 365 10097 10123
 type(
   int ref
 )
 ident(
-  int_ref v "Game.ml" 354 9751 9764 "Game.ml" 354 9751 9765
+  int_ref v "Game.ml" 354 9750 9763 "Game.ml" 354 9750 9764
 )
-"Game.ml" 365 10098 10122 "Game.ml" 365 10098 10124
+"Game.ml" 365 10097 10121 "Game.ml" 365 10097 10123
 type(
   int
 )
@@ -7439,73 +7439,73 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 365 10098 10114 "Game.ml" 365 10098 10124
+"Game.ml" 365 10097 10113 "Game.ml" 365 10097 10123
 type(
   int * int
 )
-"Game.ml" 356 9812 9820 "Game.ml" 365 10098 10124
+"Game.ml" 356 9811 9819 "Game.ml" 365 10097 10123
 type(
   int * int
 )
-"Game.ml" 355 9782 9790 "Game.ml" 365 10098 10125
+"Game.ml" 355 9781 9789 "Game.ml" 365 10097 10124
 type(
   int * int
 )
-"Game.ml" 354 9751 9760 "Game.ml" 365 10098 10125
+"Game.ml" 354 9750 9759 "Game.ml" 365 10097 10124
 type(
   int * int
 )
-"Game.ml" 338 9213 9219 "Game.ml" 365 10098 10126
+"Game.ml" 338 9212 9218 "Game.ml" 365 10097 10125
 type(
   int * int
 )
-"Game.ml" 369 10138 10147 "Game.ml" 369 10138 10150
+"Game.ml" 369 10137 10146 "Game.ml" 369 10137 10149
 type(
   int
 )
 ident(
   ext_ref num
 )
-"Game.ml" 369 10138 10151 "Game.ml" 369 10138 10152
+"Game.ml" 369 10137 10150 "Game.ml" 369 10137 10151
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"Game.ml" 369 10138 10153 "Game.ml" 369 10138 10163
+"Game.ml" 369 10137 10152 "Game.ml" 369 10137 10162
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 369 10138 10147 "Game.ml" 369 10138 10163
+"Game.ml" 369 10137 10146 "Game.ml" 369 10137 10162
 type(
   bool
 )
-"Game.ml" 371 10176 10189 "Game.ml" 371 10176 10198
+"Game.ml" 371 10175 10188 "Game.ml" 371 10175 10197
 type(
   int ref
 )
 ident(
-  def bestValue "Game.ml" 372 10218 10226 "Game.ml" 392 10995 11022
+  def bestValue "Game.ml" 372 10217 10225 "Game.ml" 392 10994 11021
 )
-"Game.ml" 371 10176 10201 "Game.ml" 371 10176 10204
+"Game.ml" 371 10175 10200 "Game.ml" 371 10175 10203
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 371 10176 10207 "Game.ml" 371 10176 10212
+"Game.ml" 371 10175 10206 "Game.ml" 371 10175 10211
 type(
   int
 )
 ident(
   int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
 )
-"Game.ml" 371 10176 10206 "Game.ml" 371 10176 10212
+"Game.ml" 371 10175 10205 "Game.ml" 371 10175 10211
 type(
   int
 )
@@ -7515,84 +7515,84 @@ type(
 ident(
   ext_ref Pervasives.( ~- )
 )
-"Game.ml" 371 10176 10201 "Game.ml" 371 10176 10213
+"Game.ml" 371 10175 10200 "Game.ml" 371 10175 10212
 type(
   int ref
 )
-"Game.ml" 372 10218 10230 "Game.ml" 372 10218 10240
+"Game.ml" 372 10217 10229 "Game.ml" 372 10217 10239
 type(
   int ref
 )
 ident(
-  def indexValue "Game.ml" 373 10252 10260 "Game.ml" 392 10995 11022
+  def indexValue "Game.ml" 373 10251 10259 "Game.ml" 392 10994 11021
 )
-"Game.ml" 372 10218 10243 "Game.ml" 372 10218 10246
+"Game.ml" 372 10217 10242 "Game.ml" 372 10217 10245
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 372 10218 10247 "Game.ml" 372 10218 10248
+"Game.ml" 372 10217 10246 "Game.ml" 372 10217 10247
 type(
   int
 )
-"Game.ml" 372 10218 10243 "Game.ml" 372 10218 10248
+"Game.ml" 372 10217 10242 "Game.ml" 372 10217 10247
 type(
   int ref
 )
-"Game.ml" 373 10252 10264 "Game.ml" 373 10252 10269
+"Game.ml" 373 10251 10263 "Game.ml" 373 10251 10268
 type(
   bool ref
 )
 ident(
-  def break "Game.ml" 374 10284 10292 "Game.ml" 392 10995 11022
+  def break "Game.ml" 374 10283 10291 "Game.ml" 392 10994 11021
 )
-"Game.ml" 373 10252 10272 "Game.ml" 373 10252 10275
+"Game.ml" 373 10251 10271 "Game.ml" 373 10251 10274
 type(
   bool -> bool ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 373 10252 10276 "Game.ml" 373 10252 10280
+"Game.ml" 373 10251 10275 "Game.ml" 373 10251 10279
 type(
   bool
 )
-"Game.ml" 373 10252 10272 "Game.ml" 373 10252 10280
+"Game.ml" 373 10251 10271 "Game.ml" 373 10251 10279
 type(
   bool ref
 )
-"Game.ml" 374 10284 10296 "Game.ml" 374 10284 10297
+"Game.ml" 374 10283 10295 "Game.ml" 374 10283 10296
 type(
   int ref
 )
 ident(
-  def i "Game.ml" 376 10311 10319 "Game.ml" 392 10995 11021
+  def i "Game.ml" 376 10310 10318 "Game.ml" 392 10994 11020
 )
-"Game.ml" 374 10284 10300 "Game.ml" 374 10284 10303
+"Game.ml" 374 10283 10299 "Game.ml" 374 10283 10302
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 374 10284 10304 "Game.ml" 374 10284 10305
+"Game.ml" 374 10283 10303 "Game.ml" 374 10283 10304
 type(
   int
 )
-"Game.ml" 374 10284 10300 "Game.ml" 374 10284 10305
+"Game.ml" 374 10283 10299 "Game.ml" 374 10283 10304
 type(
   int ref
 )
-"Game.ml" 376 10311 10327 "Game.ml" 376 10311 10328
+"Game.ml" 376 10310 10326 "Game.ml" 376 10310 10327
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 374 10284 10296 "Game.ml" 374 10284 10297
+  int_ref i "Game.ml" 374 10283 10295 "Game.ml" 374 10283 10296
 )
-"Game.ml" 376 10311 10326 "Game.ml" 376 10311 10328
+"Game.ml" 376 10310 10325 "Game.ml" 376 10310 10327
 type(
   int
 )
@@ -7602,36 +7602,36 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 376 10311 10329 "Game.ml" 376 10311 10331
+"Game.ml" 376 10310 10328 "Game.ml" 376 10310 10330
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <= )
 )
-"Game.ml" 376 10311 10332 "Game.ml" 376 10311 10333
+"Game.ml" 376 10310 10331 "Game.ml" 376 10310 10332
 type(
   int
 )
-"Game.ml" 376 10311 10326 "Game.ml" 376 10311 10333
+"Game.ml" 376 10310 10325 "Game.ml" 376 10310 10332
 type(
   bool
 )
-"Game.ml" 376 10311 10334 "Game.ml" 376 10311 10336
+"Game.ml" 376 10310 10333 "Game.ml" 376 10310 10335
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"Game.ml" 376 10311 10338 "Game.ml" 376 10311 10343
+"Game.ml" 376 10310 10337 "Game.ml" 376 10310 10342
 type(
   bool ref
 )
 ident(
-  int_ref break "Game.ml" 373 10252 10264 "Game.ml" 373 10252 10269
+  int_ref break "Game.ml" 373 10251 10263 "Game.ml" 373 10251 10268
 )
-"Game.ml" 376 10311 10337 "Game.ml" 376 10311 10343
+"Game.ml" 376 10310 10336 "Game.ml" 376 10310 10342
 type(
   bool
 )
@@ -7641,25 +7641,25 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 376 10311 10326 "Game.ml" 376 10311 10343
+"Game.ml" 376 10310 10325 "Game.ml" 376 10310 10342
 type(
   bool
 )
-"Game.ml" 377 10348 10363 "Game.ml" 377 10348 10365
+"Game.ml" 377 10347 10362 "Game.ml" 377 10347 10364
 type(
   int * int
 )
 ident(
-  def mv "Game.ml" 378 10387 10397 "Game.ml" 390 10949 10979
+  def mv "Game.ml" 378 10386 10396 "Game.ml" 390 10948 10978
 )
-"Game.ml" 377 10348 10370 "Game.ml" 377 10348 10371
+"Game.ml" 377 10347 10369 "Game.ml" 377 10347 10370
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 374 10284 10296 "Game.ml" 374 10284 10297
+  int_ref i "Game.ml" 374 10283 10295 "Game.ml" 374 10283 10296
 )
-"Game.ml" 377 10348 10369 "Game.ml" 377 10348 10371
+"Game.ml" 377 10347 10368 "Game.ml" 377 10347 10370
 type(
   int
 )
@@ -7669,147 +7669,147 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 377 10348 10372 "Game.ml" 377 10348 10382
+"Game.ml" 377 10347 10371 "Game.ml" 377 10347 10381
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 377 10348 10369 "Game.ml" 377 10348 10382
+"Game.ml" 377 10347 10368 "Game.ml" 377 10347 10381
 type(
   int * int
 )
-"Game.ml" 378 10387 10400 "Game.ml" 378 10387 10407
+"Game.ml" 378 10386 10399 "Game.ml" 378 10386 10406
 type(
   board -> c4Move -> bool
 )
 ident(
   int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
 )
-"Game.ml" 378 10387 10408 "Game.ml" 378 10387 10411
+"Game.ml" 378 10386 10407 "Game.ml" 378 10386 10410
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 378 10387 10412 "Game.ml" 378 10387 10414
+"Game.ml" 378 10386 10411 "Game.ml" 378 10386 10413
 type(
   c4Move
 )
 ident(
-  int_ref mv "Game.ml" 377 10348 10363 "Game.ml" 377 10348 10365
+  int_ref mv "Game.ml" 377 10347 10362 "Game.ml" 377 10347 10364
 )
-"Game.ml" 378 10387 10400 "Game.ml" 378 10387 10414
+"Game.ml" 378 10386 10399 "Game.ml" 378 10386 10413
 call(
   stack
 )
 type(
   bool
 )
-"Game.ml" 380 10431 10449 "Game.ml" 380 10431 10450
+"Game.ml" 380 10430 10448 "Game.ml" 380 10430 10449
 type(
   int
 )
-"Game.ml" 380 10431 10453 "Game.ml" 380 10431 10455
+"Game.ml" 380 10430 10452 "Game.ml" 380 10430 10454
 type(
   int
 )
 ident(
-  def vl "Game.ml" 384 10626 10640 "Game.ml" 389 10925 10946
+  def vl "Game.ml" 384 10625 10639 "Game.ml" 389 10924 10945
 )
-"Game.ml" 380 10431 10449 "Game.ml" 380 10431 10455
+"Game.ml" 380 10430 10448 "Game.ml" 380 10430 10454
 type(
   int * int
 )
-"Game.ml" 380 10431 10459 "Game.ml" 380 10431 10468
+"Game.ml" 380 10430 10458 "Game.ml" 380 10430 10467
 type(
   board -> int -> int -> int -> int -> int * int
 )
 ident(
-  int_ref alphabeta "Game.ml" 333 8851 8861 "Game.ml" 333 8851 8870
+  int_ref alphabeta "Game.ml" 333 8850 8860 "Game.ml" 333 8850 8869
 )
-"Game.ml" 380 10431 10470 "Game.ml" 380 10431 10480
+"Game.ml" 380 10430 10469 "Game.ml" 380 10430 10479
 type(
   board -> c4Move -> board
 )
 ident(
   int_ref next_board "Game.ml" 41 1019 1023 "Game.ml" 41 1019 1033
 )
-"Game.ml" 380 10431 10481 "Game.ml" 380 10431 10484
+"Game.ml" 380 10430 10480 "Game.ml" 380 10430 10483
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 380 10431 10485 "Game.ml" 380 10431 10487
+"Game.ml" 380 10430 10484 "Game.ml" 380 10430 10486
 type(
   c4Move
 )
 ident(
-  int_ref mv "Game.ml" 377 10348 10363 "Game.ml" 377 10348 10365
+  int_ref mv "Game.ml" 377 10347 10362 "Game.ml" 377 10347 10364
 )
-"Game.ml" 380 10431 10470 "Game.ml" 380 10431 10487
+"Game.ml" 380 10430 10469 "Game.ml" 380 10430 10486
 call(
   stack
 )
 type(
   board
 )
-"Game.ml" 380 10431 10490 "Game.ml" 380 10431 10491
+"Game.ml" 380 10430 10489 "Game.ml" 380 10430 10490
 type(
   int
 )
 ident(
-  int_ref d "Game.ml" 333 8851 8885 "Game.ml" 333 8851 8886
+  int_ref d "Game.ml" 333 8850 8884 "Game.ml" 333 8850 8885
 )
-"Game.ml" 380 10431 10492 "Game.ml" 380 10431 10493
+"Game.ml" 380 10430 10491 "Game.ml" 380 10430 10492
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"Game.ml" 380 10431 10494 "Game.ml" 380 10431 10495
+"Game.ml" 380 10430 10493 "Game.ml" 380 10430 10494
 type(
   int
 )
-"Game.ml" 380 10431 10490 "Game.ml" 380 10431 10495
+"Game.ml" 380 10430 10489 "Game.ml" 380 10430 10494
 type(
   int
 )
-"Game.ml" 380 10431 10498 "Game.ml" 380 10431 10499
+"Game.ml" 380 10430 10497 "Game.ml" 380 10430 10498
 type(
   int
 )
-"Game.ml" 380 10431 10500 "Game.ml" 380 10431 10501
+"Game.ml" 380 10430 10499 "Game.ml" 380 10430 10500
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"Game.ml" 380 10431 10502 "Game.ml" 380 10431 10512
+"Game.ml" 380 10430 10501 "Game.ml" 380 10430 10511
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 380 10431 10498 "Game.ml" 380 10431 10512
+"Game.ml" 380 10430 10497 "Game.ml" 380 10430 10511
 type(
   int
 )
-"Game.ml" 380 10431 10515 "Game.ml" 380 10431 10516
+"Game.ml" 380 10430 10514 "Game.ml" 380 10430 10515
 type(
   int ref
 )
 ident(
-  int_ref a "Game.ml" 334 8957 8965 "Game.ml" 334 8957 8966
+  int_ref a "Game.ml" 334 8956 8964 "Game.ml" 334 8956 8965
 )
-"Game.ml" 380 10431 10514 "Game.ml" 380 10431 10516
+"Game.ml" 380 10430 10513 "Game.ml" 380 10430 10515
 type(
   int
 )
@@ -7819,14 +7819,14 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 380 10431 10518 "Game.ml" 380 10431 10519
+"Game.ml" 380 10430 10517 "Game.ml" 380 10430 10518
 type(
   int ref
 )
 ident(
-  int_ref b "Game.ml" 335 9051 9059 "Game.ml" 335 9051 9060
+  int_ref b "Game.ml" 335 9050 9058 "Game.ml" 335 9050 9059
 )
-"Game.ml" 380 10431 10517 "Game.ml" 380 10431 10519
+"Game.ml" 380 10430 10516 "Game.ml" 380 10430 10518
 type(
   int
 )
@@ -7836,35 +7836,35 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 380 10431 10459 "Game.ml" 380 10431 10519
+"Game.ml" 380 10430 10458 "Game.ml" 380 10430 10518
 call(
   stack
 )
 type(
   int * int
 )
-"Game.ml" 384 10626 10643 "Game.ml" 384 10626 10645
+"Game.ml" 384 10625 10642 "Game.ml" 384 10625 10644
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 380 10431 10453 "Game.ml" 380 10431 10455
+  int_ref vl "Game.ml" 380 10430 10452 "Game.ml" 380 10430 10454
 )
-"Game.ml" 384 10626 10646 "Game.ml" 384 10626 10648
+"Game.ml" 384 10625 10645 "Game.ml" 384 10625 10647
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( >= )
 )
-"Game.ml" 384 10626 10650 "Game.ml" 384 10626 10651
+"Game.ml" 384 10625 10649 "Game.ml" 384 10625 10650
 type(
   int ref
 )
 ident(
-  int_ref a "Game.ml" 334 8957 8965 "Game.ml" 334 8957 8966
+  int_ref a "Game.ml" 334 8956 8964 "Game.ml" 334 8956 8965
 )
-"Game.ml" 384 10626 10649 "Game.ml" 384 10626 10651
+"Game.ml" 384 10625 10648 "Game.ml" 384 10625 10650
 type(
   int
 )
@@ -7874,39 +7874,39 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 384 10626 10643 "Game.ml" 384 10626 10651
+"Game.ml" 384 10625 10642 "Game.ml" 384 10625 10650
 type(
   bool
 )
-"Game.ml" 384 10626 10652 "Game.ml" 384 10626 10654
+"Game.ml" 384 10625 10651 "Game.ml" 384 10625 10653
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"Game.ml" 384 10626 10655 "Game.ml" 384 10626 10657
+"Game.ml" 384 10625 10654 "Game.ml" 384 10625 10656
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 380 10431 10453 "Game.ml" 380 10431 10455
+  int_ref vl "Game.ml" 380 10430 10452 "Game.ml" 380 10430 10454
 )
-"Game.ml" 384 10626 10658 "Game.ml" 384 10626 10659
+"Game.ml" 384 10625 10657 "Game.ml" 384 10625 10658
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( > )
 )
-"Game.ml" 384 10626 10661 "Game.ml" 384 10626 10670
+"Game.ml" 384 10625 10660 "Game.ml" 384 10625 10669
 type(
   int ref
 )
 ident(
-  int_ref bestValue "Game.ml" 371 10176 10189 "Game.ml" 371 10176 10198
+  int_ref bestValue "Game.ml" 371 10175 10188 "Game.ml" 371 10175 10197
 )
-"Game.ml" 384 10626 10660 "Game.ml" 384 10626 10670
+"Game.ml" 384 10625 10659 "Game.ml" 384 10625 10669
 type(
   int
 )
@@ -7916,29 +7916,29 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 384 10626 10655 "Game.ml" 384 10626 10670
+"Game.ml" 384 10625 10654 "Game.ml" 384 10625 10669
 type(
   bool
 )
-"Game.ml" 384 10626 10643 "Game.ml" 384 10626 10670
+"Game.ml" 384 10625 10642 "Game.ml" 384 10625 10669
 type(
   bool
 )
-"Game.ml" 385 10725 10745 "Game.ml" 385 10725 10746
+"Game.ml" 385 10724 10744 "Game.ml" 385 10724 10745
 type(
   int ref
 )
 ident(
-  int_ref a "Game.ml" 334 8957 8965 "Game.ml" 334 8957 8966
+  int_ref a "Game.ml" 334 8956 8964 "Game.ml" 334 8956 8965
 )
-"Game.ml" 385 10725 10750 "Game.ml" 385 10725 10752
+"Game.ml" 385 10724 10749 "Game.ml" 385 10724 10751
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 380 10431 10453 "Game.ml" 380 10431 10455
+  int_ref vl "Game.ml" 380 10430 10452 "Game.ml" 380 10430 10454
 )
-"Game.ml" 385 10725 10745 "Game.ml" 385 10725 10752
+"Game.ml" 385 10724 10744 "Game.ml" 385 10724 10751
 type(
   unit
 )
@@ -7948,21 +7948,21 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 385 10725 10754 "Game.ml" 385 10725 10764
+"Game.ml" 385 10724 10753 "Game.ml" 385 10724 10763
 type(
   int ref
 )
 ident(
-  int_ref indexValue "Game.ml" 372 10218 10230 "Game.ml" 372 10218 10240
+  int_ref indexValue "Game.ml" 372 10217 10229 "Game.ml" 372 10217 10239
 )
-"Game.ml" 385 10725 10769 "Game.ml" 385 10725 10770
+"Game.ml" 385 10724 10768 "Game.ml" 385 10724 10769
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 374 10284 10296 "Game.ml" 374 10284 10297
+  int_ref i "Game.ml" 374 10283 10295 "Game.ml" 374 10283 10296
 )
-"Game.ml" 385 10725 10768 "Game.ml" 385 10725 10770
+"Game.ml" 385 10724 10767 "Game.ml" 385 10724 10769
 type(
   int
 )
@@ -7972,7 +7972,7 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 385 10725 10754 "Game.ml" 385 10725 10770
+"Game.ml" 385 10724 10753 "Game.ml" 385 10724 10769
 type(
   unit
 )
@@ -7982,21 +7982,21 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 385 10725 10772 "Game.ml" 385 10725 10781
+"Game.ml" 385 10724 10771 "Game.ml" 385 10724 10780
 type(
   int ref
 )
 ident(
-  int_ref bestValue "Game.ml" 371 10176 10189 "Game.ml" 371 10176 10198
+  int_ref bestValue "Game.ml" 371 10175 10188 "Game.ml" 371 10175 10197
 )
-"Game.ml" 385 10725 10785 "Game.ml" 385 10725 10787
+"Game.ml" 385 10724 10784 "Game.ml" 385 10724 10786
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 380 10431 10453 "Game.ml" 380 10431 10455
+  int_ref vl "Game.ml" 380 10430 10452 "Game.ml" 380 10430 10454
 )
-"Game.ml" 385 10725 10772 "Game.ml" 385 10725 10787
+"Game.ml" 385 10724 10771 "Game.ml" 385 10724 10786
 type(
   unit
 )
@@ -8006,14 +8006,14 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 386 10789 10809 "Game.ml" 386 10789 10810
+"Game.ml" 386 10788 10808 "Game.ml" 386 10788 10809
 type(
   int ref
 )
 ident(
-  int_ref b "Game.ml" 335 9051 9059 "Game.ml" 335 9051 9060
+  int_ref b "Game.ml" 335 9050 9058 "Game.ml" 335 9050 9059
 )
-"Game.ml" 386 10789 10808 "Game.ml" 386 10789 10810
+"Game.ml" 386 10788 10807 "Game.ml" 386 10788 10809
 type(
   int
 )
@@ -8023,21 +8023,21 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 386 10789 10811 "Game.ml" 386 10789 10812
+"Game.ml" 386 10788 10810 "Game.ml" 386 10788 10811
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"Game.ml" 386 10789 10814 "Game.ml" 386 10789 10815
+"Game.ml" 386 10788 10813 "Game.ml" 386 10788 10814
 type(
   int ref
 )
 ident(
-  int_ref a "Game.ml" 334 8957 8965 "Game.ml" 334 8957 8966
+  int_ref a "Game.ml" 334 8956 8964 "Game.ml" 334 8956 8965
 )
-"Game.ml" 386 10789 10813 "Game.ml" 386 10789 10815
+"Game.ml" 386 10788 10812 "Game.ml" 386 10788 10814
 type(
   int
 )
@@ -8047,22 +8047,22 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 386 10789 10808 "Game.ml" 386 10789 10815
+"Game.ml" 386 10788 10807 "Game.ml" 386 10788 10814
 type(
   bool
 )
-"Game.ml" 387 10816 10837 "Game.ml" 387 10816 10842
+"Game.ml" 387 10815 10836 "Game.ml" 387 10815 10841
 type(
   bool ref
 )
 ident(
-  int_ref break "Game.ml" 373 10252 10264 "Game.ml" 373 10252 10269
+  int_ref break "Game.ml" 373 10251 10263 "Game.ml" 373 10251 10268
 )
-"Game.ml" 387 10816 10846 "Game.ml" 387 10816 10851
+"Game.ml" 387 10815 10845 "Game.ml" 387 10815 10850
 type(
   bool
 )
-"Game.ml" 387 10816 10837 "Game.ml" 387 10816 10851
+"Game.ml" 387 10815 10836 "Game.ml" 387 10815 10850
 type(
   unit
 )
@@ -8072,61 +8072,61 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 388 10852 10873 "Game.ml" 388 10852 10875
+"Game.ml" 388 10851 10872 "Game.ml" 388 10851 10874
 type(
   unit
 )
-"Game.ml" 386 10789 10805 "Game.ml" 388 10852 10875
+"Game.ml" 386 10788 10804 "Game.ml" 388 10851 10874
 type(
   unit
 )
-"Game.ml" 385 10725 10772 "Game.ml" 388 10852 10875
+"Game.ml" 385 10724 10771 "Game.ml" 388 10851 10874
 type(
   unit
 )
-"Game.ml" 385 10725 10754 "Game.ml" 388 10852 10875
+"Game.ml" 385 10724 10753 "Game.ml" 388 10851 10874
 type(
   unit
 )
-"Game.ml" 385 10725 10745 "Game.ml" 388 10852 10875
+"Game.ml" 385 10724 10744 "Game.ml" 388 10851 10874
 type(
   unit
 )
-"Game.ml" 389 10925 10944 "Game.ml" 389 10925 10946
+"Game.ml" 389 10924 10943 "Game.ml" 389 10924 10945
 type(
   unit
 )
-"Game.ml" 384 10626 10640 "Game.ml" 389 10925 10946
+"Game.ml" 384 10625 10639 "Game.ml" 389 10924 10945
 type(
   unit
 )
-"Game.ml" 380 10431 10444 "Game.ml" 389 10925 10946
+"Game.ml" 380 10430 10443 "Game.ml" 389 10924 10945
 type(
   unit
 )
-"Game.ml" 390 10949 10964 "Game.ml" 390 10949 10966
+"Game.ml" 390 10948 10963 "Game.ml" 390 10948 10965
 type(
   unit
 )
-"Game.ml" 378 10387 10397 "Game.ml" 390 10949 10966
+"Game.ml" 378 10386 10396 "Game.ml" 390 10948 10965
 type(
   unit
 )
-"Game.ml" 390 10949 10968 "Game.ml" 390 10949 10969
+"Game.ml" 390 10948 10967 "Game.ml" 390 10948 10968
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 374 10284 10296 "Game.ml" 374 10284 10297
+  int_ref i "Game.ml" 374 10283 10295 "Game.ml" 374 10283 10296
 )
-"Game.ml" 390 10949 10974 "Game.ml" 390 10949 10975
+"Game.ml" 390 10948 10973 "Game.ml" 390 10948 10974
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 374 10284 10296 "Game.ml" 374 10284 10297
+  int_ref i "Game.ml" 374 10283 10295 "Game.ml" 374 10283 10296
 )
-"Game.ml" 390 10949 10973 "Game.ml" 390 10949 10975
+"Game.ml" 390 10948 10972 "Game.ml" 390 10948 10974
 type(
   int
 )
@@ -8136,22 +8136,22 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 390 10949 10976 "Game.ml" 390 10949 10977
+"Game.ml" 390 10948 10975 "Game.ml" 390 10948 10976
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Game.ml" 390 10949 10978 "Game.ml" 390 10949 10979
+"Game.ml" 390 10948 10977 "Game.ml" 390 10948 10978
 type(
   int
 )
-"Game.ml" 390 10949 10973 "Game.ml" 390 10949 10979
+"Game.ml" 390 10948 10972 "Game.ml" 390 10948 10978
 type(
   int
 )
-"Game.ml" 390 10949 10968 "Game.ml" 390 10949 10979
+"Game.ml" 390 10948 10967 "Game.ml" 390 10948 10978
 type(
   unit
 )
@@ -8161,26 +8161,26 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 378 10387 10397 "Game.ml" 390 10949 10979
+"Game.ml" 378 10386 10396 "Game.ml" 390 10948 10978
 type(
   unit
 )
-"Game.ml" 377 10348 10359 "Game.ml" 390 10949 10979
+"Game.ml" 377 10347 10358 "Game.ml" 390 10948 10978
 type(
   unit
 )
-"Game.ml" 376 10311 10319 "Game.ml" 391 10981 10993
+"Game.ml" 376 10310 10318 "Game.ml" 391 10980 10992
 type(
   unit
 )
-"Game.ml" 392 10995 11006 "Game.ml" 392 10995 11016
+"Game.ml" 392 10994 11005 "Game.ml" 392 10994 11015
 type(
   int ref
 )
 ident(
-  int_ref indexValue "Game.ml" 372 10218 10230 "Game.ml" 372 10218 10240
+  int_ref indexValue "Game.ml" 372 10217 10229 "Game.ml" 372 10217 10239
 )
-"Game.ml" 392 10995 11004 "Game.ml" 392 10995 11017
+"Game.ml" 392 10994 11003 "Game.ml" 392 10994 11016
 type(
   int
 )
@@ -8190,14 +8190,14 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 392 10995 11020 "Game.ml" 392 10995 11021
+"Game.ml" 392 10994 11019 "Game.ml" 392 10994 11020
 type(
   int ref
 )
 ident(
-  int_ref a "Game.ml" 334 8957 8965 "Game.ml" 334 8957 8966
+  int_ref a "Game.ml" 334 8956 8964 "Game.ml" 334 8956 8965
 )
-"Game.ml" 392 10995 11019 "Game.ml" 392 10995 11021
+"Game.ml" 392 10994 11018 "Game.ml" 392 10994 11020
 type(
   int
 )
@@ -8207,129 +8207,129 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 392 10995 11004 "Game.ml" 392 10995 11021
+"Game.ml" 392 10994 11003 "Game.ml" 392 10994 11020
 type(
   int * int
 )
-"Game.ml" 376 10311 10319 "Game.ml" 392 10995 11021
+"Game.ml" 376 10310 10318 "Game.ml" 392 10994 11020
 type(
   int * int
 )
-"Game.ml" 374 10284 10292 "Game.ml" 392 10995 11022
+"Game.ml" 374 10283 10291 "Game.ml" 392 10994 11021
 type(
   int * int
 )
-"Game.ml" 373 10252 10260 "Game.ml" 392 10995 11022
+"Game.ml" 373 10251 10259 "Game.ml" 392 10994 11021
 type(
   int * int
 )
-"Game.ml" 372 10218 10226 "Game.ml" 392 10995 11022
+"Game.ml" 372 10217 10225 "Game.ml" 392 10994 11021
 type(
   int * int
 )
-"Game.ml" 371 10176 10185 "Game.ml" 392 10995 11022
+"Game.ml" 371 10175 10184 "Game.ml" 392 10994 11021
 type(
   int * int
 )
-"Game.ml" 396 11037 11050 "Game.ml" 396 11037 11059
+"Game.ml" 396 11036 11049 "Game.ml" 396 11036 11058
 type(
   int ref
 )
 ident(
-  def bestValue "Game.ml" 397 11075 11083 "Game.ml" 417 11963 11990
+  def bestValue "Game.ml" 397 11074 11082 "Game.ml" 417 11926 11953
 )
-"Game.ml" 396 11037 11062 "Game.ml" 396 11037 11065
+"Game.ml" 396 11036 11061 "Game.ml" 396 11036 11064
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 396 11037 11066 "Game.ml" 396 11037 11071
+"Game.ml" 396 11036 11065 "Game.ml" 396 11036 11070
 type(
   int
 )
 ident(
   int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
 )
-"Game.ml" 396 11037 11062 "Game.ml" 396 11037 11071
+"Game.ml" 396 11036 11061 "Game.ml" 396 11036 11070
 type(
   int ref
 )
-"Game.ml" 397 11075 11087 "Game.ml" 397 11075 11097
+"Game.ml" 397 11074 11086 "Game.ml" 397 11074 11096
 type(
   int ref
 )
 ident(
-  def indexValue "Game.ml" 398 11109 11117 "Game.ml" 417 11963 11990
+  def indexValue "Game.ml" 398 11108 11116 "Game.ml" 417 11926 11953
 )
-"Game.ml" 397 11075 11100 "Game.ml" 397 11075 11103
+"Game.ml" 397 11074 11099 "Game.ml" 397 11074 11102
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 397 11075 11104 "Game.ml" 397 11075 11105
+"Game.ml" 397 11074 11103 "Game.ml" 397 11074 11104
 type(
   int
 )
-"Game.ml" 397 11075 11100 "Game.ml" 397 11075 11105
+"Game.ml" 397 11074 11099 "Game.ml" 397 11074 11104
 type(
   int ref
 )
-"Game.ml" 398 11109 11121 "Game.ml" 398 11109 11126
+"Game.ml" 398 11108 11120 "Game.ml" 398 11108 11125
 type(
   bool ref
 )
 ident(
-  def break "Game.ml" 399 11141 11149 "Game.ml" 417 11963 11990
+  def break "Game.ml" 399 11140 11148 "Game.ml" 417 11926 11953
 )
-"Game.ml" 398 11109 11129 "Game.ml" 398 11109 11132
+"Game.ml" 398 11108 11128 "Game.ml" 398 11108 11131
 type(
   bool -> bool ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 398 11109 11133 "Game.ml" 398 11109 11137
+"Game.ml" 398 11108 11132 "Game.ml" 398 11108 11136
 type(
   bool
 )
-"Game.ml" 398 11109 11129 "Game.ml" 398 11109 11137
+"Game.ml" 398 11108 11128 "Game.ml" 398 11108 11136
 type(
   bool ref
 )
-"Game.ml" 399 11141 11153 "Game.ml" 399 11141 11154
+"Game.ml" 399 11140 11152 "Game.ml" 399 11140 11153
 type(
   int ref
 )
 ident(
-  def i "Game.ml" 401 11168 11176 "Game.ml" 417 11963 11989
+  def i "Game.ml" 401 11167 11175 "Game.ml" 417 11926 11952
 )
-"Game.ml" 399 11141 11157 "Game.ml" 399 11141 11160
+"Game.ml" 399 11140 11156 "Game.ml" 399 11140 11159
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Game.ml" 399 11141 11161 "Game.ml" 399 11141 11162
+"Game.ml" 399 11140 11160 "Game.ml" 399 11140 11161
 type(
   int
 )
-"Game.ml" 399 11141 11157 "Game.ml" 399 11141 11162
+"Game.ml" 399 11140 11156 "Game.ml" 399 11140 11161
 type(
   int ref
 )
-"Game.ml" 401 11168 11184 "Game.ml" 401 11168 11185
+"Game.ml" 401 11167 11183 "Game.ml" 401 11167 11184
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 399 11141 11153 "Game.ml" 399 11141 11154
+  int_ref i "Game.ml" 399 11140 11152 "Game.ml" 399 11140 11153
 )
-"Game.ml" 401 11168 11183 "Game.ml" 401 11168 11185
+"Game.ml" 401 11167 11182 "Game.ml" 401 11167 11184
 type(
   int
 )
@@ -8339,36 +8339,36 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 401 11168 11186 "Game.ml" 401 11168 11188
+"Game.ml" 401 11167 11185 "Game.ml" 401 11167 11187
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <= )
 )
-"Game.ml" 401 11168 11189 "Game.ml" 401 11168 11190
+"Game.ml" 401 11167 11188 "Game.ml" 401 11167 11189
 type(
   int
 )
-"Game.ml" 401 11168 11183 "Game.ml" 401 11168 11190
+"Game.ml" 401 11167 11182 "Game.ml" 401 11167 11189
 type(
   bool
 )
-"Game.ml" 401 11168 11191 "Game.ml" 401 11168 11193
+"Game.ml" 401 11167 11190 "Game.ml" 401 11167 11192
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"Game.ml" 401 11168 11195 "Game.ml" 401 11168 11200
+"Game.ml" 401 11167 11194 "Game.ml" 401 11167 11199
 type(
   bool ref
 )
 ident(
-  int_ref break "Game.ml" 398 11109 11121 "Game.ml" 398 11109 11126
+  int_ref break "Game.ml" 398 11108 11120 "Game.ml" 398 11108 11125
 )
-"Game.ml" 401 11168 11194 "Game.ml" 401 11168 11200
+"Game.ml" 401 11167 11193 "Game.ml" 401 11167 11199
 type(
   bool
 )
@@ -8378,25 +8378,25 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 401 11168 11183 "Game.ml" 401 11168 11200
+"Game.ml" 401 11167 11182 "Game.ml" 401 11167 11199
 type(
   bool
 )
-"Game.ml" 402 11205 11220 "Game.ml" 402 11205 11222
+"Game.ml" 402 11204 11219 "Game.ml" 402 11204 11221
 type(
   int * int
 )
 ident(
-  def mv "Game.ml" 403 11244 11254 "Game.ml" 415 11881 11911
+  def mv "Game.ml" 403 11243 11253 "Game.ml" 415 11880 11910
 )
-"Game.ml" 402 11205 11227 "Game.ml" 402 11205 11228
+"Game.ml" 402 11204 11226 "Game.ml" 402 11204 11227
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 399 11141 11153 "Game.ml" 399 11141 11154
+  int_ref i "Game.ml" 399 11140 11152 "Game.ml" 399 11140 11153
 )
-"Game.ml" 402 11205 11226 "Game.ml" 402 11205 11228
+"Game.ml" 402 11204 11225 "Game.ml" 402 11204 11227
 type(
   int
 )
@@ -8406,147 +8406,147 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 402 11205 11229 "Game.ml" 402 11205 11239
+"Game.ml" 402 11204 11228 "Game.ml" 402 11204 11238
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 402 11205 11226 "Game.ml" 402 11205 11239
+"Game.ml" 402 11204 11225 "Game.ml" 402 11204 11238
 type(
   int * int
 )
-"Game.ml" 403 11244 11257 "Game.ml" 403 11244 11264
+"Game.ml" 403 11243 11256 "Game.ml" 403 11243 11263
 type(
   board -> c4Move -> bool
 )
 ident(
   int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
 )
-"Game.ml" 403 11244 11265 "Game.ml" 403 11244 11268
+"Game.ml" 403 11243 11264 "Game.ml" 403 11243 11267
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 403 11244 11269 "Game.ml" 403 11244 11271
+"Game.ml" 403 11243 11268 "Game.ml" 403 11243 11270
 type(
   c4Move
 )
 ident(
-  int_ref mv "Game.ml" 402 11205 11220 "Game.ml" 402 11205 11222
+  int_ref mv "Game.ml" 402 11204 11219 "Game.ml" 402 11204 11221
 )
-"Game.ml" 403 11244 11257 "Game.ml" 403 11244 11271
+"Game.ml" 403 11243 11256 "Game.ml" 403 11243 11270
 call(
   stack
 )
 type(
   bool
 )
-"Game.ml" 405 11288 11306 "Game.ml" 405 11288 11307
+"Game.ml" 405 11287 11305 "Game.ml" 405 11287 11306
 type(
   int
 )
-"Game.ml" 405 11288 11310 "Game.ml" 405 11288 11312
+"Game.ml" 405 11287 11309 "Game.ml" 405 11287 11311
 type(
   int
 )
 ident(
-  def vl "Game.ml" 409 11484 11498 "Game.ml" 414 11784 11805
+  def vl "Game.ml" 409 11483 11497 "Game.ml" 414 11783 11804
 )
-"Game.ml" 405 11288 11306 "Game.ml" 405 11288 11312
+"Game.ml" 405 11287 11305 "Game.ml" 405 11287 11311
 type(
   int * int
 )
-"Game.ml" 405 11288 11316 "Game.ml" 405 11288 11325
+"Game.ml" 405 11287 11315 "Game.ml" 405 11287 11324
 type(
   board -> int -> int -> int -> int -> int * int
 )
 ident(
-  int_ref alphabeta "Game.ml" 333 8851 8861 "Game.ml" 333 8851 8870
+  int_ref alphabeta "Game.ml" 333 8850 8860 "Game.ml" 333 8850 8869
 )
-"Game.ml" 405 11288 11327 "Game.ml" 405 11288 11337
+"Game.ml" 405 11287 11326 "Game.ml" 405 11287 11336
 type(
   board -> c4Move -> board
 )
 ident(
   int_ref next_board "Game.ml" 41 1019 1023 "Game.ml" 41 1019 1033
 )
-"Game.ml" 405 11288 11338 "Game.ml" 405 11288 11341
+"Game.ml" 405 11287 11337 "Game.ml" 405 11287 11340
 type(
   board
 )
 ident(
-  int_ref brd "Game.ml" 333 8851 8872 "Game.ml" 333 8851 8875
+  int_ref brd "Game.ml" 333 8850 8871 "Game.ml" 333 8850 8874
 )
-"Game.ml" 405 11288 11342 "Game.ml" 405 11288 11344
+"Game.ml" 405 11287 11341 "Game.ml" 405 11287 11343
 type(
   c4Move
 )
 ident(
-  int_ref mv "Game.ml" 402 11205 11220 "Game.ml" 402 11205 11222
+  int_ref mv "Game.ml" 402 11204 11219 "Game.ml" 402 11204 11221
 )
-"Game.ml" 405 11288 11327 "Game.ml" 405 11288 11344
+"Game.ml" 405 11287 11326 "Game.ml" 405 11287 11343
 call(
   stack
 )
 type(
   board
 )
-"Game.ml" 405 11288 11347 "Game.ml" 405 11288 11348
+"Game.ml" 405 11287 11346 "Game.ml" 405 11287 11347
 type(
   int
 )
 ident(
-  int_ref d "Game.ml" 333 8851 8885 "Game.ml" 333 8851 8886
+  int_ref d "Game.ml" 333 8850 8884 "Game.ml" 333 8850 8885
 )
-"Game.ml" 405 11288 11349 "Game.ml" 405 11288 11350
+"Game.ml" 405 11287 11348 "Game.ml" 405 11287 11349
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"Game.ml" 405 11288 11351 "Game.ml" 405 11288 11352
+"Game.ml" 405 11287 11350 "Game.ml" 405 11287 11351
 type(
   int
 )
-"Game.ml" 405 11288 11347 "Game.ml" 405 11288 11352
+"Game.ml" 405 11287 11346 "Game.ml" 405 11287 11351
 type(
   int
 )
-"Game.ml" 405 11288 11355 "Game.ml" 405 11288 11356
+"Game.ml" 405 11287 11354 "Game.ml" 405 11287 11355
 type(
   int
 )
-"Game.ml" 405 11288 11357 "Game.ml" 405 11288 11358
+"Game.ml" 405 11287 11356 "Game.ml" 405 11287 11357
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"Game.ml" 405 11288 11359 "Game.ml" 405 11288 11369
+"Game.ml" 405 11287 11358 "Game.ml" 405 11287 11368
 type(
   int
 )
 ident(
-  int_ref num_player "Game.ml" 333 8851 8895 "Game.ml" 333 8851 8905
+  int_ref num_player "Game.ml" 333 8850 8894 "Game.ml" 333 8850 8904
 )
-"Game.ml" 405 11288 11355 "Game.ml" 405 11288 11369
+"Game.ml" 405 11287 11354 "Game.ml" 405 11287 11368
 type(
   int
 )
-"Game.ml" 405 11288 11372 "Game.ml" 405 11288 11373
+"Game.ml" 405 11287 11371 "Game.ml" 405 11287 11372
 type(
   int ref
 )
 ident(
-  int_ref a "Game.ml" 334 8957 8965 "Game.ml" 334 8957 8966
+  int_ref a "Game.ml" 334 8956 8964 "Game.ml" 334 8956 8965
 )
-"Game.ml" 405 11288 11371 "Game.ml" 405 11288 11373
+"Game.ml" 405 11287 11370 "Game.ml" 405 11287 11372
 type(
   int
 )
@@ -8556,14 +8556,14 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 405 11288 11375 "Game.ml" 405 11288 11376
+"Game.ml" 405 11287 11374 "Game.ml" 405 11287 11375
 type(
   int ref
 )
 ident(
-  int_ref b "Game.ml" 335 9051 9059 "Game.ml" 335 9051 9060
+  int_ref b "Game.ml" 335 9050 9058 "Game.ml" 335 9050 9059
 )
-"Game.ml" 405 11288 11374 "Game.ml" 405 11288 11376
+"Game.ml" 405 11287 11373 "Game.ml" 405 11287 11375
 type(
   int
 )
@@ -8573,35 +8573,35 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 405 11288 11316 "Game.ml" 405 11288 11376
+"Game.ml" 405 11287 11315 "Game.ml" 405 11287 11375
 call(
   stack
 )
 type(
   int * int
 )
-"Game.ml" 409 11484 11501 "Game.ml" 409 11484 11503
+"Game.ml" 409 11483 11500 "Game.ml" 409 11483 11502
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 405 11288 11310 "Game.ml" 405 11288 11312
+  int_ref vl "Game.ml" 405 11287 11309 "Game.ml" 405 11287 11311
 )
-"Game.ml" 409 11484 11504 "Game.ml" 409 11484 11506
+"Game.ml" 409 11483 11503 "Game.ml" 409 11483 11505
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <= )
 )
-"Game.ml" 409 11484 11508 "Game.ml" 409 11484 11509
+"Game.ml" 409 11483 11507 "Game.ml" 409 11483 11508
 type(
   int ref
 )
 ident(
-  int_ref b "Game.ml" 335 9051 9059 "Game.ml" 335 9051 9060
+  int_ref b "Game.ml" 335 9050 9058 "Game.ml" 335 9050 9059
 )
-"Game.ml" 409 11484 11507 "Game.ml" 409 11484 11509
+"Game.ml" 409 11483 11506 "Game.ml" 409 11483 11508
 type(
   int
 )
@@ -8611,39 +8611,39 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 409 11484 11501 "Game.ml" 409 11484 11509
+"Game.ml" 409 11483 11500 "Game.ml" 409 11483 11508
 type(
   bool
 )
-"Game.ml" 409 11484 11510 "Game.ml" 409 11484 11512
+"Game.ml" 409 11483 11509 "Game.ml" 409 11483 11511
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"Game.ml" 409 11484 11513 "Game.ml" 409 11484 11515
+"Game.ml" 409 11483 11512 "Game.ml" 409 11483 11514
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 405 11288 11310 "Game.ml" 405 11288 11312
+  int_ref vl "Game.ml" 405 11287 11309 "Game.ml" 405 11287 11311
 )
-"Game.ml" 409 11484 11516 "Game.ml" 409 11484 11517
+"Game.ml" 409 11483 11515 "Game.ml" 409 11483 11516
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"Game.ml" 409 11484 11519 "Game.ml" 409 11484 11528
+"Game.ml" 409 11483 11518 "Game.ml" 409 11483 11527
 type(
   int ref
 )
 ident(
-  int_ref bestValue "Game.ml" 396 11037 11050 "Game.ml" 396 11037 11059
+  int_ref bestValue "Game.ml" 396 11036 11049 "Game.ml" 396 11036 11058
 )
-"Game.ml" 409 11484 11518 "Game.ml" 409 11484 11528
+"Game.ml" 409 11483 11517 "Game.ml" 409 11483 11527
 type(
   int
 )
@@ -8653,29 +8653,29 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 409 11484 11513 "Game.ml" 409 11484 11528
+"Game.ml" 409 11483 11512 "Game.ml" 409 11483 11527
 type(
   bool
 )
-"Game.ml" 409 11484 11501 "Game.ml" 409 11484 11528
+"Game.ml" 409 11483 11500 "Game.ml" 409 11483 11527
 type(
   bool
 )
-"Game.ml" 410 11584 11604 "Game.ml" 410 11584 11605
+"Game.ml" 410 11583 11603 "Game.ml" 410 11583 11604
 type(
   int ref
 )
 ident(
-  int_ref b "Game.ml" 335 9051 9059 "Game.ml" 335 9051 9060
+  int_ref b "Game.ml" 335 9050 9058 "Game.ml" 335 9050 9059
 )
-"Game.ml" 410 11584 11609 "Game.ml" 410 11584 11611
+"Game.ml" 410 11583 11608 "Game.ml" 410 11583 11610
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 405 11288 11310 "Game.ml" 405 11288 11312
+  int_ref vl "Game.ml" 405 11287 11309 "Game.ml" 405 11287 11311
 )
-"Game.ml" 410 11584 11604 "Game.ml" 410 11584 11611
+"Game.ml" 410 11583 11603 "Game.ml" 410 11583 11610
 type(
   unit
 )
@@ -8685,21 +8685,21 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 410 11584 11613 "Game.ml" 410 11584 11623
+"Game.ml" 410 11583 11612 "Game.ml" 410 11583 11622
 type(
   int ref
 )
 ident(
-  int_ref indexValue "Game.ml" 397 11075 11087 "Game.ml" 397 11075 11097
+  int_ref indexValue "Game.ml" 397 11074 11086 "Game.ml" 397 11074 11096
 )
-"Game.ml" 410 11584 11628 "Game.ml" 410 11584 11629
+"Game.ml" 410 11583 11627 "Game.ml" 410 11583 11628
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 399 11141 11153 "Game.ml" 399 11141 11154
+  int_ref i "Game.ml" 399 11140 11152 "Game.ml" 399 11140 11153
 )
-"Game.ml" 410 11584 11627 "Game.ml" 410 11584 11629
+"Game.ml" 410 11583 11626 "Game.ml" 410 11583 11628
 type(
   int
 )
@@ -8709,7 +8709,7 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 410 11584 11613 "Game.ml" 410 11584 11629
+"Game.ml" 410 11583 11612 "Game.ml" 410 11583 11628
 type(
   unit
 )
@@ -8719,21 +8719,21 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 410 11584 11631 "Game.ml" 410 11584 11640
+"Game.ml" 410 11583 11630 "Game.ml" 410 11583 11639
 type(
   int ref
 )
 ident(
-  int_ref bestValue "Game.ml" 396 11037 11050 "Game.ml" 396 11037 11059
+  int_ref bestValue "Game.ml" 396 11036 11049 "Game.ml" 396 11036 11058
 )
-"Game.ml" 410 11584 11644 "Game.ml" 410 11584 11646
+"Game.ml" 410 11583 11643 "Game.ml" 410 11583 11645
 type(
   int
 )
 ident(
-  int_ref vl "Game.ml" 405 11288 11310 "Game.ml" 405 11288 11312
+  int_ref vl "Game.ml" 405 11287 11309 "Game.ml" 405 11287 11311
 )
-"Game.ml" 410 11584 11631 "Game.ml" 410 11584 11646
+"Game.ml" 410 11583 11630 "Game.ml" 410 11583 11645
 type(
   unit
 )
@@ -8743,14 +8743,14 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 411 11648 11668 "Game.ml" 411 11648 11669
+"Game.ml" 411 11647 11667 "Game.ml" 411 11647 11668
 type(
   int ref
 )
 ident(
-  int_ref b "Game.ml" 335 9051 9059 "Game.ml" 335 9051 9060
+  int_ref b "Game.ml" 335 9050 9058 "Game.ml" 335 9050 9059
 )
-"Game.ml" 411 11648 11667 "Game.ml" 411 11648 11669
+"Game.ml" 411 11647 11666 "Game.ml" 411 11647 11668
 type(
   int
 )
@@ -8760,21 +8760,21 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 411 11648 11670 "Game.ml" 411 11648 11671
+"Game.ml" 411 11647 11669 "Game.ml" 411 11647 11670
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( < )
 )
-"Game.ml" 411 11648 11673 "Game.ml" 411 11648 11674
+"Game.ml" 411 11647 11672 "Game.ml" 411 11647 11673
 type(
   int ref
 )
 ident(
-  int_ref a "Game.ml" 334 8957 8965 "Game.ml" 334 8957 8966
+  int_ref a "Game.ml" 334 8956 8964 "Game.ml" 334 8956 8965
 )
-"Game.ml" 411 11648 11672 "Game.ml" 411 11648 11674
+"Game.ml" 411 11647 11671 "Game.ml" 411 11647 11673
 type(
   int
 )
@@ -8784,22 +8784,22 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 411 11648 11667 "Game.ml" 411 11648 11674
+"Game.ml" 411 11647 11666 "Game.ml" 411 11647 11673
 type(
   bool
 )
-"Game.ml" 412 11675 11696 "Game.ml" 412 11675 11701
+"Game.ml" 412 11674 11695 "Game.ml" 412 11674 11700
 type(
   bool ref
 )
 ident(
-  int_ref break "Game.ml" 398 11109 11121 "Game.ml" 398 11109 11126
+  int_ref break "Game.ml" 398 11108 11120 "Game.ml" 398 11108 11125
 )
-"Game.ml" 412 11675 11705 "Game.ml" 412 11675 11710
+"Game.ml" 412 11674 11704 "Game.ml" 412 11674 11709
 type(
   bool
 )
-"Game.ml" 412 11675 11696 "Game.ml" 412 11675 11710
+"Game.ml" 412 11674 11695 "Game.ml" 412 11674 11709
 type(
   unit
 )
@@ -8809,61 +8809,61 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 413 11711 11732 "Game.ml" 413 11711 11734
+"Game.ml" 413 11710 11731 "Game.ml" 413 11710 11733
 type(
   unit
 )
-"Game.ml" 411 11648 11664 "Game.ml" 413 11711 11734
+"Game.ml" 411 11647 11663 "Game.ml" 413 11710 11733
 type(
   unit
 )
-"Game.ml" 410 11584 11631 "Game.ml" 413 11711 11734
+"Game.ml" 410 11583 11630 "Game.ml" 413 11710 11733
 type(
   unit
 )
-"Game.ml" 410 11584 11613 "Game.ml" 413 11711 11734
+"Game.ml" 410 11583 11612 "Game.ml" 413 11710 11733
 type(
   unit
 )
-"Game.ml" 410 11584 11604 "Game.ml" 413 11711 11734
+"Game.ml" 410 11583 11603 "Game.ml" 413 11710 11733
 type(
   unit
 )
-"Game.ml" 414 11784 11803 "Game.ml" 414 11784 11805
+"Game.ml" 414 11783 11802 "Game.ml" 414 11783 11804
 type(
   unit
 )
-"Game.ml" 409 11484 11498 "Game.ml" 414 11784 11805
+"Game.ml" 409 11483 11497 "Game.ml" 414 11783 11804
 type(
   unit
 )
-"Game.ml" 405 11288 11301 "Game.ml" 414 11784 11805
+"Game.ml" 405 11287 11300 "Game.ml" 414 11783 11804
 type(
   unit
 )
-"Game.ml" 415 11881 11896 "Game.ml" 415 11881 11898
+"Game.ml" 415 11880 11895 "Game.ml" 415 11880 11897
 type(
   unit
 )
-"Game.ml" 403 11244 11254 "Game.ml" 415 11881 11898
+"Game.ml" 403 11243 11253 "Game.ml" 415 11880 11897
 type(
   unit
 )
-"Game.ml" 415 11881 11900 "Game.ml" 415 11881 11901
+"Game.ml" 415 11880 11899 "Game.ml" 415 11880 11900
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 399 11141 11153 "Game.ml" 399 11141 11154
+  int_ref i "Game.ml" 399 11140 11152 "Game.ml" 399 11140 11153
 )
-"Game.ml" 415 11881 11906 "Game.ml" 415 11881 11907
+"Game.ml" 415 11880 11905 "Game.ml" 415 11880 11906
 type(
   int ref
 )
 ident(
-  int_ref i "Game.ml" 399 11141 11153 "Game.ml" 399 11141 11154
+  int_ref i "Game.ml" 399 11140 11152 "Game.ml" 399 11140 11153
 )
-"Game.ml" 415 11881 11905 "Game.ml" 415 11881 11907
+"Game.ml" 415 11880 11904 "Game.ml" 415 11880 11906
 type(
   int
 )
@@ -8873,22 +8873,22 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 415 11881 11908 "Game.ml" 415 11881 11909
+"Game.ml" 415 11880 11907 "Game.ml" 415 11880 11908
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Game.ml" 415 11881 11910 "Game.ml" 415 11881 11911
+"Game.ml" 415 11880 11909 "Game.ml" 415 11880 11910
 type(
   int
 )
-"Game.ml" 415 11881 11905 "Game.ml" 415 11881 11911
+"Game.ml" 415 11880 11904 "Game.ml" 415 11880 11910
 type(
   int
 )
-"Game.ml" 415 11881 11900 "Game.ml" 415 11881 11911
+"Game.ml" 415 11880 11899 "Game.ml" 415 11880 11910
 type(
   unit
 )
@@ -8898,37 +8898,26 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Game.ml" 403 11244 11254 "Game.ml" 415 11881 11911
+"Game.ml" 403 11243 11253 "Game.ml" 415 11880 11910
 type(
   unit
 )
-"Game.ml" 402 11205 11216 "Game.ml" 415 11881 11911
+"Game.ml" 402 11204 11215 "Game.ml" 415 11880 11910
 type(
   unit
 )
-"Game.ml" 401 11168 11176 "Game.ml" 416 11913 11925
+"Game.ml" 401 11167 11175 "Game.ml" 416 11912 11924
 type(
   unit
 )
-"Game.ml" 416 11913 11927 "Game.ml" 416 11913 11940
-type(
-  (int -> unit, out_channel, unit) format -> int -> unit
-)
-ident(
-  ext_ref Core.Std.Printf.printf
-)
-"Game.ml" 416 11913 11941 "Game.ml" 416 11913 11945
-type(
-  (int -> unit, out_channel, unit) format
-)
-"Game.ml" 416 11913 11949 "Game.ml" 416 11913 11959
+"Game.ml" 417 11926 11937 "Game.ml" 417 11926 11947
 type(
   int ref
 )
 ident(
-  int_ref indexValue "Game.ml" 397 11075 11087 "Game.ml" 397 11075 11097
+  int_ref indexValue "Game.ml" 397 11074 11086 "Game.ml" 397 11074 11096
 )
-"Game.ml" 416 11913 11947 "Game.ml" 416 11913 11960
+"Game.ml" 417 11926 11935 "Game.ml" 417 11926 11948
 type(
   int
 )
@@ -8938,21 +8927,14 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 416 11913 11927 "Game.ml" 416 11913 11961
-call(
-  stack
-)
-type(
-  unit
-)
-"Game.ml" 417 11963 11974 "Game.ml" 417 11963 11984
+"Game.ml" 417 11926 11951 "Game.ml" 417 11926 11952
 type(
   int ref
 )
 ident(
-  int_ref indexValue "Game.ml" 397 11075 11087 "Game.ml" 397 11075 11097
+  int_ref b "Game.ml" 335 9050 9058 "Game.ml" 335 9050 9059
 )
-"Game.ml" 417 11963 11972 "Game.ml" 417 11963 11985
+"Game.ml" 417 11926 11950 "Game.ml" 417 11926 11952
 type(
   int
 )
@@ -8962,141 +8944,120 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Game.ml" 417 11963 11988 "Game.ml" 417 11963 11989
-type(
-  int ref
-)
-ident(
-  int_ref b "Game.ml" 335 9051 9059 "Game.ml" 335 9051 9060
-)
-"Game.ml" 417 11963 11987 "Game.ml" 417 11963 11989
-type(
-  int
-)
-type(
-  int ref -> int
-)
-ident(
-  ext_ref Pervasives.( ! )
-)
-"Game.ml" 417 11963 11972 "Game.ml" 417 11963 11989
+"Game.ml" 417 11926 11935 "Game.ml" 417 11926 11952
 type(
   int * int
 )
-"Game.ml" 416 11913 11927 "Game.ml" 417 11963 11989
+"Game.ml" 401 11167 11175 "Game.ml" 417 11926 11952
 type(
   int * int
 )
-"Game.ml" 401 11168 11176 "Game.ml" 417 11963 11989
+"Game.ml" 399 11140 11148 "Game.ml" 417 11926 11953
 type(
   int * int
 )
-"Game.ml" 399 11141 11149 "Game.ml" 417 11963 11990
+"Game.ml" 398 11108 11116 "Game.ml" 417 11926 11953
 type(
   int * int
 )
-"Game.ml" 398 11109 11117 "Game.ml" 417 11963 11990
+"Game.ml" 397 11074 11082 "Game.ml" 417 11926 11953
 type(
   int * int
 )
-"Game.ml" 397 11075 11083 "Game.ml" 417 11963 11990
+"Game.ml" 396 11036 11045 "Game.ml" 417 11926 11953
 type(
   int * int
 )
-"Game.ml" 396 11037 11046 "Game.ml" 417 11963 11990
+"Game.ml" 369 10137 10143 "Game.ml" 417 11926 11954
 type(
   int * int
 )
-"Game.ml" 369 10138 10144 "Game.ml" 417 11963 11991
+"Game.ml" 336 9142 9146 "Game.ml" 417 11926 11954
 type(
   int * int
 )
-"Game.ml" 336 9143 9147 "Game.ml" 417 11963 11991
+"Game.ml" 335 9050 9054 "Game.ml" 417 11926 11954
 type(
   int * int
 )
-"Game.ml" 335 9051 9055 "Game.ml" 417 11963 11991
-type(
-  int * int
-)
-"Game.ml" 334 8957 8961 "Game.ml" 417 11963 11991
+"Game.ml" 334 8956 8960 "Game.ml" 417 11926 11954
 type(
   int * int
 )
 type(
   int * int
 )
-"Game.ml" 333 8851 8927 "Game.ml" 417 11963 11991
+"Game.ml" 333 8850 8926 "Game.ml" 417 11926 11954
 type(
   int -> int * int
 )
-"Game.ml" 333 8851 8913 "Game.ml" 417 11963 11991
+"Game.ml" 333 8850 8912 "Game.ml" 417 11926 11954
 type(
   int -> int -> int * int
 )
-"Game.ml" 333 8851 8894 "Game.ml" 417 11963 11991
+"Game.ml" 333 8850 8893 "Game.ml" 417 11926 11954
 type(
   int -> int -> int -> int * int
 )
-"Game.ml" 333 8851 8884 "Game.ml" 417 11963 11991
+"Game.ml" 333 8850 8883 "Game.ml" 417 11926 11954
 type(
   int -> int -> int -> int -> int * int
 )
-"Game.ml" 333 8851 8871 "Game.ml" 417 11963 11991
+"Game.ml" 333 8850 8870 "Game.ml" 417 11926 11954
 type(
   board -> int -> int -> int -> int -> int * int
 )
-"Game.ml" 419 11997 12004 "Game.ml" 419 11997 12006
+"Game.ml" 419 11960 11967 "Game.ml" 419 11960 11969
 type(
   int
 )
 ident(
-  def mv "Game.ml" 420 12062 12065 "Game.ml" 420 12062 12071
+  def mv "Game.ml" 420 12025 12028 "Game.ml" 420 12025 12034
 )
-"Game.ml" 419 11997 12008 "Game.ml" 419 11997 12009
+"Game.ml" 419 11960 11971 "Game.ml" 419 11960 11972
 type(
   int
 )
-"Game.ml" 419 11997 12004 "Game.ml" 419 11997 12009
+"Game.ml" 419 11960 11967 "Game.ml" 419 11960 11972
 type(
   int * int
 )
-"Game.ml" 419 11997 12013 "Game.ml" 419 11997 12022
+"Game.ml" 419 11960 11976 "Game.ml" 419 11960 11985
 type(
   board -> int -> int -> int -> int -> int * int
 )
 ident(
-  int_ref alphabeta "Game.ml" 333 8851 8861 "Game.ml" 333 8851 8870
+  int_ref alphabeta "Game.ml" 333 8850 8860 "Game.ml" 333 8850 8869
 )
-"Game.ml" 419 11997 12023 "Game.ml" 419 11997 12025
+"Game.ml" 419 11960 11986 "Game.ml" 419 11960 11988
 type(
   board
 )
 ident(
   int_ref bd "Game.ml" 203 5335 5356 "Game.ml" 203 5335 5358
 )
-"Game.ml" 419 11997 12026 "Game.ml" 419 11997 12039
+"Game.ml" 419 11960 11989 "Game.ml" 419 11960 12002
 type(
   int
 )
 ident(
   int_ref minimax_depth "Game.ml" 9 133 137 "Game.ml" 9 133 150
 )
-"Game.ml" 419 11997 12040 "Game.ml" 419 11997 12043
+"Game.ml" 419 11960 12003 "Game.ml" 419 11960 12006
 type(
   int
 )
 ident(
   ext_ref num
 )
-"Game.ml" 419 11997 12046 "Game.ml" 419 11997 12051
+"Game.ml" 419 11960 12009 "Game.ml" 419 11960 12014
 type(
   int
 )
 ident(
   int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
 )
-"Game.ml" 419 11997 12045 "Game.ml" 419 11997 12051
+"Game.ml" 419 11960 12008 "Game.ml" 419 11960 12014
 type(
   int
 )
@@ -9106,108 +9067,108 @@ type(
 ident(
   ext_ref Pervasives.( ~- )
 )
-"Game.ml" 419 11997 12053 "Game.ml" 419 11997 12058
+"Game.ml" 419 11960 12016 "Game.ml" 419 11960 12021
 type(
   int
 )
 ident(
   int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
 )
-"Game.ml" 419 11997 12013 "Game.ml" 419 11997 12058
+"Game.ml" 419 11960 11976 "Game.ml" 419 11960 12021
 call(
   stack
 )
 type(
   int * int
 )
-"Game.ml" 420 12062 12065 "Game.ml" 420 12062 12067
+"Game.ml" 420 12025 12028 "Game.ml" 420 12025 12030
 type(
   int
 )
 ident(
-  int_ref mv "Game.ml" 419 11997 12004 "Game.ml" 419 11997 12006
+  int_ref mv "Game.ml" 419 11960 11967 "Game.ml" 419 11960 11969
 )
-"Game.ml" 420 12062 12068 "Game.ml" 420 12062 12071
+"Game.ml" 420 12025 12031 "Game.ml" 420 12025 12034
 type(
   int
 )
 ident(
   ext_ref num
 )
-"Game.ml" 420 12062 12065 "Game.ml" 420 12062 12071
+"Game.ml" 420 12025 12028 "Game.ml" 420 12025 12034
 type(
   int * int
 )
-"Game.ml" 419 11997 11999 "Game.ml" 420 12062 12072
+"Game.ml" 419 11960 11962 "Game.ml" 420 12025 12035
 type(
   int * int
 )
-"Game.ml" 333 8851 8853 "Game.ml" 420 12062 12072
+"Game.ml" 333 8850 8852 "Game.ml" 420 12025 12035
 type(
   int * int
 )
-"Game.ml" 203 5335 5355 "Game.ml" 420 12062 12072
+"Game.ml" 203 5335 5355 "Game.ml" 420 12025 12035
 type(
   board -> c4Move
 )
 type(
   board -> c4Move
 )
-"Game.ml" 203 5335 5337 "Game.ml" 420 12062 12072
+"Game.ml" 203 5335 5337 "Game.ml" 420 12025 12035
 type(
   (< next_move : board -> c4Move; player_name : string; .. > as 'a) ->
   board -> c4Move
 )
-"Game.ml" 198 5222 5222 "Game.ml" 423 12075 12078
+"Game.ml" 198 5222 5222 "Game.ml" 423 12038 12041
 type(
   'a
 )
-"Game.ml" 485 13634 13648 "Game.ml" 485 13634 13655
+"Game.ml" 485 13597 13611 "Game.ml" 485 13597 13618
 type(
   c4Player
 )
-"Game.ml" 485 13634 13669 "Game.ml" 485 13634 13676
+"Game.ml" 485 13597 13632 "Game.ml" 485 13597 13639
 type(
   c4Player
 )
-"Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+"Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 type(
   < get_board : board; play : unit -> unit; print_board : unit;
     switch_player : unit; .. >
 )
-"Game.ml" 490 13732 13763 "Game.ml" 490 13732 13770
+"Game.ml" 490 13695 13726 "Game.ml" 490 13695 13733
 type(
   c4Player
 )
 ident(
-  int_ref player2 "Game.ml" 485 13634 13669 "Game.ml" 485 13634 13676
+  int_ref player2 "Game.ml" 485 13597 13632 "Game.ml" 485 13597 13639
 )
-"Game.ml" 492 13772 13802 "Game.ml" 492 13772 13819
+"Game.ml" 492 13735 13765 "Game.ml" 492 13735 13782
 type(
   dimx:int -> dimy:int -> int -> int array array
 )
 ident(
   ext_ref Core.Std.Array.make_matrix
 )
-"Game.ml" 492 13772 13826 "Game.ml" 492 13772 13831
+"Game.ml" 492 13735 13789 "Game.ml" 492 13735 13794
 type(
   int
 )
 ident(
   int_ref width "Game.ml" 10 155 159 "Game.ml" 10 155 164
 )
-"Game.ml" 492 13772 13838 "Game.ml" 492 13772 13844
+"Game.ml" 492 13735 13801 "Game.ml" 492 13735 13807
 type(
   int
 )
 ident(
   int_ref height "Game.ml" 11 169 173 "Game.ml" 11 169 179
 )
-"Game.ml" 492 13772 13845 "Game.ml" 492 13772 13846
+"Game.ml" 492 13735 13808 "Game.ml" 492 13735 13809
 type(
   int
 )
-"Game.ml" 492 13772 13802 "Game.ml" 492 13772 13846
+"Game.ml" 492 13735 13765 "Game.ml" 492 13735 13809
 call(
   stack
 )
@@ -9217,7 +9178,7 @@ type(
 type(
   int array array
 )
-"Game.ml" 494 13849 13870 "Game.ml" 494 13849 13875
+"Game.ml" 494 13812 13833 "Game.ml" 494 13812 13838
 type(
   board
 )
@@ -9227,150 +9188,150 @@ type(
 ident(
   ext_ref board
 )
-"Game.ml" 494 13849 13851 "Game.ml" 494 13849 13875
+"Game.ml" 494 13812 13814 "Game.ml" 494 13812 13838
 type(
   (< get_board : board; play : unit -> unit; print_board : unit;
      switch_player : unit; .. >
    as 'a) ->
   board
 )
-"Game.ml" 497 13908 13912 "Game.ml" 497 13908 13932
+"Game.ml" 497 13871 13875 "Game.ml" 497 13871 13895
 type(
   unit -> unit
 )
 ident(
   ext_ref Graphics.clear_graph
 )
-"Game.ml" 497 13908 13932 "Game.ml" 497 13908 13934
+"Game.ml" 497 13871 13895 "Game.ml" 497 13871 13897
 type(
   unit
 )
-"Game.ml" 497 13908 13912 "Game.ml" 497 13908 13934
+"Game.ml" 497 13871 13875 "Game.ml" 497 13871 13897
 type(
   unit
 )
-"Game.ml" 498 13936 13940 "Game.ml" 498 13936 13944
+"Game.ml" 498 13899 13903 "Game.ml" 498 13899 13907
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 498 13936 13940 "Game.ml" 498 13936 13949
+"Game.ml" 498 13899 13903 "Game.ml" 498 13899 13912
 call(
   stack
 )
 type(
   unit -> unit
 )
-"Game.ml" 498 13936 13949 "Game.ml" 498 13936 13951
+"Game.ml" 498 13899 13912 "Game.ml" 498 13899 13914
 type(
   unit
 )
-"Game.ml" 498 13936 13940 "Game.ml" 498 13936 13951
+"Game.ml" 498 13899 13903 "Game.ml" 498 13899 13914
 type(
   unit
 )
-"Game.ml" 499 13953 13963 "Game.ml" 499 13953 13968
+"Game.ml" 499 13916 13926 "Game.ml" 499 13916 13931
 type(
   board
 )
 ident(
   ext_ref board
 )
-"Game.ml" 500 13975 13981 "Game.ml" 500 13975 13985
+"Game.ml" 500 13938 13944 "Game.ml" 500 13938 13948
 type(
   board
 )
-"Game.ml" 500 13975 13989 "Game.ml" 500 13975 13997
+"Game.ml" 500 13938 13952 "Game.ml" 500 13938 13960
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.failwith
 )
-"Game.ml" 500 13975 13998 "Game.ml" 500 13975 14013
+"Game.ml" 500 13938 13961 "Game.ml" 500 13938 13976
 type(
   string
 )
-"Game.ml" 500 13975 13989 "Game.ml" 500 13975 14013
+"Game.ml" 500 13938 13952 "Game.ml" 500 13938 13976
 call(
   tail
 )
 type(
   unit
 )
-"Game.ml" 501 14014 14020 "Game.ml" 501 14014 14021
+"Game.ml" 501 13977 13983 "Game.ml" 501 13977 13984
 type(
   board
 )
-"Game.ml" 501 14014 14033 "Game.ml" 501 14014 14034
+"Game.ml" 501 13977 13996 "Game.ml" 501 13977 13997
 type(
   int
 )
-"Game.ml" 501 14014 14039 "Game.ml" 501 14014 14045
+"Game.ml" 501 13977 14002 "Game.ml" 501 13977 14008
 type(
   int
 )
 ident(
   int_ref height "Game.ml" 11 169 173 "Game.ml" 11 169 179
 )
-"Game.ml" 501 14014 14045 "Game.ml" 501 14014 14046
+"Game.ml" 501 13977 14008 "Game.ml" 501 13977 14009
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"Game.ml" 501 14014 14046 "Game.ml" 501 14014 14047
+"Game.ml" 501 13977 14009 "Game.ml" 501 13977 14010
 type(
   int
 )
-"Game.ml" 501 14014 14039 "Game.ml" 501 14014 14047
+"Game.ml" 501 13977 14002 "Game.ml" 501 13977 14010
 type(
   int
 )
-"Game.ml" 502 14052 14066 "Game.ml" 502 14052 14067
+"Game.ml" 502 14015 14029 "Game.ml" 502 14015 14030
 type(
   int
 )
-"Game.ml" 502 14052 14072 "Game.ml" 502 14052 14077
+"Game.ml" 502 14015 14035 "Game.ml" 502 14015 14040
 type(
   int
 )
 ident(
   int_ref width "Game.ml" 10 155 159 "Game.ml" 10 155 164
 )
-"Game.ml" 502 14052 14077 "Game.ml" 502 14052 14078
+"Game.ml" 502 14015 14040 "Game.ml" 502 14015 14041
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( - )
 )
-"Game.ml" 502 14052 14078 "Game.ml" 502 14052 14079
+"Game.ml" 502 14015 14041 "Game.ml" 502 14015 14042
 type(
   int
 )
-"Game.ml" 502 14052 14072 "Game.ml" 502 14052 14079
+"Game.ml" 502 14015 14035 "Game.ml" 502 14015 14042
 type(
   int
 )
-"Game.ml" 503 14085 14098 "Game.ml" 503 14085 14103
+"Game.ml" 503 14048 14061 "Game.ml" 503 14048 14066
 type(
   board
 )
 ident(
   ext_ref board
 )
-"Game.ml" 503 14085 14105 "Game.ml" 503 14085 14106
+"Game.ml" 503 14048 14068 "Game.ml" 503 14048 14069
 type(
   int
 )
 ident(
-  int_ref i "Game.ml" 502 14052 14058 "Game.ml" 508 14395 14404
+  int_ref i "Game.ml" 502 14015 14021 "Game.ml" 508 14358 14367
 )
-"Game.ml" 503 14085 14098 "Game.ml" 503 14085 14107
+"Game.ml" 503 14048 14061 "Game.ml" 503 14048 14070
 type(
   int array
 )
@@ -9380,14 +9341,14 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"Game.ml" 503 14085 14109 "Game.ml" 503 14085 14110
+"Game.ml" 503 14048 14072 "Game.ml" 503 14048 14073
 type(
   int
 )
 ident(
-  int_ref j "Game.ml" 501 14014 14025 "Game.ml" 509 14406 14415
+  int_ref j "Game.ml" 501 13977 13988 "Game.ml" 509 14369 14378
 )
-"Game.ml" 503 14085 14098 "Game.ml" 503 14085 14111
+"Game.ml" 503 14048 14061 "Game.ml" 503 14048 14074
 type(
   int
 )
@@ -9397,1114 +9358,1114 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"Game.ml" 504 14117 14126 "Game.ml" 504 14117 14127
+"Game.ml" 504 14080 14089 "Game.ml" 504 14080 14090
 type(
   int
 )
-"Game.ml" 504 14117 14131 "Game.ml" 504 14117 14135
+"Game.ml" 504 14080 14094 "Game.ml" 504 14080 14098
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 504 14117 14131 "Game.ml" 504 14117 14147
+"Game.ml" 504 14080 14094 "Game.ml" 504 14080 14110
 call(
   stack
 )
 type(
   int -> int -> int -> string -> unit
 )
-"Game.ml" 504 14117 14150 "Game.ml" 504 14117 14151
+"Game.ml" 504 14080 14113 "Game.ml" 504 14080 14114
 type(
   int
 )
 ident(
-  int_ref i "Game.ml" 502 14052 14058 "Game.ml" 508 14395 14404
+  int_ref i "Game.ml" 502 14015 14021 "Game.ml" 508 14358 14367
 )
-"Game.ml" 504 14117 14152 "Game.ml" 504 14117 14153
+"Game.ml" 504 14080 14115 "Game.ml" 504 14080 14116
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"Game.ml" 504 14117 14154 "Game.ml" 504 14117 14157
+"Game.ml" 504 14080 14117 "Game.ml" 504 14080 14120
 type(
   int
 )
-"Game.ml" 504 14117 14150 "Game.ml" 504 14117 14157
+"Game.ml" 504 14080 14113 "Game.ml" 504 14080 14120
 type(
   int
 )
-"Game.ml" 504 14117 14158 "Game.ml" 504 14117 14159
+"Game.ml" 504 14080 14121 "Game.ml" 504 14080 14122
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Game.ml" 504 14117 14159 "Game.ml" 504 14117 14161
+"Game.ml" 504 14080 14122 "Game.ml" 504 14080 14124
 type(
   int
 )
-"Game.ml" 504 14117 14149 "Game.ml" 504 14117 14161
+"Game.ml" 504 14080 14112 "Game.ml" 504 14080 14124
 type(
   int
 )
-"Game.ml" 504 14117 14165 "Game.ml" 504 14117 14166
+"Game.ml" 504 14080 14128 "Game.ml" 504 14080 14129
 type(
   int
 )
 ident(
-  int_ref j "Game.ml" 501 14014 14025 "Game.ml" 509 14406 14415
+  int_ref j "Game.ml" 501 13977 13988 "Game.ml" 509 14369 14378
 )
-"Game.ml" 504 14117 14167 "Game.ml" 504 14117 14168
+"Game.ml" 504 14080 14130 "Game.ml" 504 14080 14131
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"Game.ml" 504 14117 14169 "Game.ml" 504 14117 14172
+"Game.ml" 504 14080 14132 "Game.ml" 504 14080 14135
 type(
   int
 )
-"Game.ml" 504 14117 14165 "Game.ml" 504 14117 14172
+"Game.ml" 504 14080 14128 "Game.ml" 504 14080 14135
 type(
   int
 )
-"Game.ml" 504 14117 14173 "Game.ml" 504 14117 14174
+"Game.ml" 504 14080 14136 "Game.ml" 504 14080 14137
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Game.ml" 504 14117 14174 "Game.ml" 504 14117 14176
+"Game.ml" 504 14080 14137 "Game.ml" 504 14080 14139
 type(
   int
 )
-"Game.ml" 504 14117 14164 "Game.ml" 504 14117 14176
+"Game.ml" 504 14080 14127 "Game.ml" 504 14080 14139
 type(
   int
 )
-"Game.ml" 504 14117 14178 "Game.ml" 504 14117 14192
+"Game.ml" 504 14080 14141 "Game.ml" 504 14080 14155
 type(
   int
 )
 ident(
   ext_ref Graphics.black
 )
-"Game.ml" 504 14117 14193 "Game.ml" 504 14117 14195
+"Game.ml" 504 14080 14156 "Game.ml" 504 14080 14158
 type(
   string
 )
-"Game.ml" 504 14117 14131 "Game.ml" 504 14117 14195
+"Game.ml" 504 14080 14094 "Game.ml" 504 14080 14158
 type(
   unit
 )
-"Game.ml" 505 14196 14205 "Game.ml" 505 14196 14206
+"Game.ml" 505 14159 14168 "Game.ml" 505 14159 14169
 type(
   int
 )
-"Game.ml" 505 14196 14210 "Game.ml" 505 14196 14214
+"Game.ml" 505 14159 14173 "Game.ml" 505 14159 14177
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 505 14196 14210 "Game.ml" 505 14196 14226
+"Game.ml" 505 14159 14173 "Game.ml" 505 14159 14189
 call(
   stack
 )
 type(
   int -> int -> int -> string -> unit
 )
-"Game.ml" 505 14196 14229 "Game.ml" 505 14196 14230
+"Game.ml" 505 14159 14192 "Game.ml" 505 14159 14193
 type(
   int
 )
 ident(
-  int_ref i "Game.ml" 502 14052 14058 "Game.ml" 508 14395 14404
+  int_ref i "Game.ml" 502 14015 14021 "Game.ml" 508 14358 14367
 )
-"Game.ml" 505 14196 14231 "Game.ml" 505 14196 14232
+"Game.ml" 505 14159 14194 "Game.ml" 505 14159 14195
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"Game.ml" 505 14196 14233 "Game.ml" 505 14196 14236
+"Game.ml" 505 14159 14196 "Game.ml" 505 14159 14199
 type(
   int
 )
-"Game.ml" 505 14196 14229 "Game.ml" 505 14196 14236
+"Game.ml" 505 14159 14192 "Game.ml" 505 14159 14199
 type(
   int
 )
-"Game.ml" 505 14196 14237 "Game.ml" 505 14196 14238
+"Game.ml" 505 14159 14200 "Game.ml" 505 14159 14201
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Game.ml" 505 14196 14238 "Game.ml" 505 14196 14240
+"Game.ml" 505 14159 14201 "Game.ml" 505 14159 14203
 type(
   int
 )
-"Game.ml" 505 14196 14228 "Game.ml" 505 14196 14240
+"Game.ml" 505 14159 14191 "Game.ml" 505 14159 14203
 type(
   int
 )
-"Game.ml" 505 14196 14244 "Game.ml" 505 14196 14245
+"Game.ml" 505 14159 14207 "Game.ml" 505 14159 14208
 type(
   int
 )
 ident(
-  int_ref j "Game.ml" 501 14014 14025 "Game.ml" 509 14406 14415
+  int_ref j "Game.ml" 501 13977 13988 "Game.ml" 509 14369 14378
 )
-"Game.ml" 505 14196 14246 "Game.ml" 505 14196 14247
+"Game.ml" 505 14159 14209 "Game.ml" 505 14159 14210
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"Game.ml" 505 14196 14248 "Game.ml" 505 14196 14251
+"Game.ml" 505 14159 14211 "Game.ml" 505 14159 14214
 type(
   int
 )
-"Game.ml" 505 14196 14244 "Game.ml" 505 14196 14251
+"Game.ml" 505 14159 14207 "Game.ml" 505 14159 14214
 type(
   int
 )
-"Game.ml" 505 14196 14252 "Game.ml" 505 14196 14253
+"Game.ml" 505 14159 14215 "Game.ml" 505 14159 14216
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Game.ml" 505 14196 14253 "Game.ml" 505 14196 14255
+"Game.ml" 505 14159 14216 "Game.ml" 505 14159 14218
 type(
   int
 )
-"Game.ml" 505 14196 14243 "Game.ml" 505 14196 14255
+"Game.ml" 505 14159 14206 "Game.ml" 505 14159 14218
 type(
   int
 )
-"Game.ml" 505 14196 14257 "Game.ml" 505 14196 14269
+"Game.ml" 505 14159 14220 "Game.ml" 505 14159 14232
 type(
   int
 )
 ident(
   ext_ref Graphics.red
 )
-"Game.ml" 505 14196 14270 "Game.ml" 505 14196 14274
+"Game.ml" 505 14159 14233 "Game.ml" 505 14159 14237
 type(
   string
 )
-"Game.ml" 505 14196 14210 "Game.ml" 505 14196 14274
+"Game.ml" 505 14159 14173 "Game.ml" 505 14159 14237
 type(
   unit
 )
-"Game.ml" 506 14275 14284 "Game.ml" 506 14275 14285
+"Game.ml" 506 14238 14247 "Game.ml" 506 14238 14248
 type(
   int
 )
-"Game.ml" 506 14275 14289 "Game.ml" 506 14275 14293
+"Game.ml" 506 14238 14252 "Game.ml" 506 14238 14256
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 506 14275 14289 "Game.ml" 506 14275 14305
+"Game.ml" 506 14238 14252 "Game.ml" 506 14238 14268
 call(
   stack
 )
 type(
   int -> int -> int -> string -> unit
 )
-"Game.ml" 506 14275 14308 "Game.ml" 506 14275 14309
+"Game.ml" 506 14238 14271 "Game.ml" 506 14238 14272
 type(
   int
 )
 ident(
-  int_ref i "Game.ml" 502 14052 14058 "Game.ml" 508 14395 14404
+  int_ref i "Game.ml" 502 14015 14021 "Game.ml" 508 14358 14367
 )
-"Game.ml" 506 14275 14310 "Game.ml" 506 14275 14311
+"Game.ml" 506 14238 14273 "Game.ml" 506 14238 14274
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"Game.ml" 506 14275 14312 "Game.ml" 506 14275 14315
+"Game.ml" 506 14238 14275 "Game.ml" 506 14238 14278
 type(
   int
 )
-"Game.ml" 506 14275 14308 "Game.ml" 506 14275 14315
+"Game.ml" 506 14238 14271 "Game.ml" 506 14238 14278
 type(
   int
 )
-"Game.ml" 506 14275 14316 "Game.ml" 506 14275 14317
+"Game.ml" 506 14238 14279 "Game.ml" 506 14238 14280
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Game.ml" 506 14275 14317 "Game.ml" 506 14275 14319
+"Game.ml" 506 14238 14280 "Game.ml" 506 14238 14282
 type(
   int
 )
-"Game.ml" 506 14275 14307 "Game.ml" 506 14275 14319
+"Game.ml" 506 14238 14270 "Game.ml" 506 14238 14282
 type(
   int
 )
-"Game.ml" 506 14275 14323 "Game.ml" 506 14275 14324
+"Game.ml" 506 14238 14286 "Game.ml" 506 14238 14287
 type(
   int
 )
 ident(
-  int_ref j "Game.ml" 501 14014 14025 "Game.ml" 509 14406 14415
+  int_ref j "Game.ml" 501 13977 13988 "Game.ml" 509 14369 14378
 )
-"Game.ml" 506 14275 14325 "Game.ml" 506 14275 14326
+"Game.ml" 506 14238 14288 "Game.ml" 506 14238 14289
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"Game.ml" 506 14275 14327 "Game.ml" 506 14275 14330
+"Game.ml" 506 14238 14290 "Game.ml" 506 14238 14293
 type(
   int
 )
-"Game.ml" 506 14275 14323 "Game.ml" 506 14275 14330
+"Game.ml" 506 14238 14286 "Game.ml" 506 14238 14293
 type(
   int
 )
-"Game.ml" 506 14275 14331 "Game.ml" 506 14275 14332
+"Game.ml" 506 14238 14294 "Game.ml" 506 14238 14295
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Game.ml" 506 14275 14332 "Game.ml" 506 14275 14334
+"Game.ml" 506 14238 14295 "Game.ml" 506 14238 14297
 type(
   int
 )
-"Game.ml" 506 14275 14322 "Game.ml" 506 14275 14334
+"Game.ml" 506 14238 14285 "Game.ml" 506 14238 14297
 type(
   int
 )
-"Game.ml" 506 14275 14336 "Game.ml" 506 14275 14349
+"Game.ml" 506 14238 14299 "Game.ml" 506 14238 14312
 type(
   int
 )
 ident(
   ext_ref Graphics.blue
 )
-"Game.ml" 506 14275 14350 "Game.ml" 506 14275 14354
+"Game.ml" 506 14238 14313 "Game.ml" 506 14238 14317
 type(
   string
 )
-"Game.ml" 506 14275 14289 "Game.ml" 506 14275 14354
+"Game.ml" 506 14238 14252 "Game.ml" 506 14238 14317
 type(
   unit
 )
-"Game.ml" 507 14355 14364 "Game.ml" 507 14355 14365
+"Game.ml" 507 14318 14327 "Game.ml" 507 14318 14328
 type(
   int
 )
-"Game.ml" 507 14355 14369 "Game.ml" 507 14355 14377
+"Game.ml" 507 14318 14332 "Game.ml" 507 14318 14340
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.failwith
 )
-"Game.ml" 507 14355 14378 "Game.ml" 507 14355 14393
+"Game.ml" 507 14318 14341 "Game.ml" 507 14318 14356
 type(
   string
 )
-"Game.ml" 507 14355 14369 "Game.ml" 507 14355 14393
+"Game.ml" 507 14318 14332 "Game.ml" 507 14318 14356
 call(
   stack
 )
 type(
   unit
 )
-"Game.ml" 503 14085 14092 "Game.ml" 507 14355 14393
+"Game.ml" 503 14048 14055 "Game.ml" 507 14318 14356
 type(
   unit
 )
-"Game.ml" 502 14052 14058 "Game.ml" 508 14395 14404
+"Game.ml" 502 14015 14021 "Game.ml" 508 14358 14367
 type(
   unit
 )
-"Game.ml" 501 14014 14025 "Game.ml" 509 14406 14415
+"Game.ml" 501 13977 13988 "Game.ml" 509 14369 14378
 type(
   unit
 )
-"Game.ml" 499 13953 13957 "Game.ml" 509 14406 14415
+"Game.ml" 499 13916 13920 "Game.ml" 509 14369 14378
 type(
   unit
 )
-"Game.ml" 498 13936 13940 "Game.ml" 509 14406 14415
+"Game.ml" 498 13899 13903 "Game.ml" 509 14369 14378
 type(
   unit
 )
-"Game.ml" 497 13908 13912 "Game.ml" 509 14406 14415
+"Game.ml" 497 13871 13875 "Game.ml" 509 14369 14378
 type(
   unit
 )
 type(
   unit
 )
-"Game.ml" 496 13878 13880 "Game.ml" 509 14406 14415
+"Game.ml" 496 13841 13843 "Game.ml" 509 14369 14378
 type(
   'a -> unit
 )
-"Game.ml" 512 14456 14463 "Game.ml" 512 14456 14477
+"Game.ml" 512 14419 14426 "Game.ml" 512 14419 14440
 type(
   c4Player
 )
 ident(
   ext_ref current_player
 )
-"Game.ml" 512 14456 14478 "Game.ml" 512 14456 14479
+"Game.ml" 512 14419 14441 "Game.ml" 512 14419 14442
 type(
   c4Player -> c4Player -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"Game.ml" 512 14456 14480 "Game.ml" 512 14456 14487
+"Game.ml" 512 14419 14443 "Game.ml" 512 14419 14450
 type(
   c4Player
 )
 ident(
-  int_ref player1 "Game.ml" 485 13634 13648 "Game.ml" 485 13634 13655
+  int_ref player1 "Game.ml" 485 13597 13611 "Game.ml" 485 13597 13618
 )
-"Game.ml" 512 14456 14463 "Game.ml" 512 14456 14487
+"Game.ml" 512 14419 14426 "Game.ml" 512 14419 14450
 type(
   bool
 )
-"Game.ml" 512 14456 14511 "Game.ml" 512 14456 14518
+"Game.ml" 512 14419 14474 "Game.ml" 512 14419 14481
 type(
   c4Player
 )
 ident(
-  int_ref player2 "Game.ml" 485 13634 13669 "Game.ml" 485 13634 13676
+  int_ref player2 "Game.ml" 485 13597 13632 "Game.ml" 485 13597 13639
 )
-"Game.ml" 512 14456 14493 "Game.ml" 512 14456 14518
+"Game.ml" 512 14419 14456 "Game.ml" 512 14419 14481
 type(
   unit
 )
-"Game.ml" 512 14456 14542 "Game.ml" 512 14456 14549
+"Game.ml" 512 14419 14505 "Game.ml" 512 14419 14512
 type(
   c4Player
 )
 ident(
-  int_ref player1 "Game.ml" 485 13634 13648 "Game.ml" 485 13634 13655
+  int_ref player1 "Game.ml" 485 13597 13611 "Game.ml" 485 13597 13618
 )
-"Game.ml" 512 14456 14524 "Game.ml" 512 14456 14549
+"Game.ml" 512 14419 14487 "Game.ml" 512 14419 14512
 type(
   unit
 )
-"Game.ml" 512 14456 14460 "Game.ml" 512 14456 14549
+"Game.ml" 512 14419 14423 "Game.ml" 512 14419 14512
 type(
   unit
 )
 type(
   unit
 )
-"Game.ml" 511 14424 14426 "Game.ml" 512 14456 14549
+"Game.ml" 511 14387 14389 "Game.ml" 512 14419 14512
 type(
   'a -> unit
 )
-"Game.ml" 514 14551 14564 "Game.ml" 514 14551 14566
+"Game.ml" 514 14514 14527 "Game.ml" 514 14514 14529
 type(
   unit
 )
-"Game.ml" 515 14576 14580 "Game.ml" 515 14576 14584
+"Game.ml" 515 14539 14543 "Game.ml" 515 14539 14547
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 515 14576 14580 "Game.ml" 515 14576 14596
+"Game.ml" 515 14539 14543 "Game.ml" 515 14539 14559
 call(
   stack
 )
 type(
   unit
 )
-"Game.ml" 516 14598 14602 "Game.ml" 516 14598 14606
+"Game.ml" 516 14561 14565 "Game.ml" 516 14561 14569
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 516 14598 14602 "Game.ml" 516 14598 14611
+"Game.ml" 516 14561 14565 "Game.ml" 516 14561 14574
 call(
   stack
 )
 type(
   unit -> unit
 )
-"Game.ml" 516 14598 14611 "Game.ml" 516 14598 14613
+"Game.ml" 516 14561 14574 "Game.ml" 516 14561 14576
 type(
   unit
 )
-"Game.ml" 516 14598 14602 "Game.ml" 516 14598 14613
+"Game.ml" 516 14561 14565 "Game.ml" 516 14561 14576
 type(
   unit
 )
-"Game.ml" 517 14616 14620 "Game.ml" 517 14616 14638
+"Game.ml" 517 14579 14583 "Game.ml" 517 14579 14601
 type(
   int -> unit
 )
 ident(
   ext_ref Graphics.set_color
 )
-"Game.ml" 517 14616 14639 "Game.ml" 517 14616 14653
+"Game.ml" 517 14579 14602 "Game.ml" 517 14579 14616
 type(
   int
 )
 ident(
   ext_ref Graphics.black
 )
-"Game.ml" 517 14616 14620 "Game.ml" 517 14616 14653
+"Game.ml" 517 14579 14583 "Game.ml" 517 14579 14616
 type(
   unit
 )
-"Game.ml" 518 14655 14659 "Game.ml" 518 14655 14677
+"Game.ml" 518 14618 14622 "Game.ml" 518 14618 14640
 type(
   int -> int -> int -> int -> unit
 )
 ident(
   ext_ref Graphics.fill_rect
 )
-"Game.ml" 518 14655 14678 "Game.ml" 518 14655 14679
+"Game.ml" 518 14618 14641 "Game.ml" 518 14618 14642
 type(
   int
 )
-"Game.ml" 518 14655 14680 "Game.ml" 518 14655 14683
+"Game.ml" 518 14618 14643 "Game.ml" 518 14618 14646
 type(
   int
 )
-"Game.ml" 518 14655 14684 "Game.ml" 518 14655 14687
+"Game.ml" 518 14618 14647 "Game.ml" 518 14618 14650
 type(
   int
 )
-"Game.ml" 518 14655 14688 "Game.ml" 518 14655 14691
+"Game.ml" 518 14618 14651 "Game.ml" 518 14618 14654
 type(
   int
 )
-"Game.ml" 518 14655 14659 "Game.ml" 518 14655 14691
+"Game.ml" 518 14618 14622 "Game.ml" 518 14618 14654
 call(
   stack
 )
 type(
   unit
 )
-"Game.ml" 519 14693 14701 "Game.ml" 519 14693 14715
+"Game.ml" 519 14656 14664 "Game.ml" 519 14656 14678
 type(
   board -> int -> int
 )
 ident(
   int_ref estimate_value "Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
 )
-"Game.ml" 519 14693 14716 "Game.ml" 519 14693 14721
+"Game.ml" 519 14656 14679 "Game.ml" 519 14656 14684
 type(
   board
 )
 ident(
   ext_ref board
 )
-"Game.ml" 519 14693 14722 "Game.ml" 519 14693 14723
+"Game.ml" 519 14656 14685 "Game.ml" 519 14656 14686
 type(
   int
 )
-"Game.ml" 519 14693 14701 "Game.ml" 519 14693 14723
+"Game.ml" 519 14656 14664 "Game.ml" 519 14656 14686
 call(
   stack
 )
 type(
   int
 )
-"Game.ml" 519 14693 14724 "Game.ml" 519 14693 14725
+"Game.ml" 519 14656 14687 "Game.ml" 519 14656 14688
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"Game.ml" 519 14693 14726 "Game.ml" 519 14693 14731
+"Game.ml" 519 14656 14689 "Game.ml" 519 14656 14694
 type(
   int
 )
 ident(
   int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
 )
-"Game.ml" 519 14693 14701 "Game.ml" 519 14693 14731
+"Game.ml" 519 14656 14664 "Game.ml" 519 14656 14694
 type(
   bool
 )
-"Game.ml" 519 14693 14733 "Game.ml" 519 14693 14735
+"Game.ml" 519 14656 14696 "Game.ml" 519 14656 14698
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"Game.ml" 519 14693 14737 "Game.ml" 519 14693 14751
+"Game.ml" 519 14656 14700 "Game.ml" 519 14656 14714
 type(
   board -> int -> int
 )
 ident(
   int_ref estimate_value "Game.ml" 103 2956 2960 "Game.ml" 103 2956 2974
 )
-"Game.ml" 519 14693 14752 "Game.ml" 519 14693 14757
+"Game.ml" 519 14656 14715 "Game.ml" 519 14656 14720
 type(
   board
 )
 ident(
   ext_ref board
 )
-"Game.ml" 519 14693 14758 "Game.ml" 519 14693 14759
+"Game.ml" 519 14656 14721 "Game.ml" 519 14656 14722
 type(
   int
 )
-"Game.ml" 519 14693 14737 "Game.ml" 519 14693 14759
+"Game.ml" 519 14656 14700 "Game.ml" 519 14656 14722
 call(
   stack
 )
 type(
   int
 )
-"Game.ml" 519 14693 14760 "Game.ml" 519 14693 14761
+"Game.ml" 519 14656 14723 "Game.ml" 519 14656 14724
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"Game.ml" 519 14693 14763 "Game.ml" 519 14693 14768
+"Game.ml" 519 14656 14726 "Game.ml" 519 14656 14731
 type(
   int
 )
 ident(
   int_ref infty "Game.ml" 8 112 116 "Game.ml" 8 112 121
 )
-"Game.ml" 519 14693 14769 "Game.ml" 519 14693 14770
+"Game.ml" 519 14656 14732 "Game.ml" 519 14656 14733
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( * )
 )
-"Game.ml" 519 14693 14771 "Game.ml" 519 14693 14773
+"Game.ml" 519 14656 14734 "Game.ml" 519 14656 14736
 type(
   int
 )
-"Game.ml" 519 14693 14763 "Game.ml" 519 14693 14773
+"Game.ml" 519 14656 14726 "Game.ml" 519 14656 14736
 type(
   int
 )
-"Game.ml" 519 14693 14737 "Game.ml" 519 14693 14774
+"Game.ml" 519 14656 14700 "Game.ml" 519 14656 14737
 type(
   bool
 )
-"Game.ml" 519 14693 14700 "Game.ml" 519 14693 14775
+"Game.ml" 519 14656 14663 "Game.ml" 519 14656 14738
 type(
   bool
 )
-"Game.ml" 521 14786 14796 "Game.ml" 521 14786 14800
+"Game.ml" 521 14749 14759 "Game.ml" 521 14749 14763
 type(
   string
 )
 ident(
-  def name "Game.ml" 522 14834 14840 "Game.ml" 523 14901 14913
+  def name "Game.ml" 522 14797 14803 "Game.ml" 523 14864 14876
 )
-"Game.ml" 521 14786 14803 "Game.ml" 521 14786 14817
+"Game.ml" 521 14749 14766 "Game.ml" 521 14749 14780
 type(
   c4Player
 )
 ident(
   ext_ref current_player
 )
-"Game.ml" 521 14786 14803 "Game.ml" 521 14786 14829
+"Game.ml" 521 14749 14766 "Game.ml" 521 14749 14792
 call(
   stack
 )
 type(
   string
 )
-"Game.ml" 522 14834 14840 "Game.ml" 522 14834 14853
+"Game.ml" 522 14797 14803 "Game.ml" 522 14797 14816
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_endline
 )
-"Game.ml" 522 14834 14855 "Game.ml" 522 14834 14873
+"Game.ml" 522 14797 14818 "Game.ml" 522 14797 14836
 type(
   string
 )
-"Game.ml" 522 14834 14874 "Game.ml" 522 14834 14875
+"Game.ml" 522 14797 14837 "Game.ml" 522 14797 14838
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"Game.ml" 522 14834 14876 "Game.ml" 522 14834 14880
+"Game.ml" 522 14797 14839 "Game.ml" 522 14797 14843
 type(
   string
 )
 ident(
-  int_ref name "Game.ml" 521 14786 14796 "Game.ml" 521 14786 14800
+  int_ref name "Game.ml" 521 14749 14759 "Game.ml" 521 14749 14763
 )
-"Game.ml" 522 14834 14881 "Game.ml" 522 14834 14882
+"Game.ml" 522 14797 14844 "Game.ml" 522 14797 14845
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"Game.ml" 522 14834 14883 "Game.ml" 522 14834 14897
+"Game.ml" 522 14797 14846 "Game.ml" 522 14797 14860
 type(
   string
 )
-"Game.ml" 522 14834 14876 "Game.ml" 522 14834 14897
+"Game.ml" 522 14797 14839 "Game.ml" 522 14797 14860
 call(
   stack
 )
 type(
   string
 )
-"Game.ml" 522 14834 14855 "Game.ml" 522 14834 14897
+"Game.ml" 522 14797 14818 "Game.ml" 522 14797 14860
 call(
   stack
 )
 type(
   string
 )
-"Game.ml" 522 14834 14840 "Game.ml" 522 14834 14898
+"Game.ml" 522 14797 14803 "Game.ml" 522 14797 14861
 call(
   stack
 )
 type(
   unit
 )
-"Game.ml" 523 14901 14907 "Game.ml" 523 14901 14911
+"Game.ml" 523 14864 14870 "Game.ml" 523 14864 14874
 type(
   int -> unit
 )
 ident(
   ext_ref Pervasives.exit
 )
-"Game.ml" 523 14901 14912 "Game.ml" 523 14901 14913
+"Game.ml" 523 14864 14875 "Game.ml" 523 14864 14876
 type(
   int
 )
-"Game.ml" 523 14901 14907 "Game.ml" 523 14901 14913
+"Game.ml" 523 14864 14870 "Game.ml" 523 14864 14876
 call(
   tail
 )
 type(
   unit
 )
-"Game.ml" 522 14834 14840 "Game.ml" 523 14901 14913
+"Game.ml" 522 14797 14803 "Game.ml" 523 14864 14876
 type(
   unit
 )
-"Game.ml" 521 14786 14792 "Game.ml" 523 14901 14913
+"Game.ml" 521 14749 14755 "Game.ml" 523 14864 14876
 type(
   unit
 )
-"Game.ml" 525 14924 14931 "Game.ml" 525 14924 14935
+"Game.ml" 525 14887 14894 "Game.ml" 525 14887 14898
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 525 14924 14931 "Game.ml" 525 14924 14949
+"Game.ml" 525 14887 14894 "Game.ml" 525 14887 14912
 call(
   stack
 )
 type(
   unit
 )
-"Game.ml" 526 14951 14958 "Game.ml" 526 14951 14976
+"Game.ml" 526 14914 14921 "Game.ml" 526 14914 14939
 type(
   int -> unit
 )
 ident(
   ext_ref Graphics.set_color
 )
-"Game.ml" 526 14951 14977 "Game.ml" 526 14951 14991
+"Game.ml" 526 14914 14940 "Game.ml" 526 14914 14954
 type(
   int
 )
 ident(
   ext_ref Graphics.white
 )
-"Game.ml" 526 14951 14958 "Game.ml" 526 14951 14991
+"Game.ml" 526 14914 14921 "Game.ml" 526 14914 14954
 type(
   unit
 )
-"Game.ml" 527 14993 15000 "Game.ml" 527 14993 15015
+"Game.ml" 527 14956 14963 "Game.ml" 527 14956 14978
 type(
   int -> int -> unit
 )
 ident(
   ext_ref Graphics.moveto
 )
-"Game.ml" 527 14993 15016 "Game.ml" 527 14993 15019
+"Game.ml" 527 14956 14979 "Game.ml" 527 14956 14982
 type(
   int
 )
-"Game.ml" 527 14993 15020 "Game.ml" 527 14993 15023
+"Game.ml" 527 14956 14983 "Game.ml" 527 14956 14986
 type(
   int
 )
-"Game.ml" 527 14993 15000 "Game.ml" 527 14993 15023
+"Game.ml" 527 14956 14963 "Game.ml" 527 14956 14986
 type(
   unit
 )
-"Game.ml" 528 15025 15032 "Game.ml" 528 15025 15052
+"Game.ml" 528 14988 14995 "Game.ml" 528 14988 15015
 type(
   string -> unit
 )
 ident(
   ext_ref Graphics.draw_string
 )
-"Game.ml" 528 15025 15054 "Game.ml" 528 15025 15068
+"Game.ml" 528 14988 15017 "Game.ml" 528 14988 15031
 type(
   c4Player
 )
 ident(
   ext_ref current_player
 )
-"Game.ml" 528 15025 15054 "Game.ml" 528 15025 15080
+"Game.ml" 528 14988 15017 "Game.ml" 528 14988 15043
 call(
   stack
 )
 type(
   string
 )
-"Game.ml" 528 15025 15081 "Game.ml" 528 15025 15082
+"Game.ml" 528 14988 15044 "Game.ml" 528 14988 15045
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"Game.ml" 528 15025 15083 "Game.ml" 528 15025 15102
+"Game.ml" 528 14988 15046 "Game.ml" 528 14988 15065
 type(
   string
 )
-"Game.ml" 528 15025 15054 "Game.ml" 528 15025 15102
+"Game.ml" 528 14988 15017 "Game.ml" 528 14988 15065
 call(
   stack
 )
 type(
   string
 )
-"Game.ml" 528 15025 15032 "Game.ml" 528 15025 15103
+"Game.ml" 528 14988 14995 "Game.ml" 528 14988 15066
 type(
   unit
 )
-"Game.ml" 529 15105 15116 "Game.ml" 529 15105 15120
+"Game.ml" 529 15068 15079 "Game.ml" 529 15068 15083
 type(
   c4Move
 )
 ident(
-  def move "Game.ml" 530 15168 15175 "Game.ml" 537 15353 15371
+  def move "Game.ml" 530 15131 15138 "Game.ml" 537 15316 15334
 )
-"Game.ml" 529 15105 15123 "Game.ml" 529 15105 15137
+"Game.ml" 529 15068 15086 "Game.ml" 529 15068 15100
 type(
   c4Player
 )
 ident(
   ext_ref current_player
 )
-"Game.ml" 529 15105 15123 "Game.ml" 529 15105 15147
+"Game.ml" 529 15068 15086 "Game.ml" 529 15068 15110
 call(
   stack
 )
 type(
   board -> c4Move
 )
-"Game.ml" 529 15105 15149 "Game.ml" 529 15105 15153
+"Game.ml" 529 15068 15112 "Game.ml" 529 15068 15116
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 529 15105 15149 "Game.ml" 529 15105 15163
+"Game.ml" 529 15068 15112 "Game.ml" 529 15068 15126
 call(
   stack
 )
 type(
   board
 )
-"Game.ml" 529 15105 15123 "Game.ml" 529 15105 15164
+"Game.ml" 529 15068 15086 "Game.ml" 529 15068 15127
 type(
   c4Move
 )
-"Game.ml" 530 15168 15178 "Game.ml" 530 15168 15185
+"Game.ml" 530 15131 15141 "Game.ml" 530 15131 15148
 type(
   board -> c4Move -> bool
 )
 ident(
   int_ref allowed "Game.ml" 36 902 906 "Game.ml" 36 902 913
 )
-"Game.ml" 530 15168 15186 "Game.ml" 530 15168 15191
+"Game.ml" 530 15131 15149 "Game.ml" 530 15131 15154
 type(
   board
 )
 ident(
   ext_ref board
 )
-"Game.ml" 530 15168 15192 "Game.ml" 530 15168 15196
+"Game.ml" 530 15131 15155 "Game.ml" 530 15131 15159
 type(
   c4Move
 )
 ident(
-  int_ref move "Game.ml" 529 15105 15116 "Game.ml" 529 15105 15120
+  int_ref move "Game.ml" 529 15068 15079 "Game.ml" 529 15068 15083
 )
-"Game.ml" 530 15168 15178 "Game.ml" 530 15168 15196
+"Game.ml" 530 15131 15141 "Game.ml" 530 15131 15159
 call(
   stack
 )
 type(
   bool
 )
-"Game.ml" 532 15212 15217 "Game.ml" 532 15212 15223
+"Game.ml" 532 15175 15180 "Game.ml" 532 15175 15186
 type(
   board -> unit
 )
 ident(
   ext_ref Pervasives.ignore
 )
-"Game.ml" 532 15212 15225 "Game.ml" 532 15212 15235
+"Game.ml" 532 15175 15188 "Game.ml" 532 15175 15198
 type(
   board -> c4Move -> board
 )
 ident(
   int_ref next_board "Game.ml" 41 1019 1023 "Game.ml" 41 1019 1033
 )
-"Game.ml" 532 15212 15237 "Game.ml" 532 15212 15241
+"Game.ml" 532 15175 15200 "Game.ml" 532 15175 15204
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 532 15212 15237 "Game.ml" 532 15212 15251
+"Game.ml" 532 15175 15200 "Game.ml" 532 15175 15214
 call(
   stack
 )
 type(
   board
 )
-"Game.ml" 532 15212 15254 "Game.ml" 532 15212 15258
+"Game.ml" 532 15175 15217 "Game.ml" 532 15175 15221
 type(
   c4Move
 )
 ident(
-  int_ref move "Game.ml" 529 15105 15116 "Game.ml" 529 15105 15120
+  int_ref move "Game.ml" 529 15068 15079 "Game.ml" 529 15068 15083
 )
-"Game.ml" 532 15212 15225 "Game.ml" 532 15212 15259
+"Game.ml" 532 15175 15188 "Game.ml" 532 15175 15222
 call(
   stack
 )
 type(
   board
 )
-"Game.ml" 532 15212 15217 "Game.ml" 532 15212 15260
+"Game.ml" 532 15175 15180 "Game.ml" 532 15175 15223
 type(
   unit
 )
-"Game.ml" 533 15264 15268 "Game.ml" 533 15264 15272
+"Game.ml" 533 15227 15231 "Game.ml" 533 15227 15235
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 533 15264 15268 "Game.ml" 533 15264 15277
+"Game.ml" 533 15227 15231 "Game.ml" 533 15227 15240
 call(
   stack
 )
 type(
   unit -> unit
 )
-"Game.ml" 533 15264 15277 "Game.ml" 533 15264 15279
+"Game.ml" 533 15227 15240 "Game.ml" 533 15227 15242
 type(
   unit
 )
-"Game.ml" 533 15264 15268 "Game.ml" 533 15264 15279
+"Game.ml" 533 15227 15231 "Game.ml" 533 15227 15242
 type(
   unit
 )
-"Game.ml" 534 15282 15286 "Game.ml" 534 15282 15290
+"Game.ml" 534 15245 15249 "Game.ml" 534 15245 15253
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 534 15282 15286 "Game.ml" 534 15282 15302
+"Game.ml" 534 15245 15249 "Game.ml" 534 15245 15265
 call(
   stack
 )
 type(
   unit
 )
-"Game.ml" 535 15304 15308 "Game.ml" 535 15304 15312
+"Game.ml" 535 15267 15271 "Game.ml" 535 15267 15275
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 535 15304 15308 "Game.ml" 535 15304 15317
+"Game.ml" 535 15267 15271 "Game.ml" 535 15267 15280
 call(
   stack
 )
 type(
   unit -> unit
 )
-"Game.ml" 535 15304 15317 "Game.ml" 535 15304 15319
+"Game.ml" 535 15267 15280 "Game.ml" 535 15267 15282
 type(
   unit
 )
-"Game.ml" 535 15304 15308 "Game.ml" 535 15304 15319
+"Game.ml" 535 15267 15271 "Game.ml" 535 15267 15282
 type(
   unit
 )
-"Game.ml" 534 15282 15286 "Game.ml" 535 15304 15319
+"Game.ml" 534 15245 15249 "Game.ml" 535 15267 15282
 type(
   unit
 )
-"Game.ml" 533 15264 15268 "Game.ml" 535 15304 15319
+"Game.ml" 533 15227 15231 "Game.ml" 535 15267 15282
 type(
   unit
 )
-"Game.ml" 532 15212 15217 "Game.ml" 535 15304 15319
+"Game.ml" 532 15175 15180 "Game.ml" 535 15267 15282
 type(
   unit
 )
-"Game.ml" 536 15321 15333 "Game.ml" 536 15321 15337
+"Game.ml" 536 15284 15296 "Game.ml" 536 15284 15300
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 536 15321 15333 "Game.ml" 536 15321 15351
+"Game.ml" 536 15284 15296 "Game.ml" 536 15284 15314
 call(
   stack
 )
 type(
   unit
 )
-"Game.ml" 530 15168 15175 "Game.ml" 536 15321 15351
+"Game.ml" 530 15131 15138 "Game.ml" 536 15284 15314
 type(
   unit
 )
-"Game.ml" 537 15353 15360 "Game.ml" 537 15353 15364
+"Game.ml" 537 15316 15323 "Game.ml" 537 15316 15327
 type(
   'a
 )
 ident(
-  int_ref self "Game.ml" 486 13699 13707 "Game.ml" 486 13699 13711
+  int_ref self "Game.ml" 486 13662 13670 "Game.ml" 486 13662 13674
 )
-"Game.ml" 537 15353 15360 "Game.ml" 537 15353 15369
+"Game.ml" 537 15316 15323 "Game.ml" 537 15316 15332
 call(
   tail
 )
 type(
   unit -> unit
 )
-"Game.ml" 537 15353 15369 "Game.ml" 537 15353 15371
+"Game.ml" 537 15316 15332 "Game.ml" 537 15316 15334
 type(
   unit
 )
-"Game.ml" 537 15353 15360 "Game.ml" 537 15353 15371
+"Game.ml" 537 15316 15323 "Game.ml" 537 15316 15334
 type(
   unit
 )
-"Game.ml" 530 15168 15175 "Game.ml" 537 15353 15371
+"Game.ml" 530 15131 15138 "Game.ml" 537 15316 15334
 type(
   unit
 )
-"Game.ml" 529 15105 15112 "Game.ml" 537 15353 15371
+"Game.ml" 529 15068 15075 "Game.ml" 537 15316 15334
 type(
   unit
 )
-"Game.ml" 528 15025 15032 "Game.ml" 537 15353 15371
+"Game.ml" 528 14988 14995 "Game.ml" 537 15316 15334
 type(
   unit
 )
-"Game.ml" 527 14993 15000 "Game.ml" 537 15353 15371
+"Game.ml" 527 14956 14963 "Game.ml" 537 15316 15334
 type(
   unit
 )
-"Game.ml" 526 14951 14958 "Game.ml" 537 15353 15371
+"Game.ml" 526 14914 14921 "Game.ml" 537 15316 15334
 type(
   unit
 )
-"Game.ml" 525 14924 14931 "Game.ml" 537 15353 15371
+"Game.ml" 525 14887 14894 "Game.ml" 537 15316 15334
 type(
   unit
 )
-"Game.ml" 519 14693 14697 "Game.ml" 537 15353 15372
+"Game.ml" 519 14656 14660 "Game.ml" 537 15316 15335
 type(
   unit
 )
-"Game.ml" 518 14655 14659 "Game.ml" 537 15353 15372
+"Game.ml" 518 14618 14622 "Game.ml" 537 15316 15335
 type(
   unit
 )
-"Game.ml" 517 14616 14620 "Game.ml" 537 15353 15372
+"Game.ml" 517 14579 14583 "Game.ml" 537 15316 15335
 type(
   unit
 )
-"Game.ml" 516 14598 14602 "Game.ml" 537 15353 15372
+"Game.ml" 516 14561 14565 "Game.ml" 537 15316 15335
 type(
   unit
 )
-"Game.ml" 515 14576 14580 "Game.ml" 537 15353 15372
+"Game.ml" 515 14539 14543 "Game.ml" 537 15316 15335
 type(
   unit
 )
 type(
   unit
 )
-"Game.ml" 514 14551 14564 "Game.ml" 537 15353 15372
+"Game.ml" 514 14514 14527 "Game.ml" 537 15316 15335
 type(
   unit -> unit
 )
 type(
   unit -> unit
 )
-"Game.ml" 514 14551 14553 "Game.ml" 537 15353 15372
+"Game.ml" 514 14514 14516 "Game.ml" 537 15316 15335
 type(
   'a -> unit -> unit
 )

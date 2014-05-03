@@ -6,7 +6,7 @@ let circle_radius = 35
 let piece_height = 100
 let piece_width = 100
 let infty = 30000000
-let minimax_depth = 2
+let minimax_depth = 6
 let width = 7
 let height = 6
 
@@ -205,8 +205,8 @@ object
   (* 
    * INITIAL MINIMAX SHIT
    *)
-
-  (* let rec minimax (b : board) (d : int) (num_player : int) : (int * int) = 
+(*
+   let rec minimax (b : board) (d : int) (num_player : int) : (int * int) = 
     if d = 0 || board_full b || board_almost_full b 
     then 
       if num = num_player
@@ -270,8 +270,8 @@ object
         (!indexValue, !bestValue))
   in
   let (mv, _) = minimax bd minimax_depth num in
-  (mv,num) *) 
-
+  (mv,num) 
+*)
 
   (* 
    * SOME OTHER MINIMAX STUFF THAT DOES NOT WORK
@@ -413,7 +413,7 @@ object
                 else ()) (* then sets value of a to the value of node *)
               else ()) (* if value of potential move is less than alpha, it should break here *)
           else (); i := !i + 1)
-        done; Printf.printf "%d" (!(indexValue));
+        done;
         (!(indexValue), !b))
   in
   let (mv, _) = alphabeta bd minimax_depth num (-infty) infty in

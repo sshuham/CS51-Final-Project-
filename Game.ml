@@ -6,7 +6,7 @@ let circle_radius = 35
 let piece_height = 100
 let piece_width = 100
 let infty = 30000000
-let minimax_depth = 2
+let minimax_depth = 6
 let width = 7
 let height = 6
 
