@@ -7,7 +7,6 @@ Partner 4: Alan Xie
  *)
 
 open Core.Std
-open Graphicevents
 open Game 
 
 let board_height = 700

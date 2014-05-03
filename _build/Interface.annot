@@ -1,418 +1,418 @@
-"Interface.ml" 9 162 170 "Interface.ml" 9 162 177
+"Interface.ml" 8 143 151 "Interface.ml" 8 143 158
 type(
   ('a -> 'b) -> 'a -> 'b
 )
 ident(
-  def restart "Interface.ml" 9 162 162 "Interface.ml" 1 0 -1
+  def restart "Interface.ml" 8 143 143 "Interface.ml" 1 0 -1
 )
-"Interface.ml" 9 162 178 "Interface.ml" 9 162 179
+"Interface.ml" 8 143 159 "Interface.ml" 8 143 160
 type(
   'a -> 'b
 )
 ident(
-  def f "Interface.ml" 9 162 180 "Interface.ml" 11 198 256
+  def f "Interface.ml" 8 143 161 "Interface.ml" 10 179 237
 )
-"Interface.ml" 9 162 180 "Interface.ml" 9 162 183
+"Interface.ml" 8 143 161 "Interface.ml" 8 143 164
 type(
   'a
 )
 ident(
-  def arg "Interface.ml" 10 186 188 "Interface.ml" 11 198 256
+  def arg "Interface.ml" 9 167 169 "Interface.ml" 10 179 237
 )
-"Interface.ml" 10 186 192 "Interface.ml" 10 186 193
+"Interface.ml" 9 167 173 "Interface.ml" 9 167 174
 type(
   'a -> 'b
 )
 ident(
-  int_ref f "Interface.ml" 9 162 178 "Interface.ml" 9 162 179
+  int_ref f "Interface.ml" 8 143 159 "Interface.ml" 8 143 160
 )
-"Interface.ml" 10 186 194 "Interface.ml" 10 186 197
+"Interface.ml" 9 167 175 "Interface.ml" 9 167 178
 type(
   'a
 )
 ident(
-  int_ref arg "Interface.ml" 9 162 180 "Interface.ml" 9 162 183
+  int_ref arg "Interface.ml" 8 143 161 "Interface.ml" 8 143 164
 )
-"Interface.ml" 10 186 192 "Interface.ml" 10 186 197
+"Interface.ml" 9 167 173 "Interface.ml" 9 167 178
 call(
   stack
 )
 type(
   'b
 )
-"Interface.ml" 11 198 222 "Interface.ml" 11 198 232
+"Interface.ml" 10 179 203 "Interface.ml" 10 179 213
 type(
   UnixLabels.error
 )
-"Interface.ml" 11 198 234 "Interface.ml" 11 198 235
+"Interface.ml" 10 179 215 "Interface.ml" 10 179 216
 type(
   string
 )
-"Interface.ml" 11 198 237 "Interface.ml" 11 198 238
+"Interface.ml" 10 179 218 "Interface.ml" 10 179 219
 type(
   string
 )
-"Interface.ml" 11 198 205 "Interface.ml" 11 198 239
+"Interface.ml" 10 179 186 "Interface.ml" 10 179 220
 type(
   exn
 )
-"Interface.ml" 11 198 243 "Interface.ml" 11 198 250
+"Interface.ml" 10 179 224 "Interface.ml" 10 179 231
 type(
   ('a -> 'b) -> 'a -> 'b
 )
 ident(
-  int_ref restart "Interface.ml" 9 162 170 "Interface.ml" 9 162 177
+  int_ref restart "Interface.ml" 8 143 151 "Interface.ml" 8 143 158
 )
-"Interface.ml" 11 198 251 "Interface.ml" 11 198 252
+"Interface.ml" 10 179 232 "Interface.ml" 10 179 233
 type(
   'a -> 'b
 )
 ident(
-  int_ref f "Interface.ml" 9 162 178 "Interface.ml" 9 162 179
+  int_ref f "Interface.ml" 8 143 159 "Interface.ml" 8 143 160
 )
-"Interface.ml" 11 198 253 "Interface.ml" 11 198 256
+"Interface.ml" 10 179 234 "Interface.ml" 10 179 237
 type(
   'a
 )
 ident(
-  int_ref arg "Interface.ml" 9 162 180 "Interface.ml" 9 162 183
+  int_ref arg "Interface.ml" 8 143 161 "Interface.ml" 8 143 164
 )
-"Interface.ml" 11 198 243 "Interface.ml" 11 198 256
+"Interface.ml" 10 179 224 "Interface.ml" 10 179 237
 call(
   tail
 )
 type(
   'b
 )
-"Interface.ml" 10 186 188 "Interface.ml" 11 198 256
+"Interface.ml" 9 167 169 "Interface.ml" 10 179 237
 type(
   'b
 )
-"Interface.ml" 9 162 180 "Interface.ml" 11 198 256
+"Interface.ml" 8 143 161 "Interface.ml" 10 179 237
 type(
   'a -> 'b
 )
-"Interface.ml" 9 162 178 "Interface.ml" 11 198 256
+"Interface.ml" 8 143 159 "Interface.ml" 10 179 237
 type(
   ('a -> 'b) -> 'a -> 'b
 )
-"Interface.ml" 15 364 368 "Interface.ml" 15 364 378
+"Interface.ml" 14 345 349 "Interface.ml" 14 345 359
 type(
   float
 )
 ident(
-  def frame_rate "Interface.ml" 20 563 563 "Interface.ml" 1 0 -1
+  def frame_rate "Interface.ml" 19 544 544 "Interface.ml" 1 0 -1
 )
-"Interface.ml" 15 364 381 "Interface.ml" 15 364 385
+"Interface.ml" 14 345 362 "Interface.ml" 14 345 366
 type(
   float
 )
-"Interface.ml" 20 563 571 "Interface.ml" 20 563 581
+"Interface.ml" 19 544 552 "Interface.ml" 19 544 562
 type(
   unit -> 'a
 )
 ident(
-  def event_loop "Interface.ml" 20 563 563 "Interface.ml" 1 0 -1
+  def event_loop "Interface.ml" 19 544 544 "Interface.ml" 1 0 -1
 )
-"Interface.ml" 20 563 582 "Interface.ml" 20 563 584
+"Interface.ml" 19 544 563 "Interface.ml" 19 544 565
 type(
   unit
 )
-"Interface.ml" 21 587 589 "Interface.ml" 21 587 609
+"Interface.ml" 20 568 570 "Interface.ml" 20 568 590
 type(
   unit -> unit
 )
 ident(
   ext_ref Graphics.synchronize
 )
-"Interface.ml" 21 587 610 "Interface.ml" 21 587 612
+"Interface.ml" 20 568 591 "Interface.ml" 20 568 593
 type(
   unit
 )
-"Interface.ml" 21 587 589 "Interface.ml" 21 587 612
+"Interface.ml" 20 568 570 "Interface.ml" 20 568 593
 type(
   unit
 )
-"Interface.ml" 22 614 616 "Interface.ml" 22 614 623
+"Interface.ml" 21 595 597 "Interface.ml" 21 595 604
 type(
   (float -> unit) -> float -> unit
 )
 ident(
-  int_ref restart "Interface.ml" 9 162 170 "Interface.ml" 9 162 177
+  int_ref restart "Interface.ml" 8 143 151 "Interface.ml" 8 143 158
 )
-"Interface.ml" 22 614 624 "Interface.ml" 22 614 636
+"Interface.ml" 21 595 605 "Interface.ml" 21 595 617
 type(
   float -> unit
 )
 ident(
   ext_ref Core.Std.Thread.delay
 )
-"Interface.ml" 22 614 638 "Interface.ml" 22 614 641
+"Interface.ml" 21 595 619 "Interface.ml" 21 595 622
 type(
   float
 )
-"Interface.ml" 22 614 642 "Interface.ml" 22 614 644
+"Interface.ml" 21 595 623 "Interface.ml" 21 595 625
 type(
   float -> float -> float
 )
 ident(
   ext_ref Pervasives.( /. )
 )
-"Interface.ml" 22 614 645 "Interface.ml" 22 614 655
+"Interface.ml" 21 595 626 "Interface.ml" 21 595 636
 type(
   float
 )
 ident(
-  int_ref frame_rate "Interface.ml" 15 364 368 "Interface.ml" 15 364 378
+  int_ref frame_rate "Interface.ml" 14 345 349 "Interface.ml" 14 345 359
 )
-"Interface.ml" 22 614 638 "Interface.ml" 22 614 655
+"Interface.ml" 21 595 619 "Interface.ml" 21 595 636
 type(
   float
 )
-"Interface.ml" 22 614 616 "Interface.ml" 22 614 656
+"Interface.ml" 21 595 597 "Interface.ml" 21 595 637
 call(
   stack
 )
 type(
   unit
 )
-"Interface.ml" 23 658 660 "Interface.ml" 23 658 670
+"Interface.ml" 22 639 641 "Interface.ml" 22 639 651
 type(
   unit -> 'a
 )
 ident(
-  int_ref event_loop "Interface.ml" 20 563 571 "Interface.ml" 20 563 581
+  int_ref event_loop "Interface.ml" 19 544 552 "Interface.ml" 19 544 562
 )
-"Interface.ml" 23 658 671 "Interface.ml" 23 658 673
+"Interface.ml" 22 639 652 "Interface.ml" 22 639 654
 type(
   unit
 )
-"Interface.ml" 23 658 660 "Interface.ml" 23 658 673
+"Interface.ml" 22 639 641 "Interface.ml" 22 639 654
 call(
   tail
 )
 type(
   'a
 )
-"Interface.ml" 22 614 616 "Interface.ml" 23 658 673
+"Interface.ml" 21 595 597 "Interface.ml" 22 639 654
 type(
   'a
 )
-"Interface.ml" 21 587 589 "Interface.ml" 23 658 673
+"Interface.ml" 20 568 570 "Interface.ml" 22 639 654
 type(
   'a
 )
-"Interface.ml" 20 563 582 "Interface.ml" 23 658 673
+"Interface.ml" 19 544 563 "Interface.ml" 22 639 654
 type(
   unit -> 'a
 )
-"Interface.ml" 31 1036 1040 "Interface.ml" 31 1036 1046
+"Interface.ml" 30 1017 1021 "Interface.ml" 30 1017 1027
 type(
   int -> int -> (unit -> unit) -> unit
 )
 ident(
-  def run_ui "Interface.ml" 37 1248 1299 "Interface.ml" 1 0 -1
+  def run_ui "Interface.ml" 36 1229 1280 "Interface.ml" 1 0 -1
 )
-"Interface.ml" 31 1036 1048 "Interface.ml" 31 1036 1049
+"Interface.ml" 30 1017 1029 "Interface.ml" 30 1017 1030
 type(
   int
 )
 ident(
-  def x "Interface.ml" 31 1036 1055 "Interface.ml" 37 1248 1299
+  def x "Interface.ml" 30 1017 1036 "Interface.ml" 36 1229 1280
 )
-"Interface.ml" 31 1036 1056 "Interface.ml" 31 1036 1057
+"Interface.ml" 30 1017 1037 "Interface.ml" 30 1017 1038
 type(
   int
 )
 ident(
-  def y "Interface.ml" 31 1036 1063 "Interface.ml" 37 1248 1299
+  def y "Interface.ml" 30 1017 1044 "Interface.ml" 36 1229 1280
 )
-"Interface.ml" 31 1036 1064 "Interface.ml" 31 1036 1068
+"Interface.ml" 30 1017 1045 "Interface.ml" 30 1017 1049
 type(
   unit -> unit
 )
 ident(
-  def init "Interface.ml" 31 1036 1081 "Interface.ml" 37 1248 1299
+  def init "Interface.ml" 30 1017 1062 "Interface.ml" 36 1229 1280
 )
-"Interface.ml" 33 1096 1100 "Interface.ml" 33 1096 1119
+"Interface.ml" 32 1077 1081 "Interface.ml" 32 1077 1100
 type(
   string -> unit
 )
 ident(
   ext_ref Graphics.open_graph
 )
-"Interface.ml" 33 1096 1120 "Interface.ml" 33 1096 1122
+"Interface.ml" 32 1077 1101 "Interface.ml" 32 1077 1103
 type(
   string
 )
-"Interface.ml" 33 1096 1100 "Interface.ml" 33 1096 1122
+"Interface.ml" 32 1077 1081 "Interface.ml" 32 1077 1103
 call(
   stack
 )
 type(
   unit
 )
-"Interface.ml" 33 1096 1125 "Interface.ml" 33 1096 1147
+"Interface.ml" 32 1077 1106 "Interface.ml" 32 1077 1128
 type(
   int -> int -> unit
 )
 ident(
   ext_ref Graphics.resize_window
 )
-"Interface.ml" 33 1096 1148 "Interface.ml" 33 1096 1149
+"Interface.ml" 32 1077 1129 "Interface.ml" 32 1077 1130
 type(
   int
 )
 ident(
-  int_ref x "Interface.ml" 31 1036 1048 "Interface.ml" 31 1036 1049
+  int_ref x "Interface.ml" 30 1017 1029 "Interface.ml" 30 1017 1030
 )
-"Interface.ml" 33 1096 1150 "Interface.ml" 33 1096 1151
+"Interface.ml" 32 1077 1131 "Interface.ml" 32 1077 1132
 type(
   int
 )
 ident(
-  int_ref y "Interface.ml" 31 1036 1056 "Interface.ml" 31 1036 1057
+  int_ref y "Interface.ml" 30 1017 1037 "Interface.ml" 30 1017 1038
 )
-"Interface.ml" 33 1096 1125 "Interface.ml" 33 1096 1151
+"Interface.ml" 32 1077 1106 "Interface.ml" 32 1077 1132
 call(
   stack
 )
 type(
   unit
 )
-"Interface.ml" 34 1154 1158 "Interface.ml" 34 1154 1183
+"Interface.ml" 33 1135 1139 "Interface.ml" 33 1135 1164
 type(
   bool -> unit
 )
 ident(
   ext_ref Graphics.auto_synchronize
 )
-"Interface.ml" 34 1154 1184 "Interface.ml" 34 1154 1188
+"Interface.ml" 33 1135 1165 "Interface.ml" 33 1135 1169
 type(
   bool
 )
-"Interface.ml" 34 1154 1158 "Interface.ml" 34 1154 1188
+"Interface.ml" 33 1135 1139 "Interface.ml" 33 1135 1169
 call(
   stack
 )
 type(
   unit
 )
-"Interface.ml" 35 1191 1195 "Interface.ml" 35 1191 1220
+"Interface.ml" 34 1172 1176 "Interface.ml" 34 1172 1201
 type(
   string -> unit
 )
 ident(
   ext_ref Graphics.set_window_title
 )
-"Interface.ml" 35 1191 1221 "Interface.ml" 35 1191 1232
+"Interface.ml" 34 1172 1202 "Interface.ml" 34 1172 1213
 type(
   string
 )
-"Interface.ml" 35 1191 1195 "Interface.ml" 35 1191 1232
+"Interface.ml" 34 1172 1176 "Interface.ml" 34 1172 1213
 call(
   stack
 )
 type(
   unit
 )
-"Interface.ml" 36 1235 1239 "Interface.ml" 36 1235 1243
+"Interface.ml" 35 1216 1220 "Interface.ml" 35 1216 1224
 type(
   unit -> unit
 )
 ident(
-  int_ref init "Interface.ml" 31 1036 1064 "Interface.ml" 31 1036 1068
+  int_ref init "Interface.ml" 30 1017 1045 "Interface.ml" 30 1017 1049
 )
-"Interface.ml" 36 1235 1244 "Interface.ml" 36 1235 1246
+"Interface.ml" 35 1216 1225 "Interface.ml" 35 1216 1227
 type(
   unit
 )
-"Interface.ml" 36 1235 1239 "Interface.ml" 36 1235 1246
+"Interface.ml" 35 1216 1220 "Interface.ml" 35 1216 1227
 call(
   stack
 )
 type(
   unit
 )
-"Interface.ml" 37 1248 1255 "Interface.ml" 37 1248 1258
+"Interface.ml" 36 1229 1236 "Interface.ml" 36 1229 1239
 type(
   exn
 )
 ident(
-  def exn "Interface.ml" 37 1248 1263 "Interface.ml" 37 1248 1298
+  def exn "Interface.ml" 36 1229 1244 "Interface.ml" 36 1229 1279
 )
-"Interface.ml" 37 1248 1263 "Interface.ml" 37 1248 1283
+"Interface.ml" 36 1229 1244 "Interface.ml" 36 1229 1264
 type(
   unit -> unit
 )
 ident(
   ext_ref Graphics.close_graph
 )
-"Interface.ml" 37 1248 1284 "Interface.ml" 37 1248 1286
+"Interface.ml" 36 1229 1265 "Interface.ml" 36 1229 1267
 type(
   unit
 )
-"Interface.ml" 37 1248 1263 "Interface.ml" 37 1248 1286
+"Interface.ml" 36 1229 1244 "Interface.ml" 36 1229 1267
 call(
   stack
 )
 type(
   unit
 )
-"Interface.ml" 37 1248 1289 "Interface.ml" 37 1248 1294
+"Interface.ml" 36 1229 1270 "Interface.ml" 36 1229 1275
 type(
   exn -> unit
 )
 ident(
   ext_ref Pervasives.raise
 )
-"Interface.ml" 37 1248 1295 "Interface.ml" 37 1248 1298
+"Interface.ml" 36 1229 1276 "Interface.ml" 36 1229 1279
 type(
   exn
 )
 ident(
-  int_ref exn "Interface.ml" 37 1248 1255 "Interface.ml" 37 1248 1258
+  int_ref exn "Interface.ml" 36 1229 1236 "Interface.ml" 36 1229 1239
 )
-"Interface.ml" 37 1248 1289 "Interface.ml" 37 1248 1298
+"Interface.ml" 36 1229 1270 "Interface.ml" 36 1229 1279
 type(
   unit
 )
-"Interface.ml" 37 1248 1263 "Interface.ml" 37 1248 1298
+"Interface.ml" 36 1229 1244 "Interface.ml" 36 1229 1279
 type(
   unit
 )
-"Interface.ml" 35 1191 1195 "Interface.ml" 37 1248 1299
+"Interface.ml" 34 1172 1176 "Interface.ml" 36 1229 1280
 type(
   unit
 )
-"Interface.ml" 34 1154 1158 "Interface.ml" 37 1248 1299
+"Interface.ml" 33 1135 1139 "Interface.ml" 36 1229 1280
 type(
   unit
 )
-"Interface.ml" 33 1096 1125 "Interface.ml" 37 1248 1299
+"Interface.ml" 32 1077 1106 "Interface.ml" 36 1229 1280
 type(
   unit
 )
-"Interface.ml" 33 1096 1100 "Interface.ml" 37 1248 1299
+"Interface.ml" 32 1077 1081 "Interface.ml" 36 1229 1280
 type(
   unit
 )
-"Interface.ml" 32 1090 1092 "Interface.ml" 37 1248 1299
+"Interface.ml" 31 1071 1073 "Interface.ml" 36 1229 1280
 type(
   unit
 )
 type(
   unit
 )
-"Interface.ml" 31 1036 1063 "Interface.ml" 37 1248 1299
+"Interface.ml" 30 1017 1044 "Interface.ml" 36 1229 1280
 type(
   (unit -> unit) -> unit
 )
-"Interface.ml" 31 1036 1055 "Interface.ml" 37 1248 1299
+"Interface.ml" 30 1017 1036 "Interface.ml" 36 1229 1280
 type(
   int -> (unit -> unit) -> unit
 )
-"Interface.ml" 31 1036 1047 "Interface.ml" 37 1248 1299
+"Interface.ml" 30 1017 1028 "Interface.ml" 36 1229 1280
 type(
   int -> int -> (unit -> unit) -> unit
 )

@@ -1,212 +1,212 @@
-"Main.ml" 13 179 183 "Main.ml" 13 179 195
+"Main.ml" 12 160 164 "Main.ml" 12 160 176
 type(
   int
 )
 ident(
-  def board_height "Main.ml" 15 203 203 "Main.ml" 1 0 -1
+  def board_height "Main.ml" 14 184 184 "Main.ml" 1 0 -1
 )
-"Main.ml" 13 179 198 "Main.ml" 13 179 201
+"Main.ml" 12 160 179 "Main.ml" 12 160 182
 type(
   int
 )
-"Main.ml" 15 203 207 "Main.ml" 15 203 218
+"Main.ml" 14 184 188 "Main.ml" 14 184 199
 type(
   int
 )
 ident(
-  def board_width "Main.ml" 17 226 226 "Main.ml" 1 0 -1
+  def board_width "Main.ml" 16 207 207 "Main.ml" 1 0 -1
 )
-"Main.ml" 15 203 221 "Main.ml" 15 203 224
+"Main.ml" 14 184 202 "Main.ml" 14 184 205
 type(
   int
 )
-"Main.ml" 17 226 230 "Main.ml" 17 226 235
+"Main.ml" 16 207 211 "Main.ml" 16 207 216
 type(
   int array array
 )
 ident(
-  def board "Main.ml" 19 276 276 "Main.ml" 1 0 -1
+  def board "Main.ml" 18 257 257 "Main.ml" 1 0 -1
 )
-"Main.ml" 17 226 238 "Main.ml" 17 226 255
+"Main.ml" 16 207 219 "Main.ml" 16 207 236
 type(
   dimx:int -> dimy:int -> int -> int array array
 )
 ident(
   ext_ref Core.Std.Array.make_matrix
 )
-"Main.ml" 17 226 262 "Main.ml" 17 226 263
+"Main.ml" 16 207 243 "Main.ml" 16 207 244
 type(
   int
 )
-"Main.ml" 17 226 270 "Main.ml" 17 226 271
+"Main.ml" 16 207 251 "Main.ml" 16 207 252
 type(
   int
 )
-"Main.ml" 17 226 272 "Main.ml" 17 226 273
+"Main.ml" 16 207 253 "Main.ml" 16 207 254
 type(
   int
 )
-"Main.ml" 17 226 238 "Main.ml" 17 226 273
+"Main.ml" 16 207 219 "Main.ml" 16 207 254
 call(
   stack
 )
 type(
   int array array
 )
-"Main.ml" 19 276 280 "Main.ml" 19 276 292
+"Main.ml" 18 257 261 "Main.ml" 18 257 273
 type(
   c4Game ref
 )
 ident(
-  def current_game "Main.ml" 22 393 393 "Main.ml" 1 0 -1
+  def current_game "Main.ml" 21 374 374 "Main.ml" 1 0 -1
 )
-"Main.ml" 19 276 295 "Main.ml" 19 276 298
+"Main.ml" 18 257 276 "Main.ml" 18 257 279
 type(
   c4Game -> c4Game ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Main.ml" 19 276 300 "Main.ml" 19 276 310
+"Main.ml" 18 257 281 "Main.ml" 18 257 291
 type(
   c4Player -> c4Player -> c4Game
 )
-"Main.ml" 19 276 312 "Main.ml" 19 276 327
+"Main.ml" 18 257 293 "Main.ml" 18 257 308
 type(
   board -> int -> humanPlayer
 )
-"Main.ml" 19 276 328 "Main.ml" 19 276 333
+"Main.ml" 18 257 309 "Main.ml" 18 257 314
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 19 276 334 "Main.ml" 19 276 335
+"Main.ml" 18 257 315 "Main.ml" 18 257 316
 type(
   int
 )
-"Main.ml" 19 276 312 "Main.ml" 19 276 335
+"Main.ml" 18 257 293 "Main.ml" 18 257 316
 call(
   stack
 )
 type(
   humanPlayer
 )
-"Main.ml" 19 276 338 "Main.ml" 19 276 353
+"Main.ml" 18 257 319 "Main.ml" 18 257 334
 type(
   board -> int -> humanPlayer
 )
-"Main.ml" 19 276 354 "Main.ml" 19 276 359
+"Main.ml" 18 257 335 "Main.ml" 18 257 340
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 19 276 360 "Main.ml" 19 276 361
+"Main.ml" 18 257 341 "Main.ml" 18 257 342
 type(
   int
 )
-"Main.ml" 19 276 338 "Main.ml" 19 276 361
+"Main.ml" 18 257 319 "Main.ml" 18 257 342
 call(
   stack
 )
 type(
   humanPlayer
 )
-"Main.ml" 19 276 300 "Main.ml" 19 276 362
+"Main.ml" 18 257 281 "Main.ml" 18 257 343
 call(
   stack
 )
 type(
   c4Game
 )
-"Main.ml" 19 276 295 "Main.ml" 19 276 363
+"Main.ml" 18 257 276 "Main.ml" 18 257 344
 type(
   c4Game ref
 )
-"Main.ml" 22 393 397 "Main.ml" 22 393 411
+"Main.ml" 21 374 378 "Main.ml" 21 374 392
 type(
   unit -> unit
 )
 ident(
-  def hh_initializer "Main.ml" 25 517 517 "Main.ml" 1 0 -1
+  def hh_initializer "Main.ml" 24 498 498 "Main.ml" 1 0 -1
 )
-"Main.ml" 22 393 412 "Main.ml" 22 393 414
+"Main.ml" 21 374 393 "Main.ml" 21 374 395
 type(
   unit
 )
-"Main.ml" 23 424 426 "Main.ml" 23 424 432
+"Main.ml" 22 405 407 "Main.ml" 22 405 413
 type(
   unit -> unit
 )
 ident(
   ext_ref Pervasives.ignore
 )
-"Main.ml" 23 424 434 "Main.ml" 23 424 446
+"Main.ml" 22 405 415 "Main.ml" 22 405 427
 type(
   c4Game ref
 )
 ident(
-  int_ref current_game "Main.ml" 19 276 280 "Main.ml" 19 276 292
+  int_ref current_game "Main.ml" 18 257 261 "Main.ml" 18 257 273
 )
-"Main.ml" 23 424 451 "Main.ml" 23 424 461
+"Main.ml" 22 405 432 "Main.ml" 22 405 442
 type(
   c4Player -> c4Player -> c4Game
 )
-"Main.ml" 23 424 463 "Main.ml" 23 424 478
+"Main.ml" 22 405 444 "Main.ml" 22 405 459
 type(
   board -> int -> humanPlayer
 )
-"Main.ml" 23 424 479 "Main.ml" 23 424 484
+"Main.ml" 22 405 460 "Main.ml" 22 405 465
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 23 424 485 "Main.ml" 23 424 486
+"Main.ml" 22 405 466 "Main.ml" 22 405 467
 type(
   int
 )
-"Main.ml" 23 424 463 "Main.ml" 23 424 486
+"Main.ml" 22 405 444 "Main.ml" 22 405 467
 call(
   stack
 )
 type(
   humanPlayer
 )
-"Main.ml" 23 424 489 "Main.ml" 23 424 504
+"Main.ml" 22 405 470 "Main.ml" 22 405 485
 type(
   board -> int -> humanPlayer
 )
-"Main.ml" 23 424 505 "Main.ml" 23 424 510
+"Main.ml" 22 405 486 "Main.ml" 22 405 491
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 23 424 511 "Main.ml" 23 424 512
+"Main.ml" 22 405 492 "Main.ml" 22 405 493
 type(
   int
 )
-"Main.ml" 23 424 489 "Main.ml" 23 424 512
+"Main.ml" 22 405 470 "Main.ml" 22 405 493
 call(
   stack
 )
 type(
   humanPlayer
 )
-"Main.ml" 23 424 451 "Main.ml" 23 424 513
+"Main.ml" 22 405 432 "Main.ml" 22 405 494
 call(
   stack
 )
 type(
   c4Game
 )
-"Main.ml" 23 424 434 "Main.ml" 23 424 514
+"Main.ml" 22 405 415 "Main.ml" 22 405 495
 type(
   unit
 )
@@ -216,98 +216,98 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Main.ml" 23 424 426 "Main.ml" 23 424 515
+"Main.ml" 22 405 407 "Main.ml" 22 405 496
 type(
   unit
 )
 type(
   unit
 )
-"Main.ml" 22 393 412 "Main.ml" 23 424 515
+"Main.ml" 21 374 393 "Main.ml" 22 405 496
 type(
   unit -> unit
 )
-"Main.ml" 25 517 521 "Main.ml" 25 517 535
+"Main.ml" 24 498 502 "Main.ml" 24 498 516
 type(
   unit -> unit
 )
 ident(
-  def hc_initializer "Main.ml" 28 643 643 "Main.ml" 1 0 -1
+  def hc_initializer "Main.ml" 27 624 624 "Main.ml" 1 0 -1
 )
-"Main.ml" 25 517 536 "Main.ml" 25 517 538
+"Main.ml" 24 498 517 "Main.ml" 24 498 519
 type(
   unit
 )
-"Main.ml" 26 548 550 "Main.ml" 26 548 556
+"Main.ml" 25 529 531 "Main.ml" 25 529 537
 type(
   unit -> unit
 )
 ident(
   ext_ref Pervasives.ignore
 )
-"Main.ml" 26 548 558 "Main.ml" 26 548 570
+"Main.ml" 25 529 539 "Main.ml" 25 529 551
 type(
   c4Game ref
 )
 ident(
-  int_ref current_game "Main.ml" 19 276 280 "Main.ml" 19 276 292
+  int_ref current_game "Main.ml" 18 257 261 "Main.ml" 18 257 273
 )
-"Main.ml" 26 548 575 "Main.ml" 26 548 585
+"Main.ml" 25 529 556 "Main.ml" 25 529 566
 type(
   c4Player -> c4Player -> c4Game
 )
-"Main.ml" 26 548 587 "Main.ml" 26 548 602
+"Main.ml" 25 529 568 "Main.ml" 25 529 583
 type(
   board -> int -> humanPlayer
 )
-"Main.ml" 26 548 603 "Main.ml" 26 548 608
+"Main.ml" 25 529 584 "Main.ml" 25 529 589
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 26 548 609 "Main.ml" 26 548 610
+"Main.ml" 25 529 590 "Main.ml" 25 529 591
 type(
   int
 )
-"Main.ml" 26 548 587 "Main.ml" 26 548 610
+"Main.ml" 25 529 568 "Main.ml" 25 529 591
 call(
   stack
 )
 type(
   humanPlayer
 )
-"Main.ml" 26 548 613 "Main.ml" 26 548 630
+"Main.ml" 25 529 594 "Main.ml" 25 529 611
 type(
   board -> int -> minimaxPlayer
 )
-"Main.ml" 26 548 631 "Main.ml" 26 548 636
+"Main.ml" 25 529 612 "Main.ml" 25 529 617
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 26 548 637 "Main.ml" 26 548 638
+"Main.ml" 25 529 618 "Main.ml" 25 529 619
 type(
   int
 )
-"Main.ml" 26 548 613 "Main.ml" 26 548 638
+"Main.ml" 25 529 594 "Main.ml" 25 529 619
 call(
   stack
 )
 type(
   minimaxPlayer
 )
-"Main.ml" 26 548 575 "Main.ml" 26 548 639
+"Main.ml" 25 529 556 "Main.ml" 25 529 620
 call(
   stack
 )
 type(
   c4Game
 )
-"Main.ml" 26 548 558 "Main.ml" 26 548 640
+"Main.ml" 25 529 539 "Main.ml" 25 529 621
 type(
   unit
 )
@@ -317,98 +317,98 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Main.ml" 26 548 550 "Main.ml" 26 548 641
+"Main.ml" 25 529 531 "Main.ml" 25 529 622
 type(
   unit
 )
 type(
   unit
 )
-"Main.ml" 25 517 536 "Main.ml" 26 548 641
+"Main.ml" 24 498 517 "Main.ml" 25 529 622
 type(
   unit -> unit
 )
-"Main.ml" 28 643 647 "Main.ml" 28 643 661
+"Main.ml" 27 624 628 "Main.ml" 27 624 642
 type(
   unit -> unit
 )
 ident(
-  def ch_initializer "Main.ml" 31 769 769 "Main.ml" 1 0 -1
+  def ch_initializer "Main.ml" 30 750 750 "Main.ml" 1 0 -1
 )
-"Main.ml" 28 643 662 "Main.ml" 28 643 664
+"Main.ml" 27 624 643 "Main.ml" 27 624 645
 type(
   unit
 )
-"Main.ml" 29 674 676 "Main.ml" 29 674 682
+"Main.ml" 28 655 657 "Main.ml" 28 655 663
 type(
   unit -> unit
 )
 ident(
   ext_ref Pervasives.ignore
 )
-"Main.ml" 29 674 684 "Main.ml" 29 674 696
+"Main.ml" 28 655 665 "Main.ml" 28 655 677
 type(
   c4Game ref
 )
 ident(
-  int_ref current_game "Main.ml" 19 276 280 "Main.ml" 19 276 292
+  int_ref current_game "Main.ml" 18 257 261 "Main.ml" 18 257 273
 )
-"Main.ml" 29 674 701 "Main.ml" 29 674 711
+"Main.ml" 28 655 682 "Main.ml" 28 655 692
 type(
   c4Player -> c4Player -> c4Game
 )
-"Main.ml" 29 674 713 "Main.ml" 29 674 730
+"Main.ml" 28 655 694 "Main.ml" 28 655 711
 type(
   board -> int -> minimaxPlayer
 )
-"Main.ml" 29 674 731 "Main.ml" 29 674 736
+"Main.ml" 28 655 712 "Main.ml" 28 655 717
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 29 674 737 "Main.ml" 29 674 738
+"Main.ml" 28 655 718 "Main.ml" 28 655 719
 type(
   int
 )
-"Main.ml" 29 674 713 "Main.ml" 29 674 738
+"Main.ml" 28 655 694 "Main.ml" 28 655 719
 call(
   stack
 )
 type(
   minimaxPlayer
 )
-"Main.ml" 29 674 741 "Main.ml" 29 674 756
+"Main.ml" 28 655 722 "Main.ml" 28 655 737
 type(
   board -> int -> humanPlayer
 )
-"Main.ml" 29 674 757 "Main.ml" 29 674 762
+"Main.ml" 28 655 738 "Main.ml" 28 655 743
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 29 674 763 "Main.ml" 29 674 764
+"Main.ml" 28 655 744 "Main.ml" 28 655 745
 type(
   int
 )
-"Main.ml" 29 674 741 "Main.ml" 29 674 764
+"Main.ml" 28 655 722 "Main.ml" 28 655 745
 call(
   stack
 )
 type(
   humanPlayer
 )
-"Main.ml" 29 674 701 "Main.ml" 29 674 765
+"Main.ml" 28 655 682 "Main.ml" 28 655 746
 call(
   stack
 )
 type(
   c4Game
 )
-"Main.ml" 29 674 684 "Main.ml" 29 674 766
+"Main.ml" 28 655 665 "Main.ml" 28 655 747
 type(
   unit
 )
@@ -418,98 +418,98 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Main.ml" 29 674 676 "Main.ml" 29 674 767
+"Main.ml" 28 655 657 "Main.ml" 28 655 748
 type(
   unit
 )
 type(
   unit
 )
-"Main.ml" 28 643 662 "Main.ml" 29 674 767
+"Main.ml" 27 624 643 "Main.ml" 28 655 748
 type(
   unit -> unit
 )
-"Main.ml" 31 769 773 "Main.ml" 31 769 787
+"Main.ml" 30 750 754 "Main.ml" 30 750 768
 type(
   unit -> unit
 )
 ident(
-  def cc_initializer "Main.ml" 37 1013 1013 "Main.ml" 1 0 -1
+  def cc_initializer "Main.ml" 36 994 994 "Main.ml" 1 0 -1
 )
-"Main.ml" 31 769 788 "Main.ml" 31 769 790
+"Main.ml" 30 750 769 "Main.ml" 30 750 771
 type(
   unit
 )
-"Main.ml" 32 800 802 "Main.ml" 32 800 808
+"Main.ml" 31 781 783 "Main.ml" 31 781 789
 type(
   unit -> unit
 )
 ident(
   ext_ref Pervasives.ignore
 )
-"Main.ml" 32 800 810 "Main.ml" 32 800 822
+"Main.ml" 31 781 791 "Main.ml" 31 781 803
 type(
   c4Game ref
 )
 ident(
-  int_ref current_game "Main.ml" 19 276 280 "Main.ml" 19 276 292
+  int_ref current_game "Main.ml" 18 257 261 "Main.ml" 18 257 273
 )
-"Main.ml" 32 800 827 "Main.ml" 32 800 837
+"Main.ml" 31 781 808 "Main.ml" 31 781 818
 type(
   c4Player -> c4Player -> c4Game
 )
-"Main.ml" 32 800 839 "Main.ml" 32 800 856
+"Main.ml" 31 781 820 "Main.ml" 31 781 837
 type(
   board -> int -> minimaxPlayer
 )
-"Main.ml" 32 800 857 "Main.ml" 32 800 862
+"Main.ml" 31 781 838 "Main.ml" 31 781 843
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 32 800 863 "Main.ml" 32 800 864
+"Main.ml" 31 781 844 "Main.ml" 31 781 845
 type(
   int
 )
-"Main.ml" 32 800 839 "Main.ml" 32 800 864
+"Main.ml" 31 781 820 "Main.ml" 31 781 845
 call(
   stack
 )
 type(
   minimaxPlayer
 )
-"Main.ml" 32 800 867 "Main.ml" 32 800 884
+"Main.ml" 31 781 848 "Main.ml" 31 781 865
 type(
   board -> int -> minimaxPlayer
 )
-"Main.ml" 32 800 885 "Main.ml" 32 800 890
+"Main.ml" 31 781 866 "Main.ml" 31 781 871
 type(
   int array array
 )
 ident(
-  int_ref board "Main.ml" 17 226 230 "Main.ml" 17 226 235
+  int_ref board "Main.ml" 16 207 211 "Main.ml" 16 207 216
 )
-"Main.ml" 32 800 891 "Main.ml" 32 800 892
+"Main.ml" 31 781 872 "Main.ml" 31 781 873
 type(
   int
 )
-"Main.ml" 32 800 867 "Main.ml" 32 800 892
+"Main.ml" 31 781 848 "Main.ml" 31 781 873
 call(
   stack
 )
 type(
   minimaxPlayer
 )
-"Main.ml" 32 800 827 "Main.ml" 32 800 893
+"Main.ml" 31 781 808 "Main.ml" 31 781 874
 call(
   stack
 )
 type(
   c4Game
 )
-"Main.ml" 32 800 810 "Main.ml" 32 800 894
+"Main.ml" 31 781 791 "Main.ml" 31 781 875
 type(
   unit
 )
@@ -519,62 +519,62 @@ type(
 ident(
   ext_ref Pervasives.( := )
 )
-"Main.ml" 32 800 802 "Main.ml" 32 800 895
+"Main.ml" 31 781 783 "Main.ml" 31 781 876
 type(
   unit
 )
 type(
   unit
 )
-"Main.ml" 31 769 788 "Main.ml" 32 800 895
+"Main.ml" 30 750 769 "Main.ml" 31 781 876
 type(
   unit -> unit
 )
-"Main.ml" 37 1013 1017 "Main.ml" 37 1013 1027
+"Main.ml" 36 994 998 "Main.ml" 36 994 1008
 type(
   unit -> unit -> unit
 )
 ident(
-  def parse_args "Main.ml" 47 1327 1327 "Main.ml" 1 0 -1
+  def parse_args "Main.ml" 46 1308 1308 "Main.ml" 1 0 -1
 )
-"Main.ml" 37 1013 1028 "Main.ml" 37 1013 1030
+"Main.ml" 36 994 1009 "Main.ml" 36 994 1011
 type(
   unit
 )
-"Main.ml" 38 1050 1056 "Main.ml" 38 1050 1061
+"Main.ml" 37 1031 1037 "Main.ml" 37 1031 1042
 type(
   unit -> 'a
 )
 ident(
-  def usage "Main.ml" 39 1128 1130 "Main.ml" 45 1308 1325
+  def usage "Main.ml" 38 1109 1111 "Main.ml" 44 1289 1306
 )
-"Main.ml" 38 1050 1062 "Main.ml" 38 1050 1064
+"Main.ml" 37 1031 1043 "Main.ml" 37 1031 1045
 type(
   unit
 )
-"Main.ml" 38 1050 1067 "Main.ml" 38 1050 1080
+"Main.ml" 37 1031 1048 "Main.ml" 37 1031 1061
 type(
   (string -> unit, out_channel, unit) format -> string -> unit
 )
 ident(
   ext_ref Core.Std.Printf.printf
 )
-"Main.ml" 38 1050 1081 "Main.ml" 38 1050 1103
+"Main.ml" 37 1031 1062 "Main.ml" 37 1031 1084
 type(
   (string -> unit, out_channel, unit) format
 )
-"Main.ml" 38 1050 1104 "Main.ml" 38 1050 1112
+"Main.ml" 37 1031 1085 "Main.ml" 37 1031 1093
 type(
   string array
 )
 ident(
   ext_ref Core.Std.Sys.argv
 )
-"Main.ml" 38 1050 1114 "Main.ml" 38 1050 1115
+"Main.ml" 37 1031 1095 "Main.ml" 37 1031 1096
 type(
   int
 )
-"Main.ml" 38 1050 1104 "Main.ml" 38 1050 1116
+"Main.ml" 37 1031 1085 "Main.ml" 37 1031 1097
 type(
   string
 )
@@ -584,112 +584,112 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"Main.ml" 38 1050 1067 "Main.ml" 38 1050 1116
+"Main.ml" 37 1031 1048 "Main.ml" 37 1031 1097
 call(
   stack
 )
 type(
   unit
 )
-"Main.ml" 38 1050 1118 "Main.ml" 38 1050 1122
+"Main.ml" 37 1031 1099 "Main.ml" 37 1031 1103
 type(
   int -> 'a
 )
 ident(
   ext_ref Pervasives.exit
 )
-"Main.ml" 38 1050 1123 "Main.ml" 38 1050 1124
+"Main.ml" 37 1031 1104 "Main.ml" 37 1031 1105
 type(
   int
 )
-"Main.ml" 38 1050 1118 "Main.ml" 38 1050 1124
+"Main.ml" 37 1031 1099 "Main.ml" 37 1031 1105
 call(
   tail
 )
 type(
   'a
 )
-"Main.ml" 38 1050 1067 "Main.ml" 38 1050 1124
+"Main.ml" 37 1031 1048 "Main.ml" 37 1031 1105
 type(
   'a
 )
-"Main.ml" 38 1050 1062 "Main.ml" 38 1050 1124
+"Main.ml" 37 1031 1043 "Main.ml" 37 1031 1105
 type(
   unit -> 'a
 )
-"Main.ml" 39 1128 1133 "Main.ml" 39 1128 1145
+"Main.ml" 38 1109 1114 "Main.ml" 38 1109 1126
 type(
   string array -> int
 )
 ident(
   ext_ref Core.Std.Array.length
 )
-"Main.ml" 39 1128 1146 "Main.ml" 39 1128 1154
+"Main.ml" 38 1109 1127 "Main.ml" 38 1109 1135
 type(
   string array
 )
 ident(
   ext_ref Core.Std.Sys.argv
 )
-"Main.ml" 39 1128 1133 "Main.ml" 39 1128 1154
+"Main.ml" 38 1109 1114 "Main.ml" 38 1109 1135
 call(
   stack
 )
 type(
   int
 )
-"Main.ml" 39 1128 1155 "Main.ml" 39 1128 1157
+"Main.ml" 38 1109 1136 "Main.ml" 38 1109 1138
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"Main.ml" 39 1128 1158 "Main.ml" 39 1128 1159
+"Main.ml" 38 1109 1139 "Main.ml" 38 1109 1140
 type(
   int
 )
-"Main.ml" 39 1128 1133 "Main.ml" 39 1128 1159
+"Main.ml" 38 1109 1114 "Main.ml" 38 1109 1140
 type(
   bool
 )
-"Main.ml" 39 1128 1165 "Main.ml" 39 1128 1170
+"Main.ml" 38 1109 1146 "Main.ml" 38 1109 1151
 type(
   unit -> unit
 )
 ident(
-  int_ref usage "Main.ml" 38 1050 1056 "Main.ml" 38 1050 1061
+  int_ref usage "Main.ml" 37 1031 1037 "Main.ml" 37 1031 1042
 )
-"Main.ml" 39 1128 1171 "Main.ml" 39 1128 1173
+"Main.ml" 38 1109 1152 "Main.ml" 38 1109 1154
 type(
   unit
 )
-"Main.ml" 39 1128 1165 "Main.ml" 39 1128 1173
+"Main.ml" 38 1109 1146 "Main.ml" 38 1109 1154
 call(
   stack
 )
 type(
   unit
 )
-"Main.ml" 39 1128 1130 "Main.ml" 39 1128 1173
+"Main.ml" 38 1109 1111 "Main.ml" 38 1109 1154
 type(
   unit
 )
 type(
   unit
 )
-"Main.ml" 40 1175 1183 "Main.ml" 40 1175 1191
+"Main.ml" 39 1156 1164 "Main.ml" 39 1156 1172
 type(
   string array
 )
 ident(
   ext_ref Core.Std.Sys.argv
 )
-"Main.ml" 40 1175 1193 "Main.ml" 40 1175 1194
+"Main.ml" 39 1156 1174 "Main.ml" 39 1156 1175
 type(
   int
 )
-"Main.ml" 40 1175 1183 "Main.ml" 40 1175 1195
+"Main.ml" 39 1156 1164 "Main.ml" 39 1156 1176
 type(
   string
 )
@@ -699,177 +699,177 @@ type(
 ident(
   ext_ref Core.Std.Array.get
 )
-"Main.ml" 41 1201 1205 "Main.ml" 41 1201 1209
+"Main.ml" 40 1182 1186 "Main.ml" 40 1182 1190
 type(
   string
 )
-"Main.ml" 41 1201 1212 "Main.ml" 41 1201 1226
+"Main.ml" 40 1182 1193 "Main.ml" 40 1182 1207
 type(
   unit -> unit
 )
 ident(
-  int_ref hh_initializer "Main.ml" 22 393 397 "Main.ml" 22 393 411
+  int_ref hh_initializer "Main.ml" 21 374 378 "Main.ml" 21 374 392
 )
-"Main.ml" 42 1227 1231 "Main.ml" 42 1227 1235
+"Main.ml" 41 1208 1212 "Main.ml" 41 1208 1216
 type(
   string
 )
-"Main.ml" 42 1227 1239 "Main.ml" 42 1227 1253
+"Main.ml" 41 1208 1220 "Main.ml" 41 1208 1234
 type(
   unit -> unit
 )
 ident(
-  int_ref hc_initializer "Main.ml" 25 517 521 "Main.ml" 25 517 535
+  int_ref hc_initializer "Main.ml" 24 498 502 "Main.ml" 24 498 516
 )
-"Main.ml" 43 1254 1258 "Main.ml" 43 1254 1262
+"Main.ml" 42 1235 1239 "Main.ml" 42 1235 1243
 type(
   string
 )
-"Main.ml" 43 1254 1266 "Main.ml" 43 1254 1280
+"Main.ml" 42 1235 1247 "Main.ml" 42 1235 1261
 type(
   unit -> unit
 )
 ident(
-  int_ref ch_initializer "Main.ml" 28 643 647 "Main.ml" 28 643 661
+  int_ref ch_initializer "Main.ml" 27 624 628 "Main.ml" 27 624 642
 )
-"Main.ml" 44 1281 1285 "Main.ml" 44 1281 1289
+"Main.ml" 43 1262 1266 "Main.ml" 43 1262 1270
 type(
   string
 )
-"Main.ml" 44 1281 1293 "Main.ml" 44 1281 1307
+"Main.ml" 43 1262 1274 "Main.ml" 43 1262 1288
 type(
   unit -> unit
 )
 ident(
-  int_ref cc_initializer "Main.ml" 31 769 773 "Main.ml" 31 769 787
+  int_ref cc_initializer "Main.ml" 30 750 754 "Main.ml" 30 750 768
 )
-"Main.ml" 45 1308 1312 "Main.ml" 45 1308 1313
+"Main.ml" 44 1289 1293 "Main.ml" 44 1289 1294
 type(
   string
 )
-"Main.ml" 45 1308 1317 "Main.ml" 45 1308 1322
+"Main.ml" 44 1289 1298 "Main.ml" 44 1289 1303
 type(
   unit -> unit -> unit
 )
 ident(
-  int_ref usage "Main.ml" 38 1050 1056 "Main.ml" 38 1050 1061
+  int_ref usage "Main.ml" 37 1031 1037 "Main.ml" 37 1031 1042
 )
-"Main.ml" 45 1308 1323 "Main.ml" 45 1308 1325
+"Main.ml" 44 1289 1304 "Main.ml" 44 1289 1306
 type(
   unit
 )
-"Main.ml" 45 1308 1317 "Main.ml" 45 1308 1325
+"Main.ml" 44 1289 1298 "Main.ml" 44 1289 1306
 call(
   tail
 )
 type(
   unit -> unit
 )
-"Main.ml" 40 1175 1177 "Main.ml" 45 1308 1325
+"Main.ml" 39 1156 1158 "Main.ml" 44 1289 1306
 type(
   unit -> unit
 )
-"Main.ml" 39 1128 1130 "Main.ml" 45 1308 1325
+"Main.ml" 38 1109 1111 "Main.ml" 44 1289 1306
 type(
   unit -> unit
 )
-"Main.ml" 38 1050 1052 "Main.ml" 45 1308 1325
+"Main.ml" 37 1031 1033 "Main.ml" 44 1289 1306
 type(
   unit -> unit
 )
 type(
   unit -> unit
 )
-"Main.ml" 37 1013 1028 "Main.ml" 45 1308 1325
+"Main.ml" 36 994 1009 "Main.ml" 44 1289 1306
 type(
   unit -> unit -> unit
 )
-"Main.ml" 47 1327 1331 "Main.ml" 47 1327 1334
+"Main.ml" 46 1308 1312 "Main.ml" 46 1308 1315
 type(
   unit -> unit
 )
 ident(
-  def run "Main.ml" 54 1490 1490 "Main.ml" 1 0 -1
+  def run "Main.ml" 53 1471 1471 "Main.ml" 1 0 -1
 )
-"Main.ml" 47 1327 1335 "Main.ml" 47 1327 1337
+"Main.ml" 46 1308 1316 "Main.ml" 46 1308 1318
 type(
   unit
 )
-"Main.ml" 48 1347 1353 "Main.ml" 48 1347 1363
+"Main.ml" 47 1328 1334 "Main.ml" 47 1328 1344
 type(
   unit -> unit
 )
 ident(
-  def initialize "Main.ml" 49 1383 1385 "Main.ml" 51 1470 1484
+  def initialize "Main.ml" 48 1364 1366 "Main.ml" 50 1451 1465
 )
-"Main.ml" 48 1347 1366 "Main.ml" 48 1347 1376
+"Main.ml" 47 1328 1347 "Main.ml" 47 1328 1357
 type(
   unit -> unit -> unit
 )
 ident(
-  int_ref parse_args "Main.ml" 37 1013 1017 "Main.ml" 37 1013 1027
+  int_ref parse_args "Main.ml" 36 994 998 "Main.ml" 36 994 1008
 )
-"Main.ml" 48 1347 1377 "Main.ml" 48 1347 1379
+"Main.ml" 47 1328 1358 "Main.ml" 47 1328 1360
 type(
   unit
 )
-"Main.ml" 48 1347 1366 "Main.ml" 48 1347 1379
+"Main.ml" 47 1328 1347 "Main.ml" 47 1328 1360
 call(
   stack
 )
 type(
   unit -> unit
 )
-"Main.ml" 49 1383 1385 "Main.ml" 49 1383 1401
+"Main.ml" 48 1364 1366 "Main.ml" 48 1364 1382
 type(
   int -> int -> (unit -> unit) -> unit
 )
 ident(
   ext_ref Interface.run_ui
 )
-"Main.ml" 49 1383 1402 "Main.ml" 49 1383 1413
+"Main.ml" 48 1364 1383 "Main.ml" 48 1364 1394
 type(
   int
 )
 ident(
-  int_ref board_width "Main.ml" 15 203 207 "Main.ml" 15 203 218
+  int_ref board_width "Main.ml" 14 184 188 "Main.ml" 14 184 199
 )
-"Main.ml" 49 1383 1414 "Main.ml" 49 1383 1426
+"Main.ml" 48 1364 1395 "Main.ml" 48 1364 1407
 type(
   int
 )
 ident(
-  int_ref board_height "Main.ml" 13 179 183 "Main.ml" 13 179 195
+  int_ref board_height "Main.ml" 12 160 164 "Main.ml" 12 160 176
 )
-"Main.ml" 49 1383 1427 "Main.ml" 49 1383 1437
+"Main.ml" 48 1364 1408 "Main.ml" 48 1364 1418
 type(
   unit -> unit
 )
 ident(
-  int_ref initialize "Main.ml" 48 1347 1353 "Main.ml" 48 1347 1363
+  int_ref initialize "Main.ml" 47 1328 1334 "Main.ml" 47 1328 1344
 )
-"Main.ml" 49 1383 1385 "Main.ml" 49 1383 1437
+"Main.ml" 48 1364 1366 "Main.ml" 48 1364 1418
 call(
   stack
 )
 type(
   unit
 )
-"Main.ml" 50 1439 1445 "Main.ml" 50 1439 1449
+"Main.ml" 49 1420 1426 "Main.ml" 49 1420 1430
 type(
   c4Game
 )
 ident(
-  def game "Main.ml" 51 1470 1472 "Main.ml" 51 1470 1483
+  def game "Main.ml" 50 1451 1453 "Main.ml" 50 1451 1464
 )
-"Main.ml" 50 1439 1453 "Main.ml" 50 1439 1465
+"Main.ml" 49 1420 1434 "Main.ml" 49 1420 1446
 type(
   c4Game ref
 )
 ident(
-  int_ref current_game "Main.ml" 19 276 280 "Main.ml" 19 276 292
+  int_ref current_game "Main.ml" 18 257 261 "Main.ml" 18 257 273
 )
-"Main.ml" 50 1439 1452 "Main.ml" 50 1439 1465
+"Main.ml" 49 1420 1433 "Main.ml" 49 1420 1446
 type(
   c4Game
 )
@@ -879,59 +879,59 @@ type(
 ident(
   ext_ref Pervasives.( ! )
 )
-"Main.ml" 51 1470 1472 "Main.ml" 51 1470 1476
+"Main.ml" 50 1451 1453 "Main.ml" 50 1451 1457
 type(
   c4Game
 )
 ident(
-  int_ref game "Main.ml" 50 1439 1445 "Main.ml" 50 1439 1449
+  int_ref game "Main.ml" 49 1420 1426 "Main.ml" 49 1420 1430
 )
-"Main.ml" 51 1470 1472 "Main.ml" 51 1470 1481
+"Main.ml" 50 1451 1453 "Main.ml" 50 1451 1462
 call(
   tail
 )
 type(
   unit -> unit
 )
-"Main.ml" 51 1470 1481 "Main.ml" 51 1470 1483
+"Main.ml" 50 1451 1462 "Main.ml" 50 1451 1464
 type(
   unit
 )
-"Main.ml" 51 1470 1472 "Main.ml" 51 1470 1483
+"Main.ml" 50 1451 1453 "Main.ml" 50 1451 1464
 type(
   unit
 )
-"Main.ml" 50 1439 1441 "Main.ml" 51 1470 1484
+"Main.ml" 49 1420 1422 "Main.ml" 50 1451 1465
 type(
   unit
 )
-"Main.ml" 49 1383 1385 "Main.ml" 51 1470 1484
+"Main.ml" 48 1364 1366 "Main.ml" 50 1451 1465
 type(
   unit
 )
-"Main.ml" 48 1347 1349 "Main.ml" 51 1470 1484
+"Main.ml" 47 1328 1330 "Main.ml" 50 1451 1465
 type(
   unit
 )
 type(
   unit
 )
-"Main.ml" 47 1327 1335 "Main.ml" 51 1470 1484
+"Main.ml" 46 1308 1316 "Main.ml" 50 1451 1465
 type(
   unit -> unit
 )
-"Main.ml" 54 1490 1490 "Main.ml" 54 1490 1493
+"Main.ml" 53 1471 1471 "Main.ml" 53 1471 1474
 type(
   unit -> unit
 )
 ident(
-  int_ref run "Main.ml" 47 1327 1331 "Main.ml" 47 1327 1334
+  int_ref run "Main.ml" 46 1308 1312 "Main.ml" 46 1308 1315
 )
-"Main.ml" 54 1490 1494 "Main.ml" 54 1490 1496
+"Main.ml" 53 1471 1475 "Main.ml" 53 1471 1477
 type(
   unit
 )
-"Main.ml" 54 1490 1490 "Main.ml" 54 1490 1496
+"Main.ml" 53 1471 1471 "Main.ml" 53 1471 1477
 call(
   stack
 )

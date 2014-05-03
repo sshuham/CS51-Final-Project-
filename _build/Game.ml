@@ -203,9 +203,10 @@ object
   method! next_move (bd : board) =
 
   (* 
-   * INITIAL MINIMAX SHIT
+   * INITIAL MINIMAX
    *)
-(*
+  
+  (*
    let rec minimax (b : board) (d : int) (num_player : int) : (int * int) = 
     if d = 0 || board_full b || board_almost_full b 
     then 
@@ -337,14 +338,13 @@ object
     then 
       if num = num_player
       then 
-        (
-        let v = ref (-infty) in
+        (let v = ref (-infty) in
         let index = ref 0 in 
         for i = 0 to 6 do 
           let mv = (i , num_player) in 
           if allowed brd mv 
           then  
-            (let vl = estimate_value (next_board brd mv) num_player in
+            (let vl = estimate_value (not_alter_next_board brd mv) num_player in
             if vl > !v (* if value of potential move is greater than current option *)
             then (v := vl; index := i)
             else ())
@@ -357,7 +357,7 @@ object
           let mv = (i , num_player) in 
           if allowed brd mv 
           then  
-            (let vl = estimate_value (next_board brd mv) num_player in
+            (let vl = estimate_value (not_alter_next_board brd mv) num_player in
             if vl < !v 
             then (v := vl; index := i)
             else ())
@@ -377,7 +377,7 @@ object
           (let mv = (!i,num_player) in
           if allowed brd mv
           then 
-            (let (_ , vl) = alphabeta (next_board brd mv) (d - 1) (3 - num_player) !a !b in 
+            (let (_ , vl) = alphabeta (not_alter_next_board brd mv) (d - 1) (3 - num_player) !a !b in 
             (*if vl > !bestValue
             then
               (bestValue := vl; indexValue := !i;*)
@@ -402,7 +402,7 @@ object
           (let mv = (!i,num_player) in
           if allowed brd mv
           then 
-            (let (_ , vl) = alphabeta (next_board brd mv) (d - 1) (3 - num_player) !a !b in 
+            (let (_ , vl) = alphabeta (not_alter_next_board brd mv) (d - 1) (3 - num_player) !a !b in 
             (*if vl < !bestValue
             then
               (bestValue := vl; indexValue := !i; *)
@@ -418,60 +418,7 @@ object
   in
   let (mv, _) = alphabeta bd minimax_depth num (-infty) infty in
   (mv,num)
-
-
 end  
-
-
-
-
-  (*let rec minimax (b : board) (d : int) (num_player : int) : int = 
-    if d = 0 || estimate_value b num_player = infty || estimate_value b num_player = - infty || board_full b
-    then 
-      estimate_value b num_player 
-    else
-      if num_player = num
-      then 
-        (let bestValue = ref (-infty - 1) in
-        for i = 0 to 6 do
-          let mv = (i,num_player) in
-          if allowed b mv
-          then 
-            (let vl = minimax (not_alter_next_board b mv) (d - 1) (3 - num_player) in 
-            if vl > !bestValue
-            then (bestValue := vl)
-            else () )
-          else ()
-        done;
-         !bestValue)
-      else
-        (let bestValue = ref (infty + 1) in
-        for i = 0 to 6 do
-          let mv = (i,num_player) in
-          if allowed b mv
-          then 
-            (let vl = minimax (not_alter_next_board b mv) (d - 1) (3 - num_player) in 
-            if vl < !bestValue
-            then (bestValue := vl)
-            else () )
-          else ()
-        done;
-        !bestValue)
-  in
-
-  let bestValue = ref (-infty) in 
-  let finindexValue = ref 1 in 
-
-  for i = 0 to width - 1 do
-    if allowed b (i, num) 
-    then 
-      let vl = minimax b minimax_depth (3 - num) in
-      if !bestValue < vl
-      then (bestValue := vl ; finindexValue := i) 
-      else ()
-    else ()
-  done ; (!finindexValue, num)*) 
-
 
 class type game =
 object
